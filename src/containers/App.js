@@ -6,15 +6,12 @@ import Footer from "../components/Footer";
 import Home from "./Home";
 import Services from "./Servic";
 
+import './index.scss';
+
 class App extends Component {
     state = {
-        path: ''
+        path: window.location.pathname
     };
-
-    componentWillMount() {
-        const path = window.location.pathname;
-        this.updatePath(path);
-    }
 
     render() {
         return (

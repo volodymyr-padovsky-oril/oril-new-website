@@ -2,10 +2,13 @@
 @import "src/styles/mixin";
 
 #header {
-  padding: 19px 0;
+  padding: 18px 0;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+  z-index: 20;
 
   .container {
-    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 4fr 200px;
     grid-gap: 5px;
@@ -13,7 +16,19 @@
   }
 
   .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 152px;
     height: 52px;
+    align-items: center;
+
+    h1{
+      font-family: 'Mont';
+      font-size: 28px;
+      font-weight: bold;
+      color: $orange
+    }
+
   }
 
   .nav {
@@ -26,6 +41,7 @@
       color: #848484;
       font-size: 18px;
       line-height: 1.44;
+      transition: color 0.2s;
 
       &:hover {
         color: $orange;
@@ -39,6 +55,7 @@
         margin-right: 0;
       }
     }
+
     .active {
       color: $orange;
     }
@@ -46,10 +63,14 @@
 
 
   .btn {
-    @include btn(#ffffff, linear-gradient(243deg, $yellow, $orange), 100%);
+    @include btn(#ffffff, linear-gradient(243deg, $orange, $yellow), 100%);
 
     &:focus {
       outline: none;
+    }
+
+    &:hover {
+      @include btn(#ffffff, linear-gradient(243deg, $yellow, $orange), 100%);
     }
   }
 }
