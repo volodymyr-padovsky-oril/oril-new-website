@@ -1,0 +1,55 @@
+@import "src/styles/variables";
+@import "src/styles/mixin";
+
+#header {
+  padding: 19px 0;
+
+  .container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 4fr 200px;
+    grid-gap: 5px;
+    align-items: center;
+  }
+
+  .logo {
+    height: 52px;
+  }
+
+  .nav {
+    text-align: center;
+
+    .nav_item {
+      margin: 0 30px;
+      text-decoration: none;
+      opacity: 1;
+      color: #848484;
+      font-size: 18px;
+      line-height: 1.44;
+
+      &:hover {
+        color: $orange;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .active {
+      color: $orange;
+    }
+  }
+
+
+  .btn {
+    @include btn(#ffffff, linear-gradient(243deg, $yellow, $orange), 100%);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

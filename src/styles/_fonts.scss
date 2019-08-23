@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Mont-SemiBold.eot');
+  src: url('/assets/fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-SemiBold.woff') format('woff'),
+  url('/assets/fonts/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Mont-Regular.eot');
+  src: url('/assets/fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-Regular.woff') format('woff'),
+  url('/assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Mont-Bold.eot');
+  src: url('/assets/fonts/Mont-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-Bold.woff') format('woff'),
+  url('/assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Mont-BoldItalic.eot');
+  src: url('/assets/fonts/Mont-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-BoldItalic.woff') format('woff'),
+  url('/assets/fonts/Mont-BoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+H1 {
+  font-family: 'Mont';
+  font-weight: bold;
+  font-size: 36px;
+}
+
+H2 {
+  font-family: 'Mont';
+  font-weight: bold;
+  font-size: 28px;
+}
+
+P, A {
+  font-family: 'Mont';
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0.9;
+  color: #ffffff;
+  line-height: 1.8;
+}
