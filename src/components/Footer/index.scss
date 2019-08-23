@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+
+footer {
+  background-color: $purple;
+
+  .content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 0;
+  }
+
+  .nav-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    img {
+      margin-right: 180px;
+    }
+  }
+
+  .nav-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px 60px;
+  }
+
+  .nav-footer a.nav_item {
+    color: $light-gray-text;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.11;
+    font-weight: normal;
+    transition: color .2s;
+
+    &:hover, &.active {
+      color: $orange;
+    }
+  }
+
+  .copyright {
+    border-left: solid 1.5px $dark-gray-text;
+    padding: 23px;
+
+    p {
+      font-size: 18px;
+      font-weight: normal;
+
+      &:first-child {
+        color: white;
+        line-height: 1.11;
+        margin: 0 0 15px;
+      }
+
+      &:last-child {
+        color: $dark-gray-text;
+        line-height: 1.11;
+        margin: 0;
+      }
+    }
+  }
+}

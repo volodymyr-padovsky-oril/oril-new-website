@@ -25,7 +25,7 @@ class App extends Component {
                     <Route path="/home" component={Home}/>
                     <Route path="/services" component={Services}/>
                 </div>
-                <Footer/>
+                <Footer path={this.state.path} redirect={this.onChangePage}/>
             </Router>
         );
     }
