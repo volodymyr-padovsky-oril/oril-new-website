@@ -1,0 +1,114 @@
+@import "src/styles/variables";
+@import "src/styles/mixin";
+
+#home {
+  section {
+    text-align: center;
+
+    &:first-child {
+      height: calc(100vh - 90px);
+    }
+
+    h2 {
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      @include btn($orange, #ffffff);
+      margin-bottom: 240px;
+    }
+  }
+
+  .banner {
+    grid-template-rows: 1fr;
+    grid-template-columns: 5fr 3fr;
+    grid-gap: 60px;
+    align-items: center;
+    height: 100%;
+
+    img {
+      width: 100%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .banner_slogan {
+      h1 {
+        color: #ffffff;
+        font-size: 65px;
+        line-height: 0.86;
+      }
+
+      p {
+        font-size: 36px;
+        line-height: 1.56;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .products {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 100px;
+    align-items: center;
+
+    img{
+      margin-bottom: 30px;
+    }
+
+    a{
+      text-align: center;
+      text-underline-position: under;
+      text-decoration-color: rgba(255, 255, 255, 0.35);
+      transition: 0.3s;
+      margin-bottom: 40px;
+
+      &:hover {
+        text-decoration-color: #ffffff;
+      }
+    }
+  }
+
+  .bubble_wrapper {
+    position: relative;
+    width: 100%;
+
+    .bubble_one {
+      width: 470px;
+      height: 470px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 5;
+      top: 55px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto auto auto -2px;
+    }
+
+    .bubble_two {
+      width: 351px;
+      height: 351px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 5;
+      top: 115px;
+      bottom: 0;
+      left: 200px;
+      right: -250px;
+      margin: auto;
+    }
+  }
+}
+

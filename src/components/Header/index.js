@@ -13,11 +13,11 @@ export default (props) => {
     return (
         <header id="header">
             <div className="container">
-                <div className="col-1">
-                    <Link to={'/home'} onClick={redirect}>
-                        <img src="assets/icons/logo-dark-nolabel.svg" alt="logo" className="logo"/>
+                    <Link to={'/home'} onClick={redirect} className="logo">
+                        <img src="assets/icons/logo-gold-nolabel.svg" alt="logo"/>
+                        <h1>ORIL</h1>
                     </Link>
-                </div>
+
                 <nav className="nav">
                     <Link to="/home" className={path === "/home" ? "active nav_item" : "nav_item"} onClick={redirect}>
                         Home
@@ -32,10 +32,10 @@ export default (props) => {
                         Blog
                     </Link>
                     <Link to="/contact" className={path === "/contact" ? "active nav_item" : "nav_item"} onClick={redirect}>
-                        Contact
+                        Contact Us
                     </Link>
                 </nav>
-                <div className="col-2 align-self-center">
+                <div>
                     <button className="btn">Free Consultation</button>
                 </div>
             </div>
