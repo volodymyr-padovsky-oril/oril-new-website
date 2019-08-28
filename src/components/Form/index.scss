@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/mixin";
 
 .input-field {
   position: relative;
@@ -80,16 +81,8 @@
   cursor: pointer;
 
   button {
-    border-radius: 7px;
-    border: none;
-    background-color: $purple;
-    width: 100%;
-    color: $orange;
-    padding: 16px 0;
-    outline: none;
-    font-size: 18px;
+    @include btn($orange, linear-gradient($purple, $purple), 100%);
     transition: .2s;
-    cursor: pointer;
   }
 
   &:hover {

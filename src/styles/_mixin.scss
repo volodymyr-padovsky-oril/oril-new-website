@@ -6,6 +6,7 @@
   color: $text_color;
   padding: 14px 0 13px;
   border-color: $text_color;
+  cursor: pointer;
   outline: none;
 
   @if $bg_color != none {

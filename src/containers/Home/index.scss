@@ -45,7 +45,7 @@
     }
 
     .btn {
-      @include btn($orange, #ffffff);
+      @include btn($orange, linear-gradient(#ffffff, #ffffff));
       margin-bottom: 240px;
       position: relative;
       z-index: 1;
@@ -210,84 +210,6 @@
           transition: 0.3s;
         }
       }
-    }
-  }
-
-  .bubble_wrapper {
-    position: relative;
-    width: 100%;
-    //
-    //.bubble {
-    //  background-color: rgba(255, 255, 255, 0.15);
-    //  border-radius: 50%;
-    //  position: absolute;
-    //  z-index: 5;
-    //}
-  }
-
-  .banner {
-    .bubble_two {
-      width: 470px;
-      height: 470px;
-      top: 55px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto auto auto -2px;
-    }
-
-    .bubble_one {
-      width: 351px;
-      height: 351px;
-      top: 115px;
-      bottom: 0;
-      left: 200px;
-      right: -250px;
-      margin: auto;
-    }
-  }
-
-  .products {
-    .bubble_one {
-      width: 320px;
-      height: 320px;
-      top: -255px;
-      left: 0;
-    }
-
-    .bubble_three {
-      width: 1300px;
-      height: 1300px;
-      top: 1010px;
-      bottom: 0;
-      left: 450px;
-      right: -250px;
-      margin: auto;
-    }
-  }
-
-  .services {
-    .bubble_one {
-      width: 420px;
-      height: 420px;
-      top: -130px;
-      left: 420px;
-    }
-  }
-
-  .we_are {
-    .bubble_one {
-      width: 420px;
-      height: 420px;
-      top: 480px;
-      right: -150px;
-    }
-
-    .bubble_two {
-      width: 770px;
-      height: 770px;
-      top: 100px;
-      left: -50px;
     }
   }
 }
