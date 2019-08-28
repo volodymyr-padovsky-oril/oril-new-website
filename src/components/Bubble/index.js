@@ -4,6 +4,7 @@ import "./index.scss";
 class Bubble extends Component {
 
     scrolled;
+    _isMounted = false;
 
     constructor(props) {
         super(props);
@@ -11,22 +12,26 @@ class Bubble extends Component {
     }
 
     componentDidMount() {
+        this._isMounted = true;
         window.addEventListener('scroll', this.handleScroll.bind(this));
     };
 
     componentWillUnmount() {
+        this._isMounted = false;
         window.removeEventListener('scroll', this.handleScroll.bind(this));
     };
 
     handleScroll() {
-        let scroll = window.pageYOffset || document.documentElement.scrollTop;
-        if (!this.scrolled) {
-            this.updatePosition(scroll)
-        } else {
-            const scrolling = this.scrolled - scroll;
-            this.setPosition(scrolling);
+        if(this._isMounted){
+            let scroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (!this.scrolled) {
+                this.updatePosition(scroll)
+            } else {
+                const scrolling = this.scrolled - scroll;
+                this.setPosition(scrolling);
+            }
+            this.scrolled = scroll;
         }
-        this.scrolled = scroll;
     };
 
     setPosition(scrolling) {

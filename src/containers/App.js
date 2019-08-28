@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -19,9 +19,12 @@ class App extends Component {
             <Router>
                 <Header path={this.state.path} redirect={this.onChangePage}/>
                 <div className="App">
-                    <Redirect from="/" to="/home"/>
-                    <Route path="/home" component={Home}/>
-                    <Route path="/services" component={Services}/>
+                    <Switch>
+                        <Route exect path="/home" component={Home}/>
+                        <Route exect path="/services" component={Services}/>
+                        <Route exect path="/contact"/>
+                        <Redirect from="/" to="/home"/>
+                    </Switch>
                 </div>
                 <Contacts/>
                 <Footer path={this.state.path} redirect={this.onChangePage}/>

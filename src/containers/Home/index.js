@@ -48,23 +48,6 @@ class Home extends Component {
         photo: 'photo'
     }];
 
-    // scrollTop() {
-    //     let scroll = window.pageYOffset || document.documentElement.scrollTop;
-    //     const bubblesOne = document.getElementsByClassName('bubble_one');
-    //     const bubblesTwo = document.getElementsByClassName('bubble_two');
-    //     const bubblesTree = document.getElementsByClassName('bubble_three');
-    //
-    //     for (const bubble of bubblesOne) {
-    //         this.updatePosition(bubble, (-scroll * 0.7));
-    //     }
-    //     for (const bubble of bubblesTwo) {
-    //         this.updatePosition(bubble, (-scroll * 0.5));
-    //     }
-    //     for (const bubble of bubblesTree) {
-    //         this.updatePosition(bubble, (-scroll * 0.3));
-    //     }
-    // }
-
     render() {
         return (
             <Fragment>
@@ -73,7 +56,7 @@ class Home extends Component {
                         <div className='container banner'>
                             <div className='wrapper'>
                                 <Bubble size='351px' top='115px' left='200px' right='-255px' speed='0.8'/>
-                                <Bubble size='470px' top='55px' left='-270px' speed='0.5'/>
+                                <Bubble size='470px' top='55px' left='-270px' speed='0.3'/>
                                 <img src="assets/img/hero-elefant-notebook-3.png" alt="elefant"
                                      srcSet="assets/img/hero-elefant-notebook-3@2x.png 2x,
                                      assets/img/hero-elefant-notebook-3@3x.png 3x"/>
