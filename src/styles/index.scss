@@ -1,3 +1,10 @@
 @import "_mixin.scss";
 @import "_fonts.scss";
 @import "_variables.scss";
+
+* {
+  font-family: Mont, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

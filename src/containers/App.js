@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Home from "./Home";
 import Services from "./Servic";
+import Contacts from "./Contacts";
 
 import './index.scss';
 
@@ -22,6 +23,7 @@ class App extends Component {
                     <Route path="/home" component={Home}/>
                     <Route path="/services" component={Services}/>
                 </div>
+                <Contacts/>
                 <Footer path={this.state.path} redirect={this.onChangePage}/>
             </Router>
         );

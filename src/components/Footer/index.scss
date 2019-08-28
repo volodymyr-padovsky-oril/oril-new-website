@@ -2,6 +2,7 @@
 
 footer {
   background-color: $purple;
+  border-top: 1px solid $dark-gray;
 
   .content {
     display: grid;
@@ -28,7 +29,7 @@ footer {
   }
 
   .nav-footer a.nav_item {
-    color: $light-gray-text;
+    color: $light-gray;
     font-size: 18px;
     text-decoration: none;
     line-height: 1.11;
@@ -41,7 +42,7 @@ footer {
   }
 
   .copyright {
-    border-left: solid 1.5px $dark-gray-text;
+    border-left: solid 1.5px $dark-gray;
     padding: 23px;
 
     p {
@@ -55,7 +56,7 @@ footer {
       }
 
       &:last-child {
-        color: $dark-gray-text;
+        color: $dark-gray;
         line-height: 1.11;
         margin: 0;
       }
