@@ -16,17 +16,18 @@
   }
 
   .logo {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     width: 152px;
     height: 52px;
-    align-items: center;
 
-    h1{
+    h1 {
       font-family: 'Mont';
       font-size: 28px;
       font-weight: bold;
-      color: $orange
+      color: $orange;
+      margin: 0 auto;
     }
 
   }
