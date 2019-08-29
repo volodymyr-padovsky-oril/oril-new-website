@@ -1,0 +1,78 @@
+@import "src/styles/variables";
+@import "src/styles/mixin";
+
+header {
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 20;
+
+  .container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 4fr 200px;
+    grid-gap: 5px;
+    align-items: center;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 152px;
+    height: 52px;
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: $orange;
+      margin: 0 auto;
+    }
+  }
+
+  .nav {
+    text-align: center;
+
+    .nav_item {
+      margin: 0 30px;
+      text-decoration: none;
+      opacity: 1;
+      color: #848484;
+      font-size: 18px;
+      line-height: 1.44;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $orange;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .active {
+      color: $orange;
+    }
+  }
+
+  .btn {
+    @include btn(#ffffff, linear-gradient(243deg, $orange, $yellow, $yellow, $orange), 100%);
+    background-size: 300% 300%;
+    transition: 1s;
+    font-weight: 900;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-position: 100% 50%;
+      transform: scale(1.1);
+    }
+  }
+}

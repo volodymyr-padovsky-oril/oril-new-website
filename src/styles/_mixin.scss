@@ -8,9 +8,10 @@
   border-color: $text_color;
   cursor: pointer;
   outline: none;
+  font-weight: 600;
 
   @if $bg_color != none {
-    background-image: $bg_color;
+    background: $bg_color;
     font-size: 17px;
     border: none;
     padding: 15px 0 16px;

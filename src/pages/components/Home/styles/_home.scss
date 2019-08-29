@@ -1,0 +1,52 @@
+@import "src/styles/variables";
+@import "src/styles/mixin";
+
+@import "../components/Banner/styles/banner";
+@import "../components/Products/styles/products";
+@import "../components/Services/styles/services";
+@import "../components/WeAre/styles/we-are";
+
+.home {
+  overflow: hidden;
+  background-image: linear-gradient(180deg, $yellow, $orange 51%, #fbc739);
+
+  section {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &:first-child {
+      height: calc(100vh - 90px);
+    }
+
+    h2 {
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 50px;
+    }
+
+    p, h3 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      text-align: left;
+      font-size: 25px;
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    img {
+      z-index: 10;
+    }
+
+    .btn {
+      @include btn($orange, linear-gradient(#ffffff, #ffffff));
+      margin-bottom: 240px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.home {
+  &__products {
+    & > .container {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 100px;
+      align-items: center;
+
+      img {
+        margin-bottom: 30px;
+      }
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 40px;
+
+        &:hover {
+          span {
+            border-color: rgb(255, 255, 255);
+          }
+        }
+
+        span {
+          border-bottom: 2px solid rgba(255, 255, 255, .35);
+          transition: .2s;
+        }
+      }
+    }
+
+    .btn {
+      transition: .2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
