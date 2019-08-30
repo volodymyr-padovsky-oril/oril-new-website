@@ -1,10 +1,8 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "./index.scss";
 
 export default (props) => {
-    const path = props.path;
-
     const redirect = (e) => {
         const elem = e.target;
         props.redirect(elem.pathname);
@@ -14,27 +12,27 @@ export default (props) => {
     return (
         <header>
             <div className="container">
-                    <Link to={'/home'} onClick={redirect} className="logo">
+                    <NavLink to={'/home'} onClick={redirect} className="logo">
                         <img src="assets/icons/logo-gold-nolabel.svg" alt="logo"/>
                         <h1>ORIL</h1>
-                    </Link>
+                    </NavLink>
 
                 <nav className="nav">
-                    <Link to="/home" className={path === "/home" ? "active nav_item" : "nav_item"} onClick={redirect}>
+                    <NavLink to="/home" className="nav_item" activeClassName="active" onClick={redirect}>
                         Home
-                    </Link>
-                    <Link to="/services" className={path === "/services" ? "active nav_item" : "nav_item"} onClick={redirect}>
+                    </NavLink>
+                    <NavLink to="/services" className="nav_item" activeClassName="active" onClick={redirect}>
                         Services
-                    </Link>
-                    <Link to="/portfolio" className={path === "/portfolio" ? "active nav_item" : "nav_item"} onClick={redirect}>
+                    </NavLink>
+                    <NavLink to="/portfolio" className="nav_item" activeClassName="active" onClick={redirect}>
                         Portfolio
-                    </Link>
-                    <Link to="/blog" className={path === "/blog" ? "active nav_item" : "nav_item"} onClick={redirect}>
+                    </NavLink>
+                    <NavLink to="/blog" className="nav_item" activeClassName="active" onClick={redirect}>
                         Blog
-                    </Link>
-                    <Link to="/contact" className={path === "/contact" ? "active nav_item" : "nav_item"} onClick={redirect}>
+                    </NavLink>
+                    <NavLink to="/contact" className="nav_item" activeClassName="active" onClick={redirect}>
                         Contact Us
-                    </Link>
+                    </NavLink>
                 </nav>
                 <div>
                     <button className="btn">Free Consultation</button>

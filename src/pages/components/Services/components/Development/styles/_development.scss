@@ -1,0 +1,11 @@
+.services {
+  &__development {
+    margin-bottom: 150px;
+
+    .react-tabs {
+      &__tab-list {
+        margin-bottom: 90px;
+      }
+    }
+  }
+}

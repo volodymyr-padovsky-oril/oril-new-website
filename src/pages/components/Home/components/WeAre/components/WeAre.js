@@ -56,7 +56,7 @@ export class WeAre extends Component {
                 <Bubble size="420px" top="3150px" right="-1700px" speed="0.8"/>
                 <Bubble size="800px" top="2150px" left="-1300px" speed="0.5"/>
                 <div className="container">
-                    <div>
+                    <div className="home__we-are__text-wrapper">
                         <p>This an introduction text. It has a fixed size, and a custom line height, so you can
                             experiment </p>
                         <h3>Our Kredo</h3>
@@ -75,20 +75,34 @@ export class WeAre extends Component {
                                 const animal_src = "assets/img/Who-we-are-" + worker.animal + ".svg";
                                 const photoStyles = {
                                     backgroundImage: "url(assets/img/who-we-are-team-member-" + worker.photo + ".jpg)",
+                                    backgroundSize: 'contain'
                                 };
 
                                 return (
-                                    <div className="home__we-are__our-images__wrapper" key={index}>
-                                        <div className="bg"></div>
-                                        <img className="animal-avatar" src={animal_src} alt="worker.animal"/>
-                                        <div className="photo" style={photoStyles}>
-                                            <div className="photo__desc">
-                                                <p>{worker.name}</p>
-                                                <p>{worker.position}</p>
+                                    <div className="flip-container" key={'card-' + index}>
+                                        <div className="flip-container__flipper">
+                                            <div className="flip-container__flipper__front">
+                                                <img className="animal-avatar" src={animal_src} alt="worker.animal"/>
+                                            </div>
+                                            <div className="flip-container__flipper__back" style={photoStyles}>
+                                                <div className="flip-container__flipper__back__desc">
+                                                    <span>{worker.name}</span>
+                                                    <span>{worker.position}</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 )
+
+                                // return (
+                                //     <div className="card" key={index}>
+                                //        <div className="card__front">
+                                //            <img className="animal-avatar" src={animal_src} alt="worker.animal"/>
+                                //        </div>
+                                //         <div className="card__back" style={photoStyles}>
+                                //        </div>
+                                //     </div>
+                                // )
                             })
                         }
                     </div>

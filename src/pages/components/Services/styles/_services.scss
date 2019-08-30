@@ -1,0 +1,234 @@
+@import "src/styles/variables";
+
+@import "../components/Intro/styles/intro";
+@import "../components/Design/styles/design";
+@import "../components/Development/styles/development";
+@import "../components/Web/styles/web";
+@import "../components/Mobile/styles/mobile";
+@import "../components/HybridApp/styles/hybrid-app";
+@import "../components/FrontEnd/styles/front-end";
+@import "../components/BackEnd/styles/back-end";
+@import "../components/Databases/styles/databases";
+
+h2 {
+  font-size: 36px;
+  line-height: 1.56;
+
+  span {
+    color: rgba(255, 255, 255, .5);
+    margin-right: 20px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.07;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1;
+}
+
+
+.services {
+  background-image: linear-gradient(156deg, $yellow, $orange 50%, $yellow);
+  overflow: hidden;
+
+  &__ul-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 120px;
+
+    .list-item {
+      font-size: 20px;
+      max-width: 500px;
+      color: rgba(255, 255, 255, .9);
+      line-height: 1.8;
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      grid-gap: 30px;
+      margin-bottom: 40px;
+
+      .list-style {
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, .55);
+        border-radius: 50%;
+        margin-top: 7px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__choices {
+    margin-bottom: 120px;
+
+    h4 {
+      margin: 0 0 40px;
+    }
+
+    .choices-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 465px);
+      grid-column-gap: 80px;
+      grid-row-gap: 60px;
+
+      .list-item {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        grid-gap: 25px;
+        max-width: 465px;
+
+        div:first-child {
+          width: 90px;
+          height: 90px;
+          background-color: rgba(255, 255, 255, .75);
+          border-radius: 12px;
+        }
+
+        p {
+          margin: 0;
+
+          &:first-child {
+            font-size: 20px;
+            line-height: 1.25;
+            margin-bottom: 12px;
+          }
+
+          &:last-child {
+            font-size: 18px;
+            line-height: 1.44;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  &__approach {
+    margin-bottom: 120px;
+
+    h4 {
+      margin: 0 0 40px;
+    }
+
+    &__diagram {
+      width: 950px;
+      height: 398px;
+      background-color: rgba(255, 255, 255, .36);
+      border-radius: 19px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__technologies {
+    display: grid;
+    align-items: center;
+    margin-bottom: 120px;
+
+    &--center {
+      margin-bottom: 0;
+      align-items: center;
+    }
+
+    & > div {
+      display: grid;
+      grid-template-columns: repeat(5, 65px);
+      grid-gap: 55px;
+
+      & > div {
+        text-align: center;
+        width: 100%;
+        grid-gap: 18px;
+        display: grid;
+        justify-items: center;
+
+        & > div {
+          width: 66px;
+          height: 66px;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &__deliverables {
+    margin-bottom: 120px;
+
+    & > div {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 120px;
+
+      & > div {
+        display: grid;
+        grid-template-columns: 140px;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 25px;
+
+        & > div {
+          width: 140px;
+          height: 140px;
+          border-radius: 13px;
+          background-color: rgba(255, 255, 255, .23);
+        }
+      }
+    }
+
+    h3 {
+      margin: 0 0 40px;
+    }
+  }
+
+  &__products {
+    h3 {
+      margin: 0 0 40px;
+    }
+
+    & > div {
+      display: grid;
+      grid-template-columns: repeat(3, 55px);
+      grid-gap: 40px;
+    }
+  }
+
+  &__desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 120px;
+
+    & > div:first-child {
+      border-right: 2px solid rgba(255, 255, 255, .35);
+      margin-right: 70px;
+    }
+
+    h3 {
+      margin: 0 0 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, .9);
+      line-height: 1.8;
+      max-width: 500px;
+      margin: 0;
+    }
+  }
+
+  &__design, &__development {
+    h2 {
+      margin: 0 0 60px;
+    }
+  }
+}

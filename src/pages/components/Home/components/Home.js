@@ -1,17 +1,21 @@
 import React, {Component, Fragment} from "react";
-import Banner from "./Banner/components/Banner";
-import Products from "./Products/components/Products";
-import Services from "./Services/components/Services";
-import WeAre from "./WeAre/components/WeAre";
+import Banner from "./Banner";
+import Products from "./Products";
+import Services from "./Services";
+import WeAre from "./WeAre";
 
 class Home extends Component {
+    onChangePage = (path) => {
+        this.setState({ path });
+    };
+
     render() {
         return (
             <Fragment>
                 <main className='home'>
                     <Banner/>
                     <Products/>
-                    <Services/>
+                    <Services redirect={this.onChangePage}/>
                     <WeAre/>
                 </main>
             </Fragment>

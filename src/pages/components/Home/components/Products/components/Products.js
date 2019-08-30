@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
 import Bubble from "../../../../../../commons/Bubble";
 
-
 export class Products extends Component {
     products = [{
-        iconName: 'web',
+        name: 'web',
         content: 'Web'
     }, {
-        iconName: 'mobile',
+        name: 'mobile',
         content: 'Mobile'
     }, {
-        iconName: 'io-t',
+        name: 'iot',
         content: 'IoT'
     }, {
-        iconName: 'blockchain',
+        name: 'blockchain',
         content: 'Blockchain'
     }];
 
@@ -23,17 +22,18 @@ export class Products extends Component {
                 <h2>Products We Build</h2>
                 <Bubble size="1300px" top="1000px" left="660px" speed="0.2"/>
                 <Bubble size="320px" top="560px" left="-1300px" speed="0.8"/>
-                <div className="container">{
-                    this.products.map((product, index) => {
-                        return (
-                            <a href="/" key={index}>
-                                <img src={"assets/icons/products-" + product.iconName + ".svg"}
-                                     alt={product.iconName}/>
-                                <span>{product.content}</span>
-                            </a>
-                        )
-                    })
-                }
+                <div className="container">
+                    {
+                        this.products.map((product, index) => {
+                            return (
+                                <a href={`/services?activeTab=${product.name}`} key={index} target="_blank" rel="noopener noreferrer">
+                                    <img src={"assets/icons/products-" + product.name + ".svg"}
+                                         alt={product.name}/>
+                                    <span>{product.content}</span>
+                                </a>
+                            )
+                        })
+                    }
                 </div>
                 <button className="btn">Featured Products</button>
             </section>

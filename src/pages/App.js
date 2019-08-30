@@ -9,17 +9,13 @@ import routes from "../routes";
 import './index.scss';
 
 class App extends Component {
-    state = {
-        path: window.location.pathname
-    };
-
     render() {
         return (
             <Router>
-                <Header path={this.state.path} redirect={this.onChangePage}/>
+                <Header redirect={this.onChangePage}/>
                     {routes()}
                 <Contacts/>
-                <Footer path={this.state.path} redirect={this.onChangePage}/>
+                <Footer redirect={this.onChangePage}/>
             </Router>
         );
     }
