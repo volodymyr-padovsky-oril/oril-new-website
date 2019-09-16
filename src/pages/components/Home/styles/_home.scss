@@ -8,12 +8,11 @@
 
 .home {
   overflow: hidden;
-  background-image: linear-gradient(180deg, $yellow, $orange 51%, #fbc739);
+  background-image: linear-gradient(158deg, $yellow, $orange 51%, $yellow);
+  object-fit: contain;
 
   section {
     text-align: center;
-    position: relative;
-    z-index: 1;
 
     &:first-child {
       height: calc(100vh - 90px);

@@ -1,0 +1,56 @@
+.services {
+  color: white;
+
+  &__intro {
+    height: calc(100vh - 90px);
+
+    & > .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__text {
+      max-width: 350px;
+
+      h2 {
+        font-size: 36px;
+        line-height: 1.56;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.8;
+        opacity: .9;
+      }
+    }
+
+    &__categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 120px;
+      width: 100%;
+
+      &__design, &__development {
+        text-align: center;
+
+        &:hover span {
+          border-color: rgb(255, 255, 255);
+        }
+
+        span {
+          margin: 44px 0 0;
+          border-bottom: 2px solid white;
+          display: inline-block;
+          font-size: 20px;
+          line-height: 1.2;
+          border-color: rgba(255, 255, 255, .35);
+          transition: .2s;
+        }
+      }
+    }
+  }
+}

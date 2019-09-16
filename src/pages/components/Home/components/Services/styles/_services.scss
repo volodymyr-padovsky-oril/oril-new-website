@@ -3,6 +3,21 @@
     &__flex-row {
       display: grid;
       grid-template-columns: auto auto;
+
+      h3 {
+        border-bottom: 2px solid rgba(255, 255, 255, .35);
+        transition: .2s;
+      }
+
+      &:hover {
+        h3 {
+          border-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      div div {
+        display: flex;
+      }
     }
 
     & > .container {
@@ -12,18 +27,16 @@
       align-items: center;
       margin-bottom: 220px;
 
+      a {
+        text-decoration: none;
+      }
+
       img {
         margin-right: 30px;
         height: 145px;
         width: 100px;
         box-shadow: 0 6px 11px 0 rgba(119, 84,23,0.14);
         border-radius: 8px;
-      }
-
-      h3 {
-        text-decoration: underline;
-        text-underline-position: under;
-        text-decoration-color: rgba(255, 255, 255, 0.35);
       }
     }
   }

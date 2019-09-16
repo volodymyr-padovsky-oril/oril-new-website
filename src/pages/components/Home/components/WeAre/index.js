@@ -1,3 +1,1 @@
-import WeAre from './components/WeAre';
-
-export default  WeAre;
+export {default} from './components/WeAre';

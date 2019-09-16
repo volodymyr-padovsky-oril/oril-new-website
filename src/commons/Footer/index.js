@@ -6,6 +6,7 @@ export default (props) => {
     const redirect = (e) => {
         const elem = e.target;
         props.redirect(elem.pathname);
+        window.scrollTo(0, 0);
     };
 
     return (

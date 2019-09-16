@@ -1,0 +1,56 @@
+.react-tabs {
+  &__tab-list {
+    background-color: white;
+    border: none;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 18px 0;
+    margin: 0;
+  }
+
+  &__tab {
+    font-size: 15px;
+    line-height: 1.33;
+    color: #848484;
+    border: none;
+    bottom: 0;
+    padding: 0;
+
+    div {
+      div {
+        padding: 0 50px;
+      }
+    }
+
+    &:not(:last-child) div div {
+      border-right: 2px solid #ebebeb;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border: none;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &--selected {
+      color: #ffb248;
+      border: none;
+      border-right: inherit;
+      border-radius: 0;
+    }
+  }
+
+  &__tab-panel {
+    &--selected {
+      animation: fadeIn .3s linear;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
