@@ -2,6 +2,8 @@
 @import "_fonts.scss";
 @import "_variables.scss";
 
+@import "~swiper/dist/css/swiper.min.css";
+
 * {
   font-family: Mont, sans-serif;
   -webkit-box-sizing: border-box;
@@ -16,10 +18,10 @@ body {
 section {
   z-index: 1;
   position: relative;
+}
 
-  &:focus {
-    outline: none;
-  }
+section:focus {
+  outline: none;
 }
 
 .container {

@@ -94,6 +94,20 @@ export class Mobile extends Component {
                             <img src="assets/icons/implement.svg" alt="implement"/>
                         </div>
                     </div>
+                    <div className="services__deliverables">
+                        <Bubble size="735px" top="800px" left="920px" speed=".2"/>
+                        <h4>Deliverables</h4>
+                        <div>
+                            {
+                                this.deliverables.map((deliverable, index) => (
+                                    <div key={'deliverable-' + index}>
+                                        <div></div>
+                                        <span>{deliverable.title}</span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
                     <div className="services__technologies">
                         <Bubble size="407px" top="990px" left="-1800px" speed=".2"/>
                         <h4>Technologies</h4>
@@ -108,20 +122,6 @@ export class Mobile extends Component {
                                             </div>
                                         </div>
                                         <span>{service.name}</span>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className="services__deliverables">
-                        <Bubble size="735px" top="800px" left="920px" speed=".2"/>
-                        <h4>Deliverables</h4>
-                        <div>
-                            {
-                                this.deliverables.map((deliverable, index) => (
-                                    <div key={'deliverable-' + index}>
-                                        <div></div>
-                                        <span>{deliverable.title}</span>
                                     </div>
                                 ))
                             }

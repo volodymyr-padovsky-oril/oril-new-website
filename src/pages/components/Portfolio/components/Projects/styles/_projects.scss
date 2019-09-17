@@ -1,0 +1,12 @@
+.portfolio {
+  &__projects {
+    margin-bottom: 150px;
+    //padding-top: 10px;
+
+    .react-tabs {
+      &__tab-list {
+        margin-bottom: 90px;
+      }
+    }
+  }
+}

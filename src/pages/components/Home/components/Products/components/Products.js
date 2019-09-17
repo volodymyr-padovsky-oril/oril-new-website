@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Bubble from "../../../../../../commons/Bubble";
+import {NavLink} from "react-router-dom";
 
 export class Products extends Component {
     products = [{
@@ -26,16 +27,18 @@ export class Products extends Component {
                     {
                         this.products.map((product, index) => {
                             return (
-                                <a href={`/services?activeTab=${product.name}`} key={index} target="_blank" rel="noopener noreferrer">
+                                <NavLink to={`/services?activeTab=${product.name}`} key={index} rel="noopener noreferrer">
                                     <img src={"assets/icons/products-" + product.name + ".svg"}
                                          alt={product.name}/>
                                     <span>{product.content}</span>
-                                </a>
+                                </NavLink>
                             )
                         })
                     }
                 </div>
-                <button className="btn">Featured Products</button>
+                <NavLink to="/portfolio">
+                    <button className="btn">Featured Products</button>
+                </NavLink>
             </section>
         );
     }
