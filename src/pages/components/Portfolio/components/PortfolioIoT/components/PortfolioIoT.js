@@ -1,20 +1,16 @@
-import React, {Component} from 'react';
-import Swiper from 'react-id-swiper';
-import Slide from "../../Slide/components/Slide";
-import {params} from '../../../../../../slider-config';
-import {project} from '../../../our-projects';
+import React, {Component} from "react";
+import {project} from "../../../our-projects";
+import {Slides} from "../../Slides/components/Slides";
 
 export class PortfolioIoT extends Component {
+    slides = [
+        project.nuravine,
+        project.cc,
+        project.vicki
+    ];
+
     render() {
-        return (
-            <div className="slider-wrapper">
-                <Swiper {...params}>
-                    <div><Slide data={project.nuravine} /></div>
-                    <div><Slide data={project.cc} /></div>
-                    <div><Slide data={project.vicki} /></div>
-                </Swiper>
-            </div>
-        );
+        return (<Slides slides={this.slides} />);
     }
 }
 

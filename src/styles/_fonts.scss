@@ -35,23 +35,44 @@
   font-style: italic;
 }
 
-H1 {
+@font-face {
   font-family: 'Mont';
-  font-weight: bold;
+  src: url('/assets/fonts/Mont-SemiBoldItalic.eot');
+  src: url('/assets/fonts/Mont-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-SemiBoldItalic.woff') format('woff'),
+  url('/assets/fonts/Mont-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 0.86;
+}
+
+h2 {
   font-size: 36px;
+  line-height: 1.56;
 }
 
-H2 {
-  font-family: 'Mont';
-  font-weight: bold;
+h2 span {
+  color: rgba(255, 255, 255, .5);
+  margin-right: 20px;
+}
+
+h3 {
   font-size: 28px;
+  line-height: 1.07;
 }
 
-P, A {
-  font-family: 'Mont';
+h4 {
+  font-size: 25px;
+  line-height: 1;
+}
+
+p, a {
   font-weight: 600;
   font-size: 20px;
-  opacity: 0.9;
-  color: #ffffff;
+  color: rgba(255, 255, 255, .9);
   line-height: 1.8;
 }

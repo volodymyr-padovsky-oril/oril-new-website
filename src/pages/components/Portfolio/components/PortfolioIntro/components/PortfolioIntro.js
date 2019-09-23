@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class PortfolioIntro extends Component {
@@ -14,8 +14,7 @@ export class PortfolioIntro extends Component {
                     <div className="portfolio__intro__image">
                         <Bubble size="388px" top="390px" left="-370px" speed="0.7"/>
                         <Bubble size="500px" top="340px" left="10px" speed="0.3"/>
-                        <img src="assets/img/hero.png" alt="hero"
-                             srcSet="assets/img/hero@2x.png 2x, assets/img/hero@3x.png 3x"/>
+                        <img src="assets/img/hero.png" alt="hero" />
                     </div>
                 </div>
             </section>

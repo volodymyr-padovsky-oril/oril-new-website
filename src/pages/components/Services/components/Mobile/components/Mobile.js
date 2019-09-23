@@ -1,22 +1,26 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class Mobile extends Component {
     blocks = [
         {
             name: 'Ease of use.',
+            titleOnNewLine: false,
             text: 'A mobile app often serves a very narrow purpose, so the functionality is tailored to that purpose.'
         },
         {
             name: 'Personalization.',
+            titleOnNewLine: false,
             text: 'Ease of use is especially emphasized by the fact that a smartphone is mainly used by a single individual,'
         },
         {
             name: 'Always with you.',
+            titleOnNewLine: false,
             text: 'People take their smartphones with them wherever they go.'
         },
         {
             name: 'Notifications',
+            titleOnNewLine: false,
             text: 'allow you to get alerts and information updates in real time'
         }
     ];
@@ -24,27 +28,27 @@ export class Mobile extends Component {
     choises = [
         {
             title: 'E-Commerce',
-            text: 'For example: eCommerce admin, CRM, ERP',
+            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
             img: 'mobile-commerce'
         },
         {
             title: 'Media',
-            text: 'Dashboards, reports, charts',
+            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
             img: 'mobile-media'
         },
         {
             title: 'Lifestyle & Fitness',
-            text: 'Large screen interactions  and intense use of operational resources',
+            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
             img: 'mobile-lifestyle-and-fitness'
         },
         {
             title: 'Productivity | Utility',
-            text: 'Website is a good place for you to share information',
+            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
             img: 'mobile-productivity'
         },
         {
             title: 'IoT & Automation',
-            text: 'Large screen interactions  and intense use of operational resources',
+            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
             img: 'mobile-iot'
         }
     ];
@@ -77,7 +81,7 @@ export class Mobile extends Component {
             <section className="services__mobile">
                 <div className="container">
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
-                    <h3>Mobile</h3>
+                    <h3 className="tab-title">Mobile</h3>
                     <p className="text">
                         Mobile Applications came into play since early 2000s, and gained more popularity each year.
                         Today mobile applications generate majority of internet traffic, and increasingly become the
@@ -89,7 +93,7 @@ export class Mobile extends Component {
                             this.blocks.map((item, index) => (
                                 <div className="list-item" key={index}>
                                     <div className="list-style"></div>
-                                    <div><span>{item.name}</span> {item.text}</div>
+                                    <div><span className={item.titleOnNewLine ? 'block' : null }>{item.name}</span> {item.text}</div>
                                 </div>
                             ))
                         }
@@ -129,7 +133,7 @@ export class Mobile extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index}>
+                                    <a href="/#" key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </a>
@@ -145,10 +149,7 @@ export class Mobile extends Component {
                                 this.services.map((service, index) => (
                                     <div key={'technology-' + index}>
                                         <div>
-                                            <div>
-                                                <img src={'assets/img/' + service.img + '.png'} alt={service.img}
-                                                     srcSet={'assets/img/' + service.img + '@2x.png 2x, assets/img/' + service.img + '@3x.png 3x'}/>
-                                            </div>
+                                            <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
                                         <span>{service.name}</span>
                                     </div>
@@ -162,8 +163,7 @@ export class Mobile extends Component {
                             {
                                 this.products.map((product, index) => (
                                     <div key={'product-' + index}>
-                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img}
-                                             srcSet={'assets/img/' + product.img + '@2x.png 2x, assets/img/' + product.img + '@3x.png 3x'}/>
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
                                     </div>
                                 ))
                             }

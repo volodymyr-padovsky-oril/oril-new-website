@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class Design extends Component {
     blocks = [
         {
             title: 'Research',
+            titleOnNewLine: true,
             text: `
                 Driven by human-centered design approach, our clients’ product idea
                 and users behavior patterns remain to be a subject of analysis and investigation.
@@ -12,12 +13,14 @@ export class Design extends Component {
         },
         {
             title: 'Best practices',
+            titleOnNewLine: true,
             text: `
                 We use Agile methodology and Design Sprint to provide step-by-step delivery of concepts ready to use
             `
         },
         {
             title: 'Integration',
+            titleOnNewLine: true,
             text: `
                 As designers, we do care about development and this helps our clients execute complex web and mobile
                 applications, turning them into beautiful and impactful products
@@ -25,6 +28,7 @@ export class Design extends Component {
         },
         {
             title: 'Users feedback',
+            titleOnNewLine: true,
             text: `
                 Whatever your target audience is, it’s worth to perform usability testing and gather users opinions
                 on a product release to make continuous UX
@@ -56,7 +60,7 @@ export class Design extends Component {
 
     render() {
         return (
-            <section className="services__design" id="design" ref={this.props.section}>
+            <section className="services__design" id="design">
                 <div className="container">
                     <h2><span>01</span>UX/UI Design</h2>
                     <div className="services__desc">
@@ -74,7 +78,11 @@ export class Design extends Component {
                                     <div className="list-item" key={index}>
                                         <div className="list-style"></div>
                                         <div>
-                                            {item.title ? <span>{item.title}</span> : null}
+                                            {
+                                                item.title
+                                                    ? <span className={item.titleOnNewLine ? 'block' : null}>{item.title}</span>
+                                                    : null
+                                            }
                                             {item.text}
                                         </div>
                                     </div>
@@ -100,7 +108,7 @@ export class Design extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index}>
+                                    <a href="/#" key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </a>
@@ -116,10 +124,7 @@ export class Design extends Component {
                                 this.services.map((service, index) => (
                                     <div key={'technology-' + index}>
                                         <div>
-                                            <div>
-                                                <img src={'assets/img/' + service.img + '.png'} alt={service.img}
-                                                     srcSet={'assets/img/' + service.img + '@2x.png 2x, assets/img/' + service.img + '@3x.png 3x'}/>
-                                            </div>
+                                            <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
                                         <span>{service.name}</span>
                                     </div>
@@ -134,8 +139,7 @@ export class Design extends Component {
                             {
                                 this.products.map((product, index) => (
                                     <div key={'product-' + index}>
-                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img}
-                                             srcSet={'assets/img/' + product.img + '@2x.png 2x, assets/img/' + product.img + '@3x.png 3x'}/>
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
                                     </div>
                                 ))
                             }

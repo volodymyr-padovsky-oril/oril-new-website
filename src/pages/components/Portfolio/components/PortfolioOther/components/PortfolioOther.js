@@ -1,20 +1,16 @@
-import React, {Component} from 'react';
-import Swiper from "react-id-swiper";
-import Slide from "../../Slide/components/Slide";
-import {params} from '../../../../../../slider-config';
-import {project} from '../../../our-projects';
+import React, {Component} from "react";
+import {project} from "../../../our-projects";
+import {Slides} from "../../Slides/components/Slides";
 
 export class PortfolioOther extends Component {
+    slides = [
+        project.greenVision,
+        project.stick,
+        project.plusDelta
+    ];
+
     render() {
-        return (
-            <div className="slider-wrapper">
-                <Swiper {...params}>
-                    <div><Slide data={project.greenVision} /></div>
-                    <div><Slide data={project.stick} /></div>
-                    <div><Slide data={project.plusDelta} /></div>
-                </Swiper>
-            </div>
-        );
+        return (<Slides slides={this.slides} />);
     }
 }
 

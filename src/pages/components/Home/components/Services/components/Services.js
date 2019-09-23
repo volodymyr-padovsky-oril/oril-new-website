@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 import {NavLink} from "react-router-dom";
 
@@ -12,17 +12,15 @@ export class Services extends Component {
     render() {
         return (
             <section className="home__services">
-                <h2>Services</h2>
                 <Bubble size="420px" top="1550px" left="-650px" speed="0.8"/>
+                <h3>Services</h3>
                 <div className="container">
-                    <NavLink to={{pathname: "/services", search: "?section=development"}} onClick={this.redirect.bind(this)}>
+                    <NavLink to={{pathname: "/services", search: "?section=development"}} rel="noopener noreferrer" onClick={this.redirect.bind(this)}>
                         <div className="home__services__flex-row">
-                            <img src="assets/img/product-development.jpg" alt="product development"
-                                 srcSet="assets/img/product-development@2x.jpg 2x,
-                                     assets/img/product-development@3x.jpg 3x"/>
+                            <img src="assets/img/product-development.jpg" alt="product development" />
                             <div>
                                 <div>
-                                    <h3>Product development</h3>
+                                    <h4>Product development</h4>
                                 </div>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate
@@ -31,13 +29,12 @@ export class Services extends Component {
                             </div>
                         </div>
                     </NavLink>
-                    <NavLink to={{pathname: "/services", search: "?section=design"}} onClick={this.redirect.bind(this)}>
+                    <NavLink to={{pathname: "/services", search: "?section=design"}} rel="noopener noreferrer" onClick={this.redirect.bind(this)}>
                         <div className="home__services__flex-row">
-                            <img src="assets/img/uxui.jpg" alt=""
-                                 srcSet="assets/img/uxui@2x.jpg 2x, assets/img/uxui@3x.jpg 3x"/>
+                            <img src="assets/img/uxui.jpg" alt="uxui" />
                             <div>
                                 <div>
-                                    <h3>UX/UI Design</h3>
+                                    <h4>UX/UI Design</h4>
                                 </div>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate

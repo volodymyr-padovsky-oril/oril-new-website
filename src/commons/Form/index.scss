@@ -99,5 +99,36 @@
   padding: 7px;
   color: $red;
   font-size: 14px;
-  min-height: 28px;
+  min-height: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .contact {
+    &__form {
+      margin: 0 auto;
+
+      h2 {
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.67;
+        margin-top: 0;
+      }
+
+      .input-field {
+        input, label {
+          font-size: 15px;
+          line-height: 1.33;
+        }
+      }
+
+      .submit-field {
+        margin-top: 15px;
+      }
+    }
+  }
 }

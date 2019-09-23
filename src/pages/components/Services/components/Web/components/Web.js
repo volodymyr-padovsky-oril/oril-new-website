@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class Web extends Component {
@@ -37,10 +37,10 @@ export class Web extends Component {
     ];
 
     deliverables = [
-        { title: 'iOS App', img: 'deliv-web' },
-        { title: 'Android App', img: 'deliv-dashboard' },
-        { title: 'Hybrid App', img: 'deliv-documentation' },
-        { title: 'Web App', img: 'deliv-sourcecode' }
+        { title: 'Web App', img: 'deliv-web' },
+        { title: 'Admin Dashboard', img: 'deliv-dashboard' },
+        { title: 'Documentation', img: 'deliv-documentation' },
+        { title: 'Source Code', img: 'deliv-sourcecode' }
     ];
 
     products = [
@@ -54,18 +54,22 @@ export class Web extends Component {
         return (
             <section className="services__web">
                 <div className="container">
-                    <h3>Web</h3>
+                    <h3 className="tab-title">Web</h3>
                     <p className="text">
                         Web applications are used since the early 90s, and that’s for a number of good reasons such as:
                     </p>
                     <div className="services__ul-list">
                         {
-                            this.blocks.map((reason, index) => (
+                            this.blocks.map((item, index) => (
                                 <div className="list-item" key={index}>
                                     <div className="list-style"></div>
                                     <div>
-                                        {reason.title ? <span>{reason.title}</span> : null}
-                                        {reason.text}
+                                        {
+                                            item.title
+                                                ? <span className={item.titleOnNewLine ? 'block' : null}>{item.title}</span>
+                                                : null
+                                        }
+                                        {item.text}
                                     </div>
                                 </div>
                             ))
@@ -106,7 +110,7 @@ export class Web extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index}>
+                                    <a href="/#" key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </a>
@@ -122,10 +126,7 @@ export class Web extends Component {
                                 this.services.map((service, index) => (
                                     <div key={'technology-' + index}>
                                         <div>
-                                            <div>
-                                                <img src={'assets/img/' + service.img + '.png'} alt={service.img}
-                                                     srcSet={'assets/img/' + service.img + '@2x.png 2x, assets/img/' + service.img + '@3x.png 3x'}/>
-                                            </div>
+                                            <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
                                         <span>{service.name}</span>
                                     </div>
@@ -140,8 +141,7 @@ export class Web extends Component {
                             {
                                 this.products.map((product, index) => (
                                     <div key={'product-' + index}>
-                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img}
-                                             srcSet={'assets/img/' + product.img + '@2x.png 2x, assets/img/' + product.img + '@3x.png 3x'}/>
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
                                     </div>
                                 ))
                             }

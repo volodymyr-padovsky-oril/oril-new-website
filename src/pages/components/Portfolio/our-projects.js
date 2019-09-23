@@ -19,8 +19,8 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'adult-businessman-concentration-1586996',
-                extension: '.png'
+                name: 'testiomonial-default',
+                extension: '.svg'
             },
             firstName: 'Adrian',
             lastName: 'Logan',
@@ -50,8 +50,8 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'adult-business-businessman-2182970',
-                extension: '.png'
+                name: 'testiomonial-default',
+                extension: '.svg'
             },
             firstName: 'Morris',
             lastName: 'Zeitouni',
@@ -442,8 +442,8 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'beautiful-cute-daylight-1251171',
-                extension: '.png'
+                name: 'testiomonial-default',
+                extension: '.svg'
             },
             firstName: 'Lauren',
             lastName: 'Kunz',

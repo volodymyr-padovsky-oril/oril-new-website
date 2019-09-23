@@ -5,7 +5,7 @@ import Footer from "../commons/Footer";
 import Contacts from "../commons/Contacts";
 import routes from "../routes";
 
-import './index.scss';
+import "./index.scss";
 
 class App extends Component {
     onChangePage = (path) => {

@@ -1,11 +1,24 @@
 .portfolio {
   &__projects {
     margin-bottom: 150px;
-    //padding-top: 10px;
 
     .react-tabs {
       &__tab-list {
-        margin-bottom: 90px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio {
+    &__projects {
+      margin-bottom: 0;
+
+      .react-tabs {
+        &__tab-list {
+          margin-bottom: 65px;
+        }
       }
     }
   }

@@ -9,6 +9,8 @@
   cursor: pointer;
   outline: none;
   font-weight: 600;
+  position: relative;
+  z-index: 1;
 
   @if $bg_color != none {
     background: $bg_color;
