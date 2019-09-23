@@ -82,6 +82,19 @@ export class Web extends Component {
                             <img src="assets/icons/implement.svg" alt="implement"/>
                         </div>
                     </div>
+                    <div className="services__deliverables">
+                        <h4>Deliverables</h4>
+                        <div>
+                            {
+                                this.deliverables.map((deliverable, index) => (
+                                    <div key={'deliverable-' + index}>
+                                        <div></div>
+                                        <span>{deliverable.title}</span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
                     <div className="services__technologies">
                         <Bubble size="1089px" top="1740px" left="920px" speed=".2"/>
                         <h4>Technologies</h4>
@@ -96,19 +109,6 @@ export class Web extends Component {
                                             </div>
                                         </div>
                                         <span>{service.name}</span>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className="services__deliverables">
-                        <h4>Deliverables</h4>
-                        <div>
-                            {
-                                this.deliverables.map((deliverable, index) => (
-                                    <div key={'deliverable-' + index}>
-                                        <div></div>
-                                        <span>{deliverable.title}</span>
                                     </div>
                                 ))
                             }

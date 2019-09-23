@@ -1,0 +1,47 @@
+@import "../components/Slide/styles/slide";
+@import "../components/PortfolioIntro/styles/portfolio-intro";
+@import "../components/Projects/styles/projects";
+
+.portfolio {
+  background-image: linear-gradient(181deg, #ffe22a, #ffb248);
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  height: 730px;
+}
+
+.swiper-container-vertical {
+  width: calc(100% + 80px);
+  height: 100%;
+  position: relative;
+  left: -80px;
+
+  .swiper-wrapper {
+    padding-left: 80px;
+  }
+
+  & > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      background: white;
+      opacity: .5;
+      transition: transform .2s;
+      margin: 0 0 24px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &-active {
+        transform: scale(1.4);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets {
+  left: 10px;
+}

@@ -26,7 +26,7 @@ export class Design extends Component {
 
     render() {
         return (
-            <section className="services__design" id="design">
+            <section className="services__design" id="design" ref={this.props.section}>
                 <div className="container">
                     <h2><span>01</span>UX/UI Design</h2>
                     <div className="services__desc">

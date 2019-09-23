@@ -7,6 +7,13 @@ import {scrollTo} from "../../../../commons/utils/scroll";
 import {later} from "../../../../commons/utils/main";
 
 export class Services extends Component {
+    constructor(props) {
+        super(props);
+
+        this.sectionDevelopment = React.createRef();
+        this.sectionDesign = React.createRef();
+    }
+
     componentDidMount() {
         const query = parse(window.location.search);
 
@@ -31,8 +38,8 @@ export class Services extends Component {
             <Fragment>
                 <section className="services">
                     <Intro/>
-                    <Design/>
-                    <Development/>
+                    <Design section={this.sectionDesign} />
+                    <Development section={this.sectionDevelopment} />
                 </section>
             </Fragment>
         );

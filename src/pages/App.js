@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {BrowserRouter as Router} from "react-router-dom";
-
 import Header from "../commons/Header";
 import Footer from "../commons/Footer";
 import Contacts from "../commons/Contacts";
@@ -9,6 +8,10 @@ import routes from "../routes";
 import './index.scss';
 
 class App extends Component {
+    onChangePage = (path) => {
+        this.setState({ path });
+    };
+
     render() {
         return (
             <Router>
@@ -19,10 +22,6 @@ class App extends Component {
             </Router>
         );
     }
-
-    onChangePage = (path) => {
-        this.setState({ path });
-    };
 }
 
 export default App;

@@ -1,43 +1,75 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
+
 import "./index.scss";
 
-export default (props) => {
-    const redirect = (e) => {
+export class Header extends Component {
+    navLinks = [
+        { name: 'Home', to: '/home' },
+        { name: 'Services', to: '/services' },
+        { name: 'Portfolio', to: '/portfolio' },
+        { name: 'Blog', to: '/blog' },
+        { name: 'Contact Us', to: '/contact' }
+    ];
+
+    brand = { name: 'ORIL', to: '/' };
+
+    constructor(props) {
+        super(props);
+        this.state = { show: true };
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll() {
+        const offsetTop = 100;
+        const tabs = document.querySelector('.react-tabs');
+
+        if (tabs) {
+            this.setState({
+                show: Math.floor(tabs.getBoundingClientRect().top) > offsetTop
+            });
+        }
+    }
+
+    NavLinks = () =>
+        this.navLinks.map((link, index) => (
+            <NavLink to={link.to} key={index} className="nav_item" activeClassName="active" onClick={this.redirect}>
+                {link.name}
+            </NavLink>
+        ));
+
+    redirect = (e) => {
         const elem = e.target;
-        props.redirect(elem.pathname);
+        this.props.redirect(elem.pathname);
         window.scrollTo(0, 0)
     };
 
-    return (
-        <header>
-            <div className="container">
-                    <NavLink to={'/home'} onClick={redirect} className="logo">
+    render() {
+        return (
+            <header className={this.state.show ? "active" : "hidden"}>
+                <div className="container">
+                    <NavLink to={this.brand.to} onClick={this.redirect} className="logo">
                         <img src="assets/icons/logo-gold-nolabel.svg" alt="logo"/>
-                        <h1>ORIL</h1>
+                        <h1>{this.brand.name}</h1>
                     </NavLink>
 
-                <nav className="nav">
-                    <NavLink to="/home" className="nav_item" activeClassName="active" onClick={redirect}>
-                        Home
-                    </NavLink>
-                    <NavLink to="/services" className="nav_item" activeClassName="active" onClick={redirect}>
-                        Services
-                    </NavLink>
-                    <NavLink to="/portfolio" className="nav_item" activeClassName="active" onClick={redirect}>
-                        Portfolio
-                    </NavLink>
-                    <NavLink to="/blog" className="nav_item" activeClassName="active" onClick={redirect}>
-                        Blog
-                    </NavLink>
-                    <NavLink to="/contact" className="nav_item" activeClassName="active" onClick={redirect}>
-                        Contact Us
-                    </NavLink>
-                </nav>
-                <div>
-                    <button className="btn">Free Consultation</button>
+                    <nav>
+                        {this.NavLinks()}
+                    </nav>
+                    <div>
+                        <button className="btn">Free Consultation</button>
+                    </div>
                 </div>
-            </div>
-        </header>
-    )
-};
+            </header>
+        )
+    }
+}
+
+export default Header;
