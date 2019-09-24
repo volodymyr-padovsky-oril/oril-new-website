@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
 import Swiper from "react-id-swiper";
-import {params} from "../../../../../../slider-config";
 import Slide from "../../Slide/components/Slide";
+import {params} from '../../../../../../slider-config';
 import {project} from '../../../our-projects';
 
-export class PortfolioBlockchain extends Component {
+export class PortfolioOther extends Component {
     render() {
         return (
             <div className="slider-wrapper">
                 <Swiper {...params}>
-                    <div><Slide data={project.scroogeBot} /></div>
+                    <div><Slide data={project.greenVision} /></div>
+                    <div><Slide data={project.stick} /></div>
+                    <div><Slide data={project.plusDelta} /></div>
                 </Swiper>
             </div>
         );
     }
 }
 
-export default PortfolioBlockchain;
+export default PortfolioOther;
