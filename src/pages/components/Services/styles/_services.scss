@@ -5,10 +5,8 @@
 @import "../components/Development/styles/development";
 @import "../components/Web/styles/web";
 @import "../components/Mobile/styles/mobile";
-@import "../components/HybridApp/styles/hybrid-app";
-@import "../components/FrontEnd/styles/front-end";
-@import "../components/BackEnd/styles/back-end";
-@import "../components/Databases/styles/databases";
+@import "../components/IoT/styles/iot";
+@import "../components/Blockchain/styles/blockchain";
 
 h2 {
   font-size: 36px;
@@ -37,7 +35,7 @@ h4 {
   &__ul-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 120px;
+    grid-row-gap: 60px;
 
     .list-item {
       font-size: 20px;
@@ -47,7 +45,6 @@ h4 {
       display: grid;
       grid-template-columns: 20px 1fr;
       grid-gap: 30px;
-      margin-bottom: 40px;
 
       .list-style {
         width: 20px;
@@ -59,12 +56,15 @@ h4 {
 
       span {
         font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        line-height: 1.5;
       }
     }
   }
 
   &__choices {
-    margin-bottom: 120px;
+    margin-bottom: 200px;
 
     h4 {
       margin: 0 0 40px;
@@ -109,20 +109,10 @@ h4 {
   }
 
   &__approach {
-    margin-bottom: 120px;
+    margin-bottom: 200px;
 
     h4 {
       margin: 0 0 40px;
-    }
-
-    &__diagram {
-      width: 950px;
-      height: 398px;
-      background-color: rgba(255, 255, 255, .36);
-      border-radius: 19px;
-      display: grid;
-      align-items: center;
-      justify-content: center;
     }
   }
 
@@ -166,21 +156,26 @@ h4 {
 
     & > div {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 120px;
+      grid-template-columns: repeat(auto-fill, 130px);
+      grid-gap: 36px;
 
-      & > div {
+      & > a {
         display: grid;
-        grid-template-columns: 140px;
-        justify-content: center;
+        grid-template-rows: repeat(auto-fit, 96px);
+        align-items: flex-start;
+        justify-items: center;
         text-align: center;
-        grid-gap: 25px;
+        grid-gap: 30px;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 1.47;
 
-        & > div {
-          width: 140px;
-          height: 140px;
-          border-radius: 13px;
-          background-color: rgba(255, 255, 255, .23);
+        span {
+          border-bottom: 1px solid transparent;
+        }
+
+        &:hover span {
+          border-bottom-color: rgba(255, 255, 255, .3);
         }
       }
     }
@@ -197,37 +192,90 @@ h4 {
 
     & > div {
       display: grid;
-      grid-template-columns: repeat(3, 55px);
+      grid-template-columns: repeat(auto-fill, 55px);
       grid-gap: 40px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
   &__desc {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 120px;
-
-    & > div:first-child {
-      border-right: 2px solid rgba(255, 255, 255, .35);
-      margin-right: 70px;
-    }
+    margin-bottom: 200px;
 
     h3 {
-      margin: 0 0 20px;
+      margin: 0 0 25px;
     }
 
     p {
       font-size: 20px;
       color: rgba(255, 255, 255, .9);
       line-height: 1.8;
-      max-width: 500px;
-      margin: 0;
+      max-width: 816px;
+      margin: 0 0 60px 0;
+    }
+  }
+
+  &__approach {
+    .approach-text {
+      display: grid;
+      grid-template-columns: 20% 30% 30% 20%;
+      justify-items: center;
+      justify-content: space-around;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      line-height: 1.5;
+
+      div {
+        max-width: 40%;
+        display: flex;
+
+        &:nth-child(1) { max-width: 97px; }
+
+        &:nth-child(2) {
+          max-width: 90px;
+          margin-right: -40px;
+        }
+
+        &:nth-child(3) {
+          max-width: 164px;
+          margin-left: -60px;
+        }
+
+        &:nth-child(4) { max-width: 138px; }
+      }
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 14px;
+    }
+
+    .see-more {
+      display: grid;
+      justify-content: flex-end;
+
+      a {
+        line-height: 1.44;
+        font-size: 18px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        transition: border-bottom-color .2s;
+        margin-right: 50px;
+
+        &:hover {
+          border-bottom-color: white;
+        }
+      }
     }
   }
 
   &__design, &__development {
     h2 {
-      margin: 0 0 60px;
+      margin: 0 0 50px;
     }
   }
 }

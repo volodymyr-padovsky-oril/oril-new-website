@@ -1,18 +1,14 @@
 .services {
-  &__mobile {
+  &__blockchain {
     h3 {
-      margin: 0 0 25px;
+      margin: 0 0 30px;
     }
 
     .text {
       font-size: 20px;
       line-height: 1.8;
       color: rgba(255, 255, 255, .9);
-      margin-bottom: 40px;
+      margin: 0 0 200px;
     }
-  }
-
-  &__mobile &__ul-list {
-    margin-bottom: 120px;
   }
 }

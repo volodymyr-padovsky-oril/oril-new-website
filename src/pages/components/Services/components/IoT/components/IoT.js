@@ -1,54 +1,7 @@
 import React, {Component} from 'react';
 import Bubble from "../../../../../../commons/Bubble";
 
-export class Mobile extends Component {
-    blocks = [
-        {
-            name: 'Ease of use.',
-            text: 'A mobile app often serves a very narrow purpose, so the functionality is tailored to that purpose.'
-        },
-        {
-            name: 'Personalization.',
-            text: 'Ease of use is especially emphasized by the fact that a smartphone is mainly used by a single individual,'
-        },
-        {
-            name: 'Always with you.',
-            text: 'People take their smartphones with them wherever they go.'
-        },
-        {
-            name: 'Notifications',
-            text: 'allow you to get alerts and information updates in real time'
-        }
-    ];
-
-    choises = [
-        {
-            title: 'E-Commerce',
-            text: 'For example: eCommerce admin, CRM, ERP',
-            img: 'mobile-commerce'
-        },
-        {
-            title: 'Media',
-            text: 'Dashboards, reports, charts',
-            img: 'mobile-media'
-        },
-        {
-            title: 'Lifestyle & Fitness',
-            text: 'Large screen interactions  and intense use of operational resources',
-            img: 'mobile-lifestyle-and-fitness'
-        },
-        {
-            title: 'Productivity | Utility',
-            text: 'Website is a good place for you to share information',
-            img: 'mobile-productivity'
-        },
-        {
-            title: 'IoT & Automation',
-            text: 'Large screen interactions  and intense use of operational resources',
-            img: 'mobile-iot'
-        }
-    ];
-
+export class IoT extends Component {
     services = [
         { img: 'services-logo-typescript-java', name: 'Java' },
         { img: 'services-logo-typescript-node', name: 'Node JS' },
@@ -58,59 +11,31 @@ export class Mobile extends Component {
     ];
 
     deliverables = [
-        { title: 'Mobile App', img: 'deliv-mobile' },
+        { title: 'Web/Mobile App', img: 'deliv-webmobile' },
+        { title: 'Firmware', img: 'deliv-firmware' },
         { title: 'Admin Dashboard', img: 'deliv-dashboard' },
         { title: 'Documentation', img: 'deliv-documentation' },
         { title: 'Source code', img: 'deliv-sourcecode' }
     ];
 
     products = [
-        { img: 'laced-logo' },
-        { img: 'hoozeon-logo' },
-        { img: 'activesoul-logo' },
-        { img: 'vicki-logo' },
+        { img: 'nuravine-logo' },
         { img: 'connected-copper' }
     ];
 
     render() {
         return (
-            <section className="services__mobile">
+            <section className="services__iot">
                 <div className="container">
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
-                    <h3>Mobile</h3>
+                    <h3>IoT</h3>
+                    <p className="pre-text">Breathe life into objects that surround you and make them Smart</p>
                     <p className="text">
-                        Mobile Applications came into play since early 2000s, and gained more popularity each year.
-                        Today mobile applications generate majority of internet traffic, and increasingly become the
-                        #1 place to shop, find information, socialize, communicate, navigate, play, even bank, and so
-                        much more, to many people. This astonishing user adoption is achieved due to a number of factors:
+                        “Of all the emerging technologies, the Internet of Things (IoT) is
+                        projected to have the greatest impact on the industrial economy ”
+                        <a href="/#" className="link-visible">(Forbes Insights report)</a>
                     </p>
-                    <div className="services__ul-list">
-                        {
-                            this.blocks.map((item, index) => (
-                                <div className="list-item" key={index}>
-                                    <div className="list-style"></div>
-                                    <div><span>{item.name}</span> {item.text}</div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div className="services__choices">
-                        <h4>Great choice for</h4>
-                        <div className="choices-list">
-                            {
-                                this.choises.map((choice, index) => (
-                                    <div className="list-item" key={index}>
-                                        <img src={`assets/icons/` + choice.img + '.svg'} alt={choice.img} />
-                                        <div>
-                                            <p>{choice.title}</p>
-                                            <p>{choice.text}</p>
-                                        </div>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className="services__approach">
+                   <div className="services__approach">
                         <h4>Our Approach</h4>
                         <div className="approach-text">
                             <div>Domain Research</div>
@@ -118,7 +43,7 @@ export class Mobile extends Component {
                             <div>Implementation & Delivery</div>
                             <div>Maintenance & Support</div>
                         </div>
-                        <img src="assets/icons/approach-group-web.svg" alt="group-web" />
+                        <img src="assets/icons/approach-group-web.svg" alt="group-web"/>
                         <div className="see-more">
                             <a href="/#">See more details</a>
                         </div>
@@ -175,4 +100,4 @@ export class Mobile extends Component {
     }
 }
 
-export default Mobile;
+export default IoT;

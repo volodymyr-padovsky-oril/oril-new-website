@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
 import BaseTabs from '../../../../../../commons/BaseTabs';
-import Databases from "../../Databases";
 import Web from "../../Web";
 import Mobile from "../../Mobile";
-import HybridApp from "../../HybridApp";
-import FrontEnd from "../../FrontEnd";
-import BackEnd from "../../BackEnd";
+import IoT from "../../IoT";
+import Blockchain from "../../Blockchain";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class Development extends Component {
     tabs = [
         { id: 'web', title: 'Web', component: () => <Web/> },
         { id: 'mobile', title: 'Mobile', component: () => <Mobile/> },
-        { id: 'hybrid-app', title: 'Hybrid App', component: () => <HybridApp/> },
-        { id: 'front-end', title: 'Front-End', component: () => <FrontEnd/> },
-        { id: 'back-end', title: 'Back-End', component: () => <BackEnd/> },
-        { id: 'databases', title: 'Databases', component: () => <Databases/> }
+        { id: 'iot', title: 'IoT', component: () => <IoT/> },
+        { id: 'blockchain', title: 'Blockchain', component: () => <Blockchain/> }
     ];
 
     render() {

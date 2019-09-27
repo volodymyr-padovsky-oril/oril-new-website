@@ -2,22 +2,30 @@ import React, {Component} from 'react';
 import Bubble from "../../../../../../commons/Bubble";
 
 export class Web extends Component {
-    reasons = [
+    blocks = [
         {
-            name: 'Ease of use.',
-            text: 'A mobile app often serves a very narrow purpose, so the functionality is tailored to that purpose.'
+            text: `
+                A single Web Application is available on all types of platforms (Mobile, Web, iOS, Windows, Linux),
+                and provides a smooth uniform experience
+            `
         },
         {
-            name: 'Ease of use.',
-            text: 'A mobile app often serves a very narrow purpose, so the functionality is tailored to that purpose.'
+            text: `
+                No need to install any apps, since all you need is a browser (and most OS do come with one!)
+            `
+        },
+        {
+            text: `
+                Cost effectiveness. Reduced cost due to eliminated need to develop and test for various devices
+            `
         }
     ];
 
     choises = [
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP'},
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP'},
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP'},
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP'}
+        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-business'},
+        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-reporting'},
+        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-heavy-duty'},
+        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-content'}
     ];
 
     services = [
@@ -29,16 +37,17 @@ export class Web extends Component {
     ];
 
     deliverables = [
-        { title: 'iOS App' },
-        { title: 'Android App' },
-        { title: 'Hybrid App' },
-        { title: 'Web App' }
+        { title: 'iOS App', img: 'deliv-web' },
+        { title: 'Android App', img: 'deliv-dashboard' },
+        { title: 'Hybrid App', img: 'deliv-documentation' },
+        { title: 'Web App', img: 'deliv-sourcecode' }
     ];
 
     products = [
-        { img: 'nuravine-logo' },
-        { img: 'gv-logo' },
-        { img: 'connected-copper' }
+        { img: 'myn-logo' },
+        { img: 'sparkoffer-logo' },
+        { img: 'connected-copper' },
+        { img: 'gv-logo' }
     ];
 
     render() {
@@ -51,10 +60,13 @@ export class Web extends Component {
                     </p>
                     <div className="services__ul-list">
                         {
-                            this.reasons.map((reason, index) => (
+                            this.blocks.map((reason, index) => (
                                 <div className="list-item" key={index}>
                                     <div className="list-style"></div>
-                                    <div><span>{reason.name}</span> {reason.text}</div>
+                                    <div>
+                                        {reason.title ? <span>{reason.title}</span> : null}
+                                        {reason.text}
+                                    </div>
                                 </div>
                             ))
                         }
@@ -66,7 +78,7 @@ export class Web extends Component {
                             {
                                 this.choises.map((choice, index) => (
                                     <div className="list-item" key={index}>
-                                        <div></div>
+                                        <img src={`assets/icons/` + choice.img + '.svg'} alt={choice.img} />
                                         <div>
                                             <p>{choice.title}</p>
                                             <p>{choice.text}</p>
@@ -78,8 +90,15 @@ export class Web extends Component {
                     </div>
                     <div className="services__approach">
                         <h4>Our Approach</h4>
-                        <div className="services__approach__diagram">
-                            <img src="assets/icons/implement.svg" alt="implement"/>
+                        <div className="approach-text">
+                            <div>Domain Research</div>
+                            <div>Product planning</div>
+                            <div>Implementation & Delivery</div>
+                            <div>Maintenance & Support</div>
+                        </div>
+                        <img src="assets/icons/approach-group-web.svg" alt="group-web" />
+                        <div className="see-more">
+                            <a href="/#">See more details</a>
                         </div>
                     </div>
                     <div className="services__deliverables">
@@ -87,10 +106,10 @@ export class Web extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <div key={'deliverable-' + index}>
-                                        <div></div>
+                                    <a href="/#" key={'deliverable-' + index}>
+                                        <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>

@@ -23,6 +23,7 @@ export class Header extends Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
+
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
@@ -59,7 +60,6 @@ export class Header extends Component {
                         <img src="assets/icons/logo-gold-nolabel.svg" alt="logo"/>
                         <h1>{this.brand.name}</h1>
                     </NavLink>
-
                     <nav>
                         {this.NavLinks()}
                     </nav>
