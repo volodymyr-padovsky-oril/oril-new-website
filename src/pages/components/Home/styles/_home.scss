@@ -12,40 +12,39 @@
   object-fit: contain;
 
   section {
-    text-align: center;
-
     &:first-child {
       height: calc(100vh - 90px);
     }
 
-    h2 {
-      color: #ffffff;
-      text-align: center;
-      line-height: 1.25;
-      margin-bottom: 50px;
-    }
-
-    p, h3 {
-      text-align: left;
-      margin-bottom: 0;
-    }
-
-    h3 {
-      text-align: left;
-      font-size: 25px;
-      margin-top: 0;
-      color: #ffffff;
-    }
-
-    img {
-      z-index: 10;
-    }
-
     .btn {
       @include btn($orange, linear-gradient(#ffffff, #ffffff));
-      margin-bottom: 240px;
-      position: relative;
-      z-index: 1;
+    }
+  }
+
+  &__products, &__services, &__we-are {
+    h3 {
+      text-align: center;
+      margin: 0 0 50px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home {
+    section {
+      h3 {
+        margin: 0 0 35px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 1.25;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.67;
+      }
     }
   }
 }

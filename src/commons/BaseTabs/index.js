@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom';
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import React, {Component} from "react";
+import {withRouter} from "react-router-dom";
+import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {parse} from "query-string";
 import {later} from "../utils/main";
 import {scrollTo} from "../utils/scroll";
 
 import "react-tabs/style/react-tabs.css";
-import './index.scss';
+import "./index.scss";
 
 const CustomTab = ({ children, activeClassName }) => (
     <Tab className={`react-tabs__tab ${activeClassName}`}>
@@ -32,9 +32,9 @@ export class BaseTabs extends Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
         this.setState({activeTab: this.startIndex});
-        this.tabs = document.querySelector('.react-tabs');
-        this.tabsHeader = document.querySelector('.react-tabs__tab-list');
-        this.tabsHeaders = document.querySelectorAll('.react-tabs__tab');
+        this.tabsContainer = document.querySelector('.react-tabs');
+        this.tabList = document.querySelector('.react-tabs__tab-list');
+        this.tabs = document.querySelectorAll('.react-tabs__tab');
         this.div = document.createElement('div');
         this.div.classList.add('sub-template');
         const query = parse(window.location.search);
@@ -52,19 +52,19 @@ export class BaseTabs extends Component {
     }
 
     handleScroll() {
-        const offsetTop = 20;
+        const offsetTop = window.innerWidth < 768 ? 45 : 20;
 
-        if (this.tabs) {
+        if (this.tabsContainer) {
             const template = document.querySelector('.sub-template');
-            const condition = Math.floor(this.tabs.getBoundingClientRect().top > offsetTop);
+            const condition = Math.floor(this.tabsContainer.getBoundingClientRect().top > offsetTop);
 
             if (condition) {
                 if (template) {
-                    this.tabsHeader.parentNode.removeChild(template);
+                    this.tabList.parentNode.removeChild(template);
                 }
             } else {
                 if (!(typeof(template) != 'undefined' && template != null)) {
-                    this.tabsHeader.parentNode.insertBefore(this.div, this.tabsHeader.nextSibling);
+                    this.tabList.parentNode.insertBefore(this.div, this.tabList.nextSibling);
                 }
             }
 
@@ -76,23 +76,23 @@ export class BaseTabs extends Component {
 
     setActiveTabBorders() {
         const selectedTab = document.querySelector('.react-tabs__tab--selected');
-        const tabsCount = this.tabsHeaders.length;
+        const tabsCount = this.tabs.length;
         const activeClass = 'react-tabs__tab--active';
         let selectedTabIndex = 0;
 
-        for (let i = 0; i < this.tabsHeaders.length; i++) {
-            this.tabsHeaders[i].classList.remove(activeClass);
-            if (this.tabsHeaders[i] === selectedTab) {
+        for (let i = 0; i < this.tabs.length; i++) {
+            this.tabs[i].classList.remove(activeClass);
+            if (this.tabs[i] === selectedTab) {
                 selectedTabIndex = i;
             }
         }
 
         switch (selectedTabIndex) {
             case 0:
-                this.tabsHeaders[0].classList.add(activeClass);
+                this.tabs[0].classList.add(activeClass);
                 break;
             case tabsCount:
-                this.tabsHeaders[tabsCount].classList.add(activeClass);
+                this.tabs[tabsCount].classList.add(activeClass);
                 break;
             default:
                 selectedTab.classList.add(activeClass);
@@ -109,7 +109,22 @@ export class BaseTabs extends Component {
         });
 
         later().then(() => this.setActiveTabBorders());
-        scrollTo('#development');
+        let selector = '#development';
+
+        switch (this.props.pathname) {
+            case 'services':
+                selector = '#development';
+                break;
+            case 'portfolio':
+                selector = '#products';
+                break;
+            default:
+                break;
+        }
+
+        if (document.querySelector(selector)) {
+            scrollTo(selector);
+        }
     }
 
     render() {

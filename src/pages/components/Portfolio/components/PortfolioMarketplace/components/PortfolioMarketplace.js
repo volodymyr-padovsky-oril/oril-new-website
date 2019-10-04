@@ -1,22 +1,18 @@
-import React, {Component} from 'react';
-import Swiper from "react-id-swiper";
-import {params} from "../../../../../../slider-config";
-import Slide from "../../Slide/components/Slide";
-import {project} from '../../../our-projects';
+import React, {Component} from "react";
+import {project} from "../../../our-projects";
+import {Slides} from "../../Slides/components/Slides";
 
 export class PortfolioMarketplace extends Component {
+    slides = [
+        project.myn,
+        project.gowago,
+        project.hoozeOn,
+        project.rialto,
+        project.riceToRiches
+    ];
+
     render() {
-        return (
-            <div className="slider-wrapper">
-                <Swiper {...params}>
-                    <div><Slide data={project.myn} /></div>
-                    <div><Slide data={project.gowago} /></div>
-                    <div><Slide data={project.hoozeOn} /></div>
-                    <div><Slide data={project.rialto} /></div>
-                    <div><Slide data={project.riceToRiches} /></div>
-                </Swiper>
-            </div>
-        );
+        return (<Slides slides={this.slides} />);
     }
 }
 

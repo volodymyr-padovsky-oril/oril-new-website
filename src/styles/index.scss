@@ -1,28 +1,20 @@
-@import "_mixin.scss";
-@import "_fonts.scss";
-@import "_variables.scss";
+@import "normalize.css";
+@import "hamburgers.css";
+
+@import "./_mixin.scss";
+@import "./_fonts.scss";
+@import "./_variables.scss";
 
 @import "~swiper/dist/css/swiper.min.css";
 
-* {
-  font-family: Mont, sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+html, body {
+  margin: 0;
+  height: 100%;
+  //overflow: auto;
 }
 
-body {
-  margin: 0 auto;
-}
-
-section {
-  z-index: 1;
-  position: relative;
-}
-
-section:focus {
-  outline: none;
-}
+section:focus { outline: none; }
+div.bubble_wrapper { z-index: 0 }
 
 .container {
   display: grid;
@@ -38,4 +30,31 @@ section:focus {
 
 .link:hover {
   border-bottom-color: white;
+}
+
+.link-block {
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-block span {
+  border-bottom: 1px solid transparent;
+}
+
+.link-block:hover span {
+  border-bottom-color: rgba(255, 255, 255, .3);
+}
+
+.block { display: block; }
+
+@media (max-width: 1279.98px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding: 0 40px;
+  }
 }

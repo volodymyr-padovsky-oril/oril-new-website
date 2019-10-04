@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class Blockchain extends Component {
@@ -16,7 +16,7 @@ export class Blockchain extends Component {
             <section className="services__blockchain">
                 <div className="container">
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
-                    <h3>Blockchain</h3>
+                    <h3 className="tab-title">Blockchain</h3>
                     <p className="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -43,7 +43,7 @@ export class Blockchain extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index}>
+                                    <a href="/#" key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </a>

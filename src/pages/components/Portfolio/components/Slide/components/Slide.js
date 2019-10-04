@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 
 export class Slide extends Component {
     render() {
@@ -6,13 +6,10 @@ export class Slide extends Component {
             <div className="slide">
                 <div className="slide__header">
                     <div className="logo">
-                        <img src={`assets/img/${this.props.data.logo.name}${this.props.data.logo.extension}`} alt={this.props.data.logo.name}
-                             srcSet={`
-                                assets/img/${this.props.data.logo.name}@2x${this.props.data.logo.extension} 2x,
-                                assets/img/${this.props.data.logo.name}@3x${this.props.data.logo.extension} 3x
-                             `} />
+                        <img src={`assets/img/${this.props.data.logo.name}${this.props.data.logo.extension}`}
+                             alt={this.props.data.logo.name} />
                     </div>
-                    <p className="title">{this.props.data.title}</p>
+                    <h3 className="title">{this.props.data.title}</h3>
                     <div className="tags">
                         {
                             this.props.data.tags.map((tag, index) => (<span key={`tag-${index}`}>{tag}</span>))
@@ -21,7 +18,7 @@ export class Slide extends Component {
                 </div>
                 <div className="slide__content">
                     <div className="left">
-                        <div className="text">{this.props.data.text}</div>
+                        <p className="text">{this.props.data.text}</p>
                         <div className="info">
                             {
                                 this.props.data.info.map((item, index) => {
@@ -36,20 +33,14 @@ export class Slide extends Component {
                         </div>
                     </div>
                     <div className="right">
-                        <img src={`assets/img/${this.props.data.img.name}${this.props.data.img.extension}`} alt={this.props.data.img.name}
-                             srcSet={`
-                                assets/img/${this.props.data.img.name}@2x${this.props.data.img.extension} 2x,
-                                assets/img/${this.props.data.img.name}@3x${this.props.data.img.extension} 3x
-                             `} />
+                        <img src={`assets/img/${this.props.data.img.name}${this.props.data.img.extension}`}
+                             alt={this.props.data.img.name} />
                     </div>
                 </div>
                 <div className="slide__footer">
                     <div className="customer">
-                        <img src={`assets/img/${this.props.data.customer.img.name}${this.props.data.customer.img.extension}`} alt={this.props.data.customer.img.name}
-                             srcSet={`
-                                assets/img/${this.props.data.customer.img.name}@2x${this.props.data.customer.img.extension} 2x,
-                                assets/img/${this.props.data.customer.img.name}@3x${this.props.data.customer.img.extension} 3x
-                             `} />
+                        <img src={`assets/icons/${this.props.data.customer.img.name}${this.props.data.customer.img.extension}`}
+                             alt={this.props.data.customer.img.name} />
                          <div>
                              <p>{this.props.data.customer.firstName} {this.props.data.customer.lastName}</p>
                              <p>{this.props.data.customer.position}</p>

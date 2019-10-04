@@ -1,19 +1,20 @@
 .home {
   &__we-are {
     & > .container {
-      grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 80px;
       padding-bottom: 100px;
       align-items: flex-start;
-      justify-items: flex-start;
 
-      h3 {
-        margin-bottom: 15px;
+      h4 {
+        margin: 0 0 15px;
       }
 
       p {
         margin: 0 auto 50px;
+
+        &:last-child {
+          margin: 0;
+        }
       }
     }
 
@@ -118,74 +119,47 @@
   }
 }
 
-//.card {
-//  width: 185px;
-//  height: 200px;
-//  position: relative;
-//
-//  &:nth-child(odd) &__front,
-//  &:nth-child(odd) &__back {
-//    background-color: rgba(255, 255, 255, 0.3);
-//  }
-//
-//  &:nth-child(even) &__back,
-//  &:nth-child(even) &__front {
-//    background-color: rgba(255, 255, 255, 0.15);
-//  }
-//
-//  &__front, &__back {
-//    width: 100%;
-//    height: 100%;
-//    position: absolute;
-//    z-index: 0;
-//    top: 0;
-//    left: 0;
-//  }
-//
-//  &__front {
-//    z-index: 1;
-//    display: grid;
-//    align-items: center;
-//    justify-content: center;
-//
-//    img {
-//      transition: .5s;
-//    }
-//  }
-//
-//  &__back {
-//    transition: .5s;
-//    z-index: 0;
-//    opacity: 0;
-//    transform: scale(1.1);
-//    transition-delay: .15s;
-//  }
-//
-//  &__front:hover {
-//    //z-index: 0;
-//
-//    img {
-//      opacity: 0;
-//      transform: scale(.7);
-//    }
-//
-//    & + div {
-//      z-index: 2;
-//      opacity: 1;
-//    }
-//  }
-//
-//  &__back:hover {
-//    z-index: 2;
-//    opacity: 1;
-//  }
-//
-//  &__back:hover &__front {
-//    //z-index: 0;
-//
-//    img {
-//      opacity: 0;
-//      transform: scale(.7);
-//    }
-//  }
-//}
+@media (max-width: 1239.98px) {
+  .home {
+    &__we-are {
+      & > .container {
+        grid-template-columns: 1fr;
+
+        p:last-child {
+          margin-bottom: 50px;
+        }
+      }
+
+      &__text-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      &__our-images {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home {
+    &__we-are {
+      & > .container {
+        padding-bottom: 0;
+
+        h4 {
+          margin: 0 0 10px;
+        }
+
+        p {
+          margin-bottom: 35px;
+        }
+      }
+
+      &__our-images {
+        display: none;
+      }
+    }
+  }
+}

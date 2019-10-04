@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import BaseTabs from '../../../../../../commons/BaseTabs';
+import React, {Component} from "react";
+import BaseTabs from "../../../../../../commons/BaseTabs";
 import Web from "../../Web";
 import Mobile from "../../Mobile";
 import IoT from "../../IoT";
@@ -16,7 +16,7 @@ export class Development extends Component {
 
     render() {
         return (
-            <section className="services__development" id="development" ref={this.props.section}>
+            <section className="services__development" id="development">
                 <div className="container">
                     <Bubble size="517px" top="1220px" left="-980px" speed=".4"/>
                     <Bubble size="267px" top="2020px" left="-1620px" speed=".8"/>

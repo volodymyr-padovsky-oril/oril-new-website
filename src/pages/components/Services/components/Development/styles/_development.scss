@@ -2,9 +2,27 @@
   &__development {
     margin-bottom: 150px;
 
+    h2 {
+      margin: 0 0 50px;
+    }
+
     .react-tabs {
       &__tab-list {
         margin-bottom: 90px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services {
+    &__development {
+      margin-bottom: 120px;
+
+      .react-tabs {
+        &__tab-list {
+          margin-bottom: 40px;
+        }
       }
     }
   }

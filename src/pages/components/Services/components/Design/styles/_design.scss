@@ -1,9 +1,71 @@
 .services {
   &__design {
     margin-bottom: 280px;
+
+    h2 {
+      margin: 0 0 50px;
+    }
+
+    .services__approach {
+      .approach-text {
+        width: 91%;
+      }
+
+      img {
+        margin-bottom: 14px;
+      }
+
+      .see-more a {
+        margin-right: 50px;
+      }
+    }
+
+    .services__ul-list {
+      margin-bottom: 0;
+    }
   }
 
-  &__web &__ul-list {
-    margin-bottom: 125px;
+  &__desc {
+    margin-bottom: 200px;
+
+    h3 {
+      margin: 0 0 25px;
+    }
+
+    p {
+      max-width: 816px;
+      margin: 0 0 60px 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services {
+    &__design {
+      margin-bottom: 150px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 25px;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 35px;
+
+      h3 {
+        font-size: 15px;
+        line-height: 1.67;
+        margin-bottom: 5px;
+      }
+
+      p {
+        max-width: none;
+        font-size: 15px;
+        line-height: 1.87;
+        margin-bottom: 25px;
+      }
+    }
   }
 }

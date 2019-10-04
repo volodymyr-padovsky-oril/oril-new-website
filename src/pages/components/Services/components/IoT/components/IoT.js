@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import Bubble from "../../../../../../commons/Bubble";
 
 export class IoT extends Component {
@@ -28,12 +28,12 @@ export class IoT extends Component {
             <section className="services__iot">
                 <div className="container">
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
-                    <h3>IoT</h3>
+                    <h3 className="tab-title">IoT</h3>
                     <p className="pre-text">Breathe life into objects that surround you and make them Smart</p>
                     <p className="text">
                         “Of all the emerging technologies, the Internet of Things (IoT) is
                         projected to have the greatest impact on the industrial economy ”
-                        <a href="/#" className="link-visible">(Forbes Insights report)</a>
+                        <a href="/#" className="link">(Forbes Insights report)</a>
                     </p>
                    <div className="services__approach">
                         <h4>Our Approach</h4>
@@ -54,7 +54,7 @@ export class IoT extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index}>
+                                    <a href="/#" key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </a>
@@ -70,10 +70,7 @@ export class IoT extends Component {
                                 this.services.map((service, index) => (
                                     <div key={'technology-' + index}>
                                         <div>
-                                            <div>
-                                                <img src={'assets/img/' + service.img + '.png'} alt={service.img}
-                                                     srcSet={'assets/img/' + service.img + '@2x.png 2x, assets/img/' + service.img + '@3x.png 3x'}/>
-                                            </div>
+                                            <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
                                         <span>{service.name}</span>
                                     </div>
@@ -87,8 +84,7 @@ export class IoT extends Component {
                             {
                                 this.products.map((product, index) => (
                                     <div key={'product-' + index}>
-                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img}
-                                             srcSet={'assets/img/' + product.img + '@2x.png 2x, assets/img/' + product.img + '@3x.png 3x'}/>
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
                                     </div>
                                 ))
                             }

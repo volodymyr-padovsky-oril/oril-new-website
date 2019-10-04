@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import BaseTabs from "../../../../../../commons/BaseTabs";
 import PortfolioLifestyleAndFitness from "../../PortfolioLifestyleAndFitness/components/PortfolioLifestyleAndFitness";
 import PortfolioOther from "../../PortfolioOther/components/PortfolioOther";
@@ -19,7 +19,7 @@ export class Projects extends Component {
 
     render() {
         return (
-          <section className="portfolio__projects" id="products" ref={this.props.section}>
+          <section className="portfolio__projects" id="products">
               <div className="container">
                   <BaseTabs tabs={this.tabs} pathname="portfolio" />
               </div>

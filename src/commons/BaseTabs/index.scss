@@ -1,23 +1,27 @@
 @import "src/styles/variables";
 
 .react-tabs {
-  &__tab-list {
-    background-color: white;
-    border: none;
-    width: fit-content;
-    border-radius: 6px;
-    padding: 18px 0;
-    margin: 0;
-  }
-
   &__tab {
     font-size: 15px;
     line-height: 1.33;
-    color: #848484;
+    color: $dark-gray;
     border: none;
     bottom: 0;
     padding: 0;
     transition: .2s;
+
+    &--selected {
+      background: transparent;
+    }
+
+    &-list {
+      background-color: white;
+      border: none;
+      width: fit-content;
+      border-radius: 6px;
+      padding: 18px 0;
+      margin: 0;
+    }
 
     &:hover {
       color: $orange;
@@ -30,7 +34,7 @@
     }
 
     &:not(:last-child) div div {
-      border-right: 2px solid #ebebeb;
+      border-right: 2px solid $light-gray-alt;
     }
 
     &:focus {
@@ -75,16 +79,78 @@
 
 .sub-template {
   width: 100%;
-  height: 100px;
-  background: #fec03f;
+  height: 90px;
+  background: $orange;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  filter: blur(10px);
+  box-shadow: 0 20px 20px 0 $orange;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@media (max-width: 1239.98px) {
+  .react-tabs {
+    &__tab {
+      &-list {
+        padding: 14px 0;
+      }
+
+      div {
+        div {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sticky {
+    top: 45px;
+  }
+
+  .sub-template {
+    top: 20px;
+  }
+
+  .react-tabs {
+    width: 100vw;
+
+    &__tab {
+      padding: 14px 0;
+      height: 100%;
+
+      &-list {
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        margin-left: -40px;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, .89);
+        white-space: nowrap;
+        overflow-x: auto;
+      }
+
+      &-panel {
+        width: calc(100% - 80px);
+      }
+
+      &:not(:last-child) div div {
+        border-right: none;
+      }
+
+      &--selected {
+        border-bottom: 3px solid $orange;
+      }
+    }
+  }
+
+  .sticky ~ .react-tabs__tab-panel--selected {
+    padding-top: 110px;
+  }
 }

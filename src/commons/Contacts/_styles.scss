@@ -8,14 +8,16 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
+    grid-column-gap: 50px;
+    padding: 0;
+
+    .container:nth-child(3) { display: none; }
   }
 
   &__form {
     max-width: 450px;
 
     h2 {
-      color: white;
-      font-size: 36px;
       line-height: .97;
       margin: 0 0 20px;
     }
@@ -84,6 +86,28 @@
           transform: scale(1.2);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  section.contact { margin-bottom:  0 }
+
+  .contact {
+    padding: 60px 0;
+
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+
+      .container:nth-child(1) {
+        border-bottom: 1px solid $dark-gray;
+        padding-bottom: 75px;
+        margin: 0 0 75px;
+      }
+
+      .container:nth-child(2) { display: none; }
+      .container:nth-child(3) { display: block; }
     }
   }
 }
