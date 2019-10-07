@@ -7,8 +7,8 @@ header {
   z-index: 2;
   transition: top .3s, height .2s, background-color .25s;
   height: 90px;
+  top: 0;
 
-  &.active { top: 0; }
   &.hidden { top: -90px; }
 
   &.open { background-color: #252533; }
@@ -25,15 +25,18 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
+    align-items: center;
+    grid-gap: 18px;
     width: 152px;
     height: 52px;
     text-decoration: none;
 
     &__text {
-      font-size: 28px;
+      font-size: 39px;
       font-weight: bold;
       color: $orange;
       margin: 0 auto;
+      line-height: 1;
     }
   }
 
@@ -143,6 +146,7 @@ header {
         font-size: 15px;
         line-height: 1.67;
         margin: 0;
+        text-decoration: none;
       }
 
       &--title {
@@ -231,7 +235,7 @@ header {
 
     nav .nav_item {
       font-size: 14px;
-      margin: 0 15px;
+      margin: 0 10px;
     }
 
     .btn {
@@ -244,6 +248,8 @@ header {
   header {
     padding: 10px 0;
     height: 45px;
+
+    &.hidden { top: -45px; }
 
     .hamburger {
       display: block;
@@ -262,6 +268,7 @@ header {
       width: auto;
       height: auto;
       align-items: center;
+      grid-gap: 10px;
 
       img {
         width: 28px;
@@ -269,8 +276,8 @@ header {
       }
 
       p {
-        font-size: 12.5px;
-        line-height: 2;
+        font-size: 18px;
+        line-height: 1;
       }
     }
 
