@@ -133,7 +133,7 @@ class Form extends Component {
                     <div className="error">{this.state.formErrors.email ? this.state.formErrors.email : null}</div>
                 </div>
                 <div className={`textarea-field ${this.hasError(this.state.nameValid)}`} ref={this.messageInput}>
-                    <textarea placeholder="Briefly describe your idea ..."
+                    <textarea placeholder="Message..."
                               name="message"
                               value={this.state.message}
                               onChange={(event) => this.handleInputChange({ message: event.target.value })}
@@ -142,7 +142,7 @@ class Form extends Component {
                     <div className="error">{this.state.formErrors.message ? this.state.formErrors.message : null}</div>
                 </div>
                 <div className="submit-field">
-                    <button type="submit">Send!</button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
         )

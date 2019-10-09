@@ -1,0 +1,222 @@
+.home {
+  &__we-are {
+    & > .container {
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 100px;
+      align-items: flex-start;
+
+      h4 {
+        margin: 0 0 15px;
+      }
+
+      .intro-text, .our-credo {
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin: 0 0 10px;
+      }
+    }
+
+    &__text-wrapper {
+      max-width: 500px;
+
+      .ul-item {
+        display: grid;
+        grid-template-columns: 12px 1fr;
+        align-items: flex-start;
+        grid-column-gap: 10px;
+
+        &::before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          background: rgba(255, 255, 255, 0.5);
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &__our-images {
+      height: 640px;
+      width: 555px;
+      overflow: hidden;
+      margin: 0 0 0 auto;
+
+      .swiper-container {
+        overflow: visible;
+
+        .swiper-pagination {
+          bottom: -40px;
+
+          .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            background: white;
+            opacity: .5;
+            transition: transform .2s;
+            margin: 0 12px 0;
+
+            &:focus {
+              outline: none;
+            }
+
+            &-active {
+              transform: scale(1.4);
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .swiper-slide {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-gap: 0;
+        margin: 0 0 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1239.98px) {
+  .home {
+    &__we-are {
+      & > .container {
+        grid-template-columns: 1fr;
+
+        p:last-child {
+          margin-bottom: 50px;
+        }
+      }
+
+      &__text-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      &__our-images {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.card {
+  position: relative;
+  width: 185px;
+  height: 200px;
+
+  &:hover {
+    .card__front {
+      opacity: 0;
+      transform: scale(.8);
+    }
+
+    .card__back {
+      opacity: 1;
+      transform: scale(1);
+      transition-delay: .2s;
+
+      &__desc {
+        transform: translateY(0);
+        transition-delay: .3s;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__front, &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__front {
+    transition: .2s;
+    transition-delay: .2s;
+  }
+
+  &__back {
+    transition: .6s;
+    opacity: 0;
+    transform: scale(.9);
+    display: grid;
+    align-items: flex-end;
+    overflow: hidden;
+    transition-delay: 0s;
+
+    &__desc {
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      background-image: linear-gradient(to bottom, rgba(54, 54, 70, 0), rgba(54, 54, 70, 0.69));
+      padding: 45px 0 15px;
+      display: grid;
+      transform: translateY(70px);
+      transition: .2s;
+      opacity: 0;
+      transition-delay: 0s;
+
+      span {
+        text-align: center;
+        margin: 0;
+        color: white;
+
+        &:first-child {
+          font-size: 15px;
+          line-height: 1.33;
+          margin-bottom: 3px;
+        }
+
+        &:last-child {
+          font-size: 12px;
+          line-height: 1.25;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  &:nth-child(odd) { background-color: rgba(255, 255, 255, 0.3); }
+  &:nth-child(even) { background-color: rgba(255, 255, 255, 0.15); }
+}
+
+@media (max-width: 767.98px) {
+  .home {
+    &__we-are {
+      & > .container {
+        padding-bottom: 0;
+
+        h4 {
+          margin: 0 0 10px;
+        }
+
+        .intro-text, .our-credo {
+          margin-bottom: 35px;
+        }
+      }
+
+      &__our-images {
+        display: none;
+      }
+
+      &__text-wrapper {
+        .ul-item {
+          margin-bottom: 10px;
+
+          &::before {
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}

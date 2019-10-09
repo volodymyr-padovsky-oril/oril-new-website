@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from "react";
-import Intro from "./Intro";
-import Design from "./Design";
-import Development from "./Development";
+import Intro from "./Intro/Intro";
+import Design from "./Design/Design";
+import Development from "./Development/Development";
 import {parse} from "query-string";
 import {scrollTo} from "../../../../commons/utils/scroll";
 import {later} from "../../../../commons/utils/main";

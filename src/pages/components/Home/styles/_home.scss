@@ -1,10 +1,10 @@
 @import "src/styles/variables";
 @import "src/styles/mixin";
 
-@import "../components/Banner/styles/banner";
-@import "../components/Products/styles/products";
-@import "../components/Services/styles/services";
-@import "../components/WeAre/styles/we-are";
+@import "../components/Banner/banner";
+@import "../components/Products/products";
+@import "../components/Services/services";
+@import "../components/WeAre/we-are";
 
 .home {
   overflow: hidden;

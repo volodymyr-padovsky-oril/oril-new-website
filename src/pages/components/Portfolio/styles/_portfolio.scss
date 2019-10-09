@@ -1,8 +1,8 @@
 @import "src/styles/variables";
-@import "../components/Slide/styles/slide";
-@import "../components/Slides/styles/slides";
-@import "../components/PortfolioIntro/styles/portfolio-intro";
-@import "../components/Projects/styles/projects";
+@import "../components/Slide/slide";
+@import "../components/Slides/slides";
+@import "../components/PortfolioIntro/portfolio-intro";
+@import "../components/Projects/projects";
 
 .portfolio {
   background-image: linear-gradient(181deg, $yellow, $orange);
@@ -63,6 +63,12 @@
   .swiper-container-vertical {
     width: 100vw;
     left: -80px;
+  }
+
+  .portfolio {
+    &__intro {
+      height: fit-content;
+    }
   }
 }
 

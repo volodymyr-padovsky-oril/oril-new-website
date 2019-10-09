@@ -15,6 +15,10 @@ footer {
     display: grid;
     grid-template-columns: 256px auto;
     align-items: center;
+
+    img {
+      max-width: 63px;
+    }
   }
 
   .nav-footer {

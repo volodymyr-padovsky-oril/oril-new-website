@@ -7,18 +7,19 @@ import "./index.scss";
 
 export class Header extends Component {
     navLinks = [
-        { name: 'Home', to: '/home' },
-        { name: 'Services', to: '/services' },
-        { name: 'Portfolio', to: '/portfolio' },
-        { name: 'Blog', to: '/blog' },
-        { name: 'Contact Us', to: '/contact' }
+        { name: 'Home', to: '/home', internal: true },
+        { name: 'Services', to: '/services', internal: true },
+        { name: 'Portfolio', to: '/portfolio', internal: true },
+        { name: 'Blog', to: 'https://medium.com/oril', internal: false },
+        { name: 'Contact Us', to: '/contact', internal: true }
     ];
 
     brand = { name: 'ORIL', to: '/' };
+    lastScrollTop = 0;
 
     constructor(props) {
         super(props);
-        this.state = { show: true, overlayActive: false };
+        this.state = { overlayActive: false };
         this.handleScroll = this.handleScroll.bind(this);
     }
 
@@ -51,6 +52,7 @@ export class Header extends Component {
     }
 
     componentDidMount() {
+        this.navbar = document.querySelector('header');
         window.addEventListener('scroll', this.handleScroll);
         window.addEventListener('touchmove', this.handleScroll);
         this.init();
@@ -63,27 +65,32 @@ export class Header extends Component {
 
     toggleHamburger() {
         this.setState({ overlayActive: !this.state.overlayActive }, () => {
-            document.body.style.overflow = this.state.overlayActive ? 'hidden' : 'auto';
-            document.body.parentElement.style.overflow = this.state.overlayActive ? 'hidden' : 'auto';
+            document.body.style.overflow = this.state.overlayActive ? 'hidden' : '';
         });
     }
 
     handleScroll() {
-        const offsetTop = 100;
-        const tabs = document.querySelector('.react-tabs');
+        const scrollTop = window.scrollY;
+        const navBarHeight = this.navbar.offsetHeight;
 
-        if (tabs) {
-            this.setState({
-                show: window.innerWidth < 768 || Math.floor(tabs.getBoundingClientRect().top) > offsetTop
-            });
+        const currentScrollTop = scrollTop;
+
+        if (this.lastScrollTop < currentScrollTop && scrollTop > navBarHeight + navBarHeight) {
+            this.navbar.classList.add('hidden');
+        } else if (this.lastScrollTop > currentScrollTop && !(scrollTop <= navBarHeight)) {
+            this.navbar.classList.remove('hidden');
         }
+
+        this.lastScrollTop = currentScrollTop;
     }
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
-            <NavLink to={link.to} key={index} className="nav_item" activeClassName="active" onClick={this.redirect}>
-                {link.name}
-            </NavLink>
+            link.internal
+                ? (<NavLink to={link.to} key={index} className="nav_item" activeClassName="active" onClick={this.redirect}>
+                    {link.name}
+                  </NavLink>)
+                : (<a href={link.to} key={index} className="nav_item" target="_blank" rel="noopener noreferrer">{link.name}</a>)
         ));
 
     redirect = (e) => {
@@ -99,7 +106,7 @@ export class Header extends Component {
 
     render() {
         return (
-            <header className={`${this.state.show ? "active" : "hidden"} ${this.state.overlayActive ? 'open' : 'close'}`}>
+            <header className={`${this.state.overlayActive ? 'open' : 'close'}`}>
                 <div className="container">
                     <NavLink to={this.brand.to} onClick={this.redirect} className="logo">
                         <img src={`${this.state.overlayActive
@@ -111,7 +118,11 @@ export class Header extends Component {
                         {this.NavLinks()}
                     </nav>
                     <div className="button-wrapper">
-                        <button className="btn">Free Consultation</button>
+                        <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer">
+                            <button className="btn">
+                                Free Consultation
+                            </button>
+                        </a>
                     </div>
                     <div className="nav-wrapper">
                         <div className="top-block" data-toggle="collapse" data-target=".collapse"
@@ -131,7 +142,9 @@ export class Header extends Component {
                         <Bubble size="359px" top="1600px" left="500px" speed=".7"/>
                         {this.NavLinks()}
                         <div className="button-wrapper">
-                            <button className="btn">Free Consultation</button>
+                            <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer">
+                                <button className="btn">Free Consultation</button>
+                            </a>
                         </div>
                         <CompanyInfo/>
                     </div>

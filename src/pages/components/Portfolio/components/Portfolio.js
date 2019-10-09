@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import PortfolioIntro from "./PortfolioIntro/components/PortfolioIntro";
-import Projects from "./Projects/components/Projects";
+import PortfolioIntro from "./PortfolioIntro/PortfolioIntro";
+import Projects from "./Projects/Projects";
 import {parse} from "query-string";
 import {scrollTo} from "../../../../commons/utils/scroll";
 

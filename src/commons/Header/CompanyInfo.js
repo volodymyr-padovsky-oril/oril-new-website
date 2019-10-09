@@ -16,11 +16,20 @@ export class CompanyInfo extends Component {
               <div className="collapse-template__content__info">
                   <div>
                       <p className="collapse-template__content__info--title">Address</p>
-                      <p className="collapse-template__content__info--text">581 Ella Street, San Francisco, CA</p>
+                      <a href="https://goo.gl/maps/PWW2kZmqFzB2"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="collapse-template__content__info--text">
+                          581 Ella Street, San Francisco, CA
+                      </a>
                   </div>
                   <div>
-                      <p className="collapse-template__content__info--title">Project Inquiries</p>
-                      <p className="collapse-template__content__info--text">sample@orilinc.com</p>
+                      <p className="collapse-template__content__info--title">Inquires & Information</p>
+                      <a href="mailto:contact@oril.co"
+                         className="collapse-template__content__info--text"
+                         rel="noopener noreferrer">
+                          contact@oril.co
+                      </a>
                   </div>
               </div>
               <div className="collapse-template__content__socials">

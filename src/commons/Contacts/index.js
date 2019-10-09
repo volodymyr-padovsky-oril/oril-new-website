@@ -74,8 +74,8 @@ class Contacts extends Component {
                     <div className="container">
                         <div className="contact__info">
                             <div className="contact__info__block contact__info__block--border">
-                                <p>Project Inquires</p>
-                                <a href="mailto:sample@orilinc.com">sample@orilinc.com</a>
+                                <p>Inquires & Information</p>
+                                <a href="mailto:contact@oril.co">contact@oril.co</a>
                             </div>
                             <div className="contact__info__block">
                                 <p>Address</p>
@@ -83,7 +83,7 @@ class Contacts extends Component {
                             </div>
                             <div className="contact__info__block contact__info__block--border">
                                 <p>Join the Team</p>
-                                <a href="mailto:join@orilinc.com">join@orilinc.com</a>
+                                <a href="mailto:join@oril.co">join@oril.co</a>
                             </div>
                             <div className="contact__info__socials">
                                 {

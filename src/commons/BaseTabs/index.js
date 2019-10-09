@@ -52,7 +52,7 @@ export class BaseTabs extends Component {
     }
 
     handleScroll() {
-        const offsetTop = window.innerWidth < 768 ? 45 : 20;
+        const offsetTop = window.innerWidth < 768 ? 0 : 20;
 
         if (this.tabsContainer) {
             const template = document.querySelector('.sub-template');

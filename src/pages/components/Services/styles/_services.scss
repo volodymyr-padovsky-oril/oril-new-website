@@ -1,12 +1,12 @@
 @import "src/styles/variables";
 
-@import "../components/Intro/styles/intro";
-@import "../components/Design/styles/design";
-@import "../components/Development/styles/development";
-@import "../components/Web/styles/web";
-@import "../components/Mobile/styles/mobile";
-@import "../components/IoT/styles/iot";
-@import "../components/Blockchain/styles/blockchain";
+@import "../components/Intro/intro";
+@import "../components/Design/design";
+@import "../components/Development/development";
+@import "../components/Web/web";
+@import "../components/Mobile/mobile";
+@import "../components/IoT/iot";
+@import "../components/Blockchain/blockchain";
 
 .services {
   background-image: linear-gradient(156deg, $yellow, $orange 50%, $yellow);
