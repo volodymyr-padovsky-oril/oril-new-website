@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import "./index.scss";
+import { connect } from 'react-redux';
+import { sendGetInTouchMessageRequest } from '../../actions/message';
 
 class Form extends Component {
     constructor(props) {
@@ -90,18 +92,26 @@ class Form extends Component {
     }
 
     async onSubmit(e) {
+
+        const {sendMessageRequest} = this.props;
+        const {email, name, message,} = this.state;
+
         e.preventDefault();
         await this.validateForm();
 
-        if (!this.state.formValid) {
-            return;
-        }
-
         const userInfo = {
-          name: this.state.name,
-          email: this.state.email,
-          message: this.state.message
+          name: name,
+          email: email,
+          message: message
         };
+
+        if (this.state.formValid) {
+            sendMessageRequest({
+                email,
+                name,
+                message,
+            });
+        }
 
         this.setState({name: '', email: '', message: ''});
         console.log(userInfo);
@@ -149,4 +159,11 @@ class Form extends Component {
     }
 }
 
-export default Form;
+const mapDispatchToProps = dispatch => ({
+    sendMessageRequest: (message) => {
+        dispatch(sendGetInTouchMessageRequest(message));
+    }
+});
+
+export default (connect(null, mapDispatchToProps)(Form));
+
