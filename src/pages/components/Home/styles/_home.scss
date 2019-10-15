@@ -1,5 +1,5 @@
-@import "src/styles/variables";
-@import "src/styles/mixin";
+@import "../../../../styles/variables";
+@import "../../../../styles/mixin";
 
 @import "../components/Banner/banner";
 @import "../components/Products/products";
@@ -8,7 +8,7 @@
 
 .home {
   overflow: hidden;
-  background-image: linear-gradient(158deg, $yellow, $orange 51%, $yellow);
+  background-image: linear-gradient($yellow 27%, $orange 51%, $yellow);
   object-fit: contain;
 
   section {

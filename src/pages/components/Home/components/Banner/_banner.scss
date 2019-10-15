@@ -1,14 +1,14 @@
 .home {
   &__banner {
     &__block {
-      grid-template-columns: 5fr 3fr;
-      grid-gap: 75px;
+      grid-template: auto 1fr / auto;
       align-items: center;
       height: 100%;
 
       .wrapper {
         position: relative;
         width: 100%;
+        margin-top: 24vh;
       }
 
       img {
@@ -26,6 +26,10 @@
     h1 {
       margin-bottom: 40px;
     }
+    h2 {
+      font-size: 3.3vw;
+      text-align: center;
+    }
   }
 }
 
@@ -34,16 +38,14 @@
     &__banner {
       &__block {
         grid-template: auto 1fr / auto;
-        grid-gap: 0;
 
         .wrapper {
-          max-width: 600px;
-          margin: 0 auto;
+          width: 100%;
+          margin-top: 24vh;
         }
       }
 
       &__slogan {
-        grid-row-start: 1;
         margin: 0 auto;
 
         h1 {
@@ -51,6 +53,7 @@
         }
 
         h2 {
+          font-size: 4.8vw;
           margin: 0;
         }
       }
@@ -83,7 +86,7 @@
         }
 
         h2 {
-          font-size: 20px;
+          font-size: 4.8vw;
           line-height: 1.55;
         }
       }
