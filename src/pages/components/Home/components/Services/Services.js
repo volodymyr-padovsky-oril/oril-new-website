@@ -23,8 +23,7 @@ export class Services extends Component {
                                     <h4>UI/UX Design</h4>
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate
-                                    diam eu pretium
+                                    Creative designs that make your innovation simple to use
                                 </p>
                             </div>
                         </div>
@@ -37,8 +36,7 @@ export class Services extends Component {
                                     <h4>Product development</h4>
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate
-                                    diam eu pretium
+                                    Scalable state of the art products
                                 </p>
                             </div>
                         </div>
