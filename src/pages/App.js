@@ -3,6 +3,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Header from "../commons/Header";
 import Footer from "../commons/Footer";
 import Contacts from "../commons/Contacts";
+import Snackbar from "../commons/SnackBar";
 import routes from "../routes";
 
 import "./index.scss";
@@ -19,6 +20,7 @@ class App extends Component {
                     {routes()}
                 <Contacts/>
                 <Footer redirect={this.onChangePage}/>
+                <Snackbar/>
             </Router>
         );
     }

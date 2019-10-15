@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import message from './message';
+import helper from './helper';
 
 const rootReducer = combineReducers({
-    message
+    helper
 });
 
 export default rootReducer;
