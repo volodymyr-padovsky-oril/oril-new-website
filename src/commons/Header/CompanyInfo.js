@@ -20,7 +20,7 @@ export class CompanyInfo extends Component {
                          target="_blank"
                          rel="noopener noreferrer"
                          className="collapse-template__content__info--text">
-                          581 Ella Street, San Francisco, CA
+                          68 Jay Street Brooklyn, NY, 11201
                       </a>
                   </div>
                   <div>

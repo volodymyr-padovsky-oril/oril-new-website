@@ -6,6 +6,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Nuravine',
+        link: 'https://www.nuravine.com/',
         tags: ['#WebApp', '#USA'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus',
         info: [
@@ -37,6 +38,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Connected Copper',
+        link: 'https://connectedcopper.com/',
         tags: ['#WebApp', '#Mobile', '#USA'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus',
         info: [
@@ -68,6 +70,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Vicki Rewards',
+        link: 'https://getvicki.com/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Retail'],
         text: `
             VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence
@@ -105,6 +108,7 @@ export const project = {
             extension: '.png'
         },
         title: 'SparkOffer',
+        link: 'https://www.sparkoffer.com/',
         tags: ['#Wep', '#Realestate', '#Platform'],
         text: `
             A platform that helps to interact and make real estate binding offers,
@@ -143,6 +147,7 @@ export const project = {
             extension: '.png'
         },
         title: 'ScroogeBot',
+        link: 'https://scroogebot.co/',
         tags: ['#Wep', '#Dashboard', '#Bot', '#Crypto'],
         text: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -180,6 +185,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Active Soul',
+        link: 'https://www.activesoul.us/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Fitness'],
         text: `
             Application for booking fitness classes using “MindBody” service
@@ -215,6 +221,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Laced',
+        link: 'https://www.laced.co.uk/',
         tags: ['#MobileApp', '#WebApp', '#Sneakers', '#Auction'],
         text: `
             LACED is a mobile application for online auctions. Users can purchase bids and
@@ -252,6 +259,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Match Your Need',
+        link: 'https://matchyourneed.com/',
         tags: ['#WebApp', '#Charity', '#Social'],
         text: `
             Match Your Need is a marketplace for altruistic help.
@@ -287,6 +295,7 @@ export const project = {
             extension: '.png'
         },
         title: 'GOWAGO',
+        link: 'https://gowago.ch/en/',
         tags: ['#WebApp', '#E-commerce', '#Auto', '#Swiss'],
         text: `
             Switzerland's first car leasing comparison service.
@@ -321,6 +330,7 @@ export const project = {
             extension: '.png'
         },
         title: 'HoozeOn',
+        link: 'https://www.hoozeon.us/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Social'],
         text: `
             A platform on which you can see when your favorite bartender, server, host or waitstaff is working. 
@@ -355,6 +365,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Rialto',
+        link: 'https://rialtocuration.com/',
         tags: ['#WebApp', '#Fintech', '#Platform'],
         text: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -390,6 +401,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Rice to Riches',
+        link: 'https://www.ricetoriches.com/',
         tags: ['#Web', '#E-commerce', '#Catering'],
         text: `
             E-commerce website for selling rice puddings, based on Shopify platform.
@@ -426,6 +438,7 @@ export const project = {
             extension: '.png'
         },
         title: 'GreenVision',
+        link: 'https://greenvision-energy.com/',
         tags: ['#WebApp', '#Mobile'],
         text: `
             Green Vision is a platform that allows anyone to envision their future without 
@@ -461,6 +474,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Stick',
+        link: 'https://www.stick.ai/',
         tags: ['#Wep', '#AI', '#Presentation'],
         text: `
             A web application that helps to create beautiful slides very easily.
@@ -498,6 +512,7 @@ export const project = {
             extension: '.png'
         },
         title: 'PlusDelta',
+        link: 'https://plusdelta.app/',
         tags: ['#WebApp', '#Social'],
         text: `
             A platform that helps to contribute and gather feedback on meetings and events.

@@ -9,7 +9,7 @@ export class Slide extends Component {
                         <img src={`assets/img/${this.props.data.logo.name}${this.props.data.logo.extension}`}
                              alt={this.props.data.logo.name} />
                     </div>
-                    <h3 className="title">{this.props.data.title}</h3>
+                    <a href={this.props.data.link} className="title">{this.props.data.title}</a>
                     <div className="tags">
                         {
                             this.props.data.tags.map((tag, index) => (<span key={`tag-${index}`}>{tag}</span>))

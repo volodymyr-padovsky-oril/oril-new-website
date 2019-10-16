@@ -33,9 +33,9 @@ export class Blockchain extends Component {
                             <div>Maintenance & Support</div>
                         </div>
                         <img src="assets/icons/approach-group-web.svg" alt="group-web"/>
-                        <div className="see-more">
-                            <a href="/#">See more details</a>
-                        </div>
+                        {/*<div className="see-more">*/}
+                        {/*    <a href="/#">See more details</a>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="services__deliverables">
                         <Bubble size="735px" top="800px" left="920px" speed=".2"/>
@@ -43,10 +43,10 @@ export class Blockchain extends Component {
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index} className="link-block">
+                                    <div key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
-                                    </a>
+                                    </div>
                                 ))
                             }
                         </div>

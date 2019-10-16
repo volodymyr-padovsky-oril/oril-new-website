@@ -29,11 +29,11 @@ export class Web extends Component {
     ];
 
     services = [
-        { img: 'services-logo-typescript-java', name: 'Java' },
-        { img: 'services-logo-typescript-node', name: 'Node JS' },
-        { img: 'services-logo-typescript-react', name: 'React Native' },
-        { img: 'services-logo-typescript-angular', name: 'Angular' },
-        { img: 'services-logo-typescript', name: 'TypeScript' }
+        { img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/' },
+        { img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/' },
+        { img: 'services-logo-typescript-react', name: 'React Native', link: 'https://facebook.github.io/react-native/' },
+        { img: 'services-logo-typescript-angular', name: 'Angular', link: 'https://angular.io/' },
+        { img: 'services-logo-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' }
     ];
 
     deliverables = [
@@ -101,19 +101,19 @@ export class Web extends Component {
                             <div>Maintenance & Support</div>
                         </div>
                         <img src="assets/icons/approach-group-web.svg" alt="group-web" />
-                        <div className="see-more">
-                            <a href="/#">See more details</a>
-                        </div>
+                        {/*<div className="see-more">*/}
+                        {/*    <a href="/#">See more details</a>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="services__deliverables">
                         <h4>Deliverables</h4>
                         <div>
                             {
                                 this.deliverables.map((deliverable, index) => (
-                                    <a href="/#" key={'deliverable-' + index} className="link-block">
+                                    <div key={'deliverable-' + index} className="link-block">
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
-                                    </a>
+                                    </div>
                                 ))
                             }
                         </div>
@@ -124,12 +124,12 @@ export class Web extends Component {
                         <div>
                             {
                                 this.services.map((service, index) => (
-                                    <div key={'technology-' + index}>
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
                                         <div>
                                             <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
                                         <span>{service.name}</span>
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>
