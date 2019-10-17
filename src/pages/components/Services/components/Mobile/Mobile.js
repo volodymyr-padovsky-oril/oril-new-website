@@ -4,7 +4,6 @@ import Bubble from "../../../../../commons/Bubble";
 export class Mobile extends Component {
     blocks = [
         {
-            name: 'Ease of use.',
             titleOnNewLine: false,
             text: 'A mobile app often serves a very narrow purpose, so the functionality is tailored to that purpose.'
         },
@@ -28,27 +27,27 @@ export class Mobile extends Component {
     choises = [
         {
             title: 'E-Commerce',
-            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
+            text: 'Sell creatively in a few hits',
             img: 'mobile-commerce'
         },
         {
             title: 'Media',
-            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
+            text: 'Connect people and content wherever they are',
             img: 'mobile-media'
         },
         {
             title: 'Lifestyle & Fitness',
-            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
+            text: 'Exercice, plan events and stay healthy on the go',
             img: 'mobile-lifestyle-and-fitness'
         },
         {
             title: 'Productivity | Utility',
-            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
+            text: 'Be more efficient in your day to day business activities',
             img: 'mobile-productivity'
         },
         {
             title: 'IoT & Automation',
-            text: 'Aliquam ut porttitor leo a diam sollicitudin tempor id',
+            text: 'Control and monitor your surroundings with a few hits',
             img: 'mobile-iot'
         }
     ];

@@ -11,8 +11,8 @@ export class Intro extends Component {
                     <div className="services__intro__text">
                         <Bubble size="1030px" top="560px" left="-960px" speed=".5"/>
                         <Bubble size="266px" top="220px" left="100px" speed=".7"/>
-                        <h2>Introductory text <br/> to services section</h2>
-                        <p>This an introduction text. It has a fixed size, custom line</p>
+                        <h2>Build your product with us</h2>
+                        <p>No matter what stage you are at **Idea** or a **Working product**, we can help you visualize, build, deliver and improve your Product.</p>
                     </div>
                     <div className="services__intro__categories">
                         <Bubble size="315px" top="250px" left="350px" speed=".3"/>

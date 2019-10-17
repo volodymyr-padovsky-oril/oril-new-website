@@ -22,10 +22,10 @@ export class Web extends Component {
     ];
 
     choises = [
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-business'},
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-reporting'},
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-heavy-duty'},
-        { title: 'Businesses and Operational' , text: 'For example: eCommerce admin, CRM, ERP', img: 'web-content'}
+        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-business'},
+        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-reporting'},
+        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-heavy-duty'},
+        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-content'}
     ];
 
     services = [
@@ -77,7 +77,7 @@ export class Web extends Component {
                     </div>
                     <div className="services__choices">
                         <Bubble size="350px" top="1400px" left="-270px" speed=".4"/>
-                        <h4>Great choice for</h4>
+                        <h4>Great choice for such products</h4>
                         <div className="choices-list">
                             {
                                 this.choises.map((choice, index) => (
