@@ -44,10 +44,10 @@ export class Web extends Component {
     ];
 
     products = [
-        { img: 'myn-logo' },
-        { img: 'sparkoffer-logo' },
-        { img: 'connected-copper' },
-        { img: 'gv-logo' }
+        { img: 'myn-logo' ,link: 'https://matchyourneed.com/'},
+        { img: 'sparkoffer-logo', link: 'https://www.sparkoffer.com/'},
+        { img: 'connected-copper', link: 'https://connectedcopper.com/'},
+        { img: 'gv-logo', link: 'https://greenvision-energy.com/'}
     ];
 
     render() {
@@ -140,9 +140,9 @@ export class Web extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <div key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>

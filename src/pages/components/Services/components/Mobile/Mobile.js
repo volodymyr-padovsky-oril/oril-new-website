@@ -68,11 +68,11 @@ export class Mobile extends Component {
     ];
 
     products = [
-        { img: 'laced-logo' },
-        { img: 'hoozeon-logo' },
-        { img: 'activesoul-logo' },
-        { img: 'vicki-logo' },
-        { img: 'connected-copper' }
+        { img: 'laced-logo', link: 'https://www.laced.co.uk/'},
+        { img: 'hoozeon-logo', link: 'https://www.hoozeon.us/'},
+        { img: 'activesoul-logo', link: 'https://www.activesoul.us/'},
+        { img: 'vicki-logo', link: 'https://getvicki.com/'},
+        { img: 'connected-copper', link: 'https://connectedcopper.com/'}
     ];
 
     render() {
@@ -161,9 +161,9 @@ export class Mobile extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <div key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>

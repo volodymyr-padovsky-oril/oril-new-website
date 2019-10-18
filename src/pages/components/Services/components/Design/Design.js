@@ -53,9 +53,9 @@ export class Design extends Component {
     ];
 
     products = [
-        { img: 'nuravine-logo' },
-        { img: 'gv-logo' },
-        { img: 'connected-copper' }
+        { img: 'nuravine-logo', link: 'https://www.nuravine.com/' },
+        { img: 'gv-logo', link: 'https://greenvision-energy.com/' },
+        { img: 'connected-copper',link: 'https://connectedcopper.com/' }
     ];
 
     render() {
@@ -138,9 +138,9 @@ export class Design extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <div key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>
