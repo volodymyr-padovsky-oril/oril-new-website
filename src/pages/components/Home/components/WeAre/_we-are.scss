@@ -142,6 +142,10 @@
   &__front {
     transition: .2s;
     transition-delay: .2s;
+    img{
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__back {
