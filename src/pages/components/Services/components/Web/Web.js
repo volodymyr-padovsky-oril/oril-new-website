@@ -11,8 +11,12 @@ export class Web extends Component {
         },
         {
             text: `
-                No need to install any apps, since all you need is a browser (and most OS do come with one!)
+                A web App is accessible from everywhere 
             `
+        },
+        {
+            text: `
+Web Browser is the only app that you need, no need to install anything else to use your Web App            `
         },
         {
             text: `
@@ -22,18 +26,20 @@ export class Web extends Component {
     ];
 
     choises = [
-        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-business'},
-        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-reporting'},
-        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-heavy-duty'},
-        { title: 'Businesses and Operational' , text: 'eCommerce admin, CRM, ERP', img: 'web-content'}
+        { title: 'Businesses and Operational' , text: 'eCommerce, CRM, ERP', img: 'web-business'},
+        { title: 'Reporting and Analytics' , text: 'Dashboards, Reports, Charts', img: 'web-reporting'},
+        { title: 'Graphic' , text: 'Graphic & Design, Detailed Views', img: 'web-heavy-duty'},
+        { title: 'Content' , text: 'Blog, Video, Business Information', img: 'web-content'}
     ];
 
     services = [
+        { img: 'services-logo-typescript-angular', name: 'Angular', link: 'https://angular.io/' },
+        { img: 'services-logo-typescript-react', name: 'React', link: 'https://reactjs.org/' },
+        { img: 'services-logo-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
         { img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/' },
         { img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/' },
-        { img: 'services-logo-typescript-react', name: 'React Native', link: 'https://facebook.github.io/react-native/' },
-        { img: 'services-logo-typescript-angular', name: 'Angular', link: 'https://angular.io/' },
-        { img: 'services-logo-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' }
+        { img: 'services-logo-mongodb', name: 'MongoDB', link: 'https://www.mongodb.com/' },
+        { img: 'services-logo-mysql', name: 'MySQL', link: 'https://www.mysql.com/' },
     ];
 
     deliverables = [
@@ -56,8 +62,7 @@ export class Web extends Component {
                 <div className="container">
                     <h3 className="tab-title">Web</h3>
                     <p className="text">
-                        Web applications are used since the early 90s, and that’s for a number of good reasons such as:
-                    </p>
+                        The use of Web Applications has boomed since the early days of the internet. Today you almost certainly need a Web Application to operate an on-line business, there’s simply no other solution that is as efficient and easy to use. Web Apps have been the #1 choice for countless businesses for a number of reasons                    </p>
                     <div className="services__ul-list">
                         {
                             this.blocks.map((item, index) => (

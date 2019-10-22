@@ -10,7 +10,7 @@ export class Mobile extends Component {
         {
             name: 'Personalization.',
             titleOnNewLine: false,
-            text: 'Ease of use is especially emphasized by the fact that a smartphone is mainly used by a single individual,'
+            text: 'a smartphone is typically used by a single individual, so an application can be tailored to their preferences'
         },
         {
             name: 'Always with you.',
@@ -53,11 +53,15 @@ export class Mobile extends Component {
     ];
 
     services = [
-        { img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/' },
-        { img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/' },
-        { img: 'services-logo-typescript-react', name: 'React Native', link: 'https://facebook.github.io/react-native/' },
         { img: 'services-logo-typescript-angular', name: 'Angular', link: 'https://angular.io/' },
-        { img: 'services-logo-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' }
+        { img: 'services-logo-typescript-react', name: 'React', link: 'https://facebook.github.io/react-native/' },
+        { img: 'services-logo-typescript-react', name: 'React Native', link: 'https://facebook.github.io/react-native/' },
+        { img: 'services-logo-ionic', name: 'Ionic', link: 'https://ionicframework.com/' },
+        { img: 'services-logo-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+        { img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/' },
+        { img: 'services-logo-mongodb', name: 'MongoDB', link: 'https://www.mongodb.com/' },
+        { img: 'services-logo-mysql', name: 'MySQL', link: 'https://www.mysql.com/' },
+        { img: 'services-logo-firebase', name: 'FireBase', link: 'https://firebase.google.com/?gclid=EAIaIQobChMI1YWZo4aw5QIV0OeaCh02QgJyEAAYASAAEgJ2j_D_BwE' },
     ];
 
     deliverables = [
@@ -68,7 +72,7 @@ export class Mobile extends Component {
     ];
 
     products = [
-        { img: 'laced-logo', link: 'https://www.laced.co.uk/'},
+        { img: 'laced-logo', link: 'https://laced-app.com/'},
         { img: 'hoozeon-logo', link: 'https://www.hoozeon.us/'},
         { img: 'activesoul-logo', link: 'https://www.activesoul.us/'},
         { img: 'vicki-logo', link: 'https://getvicki.com/'},
@@ -82,7 +86,7 @@ export class Mobile extends Component {
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">Mobile</h3>
                     <p className="text">
-                        Mobile Applications came into play since early 2000s, and gained more popularity each year.
+                        Mobile Applications came into play since early 2000s, and more popularity each year.
                         Today mobile applications generate majority of internet traffic, and increasingly become the
                         #1 place to shop, find information, socialize, communicate, navigate, play, even bank, and so
                         much more, to many people. This astonishing user adoption is achieved due to a number of factors:

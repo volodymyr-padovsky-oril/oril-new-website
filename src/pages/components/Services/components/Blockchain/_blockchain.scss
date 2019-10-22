@@ -4,8 +4,14 @@
       margin: 0 0 200px;
     }
 
-    .services__deliverables {
-      margin-bottom: 0;
+    //.services__deliverables {
+    //  margin-bottom: 0;
+    //}
+  }
+
+  &__products {
+    img {
+      border-radius: 8px;
     }
   }
 }

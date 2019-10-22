@@ -11,6 +11,18 @@ export class Blockchain extends Component {
         { title: 'Source code', img: 'deliv-sourcecode' }
     ];
 
+    services = [
+        { img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/' },
+        { img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/' },
+        { img: 'services-logo-ethereum', name: 'Ethereum', link: 'https://www.ethereum.org/' },
+        { img: 'services-logo-binance', name: 'Binance', link: 'https://www.binance.com/en' }
+    ];
+
+    products = [
+        { img: 'scroogebot-logo', link: 'https://scroogebot.co/'},
+        { img: 'kings-logo', link: 'http://cryptokings.com/'},
+    ];
+
     render() {
         return (
             <section className="services__blockchain">
@@ -18,11 +30,7 @@ export class Blockchain extends Component {
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">Blockchain</h3>
                     <p className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        Blockchain is not only an innovative technology, it is a revolutionary approach to how our daily transactions are being processed and stored. Blockchain adoption grows each day due to its committed community that contributes to the infrastructure and tools that make Blockchain’s application almost a no brainer in many industries.
                     </p>
                     <div className="services__approach">
                         <h4>Our Approach</h4>
@@ -47,6 +55,34 @@ export class Blockchain extends Component {
                                         <img src={'assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div className="services__technologies">
+                        <Bubble size="407px" top="990px" left="-1800px" speed=".2"/>
+                        <h4>Technologies</h4>
+                        <div>
+                            {
+                                this.services.map((service, index) => (
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
+                                        <div>
+                                            <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
+                                        </div>
+                                        <span>{service.name}</span>
+                                    </a>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div className="services__products">
+                        <h4>Featured Products</h4>
+                        <div>
+                            {
+                                this.products.map((product, index) => (
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
+                                    </a>
                                 ))
                             }
                         </div>

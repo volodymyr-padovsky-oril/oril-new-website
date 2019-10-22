@@ -221,7 +221,7 @@ export const project = {
             extension: '.png'
         },
         title: 'Laced',
-        link: 'https://www.laced.co.uk/',
+        link: 'https://laced-app.com/',
         tags: ['#MobileApp', '#WebApp', '#Sneakers', '#Auction'],
         text: `
             LACED is a mobile application for online auctions. Users can purchase bids and

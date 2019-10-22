@@ -3,11 +3,13 @@ import Bubble from "../../../../../commons/Bubble";
 
 export class IoT extends Component {
     services = [
-        { img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/' },
-        { img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/' },
-        { img: 'services-logo-typescript-react', name: 'React Native', link: 'https://facebook.github.io/react-native/' },
-        { img: 'services-logo-typescript-angular', name: 'Angular', link: 'https://angular.io/' },
-        { img: 'services-logo-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' }
+        {img: 'services-logo-mqtt', name: 'MQTT', link: 'http://mqtt.org/'},
+        {img: 'services-logo-amazon-iot', name: 'Amazon IoT', link: 'https://aws.amazon.com/iot/'},
+        {img: 'services-logo-ibm-iot', name: 'IBM IoT', link: 'https://www.ibm.com/internet-of-things'},
+        {img: 'services-logo-c++', name: 'C++', link: 'https://isocpp.org/'},
+        {img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/'},
+        {img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/'},
+        {img: 'services-logo-typescript-react', name: 'React JS', link: 'https://reactjs.org/'},
     ];
 
     deliverables = [
@@ -20,7 +22,8 @@ export class IoT extends Component {
 
     products = [
         { img: 'nuravine-logo', link: 'https://www.nuravine.com/'},
-        { img: 'connected-copper', link: 'https://connectedcopper.com/'}
+        { img: 'connected-copper', link: 'https://connectedcopper.com/'},
+        { img: 'babybrezza-logo', link: 'https://babybrezza.com/'},
     ];
 
     render() {
