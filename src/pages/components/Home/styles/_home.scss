@@ -12,10 +12,11 @@
   object-fit: contain;
 
   section {
-    &:first-child {
-      height: calc(100vh - 90px);
+    @media (min-height: 500px) {
+      &:first-child {
+        height: calc(100vh - 90px);
+      }
     }
-
     .btn {
       @include btn($orange, linear-gradient(#ffffff, #ffffff));
     }

@@ -9,6 +9,17 @@
         position: relative;
         width: 100%;
         margin-top: 24vh;
+
+        #border_wrap {
+          overflow: hidden;
+
+          video {
+            position: relative;
+            bottom: 1px;
+
+          }
+        }
+
       }
 
       img {
@@ -26,6 +37,7 @@
     h1 {
       margin-bottom: 40px;
     }
+
     h2 {
       font-size: 3.3vw;
       text-align: center;

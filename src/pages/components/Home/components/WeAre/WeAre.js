@@ -6,7 +6,6 @@ import Swiper from "react-id-swiper";
 export const params = {
     autoHeight: true,
     width: 555,
-    mousewheel: true,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
