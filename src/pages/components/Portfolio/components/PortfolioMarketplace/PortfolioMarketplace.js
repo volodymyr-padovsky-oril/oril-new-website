@@ -4,11 +4,10 @@ import {Slides} from "../Slides/Slides";
 
 export class PortfolioMarketplace extends Component {
     slides = [
-        project.myn,
         project.gowago,
-        project.hoozeOn,
         project.rialto,
-        project.riceToRiches
+        project.hoozeOn,
+        project.myn,
     ];
 
     render() {

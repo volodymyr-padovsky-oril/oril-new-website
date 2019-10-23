@@ -9,11 +9,6 @@ export const project = {
         link: 'https://www.nuravine.com/',
         tags: ['#WebApp', '#USA'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus',
-        info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
-        ],
         img: {
             name: 'nuravine',
             extension: '.png'
@@ -41,28 +36,10 @@ export const project = {
         link: 'https://connectedcopper.com/',
         tags: ['#WebApp', '#Mobile', '#USA'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus',
-        info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
-        ],
         img: {
             name: 'cc',
             extension: '.png'
         },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Morris',
-            lastName: 'Zeitouni',
-            position: 'CEO of Connected Copper',
-            feedback: `
-                “Ac placerat vestibulum lectus mauris ultrices eros in cursus.
-                Sed arcu non odio euismod. Eu tincidunt tortor aliquam nulla facilisi cras fermentum”
-            `
-        }
     },
     vicki: {
         logo: {
@@ -73,14 +50,13 @@ export const project = {
         link: 'https://getvicki.com/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Retail'],
         text: `
-            VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence
-            and other advanced technologies, VICKI is a modern replacement for traditional vending
-            experiences and the first retail solution to leverage AI at the point-of-sale
+            VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: '1000+', text: 'Vending Machines' },
+            { value: 'AI powered', text: 'Intelligent item purchase detection' },
+            { value: 'Cross platform', text: 'Android & iOS' },
+            { value: '+70% engagement', text: 'Led by a reward system' }
         ],
         img: {
             name: 'vicki',
@@ -91,12 +67,11 @@ export const project = {
                 name: 'testiomonial-default',
                 extension: '.svg'
             },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
+            firstName: 'Dom',
+            lastName: 'Propati',
+            position: 'CSO of ViaTouch Media',
             feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
+                “The collaboration is effective, and ORIL always delivers on time. Precise and professional, they provide useful insights, clear documentation, and appropriate tools for the tasks at hand.”
             `
         }
     },
@@ -112,31 +87,13 @@ export const project = {
         tags: ['#Wep', '#Realestate', '#Platform'],
         text: `
             A platform that helps to interact and make real estate binding offers,
-            with or without the assistance of a buyer’s agent. SparkOffer provides a
+            with or without the assistance of a buyer’s agent. SparkOffer provides a
             PropTech process that offers an all-inclusive, secure and transparent means
             for home buyers to interact directly with sellers
         `,
-        info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
-        ],
         img: {
             name: 'sparkoffer',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
 
@@ -162,19 +119,6 @@ export const project = {
         img: {
             name: 'scroogebot',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
 
@@ -188,31 +132,16 @@ export const project = {
         link: 'https://www.activesoul.us/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Fitness'],
         text: `
-            Application for booking fitness classes using “MindBody” service
-            via mobile device and web platform. Additionally, users can become
-            members of gyms using “ABCfinancial” service
+            Book fitness classes, register for events and track your fitness activity all in one application.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: '30,000+', text: 'health clubs' },
+            { value: '300+', text: 'wearable devices integrated' },
+            { value: '6,000+', text: 'running events' }
         ],
         img: {
             name: 'activesoul',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
     laced: {
@@ -236,19 +165,6 @@ export const project = {
         img: {
             name: 'laced',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
 
@@ -266,27 +182,9 @@ export const project = {
             It connects those in need with those willing to help based on multiple
             criteria including user preferences and geography
         `,
-        info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
-        ],
         img: {
             name: 'myn',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
     gowago: {
@@ -309,19 +207,6 @@ export const project = {
         img: {
             name: 'gowago',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
     hoozeOn: {
@@ -336,27 +221,9 @@ export const project = {
             A platform on which you can see when your favorite bartender, server, host or waitstaff is working. 
             User can get information about venues(places) and other persons.
         `,
-        info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
-        ],
         img: {
             name: 'hoozeon',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
     rialto: {
@@ -373,26 +240,13 @@ export const project = {
             Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            {value: '70%', text: 'customers use iOS or Android app'},
+            {value: '4.8', text: 'rating an AppStore'},
+            {value: '11.245', text: 'monthly active users'}
         ],
         img: {
             name: 'rialto',
             extension: '.png'
-        },
-        customer: {
-            img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
-            },
-            firstName: 'Adrian',
-            lastName: 'Logan',
-            position: 'CEO',
-            feedback: `
-                “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
-            `
         }
     },
     riceToRiches: {
@@ -441,13 +295,11 @@ export const project = {
         link: 'https://greenvision-energy.com/',
         tags: ['#WebApp', '#Mobile'],
         text: `
-            Green Vision is a platform that allows anyone to envision their future without 
-            Carbon Dioxide emissions: both on the scale of personal home and on the US scale.\n +
-            Venenatis tellus in metus vulputate eu scelerisque. Mi in nulla posuere sollicitudin
+            Green Vision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' }
+            { value: 'One', text: 'Saved planet' },
+            { value: '1000+', text: 'Informed households' }
         ],
         img: {
             name: 'gv',
@@ -462,9 +314,7 @@ export const project = {
             lastName: 'Kunz',
             position: 'CEO of GreenVision',
             feedback: `
-                Bibendum enim facilisis gravida neque. Id semper risus in hendrerit gravida rutrum.
-                Egestas purus viverra accumsan in. Neque sodales ut etiam sit. Volutpat maecenas volutpat
-                blandit aliquam etiam erat velit scelerisque in
+                The website was used at three seminars right after it was completed, proving to be a hit among the audiences who praised its ease of use and informational value. Overall, ORIL is a highly-involved vendor that offered consistent status updates and valuable input while implementing changes promptly.
             `
         }
     },
@@ -477,15 +327,11 @@ export const project = {
         link: 'https://www.stick.ai/',
         tags: ['#Wep', '#AI', '#Presentation'],
         text: `
-            A web application that helps to create beautiful slides very easily.
-            Stick uses Al to create visual presentations for you, from typed text, automatically.
-            The application uses AI technologies to dynamically suggest images that match the
-            slide’s content and place them in
+            Create beautiful slides easily. Stick uses Al to create visual presentations for you, from typed text, automatically. The application uses AI technologies to dynamically suggest images that match the slide’s content and place them in a proper place on the slide. As a user, you have a great experience and don’t need to get bored finding right icons on the Internet, this is done for you automatically.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: 'AI powered', text: 'AI image recommendation' },
+            { value: '1000+', text: 'Decks created' },
         ],
         img: {
             name: 'stick',
@@ -520,9 +366,8 @@ export const project = {
             Also features Incognito Mode and anonymous feedback
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: '1000+', text: 'Meetings conducted' },
+            { value: '10,000+', text: 'Notes noted and Votes voted' },
         ],
         img: {
             name: 'plusdelta',
@@ -537,9 +382,7 @@ export const project = {
             lastName: 'Moore',
             position: 'CEO of PlusDelta',
             feedback: `
-                “Oril is highly cost-efficient. They’re also willing to adopt our systems and continue
-                working until we’re happy with the product. They did a great job - our application is coming
-                out well polished. I'm happy with Oril and will use them on future projects that fit their skill set.”
+                “Internal stakeholders are pleased with the product, which has been praised after a limited launch. Oril adapted to internal systems and provided excellent technical value. Customers can expect an organized partner capable of producing powerful yet accessible solutions.”
             `
         }
     }

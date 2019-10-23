@@ -62,7 +62,10 @@ Web Browser is the only app that you need, no need to install anything else to u
                 <div className="container">
                     <h3 className="tab-title">Web</h3>
                     <p className="text">
-                        The use of Web Applications has boomed since the early days of the internet. Today you almost certainly need a Web Application to operate an on-line business, there’s simply no other solution that is as efficient and easy to use. Web Apps have been the #1 choice for countless businesses for a number of reasons                    </p>
+                        The use of Web Applications has boomed since the early days of the internet. Today you almost
+                        certainly need a Web Application to operate an on-line business, there’s simply no other
+                        solution that is as efficient and easy to use. Web Apps have been the #1 choice for countless
+                        businesses for a number of reasons</p>
                     <div className="services__ul-list">
                         {
                             this.blocks.map((item, index) => (

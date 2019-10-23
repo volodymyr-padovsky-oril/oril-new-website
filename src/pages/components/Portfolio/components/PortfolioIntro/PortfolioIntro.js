@@ -8,8 +8,8 @@ export class PortfolioIntro extends Component {
                 <div className="container">
                     <div className="portfolio__intro__text">
                         <Bubble size="481px" top="270px" left="-450px" speed="0.5"/>
-                        <h2>Introductory text <br/> to portfolio section</h2>
-                        <p>This an introduction text. It has a fixed size, custom line height</p>
+                        <h2>Our Portfolio</h2>
+                        <p>See some of the most recent Products that we built</p>
                     </div>
                     <div className="portfolio__intro__image">
                         <Bubble size="388px" top="390px" left="-370px" speed="0.7"/>

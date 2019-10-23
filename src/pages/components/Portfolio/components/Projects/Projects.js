@@ -9,11 +9,11 @@ import PortfolioMarketplace from "../PortfolioMarketplace/PortfolioMarketplace";
 
 export class Projects extends Component {
     tabs = [
+        { id: 'marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },
+        { id: 'lifestyle-and-fitness', title: 'Lifestyle & Fitness', component: () => <PortfolioLifestyleAndFitness/> },
         { id: 'iot', title: 'IoT', component: () => <PortfolioIoT/> },
         { id: 'real-estate', title: 'Real estate', component: () => <PortfolioRealEstate/> },
         { id: 'blockchain', title: 'Blockchain', component: () => <PortfolioBlockchain/> },
-        { id: 'lifestyle-and-fitness', title: 'Lifestyle & Fitness', component: () => <PortfolioLifestyleAndFitness/> },
-        { id: 'marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },
         { id: 'other', title: 'Other', component: () => <PortfolioOther/> }
     ];
 

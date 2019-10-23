@@ -35,8 +35,8 @@ export class IoT extends Component {
                     <p className="pre-text">Breathe life into objects that surround you and make them Smart</p>
                     <p className="text">
                         “Of all the emerging technologies, the Internet of Things (IoT) is
-                        projected to have the greatest impact on the industrial economy ”
-                        <a href="http://info.forbes.com/rs/790-SNV-353/images/Hitachi+IoT+Report.pdf" className="link">(Forbes Insights report)</a>
+                        projected to have the greatest impact on the industrial economy”
+                        <a href="http://info.forbes.com/rs/790-SNV-353/images/Hitachi+IoT+Report.pdf" className="link"> (Forbes Insights report)</a>
                     </p>
                    <div className="services__approach">
                         <h4>Our Approach</h4>
