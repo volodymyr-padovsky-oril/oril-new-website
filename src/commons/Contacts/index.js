@@ -67,7 +67,7 @@ class Contacts extends Component {
                     <div className="container">
                         <div className="contact__form">
                             <h2>Contact us</h2>
-                            <p>Send us a message and we will get back to you within 24 hours</p>
+                            <p>Send us a short message and our team will get back to you within 24 hours</p>
                             <Form/>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ export const project = {
         title: 'Nuravine',
         link: 'https://www.nuravine.com/',
         tags: ['#WebApp', '#USA'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus.',
         img: {
             name: 'nuravine',
             extension: '.png'
@@ -35,7 +35,7 @@ export const project = {
         title: 'Connected Copper',
         link: 'https://connectedcopper.com/',
         tags: ['#WebApp', '#Mobile', '#USA'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus.',
         img: {
             name: 'cc',
             extension: '.png'
@@ -89,7 +89,7 @@ export const project = {
             A platform that helps to interact and make real estate binding offers,
             with or without the assistance of a buyer’s agent. SparkOffer provides a
             PropTech process that offers an all-inclusive, secure and transparent means
-            for home buyers to interact directly with sellers
+            for home buyers to interact directly with sellers.
         `,
         img: {
             name: 'sparkoffer',
@@ -109,7 +109,7 @@ export const project = {
         text: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget
-            sit amet tellus. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet
+            sit amet tellus. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet.
         `,
         info: [
             { value: '70%', text: 'customers use iOS or Android app' },
@@ -155,7 +155,7 @@ export const project = {
         text: `
             LACED is a mobile application for online auctions. Users can purchase bids and
             participate in auctions by making a bid. Each user can claim a reward in the
-            loyalty shop depending on the amount of bids spent during auctions
+            loyalty shop depending on the amount of bids spent during auctions.
         `,
         info: [
             { value: '70%', text: 'customers use iOS or Android app' },
@@ -180,8 +180,13 @@ export const project = {
         text: `
             Match Your Need is a marketplace for altruistic help.
             It connects those in need with those willing to help based on multiple
-            criteria including user preferences and geography
+            criteria including user preferences and geography.
         `,
+        info: [
+            { value: '600+', text: 'needs matched' },
+            { value: '20+', text: 'San Diego non-profits involved' },
+            { value: 'one', text: 'act of kindness one big difference' },
+        ],
         img: {
             name: 'myn',
             extension: '.png'
@@ -197,12 +202,11 @@ export const project = {
         tags: ['#WebApp', '#E-commerce', '#Auto', '#Swiss'],
         text: `
             Switzerland's first car leasing comparison service.
-            The main idea of the project is digitizing the car buying process, focusing on new cars and leasing
+            The main idea of the project is digitizing the car buying process, focusing on new cars and leasing.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: '10,000', text: 'cars on the platform' },
+            { value: '1000+', text: 'Happy car owners' },
         ],
         img: {
             name: 'gowago',
@@ -218,9 +222,12 @@ export const project = {
         link: 'https://www.hoozeon.us/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Social'],
         text: `
-            A platform on which you can see when your favorite bartender, server, host or waitstaff is working. 
-            User can get information about venues(places) and other persons.
+            A platform that provides hospitality owners real-time information of their service staff and allow service staff to connect with all the guests that they serve. HoozeOn allows guests to feel empowered and happy by connecting them with the people they enjoy the most.
         `,
+        info: [
+            {value: '5.0', text: 'rating on AppStore'},
+            {value: 'Cross Platform', text: 'Android & iOS'},
+        ],
         img: {
             name: 'hoozeon',
             extension: '.png'
@@ -235,14 +242,11 @@ export const project = {
         link: 'https://rialtocuration.com/',
         tags: ['#WebApp', '#Fintech', '#Platform'],
         text: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Viverra aliquet eget sit amet tellus.
-            Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet
+            Rialto platform curates the entrepreneurial landscape, providing exceptional founders and investment firms with 360° insight into the connections most worth their time.
         `,
         info: [
-            {value: '70%', text: 'customers use iOS or Android app'},
-            {value: '4.8', text: 'rating an AppStore'},
-            {value: '11.245', text: 'monthly active users'}
+            {value: '100+', text: 'curated startups'},
+            {value: 'Countless', text: 'Startup - Investor connections'},
         ],
         img: {
             name: 'rialto',
@@ -363,7 +367,7 @@ export const project = {
         text: `
             A platform that helps to contribute and gather feedback on meetings and events.
             All feedback lies in one place, systematically analyzed, scored, and prioritized.
-            Also features Incognito Mode and anonymous feedback
+            Also features Incognito Mode and anonymous feedback.
         `,
         info: [
             { value: '1000+', text: 'Meetings conducted' },

@@ -8,7 +8,7 @@ export class Slides extends Component {
         return (
             <>
                 <div className="slider-wrapper">
-                    <Swiper {...params}>
+                    {/*<Swiper {...params}>*/}
                         {
                             this.props.slides.map((slide, index) => (
                                 <div key={'slide-' + index}>
@@ -16,7 +16,7 @@ export class Slides extends Component {
                                 </div>
                             ))
                         }
-                    </Swiper>
+                    {/*</Swiper>*/}
                 </div>
                 <div className="slider-mobile-wrapper">
                     {
