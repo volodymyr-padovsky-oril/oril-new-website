@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 
 footer {
+  flex-shrink: 0;
   background-color: $purple;
   border-top: 1px solid $dark-gray;
 

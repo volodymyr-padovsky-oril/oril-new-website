@@ -2,6 +2,7 @@
 @import "src/styles/mixin";
 
 header {
+  flex-shrink: 0;
   padding: 18px 0;
   position: sticky;
   z-index: 2;
@@ -30,6 +31,10 @@ header {
     width: 63px;
     height: 52px;
     text-decoration: none;
+    img{
+      width: 63px;
+      height: 52px;
+    }
 
     &__text {
       font-size: 39px;
