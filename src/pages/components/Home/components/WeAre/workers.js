@@ -124,7 +124,20 @@ const thirdPage = [
         photo: '1',
         name: 'Vitalii Vototskyi',
         position: 'Software Engineer'
+    },
+    {
+        animal: 'team-22',
+        photo: '22',
+        name: 'Anna Rurych',
+        position: 'QA Software Engineer'
+    },
+    {
+        animal: 'team-23',
+        photo: '23',
+        name: 'Oleksand Kutenets',
+        position: 'Lead Generation Manager'
     }
+
 ];
 
 export const workersPages = [

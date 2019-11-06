@@ -100,6 +100,11 @@
     .customer {
       display: grid;
       grid-template-columns: 85px 1fr;
+      img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
 
       p:first-child {
         font-size: 15px;
