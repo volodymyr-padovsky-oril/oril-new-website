@@ -7,16 +7,19 @@ export const project = {
         },
         title: 'Nuravine',
         link: 'https://www.nuravine.com/',
-        tags: ['#WebApp', '#USA'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus.',
+        tags: ['#WebApp', '#USA', '#Automation'],
+        text: 'Environmental Automation Made Simple. Understand and optimize your hydroponic reservoir from afar with monitoring and control of pH, EC, Water Temp, and DO.',
+        info: [
+            { value: 'Grow-NY', text: 'finalist' },
+        ],
         img: {
             name: 'nuravine',
             extension: '.png'
         },
         customer: {
             img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
+                name: 'logan',
+                extension: '.jpeg'
             },
             firstName: 'Adrian',
             lastName: 'Logan',
@@ -33,30 +36,34 @@ export const project = {
             extension: '.png'
         },
         title: 'Connected Copper',
-        link: 'https://connectedcopper.com/',
+        link: 'http://connectedcopper.com/',
         tags: ['#WebApp', '#Mobile', '#USA'],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium dapibus.',
+        text: 'IoT platform and a line of mobile applications that manage consumer devices on an enterprise scale.',
         img: {
             name: 'cc',
             extension: '.png'
         },
+        info: [
+            { value: 'IBM', text: 'proud startup partner of IBM' },
+            { value: 'One', text: 'custom designed chipset' },
+        ],
     },
     vicki: {
         logo: {
             name: 'vicki-logo',
             extension: '.png'
         },
-        title: 'Vicki Rewards',
+        title: 'VICKI',
         link: 'https://getvicki.com/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Retail'],
         text: `
             VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world.
         `,
         info: [
-            { value: '1000+', text: 'Vending Machines' },
-            { value: 'AI powered', text: 'Intelligent item purchase detection' },
-            { value: 'Cross platform', text: 'Android & iOS' },
-            { value: '+70% engagement', text: 'Led by a reward system' }
+            { value: '1,000+', text: 'vending machines' },
+            { value: 'AI-Powered', text: 'intelligent item purchase detection' },
+            { value: 'Cross Platform', text: 'Android & iOS' },
+            { value: '+70% Engagement', text: 'led by a reward system' }
         ],
         img: {
             name: 'vicki',
@@ -64,8 +71,8 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
+                name: 'propati',
+                extension: '.jpeg'
             },
             firstName: 'Dom',
             lastName: 'Propati',
@@ -103,18 +110,16 @@ export const project = {
             name: 'scroogebot-logo',
             extension: '.png'
         },
-        title: 'ScroogeBot',
+        title: 'Scrooge Bot',
         link: 'https://scroogebot.co/',
         tags: ['#Wep', '#Dashboard', '#Bot', '#Crypto'],
         text: `
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Viverra aliquet eget
-            sit amet tellus. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet.
+            Scrooge Bot handles trading for you. Simply connect Scrooge Bot 
+            to your Binance account and watch your assets grow.
+
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: '5-15%', text: 'average monthly asset growth' },
         ],
         img: {
             name: 'scroogebot',
@@ -128,11 +133,11 @@ export const project = {
             name: 'activesoul-logo',
             extension: '.png'
         },
-        title: 'Active Soul',
+        title: 'ActiveSoul',
         link: 'https://www.activesoul.us/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Fitness'],
         text: `
-            Book fitness classes, register for events and track your fitness activity all in one application.
+            Book fitness classes, register for events, create challenges, and track your fitness activity - all in one application.
         `,
         info: [
             { value: '30,000+', text: 'health clubs' },
@@ -149,7 +154,7 @@ export const project = {
             name: 'laced-logo',
             extension: '.png'
         },
-        title: 'Laced',
+        title: 'LACED',
         link: 'https://laced-app.com/',
         tags: ['#MobileApp', '#WebApp', '#Sneakers', '#Auction'],
         text: `
@@ -158,13 +163,25 @@ export const project = {
             loyalty shop depending on the amount of bids spent during auctions.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: 'Featured', text: 'in top fashion magazines' },
+            { value: '70,000+', text: 'users' },
+            { value: '1,000+', text: 'collectable items sold' }
         ],
         img: {
             name: 'laced',
             extension: '.png'
+        },
+        customer: {
+            img: {
+                name: 'lozano',
+                extension: '.jpeg'
+            },
+            firstName: 'Sean',
+            lastName: 'Lozano',
+            position: 'CEO of LACED',
+            feedback: `
+                “ORIL's platform was intuitive and user-friendly. The client's business gained 50,000 customers in its first year. Communicative and transparent, their developers worked quickly and precisely.“
+            `
         }
     },
 
@@ -180,12 +197,12 @@ export const project = {
         text: `
             Match Your Need is a marketplace for altruistic help.
             It connects those in need with those willing to help based on multiple
-            criteria including user preferences and geography.
+            criteria, including user preferences and geography.
         `,
         info: [
             { value: '600+', text: 'needs matched' },
             { value: '20+', text: 'San Diego non-profits involved' },
-            { value: 'one', text: 'act of kindness one big difference' },
+            { value: 'One', text: 'act of kindness, one big difference' },
         ],
         img: {
             name: 'myn',
@@ -202,11 +219,11 @@ export const project = {
         tags: ['#WebApp', '#E-commerce', '#Auto', '#Swiss'],
         text: `
             Switzerland's first car leasing comparison service.
-            The main idea of the project is digitizing the car buying process, focusing on new cars and leasing.
+            The product digitizes the car buying process, focusing on new cars and leasing.
         `,
         info: [
             { value: '10,000', text: 'cars on the platform' },
-            { value: '1000+', text: 'Happy car owners' },
+            { value: '1,000+', text: 'happy car owners' },
         ],
         img: {
             name: 'gowago',
@@ -222,7 +239,7 @@ export const project = {
         link: 'https://www.hoozeon.us/',
         tags: ['#MobileApp', '#iOS', '#Android', '#Social'],
         text: `
-            A platform that provides hospitality owners real-time information of their service staff and allow service staff to connect with all the guests that they serve. HoozeOn allows guests to feel empowered and happy by connecting them with the people they enjoy the most.
+            A platform that provides hospitality owners real-time information of their service staff and allows service staff to connect with all the guests that they serve. HoozeOn allows guests to feel empowered and happy by connecting them with the people they enjoy the most.
         `,
         info: [
             {value: '5.0', text: 'rating on AppStore'},
@@ -246,7 +263,7 @@ export const project = {
         `,
         info: [
             {value: '100+', text: 'curated startups'},
-            {value: 'Countless', text: 'Startup - Investor connections'},
+            {value: 'Countless', text: 'startup-investor connections'},
         ],
         img: {
             name: 'rialto',
@@ -281,7 +298,7 @@ export const project = {
             },
             firstName: 'Adrian',
             lastName: 'Logan',
-            position: 'CEO',
+            position: 'CEO of Rice to Riches',
             feedback: `
                 “This team provides quick and quality work.
                 They were able to quickly turn ourideas into a functioning and professional dashboard.”
@@ -297,13 +314,13 @@ export const project = {
         },
         title: 'GreenVision',
         link: 'https://greenvision-energy.com/',
-        tags: ['#WebApp', '#Mobile'],
+        tags: ['#WebApp', '#Mobile', '#Environment'],
         text: `
-            Green Vision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale.
+            GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale.
         `,
         info: [
-            { value: 'One', text: 'Saved planet' },
-            { value: '1000+', text: 'Informed households' }
+            { value: 'One', text: 'saved planet' },
+            { value: '1,000+', text: 'informed households' }
         ],
         img: {
             name: 'gv',
@@ -311,14 +328,14 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
+                name: 'kuntz',
+                extension: '.jpeg'
             },
             firstName: 'Lauren',
-            lastName: 'Kunz',
+            lastName: 'Kuntz',
             position: 'CEO of GreenVision',
             feedback: `
-                The website was used at three seminars right after it was completed, proving to be a hit among the audiences who praised its ease of use and informational value. Overall, ORIL is a highly-involved vendor that offered consistent status updates and valuable input while implementing changes promptly.
+                "The website was used at three seminars right after it was completed, proving to be a hit among the audiences who praised its ease of use and informational value. Overall, ORIL is a highly-involved vendor that offered consistent status updates and valuable input while implementing changes promptly."
             `
         }
     },
@@ -329,13 +346,13 @@ export const project = {
         },
         title: 'Stick',
         link: 'https://www.stick.ai/',
-        tags: ['#Wep', '#AI', '#Presentation'],
+        tags: ['#Web', '#AI', '#Presentation'],
         text: `
             Create beautiful slides easily. Stick uses Al to create visual presentations for you, from typed text, automatically. The application uses AI technologies to dynamically suggest images that match the slide’s content and place them in a proper place on the slide. As a user, you have a great experience and don’t need to get bored finding right icons on the Internet, this is done for you automatically.
         `,
         info: [
-            { value: 'AI powered', text: 'AI image recommendation' },
-            { value: '1000+', text: 'Decks created' },
+            { value: 'AI Powered', text: 'AI image recommendation' },
+            { value: '1,000+', text: 'decks created' },
         ],
         img: {
             name: 'stick',
@@ -343,12 +360,12 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
+                name: 'mckee',
+                extension: '.jpeg'
             },
-            firstName: 'Alli',
+            firstName: 'Alli McKee',
             lastName: '',
-            position: 'CEO',
+            position: 'CEO at Stick',
             feedback: `
                 “Thank you for your great work and for going above and beyond on a regular basis.
                 This has been a challenging project and you have continued to put in your best
@@ -363,15 +380,13 @@ export const project = {
         },
         title: 'PlusDelta',
         link: 'https://plusdelta.app/',
-        tags: ['#WebApp', '#Social'],
+        tags: ['#WebApp', '#Social', "#Platform"],
         text: `
-            A platform that helps to contribute and gather feedback on meetings and events.
-            All feedback lies in one place, systematically analyzed, scored, and prioritized.
-            Also features Incognito Mode and anonymous feedback.
+            A platform that helps to contribute and gather feedback on meetings and events. All feedbacks lay in one place, systematically analyzed, scored, and prioritized. Also features incognito mode and anonymous feedback.
         `,
         info: [
-            { value: '1000+', text: 'Meetings conducted' },
-            { value: '10,000+', text: 'Notes noted and Votes voted' },
+            { value: '1,000+', text: 'meetings conducted' },
+            { value: '10,000+', text: 'notes noted and votes voted' },
         ],
         img: {
             name: 'plusdelta',
@@ -379,14 +394,14 @@ export const project = {
         },
         customer: {
             img: {
-                name: 'testiomonial-default',
-                extension: '.svg'
+                name: 'moore',
+                extension: '.png'
             },
             firstName: 'Steven',
             lastName: 'Moore',
             position: 'CEO of PlusDelta',
             feedback: `
-                “Internal stakeholders are pleased with the product, which has been praised after a limited launch. Oril adapted to internal systems and provided excellent technical value. Customers can expect an organized partner capable of producing powerful yet accessible solutions.”
+                “Internal stakeholders are pleased with the product, which has been praised after a limited launch. ORIL adapted to internal systems and provided excellent technical value. Customers can expect an organized partner capable of producing powerful yet accessible solutions.”
             `
         }
     }

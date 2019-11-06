@@ -139,7 +139,7 @@ export class Design extends Component {
                             {
                                 this.products.map((product, index) => (
                                     <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
-                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))
                             }

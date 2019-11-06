@@ -149,7 +149,7 @@ Web Browser is the only app that you need, no need to install anything else to u
                             {
                                 this.products.map((product, index) => (
                                     <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
-                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} />
+                                        <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))
                             }

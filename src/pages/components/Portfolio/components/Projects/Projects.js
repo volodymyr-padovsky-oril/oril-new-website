@@ -12,7 +12,7 @@ export class Projects extends Component {
         { id: 'marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },
         { id: 'lifestyle-and-fitness', title: 'Lifestyle & Fitness', component: () => <PortfolioLifestyleAndFitness/> },
         { id: 'iot', title: 'IoT', component: () => <PortfolioIoT/> },
-        { id: 'real-estate', title: 'Real estate', component: () => <PortfolioRealEstate/> },
+        // { id: 'real-estate', title: 'Real estate', component: () => <PortfolioRealEstate/> },
         { id: 'blockchain', title: 'Blockchain', component: () => <PortfolioBlockchain/> },
         { id: 'other', title: 'Other', component: () => <PortfolioOther/> }
     ];
