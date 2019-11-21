@@ -12,7 +12,7 @@ export class Intro extends Component {
                         <Bubble size="1030px" top="560px" left="-960px" speed=".5"/>
                         <Bubble size="266px" top="220px" left="100px" speed=".7"/>
                         <h2>Build your product with us</h2>
-                        <p>No matter what stage you are at <b>Idea</b> or a <b>Working product</b>, we can help you visualize, build, deliver and improve your Product.</p>
+                        <p>No matter what stage you are at, <b>Idea</b> or a <b>Working Product</b>, we can help you visualize, build, deliver, and improve your Product</p>
                     </div>
                     <div className="services__intro__categories">
                         <Bubble size="315px" top="250px" left="350px" speed=".3"/>

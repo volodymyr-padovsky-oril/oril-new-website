@@ -8,7 +8,7 @@ export class Design extends Component {
             titleOnNewLine: true,
             text: `
                 Driven by human-centered design approach, our clients’ product idea
-                and users behavior patterns remain to be a subject of analysis and investigation.
+                and users behavior patterns are the subject of analysis and investigation
             `
         },
         {
@@ -22,15 +22,15 @@ export class Design extends Component {
             title: 'Integration',
             titleOnNewLine: true,
             text: `
-                As designers, we do care about development and this helps our clients execute complex web and mobile
+                As designers, we care about development and this helps our clients execute complex web and mobile
                 applications, turning them into beautiful and impactful products
             `
         },
         {
-            title: 'Users feedback',
+            title: "Users' feedback",
             titleOnNewLine: true,
             text: `
-                Whatever your target audience is, it’s worth to perform usability testing and gather users opinions
+                Whatever your target audience is, it’s important to perform usability testing and gather users' opinions
                 on a product release to make continuous UX
             `
         }
@@ -48,7 +48,7 @@ export class Design extends Component {
         { img: 'services-logo-sketch', name: 'Sketch', link: 'https://www.sketch.com/' },
         { img: 'services-logo-figma', name: 'Figma', link: 'https://www.figma.com/' },
         { img: 'services-logo-photoshop', name: 'Adobe Photoshop', link: 'https://www.adobe.com/products/photoshop.html' },
-        { img: 'services-logo-illustrator', name: 'Adobe Ai', link: 'https://www.adobe.com/products/illustrator.html' },
+        { img: 'services-logo-illustrator', name: 'Adobe Illustrator', link: 'https://www.adobe.com/products/illustrator.html' },
         { img: 'services-logo-zeplin', name: 'Zeplin', link: 'https://zeplin.io/' }
     ];
 
@@ -68,9 +68,9 @@ export class Design extends Component {
                         <Bubble size="1441px" top="1100px" left="740px" speed=".2"/>
                         <h3>Thoughtful User Interfaces for All Kind of Products</h3>
                         <p>
-                            Interactive prototyping, explicit UI/UX design and branding with
-                            clear message for your web, desktop, mobile, smartwatch and IoT products.
-                            This is how we’re becoming advocates of actual user needs and business goals.
+                            Interactive prototyping, explicit UI/UX design, and branding with
+                            clear message for your web, desktop, mobile, smartwatch, and IoT products.
+                            This is how we’re becoming advocates of actual user needs and business goals
                         </p>
                         <div className="services__ul-list">
                             {

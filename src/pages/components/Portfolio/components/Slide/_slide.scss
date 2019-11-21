@@ -13,7 +13,7 @@
   &__header {
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 55px minmax(min-content, max-content) 1fr;
+    grid-template-columns: 70px minmax(min-content, max-content) 1fr;
     align-items: center;
 
     .logo {
@@ -48,7 +48,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     .left {
       max-width: 500px;
@@ -64,19 +64,21 @@
     }
 
     .text {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
+      max-width: 480px;
     }
 
     .info {
       display: grid;
       grid-template-columns: repeat(auto-fit, 200px);
-      grid-gap: 35px;
+      grid-gap: 40px;
       align-items: flex-start;
 
       div {
         background: rgba(255, 255, 255, .12);
         padding: 15px;
         border-radius: 10px;
+        min-height: 136px;
       }
 
       &__title {
@@ -94,8 +96,8 @@
 
   &__footer {
     display: grid;
-    grid-template-columns: 285px 1fr;
-    grid-gap: 70px;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 40px;
 
     .customer {
       display: grid;

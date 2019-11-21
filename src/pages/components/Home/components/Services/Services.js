@@ -33,10 +33,10 @@ export class Services extends Component {
                             <img src="assets/img/product-development.jpg" alt="product development" />
                             <div>
                                 <div>
-                                    <h4>Product development</h4>
+                                    <h4>Product Development</h4>
                                 </div>
                                 <p>
-                                    Scalable state of the art products
+                                    Scalable state-of-the-art products
                                 </p>
                             </div>
                         </div>

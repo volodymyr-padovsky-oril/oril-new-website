@@ -134,7 +134,7 @@ const thirdPage = [
     {
         animal: 'team-23',
         photo: '23',
-        name: 'Oleksand Kutenets',
+        name: 'Oleksandr Kutenets',
         position: 'Lead Generation Manager'
     }
 

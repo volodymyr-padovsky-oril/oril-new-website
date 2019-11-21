@@ -32,10 +32,9 @@ export class IoT extends Component {
                 <div className="container">
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">IoT</h3>
-                    <p className="pre-text">Breathe life into objects that surround you and make them Smart</p>
-                    <p className="text">
-                        “Of all the emerging technologies, the Internet of Things (IoT) is
-                        projected to have the greatest impact on the industrial economy”
+                    <p className="text">“Breathe life into objects around you and make them Smart.
+                        The Internet of things (IoT) has exploded during the recent days, and of all emerging technologies,
+                        such as artificial intelligence and robotics, it is expected to have the most significant impact on the industrial economy
                         <a href="http://info.forbes.com/rs/790-SNV-353/images/Hitachi+IoT+Report.pdf" className="link"> (Forbes Insights report)</a>
                     </p>
                    <div className="services__approach">

@@ -5,28 +5,28 @@ export class Web extends Component {
     blocks = [
         {
             text: `
-                A single Web Application is available on all types of platforms (Mobile, Web, iOS, Windows, Linux),
+                A single Web Application is available on all types of platforms (Mobile, Web, iOS, Windows, Linux)
                 and provides a smooth uniform experience
             `
         },
         {
             text: `
-                A web App is accessible from everywhere 
+                A Web Application is accessible everywhere 
             `
         },
         {
             text: `
-Web Browser is the only app that you need, no need to install anything else to use your Web App            `
+                A Web Browser is the only app you require. No need to install anything else to use your Web App            `
         },
         {
             text: `
-                Cost effectiveness. Reduced cost due to eliminated need to develop and test for various devices
+                A Web App reduces cost because it eliminates the need to develop and test for various devices
             `
         }
     ];
 
     choises = [
-        { title: 'Businesses and Operational' , text: 'eCommerce, CRM, ERP', img: 'web-business'},
+        { title: 'Businesses and Operational' , text: 'E-Commerce, CRM, ERP', img: 'web-business'},
         { title: 'Reporting and Analytics' , text: 'Dashboards, Reports, Charts', img: 'web-reporting'},
         { title: 'Graphic' , text: 'Graphic & Design, Detailed Views', img: 'web-heavy-duty'},
         { title: 'Content' , text: 'Blog, Video, Business Information', img: 'web-content'}
@@ -63,9 +63,9 @@ Web Browser is the only app that you need, no need to install anything else to u
                     <h3 className="tab-title">Web</h3>
                     <p className="text">
                         The use of Web Applications has boomed since the early days of the internet. Today you almost
-                        certainly need a Web Application to operate an on-line business, there’s simply no other
+                        certainly need a Web Application to operate an online business. There’s simply no other
                         solution that is as efficient and easy to use. Web Apps have been the #1 choice for countless
-                        businesses for a number of reasons</p>
+                        businesses for a number of reasons:</p>
                     <div className="services__ul-list">
                         {
                             this.blocks.map((item, index) => (

@@ -5,7 +5,7 @@ export class Mobile extends Component {
     blocks = [
         {
             titleOnNewLine: false,
-            text: 'A mobile app often serves a very narrow purpose, so the functionality is tailored to that purpose.'
+            text: 'A Mobile App often serves a very narrow purpose, so the functionality is tailored to that purpose'
         },
         {
             name: 'Personalization.',
@@ -15,7 +15,7 @@ export class Mobile extends Component {
         {
             name: 'Always with you.',
             titleOnNewLine: false,
-            text: 'People take their smartphones with them wherever they go.'
+            text: 'People take their smartphones with them wherever they go'
         },
         {
             name: 'Notifications',
@@ -36,17 +36,17 @@ export class Mobile extends Component {
             img: 'mobile-media'
         },
         {
-            title: 'Lifestyle & Fitness',
-            text: 'Exercice, plan events and stay healthy on the go',
+            title: 'Lifestyle and Fitness',
+            text: 'Exercice, plan events, and stay healthy on the go',
             img: 'mobile-lifestyle-and-fitness'
         },
         {
-            title: 'Productivity | Utility',
-            text: 'Be more efficient in your day to day business activities',
+            title: 'Productivity and Utility',
+            text: 'Be more efficient in your day-to-day business activities',
             img: 'mobile-productivity'
         },
         {
-            title: 'IoT & Automation',
+            title: 'IoT and Automation',
             text: 'Control and monitor your surroundings with a few hits',
             img: 'mobile-iot'
         }
@@ -86,10 +86,10 @@ export class Mobile extends Component {
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">Mobile</h3>
                     <p className="text">
-                        Mobile Applications came into play since early 2000s, and more popularity each year.
-                        Today mobile applications generate majority of internet traffic, and increasingly become the
+                        Mobile Apps came into play in early 2000s and have become more popular each other.
+                        Today, Mobile Apps generate the majority of internet traffic and increasingly become the
                         #1 place to shop, find information, socialize, communicate, navigate, play, even bank, and so
-                        much more, to many people. This astonishing user adoption is achieved due to a number of factors:
+                        much more, for many people. This astonishing user adoption is achieved due to a number of factors:
                     </p>
                     <div className="services__ul-list">
                         {

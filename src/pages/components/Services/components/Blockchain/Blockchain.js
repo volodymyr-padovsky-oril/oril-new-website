@@ -30,7 +30,7 @@ export class Blockchain extends Component {
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">Blockchain</h3>
                     <p className="text">
-                        Blockchain is not only an innovative technology, it is a revolutionary approach to how our daily transactions are being processed and stored. Blockchain adoption grows each day due to its committed community that contributes to the infrastructure and tools that make Blockchain’s application almost a no brainer in many industries.
+                        Blockchain is not only an innovative technology but is also a revolutionary approach to how our daily transactions are processed and stored. Blockchain adoption grows each day due to its committed community that contributes to the infrastructure and tools that make Blockchain’s application a no-brainer in many industries
                     </p>
                     <div className="services__approach">
                         <h4>Our Approach</h4>
