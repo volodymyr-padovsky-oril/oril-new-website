@@ -90,7 +90,7 @@ export class Header extends Component {
                 ? (<NavLink to={link.to} key={index} className="nav_item" activeClassName="active" onClick={this.redirect}>
                     {link.name}
                   </NavLink>)
-                : (<a href={link.to} key={index} className="nav_item" target="_blank" rel="noopener noreferrer">{link.name}</a>)
+                : (<a href={link.to} key={index} className="nav_item" rel="noopener noreferrer">{link.name}</a>)
         ));
 
     redirect = (e) => {
