@@ -1,5 +1,5 @@
-@import "src/styles/variables";
-@import "src/styles/mixin";
+@import "../../../src/styles/variables";
+@import "../../../src/styles/mixin";
 
 header {
   flex-shrink: 0;
@@ -15,12 +15,7 @@ header {
   &.open { background-color: #252533; }
   &.close { background-color: white; }
 
-  .container {
-    grid-template-rows: 1fr;
-    grid-template-columns: 152px 4fr 200px;
-    grid-gap: 5px;
-    align-items: center;
-  }
+
 
   .logo {
     display: grid;

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Bubble from "../../../../../commons/Bubble";
-import {NavLink} from "react-router-dom";
+import Link from 'next/link';
 
 export class Products extends Component {
     products = [
@@ -20,17 +20,21 @@ export class Products extends Component {
                     {
                         this.products.map((product, index) => {
                             return (
-                                <NavLink to={`/services?activeTab=${product.name}`} key={index} rel="noopener noreferrer" className="link-block">
-                                    <img src={"assets/icons/products-" + product.name + ".svg"} alt={product.name}/>
-                                    <span>{product.content}</span>
-                                </NavLink>
+                                <Link href={`/services?activeTab=${product.name}`} key={index}>
+                                    <a
+                                        rel="noopener noreferrer"
+                                        className="link-block">
+                                        <img src={"assets/icons/products-" + product.name + ".svg"} alt={product.name}/>
+                                        <span>{product.content}</span>
+                                    </a>
+                                </Link>
                             )
                         })
                     }
                 </div>
-                <NavLink to="/portfolio">
+                <Link href="/portfolio">
                     <button className="btn">Featured Products</button>
-                </NavLink>
+                </Link>
             </section>
         );
     }

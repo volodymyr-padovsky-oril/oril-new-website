@@ -2,10 +2,11 @@ import React, {Component} from "react";
 import Link from 'next/link';
 import Header from "../commons/Header";
 import Footer from "../commons/Footer";
-// import Contacts from "./Contacts";
+import Contacts from "./components/Contacts";
+import routes from "../routes";
 import Snackbar from "../commons/SnackBar";
 import {Helmet} from 'react-helmet';
-import {Route, Switch, Redirect} from "react-router-dom";
+// import {Route, Switch, Redirect} from "react-router-dom";
 
 
 import "./index.scss";
@@ -30,8 +31,8 @@ class Index extends Component {
                 {/*            <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg"/>*/}
                 {/*                <meta property="og:url" content="http://euro-travel-example.com/index.htm"/>*/}
                 {/*</Helmet>*/}
-                {/*<Header redirect={this.onChangePage}/>*/}
-                {/*<Link href="/contacts"><div className="menu">contacts</div></Link>*/}
+                <Header redirect={this.onChangePage}/>
+                <Link href="/components/contacts"><div className="menu">contacts</div></Link>
                 {/*<Link href="/test/testing"><div className="menu">test</div></Link>*/}
                 <Link href="/testing"><div className="menu">test2</div></Link>
                 {/*<Link href="/services" component={Services}/>*/}
@@ -40,6 +41,12 @@ class Index extends Component {
                 {/*<Link href="/contact"/>*/}
                 {/*<Contacts/>*/}
                 {/*<Footer redirect={this.onChangePage}/>*/}
+                {/*<Snackbar/>*/}
+
+                {/*<Header redirect={this.onChangePage}/>*/}
+                {routes()}
+                <Contacts/>
+                <Footer/>
                 {/*<Snackbar/>*/}
             </>
         );

@@ -1,25 +1,25 @@
 import React, {Component} from "react";
-import {NavLink} from "react-router-dom";
+import Link from 'next/link';
 import CompanyInfo from "./CompanyInfo";
 import Bubble from "../Bubble";
 
-import "./index.scss";
+import './index.scss';
 
 export class Header extends Component {
     navLinks = [
-        { name: 'Home', to: '/home', internal: true },
-        { name: 'Services', to: '/services', internal: true },
-        { name: 'Portfolio', to: '/portfolio', internal: true },
-        { name: 'Blog', to: 'http://52.87.212.251/', internal: false },
-        { name: 'Contact Us', to: '/contact', internal: true }
+        {name: 'Home', to: '/home', internal: true},
+        {name: 'Services', to: '/services', internal: true},
+        {name: 'Portfolio', to: '/portfolio', internal: true},
+        {name: 'Blog', to: 'http://52.87.212.251/', internal: false},
+        {name: 'Contact Us', to: '/contact', internal: true}
     ];
 
-    brand = { name: 'ORIL', to: '/' };
+    brand = {name: 'ORIL', to: '/'};
     lastScrollTop = 0;
 
     constructor(props) {
         super(props);
-        this.state = { overlayActive: false };
+        this.state = {overlayActive: false};
         this.handleScroll = this.handleScroll.bind(this);
     }
 
@@ -31,7 +31,7 @@ export class Header extends Component {
             collapse(selector, 'toggle');
         }, false);
 
-        const collapse = function(selector, cmd) {
+        const collapse = function (selector, cmd) {
             const fnmap = {
                 'toggle': 'toggle',
                 'show': 'add',
@@ -46,7 +46,7 @@ export class Header extends Component {
 
         window.onresize = () => {
             if (window.outerWidth >= 768 && this.state.overlayActive) {
-                this.setState({ overlayActive: false }, () => this.collapse());
+                this.setState({overlayActive: false}, () => this.collapse());
             }
         };
     }
@@ -64,7 +64,7 @@ export class Header extends Component {
     }
 
     toggleHamburger() {
-        this.setState({ overlayActive: !this.state.overlayActive }, () => {
+        this.setState({overlayActive: !this.state.overlayActive}, () => {
             document.body.style.overflow = this.state.overlayActive ? 'hidden' : '';
         });
     }
@@ -87,9 +87,12 @@ export class Header extends Component {
     NavLinks = () =>
         this.navLinks.map((link, index) => (
             link.internal
-                ? (<NavLink to={link.to} key={index} className="nav_item" activeClassName="active" onClick={this.redirect}>
-                    {link.name}
-                  </NavLink>)
+                ? (
+                    <Link href={link.to} key={index}>
+                        <a className="nav_item" activeClassName="active" onClick={this.redirect}>
+                            {link.name}
+                        </a>
+                    </Link>)
                 : (<a href={link.to} key={index} className="nav_item" rel="noopener noreferrer">{link.name}</a>)
         ));
 
@@ -108,12 +111,18 @@ export class Header extends Component {
         return (
             <header className={`${this.state.overlayActive ? 'open' : 'close'}`}>
                 <div className="container">
-                    <NavLink to={this.brand.to} onClick={this.redirect} className="logo">
-                        <img src={`${this.state.overlayActive
-                            ? 'assets/icons/logo-white-nolabel.svg'
-                            : 'assets/icons/logo-gold-nolabel.svg'}`} alt="logo"/>
-                        {/*<p className="logo__text">{this.brand.name}</p>*/}
-                    </NavLink>
+                    <Link href={this.brand.to}>
+                        <a
+                            onClick={this.redirect}
+                            className="logo"
+                        >
+                            <img src={`${this.state.overlayActive
+                                ? 'assets/icons/logo-white-nolabel.svg'
+                                : 'assets/icons/logo-gold-nolabel.svg'}`}
+                                 alt="logo"/>
+                            {/*<p className="logo__text">{this.brand.name}</p>*/}
+                        </a>
+                    </Link>
                     <nav>
                         {this.NavLinks()}
                     </nav>

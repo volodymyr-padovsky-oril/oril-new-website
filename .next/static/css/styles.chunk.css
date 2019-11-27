@@ -22,11 +22,6 @@ header {
     background-color: #252533; }
   header.close {
     background-color: white; }
-  header .container {
-    grid-template-rows: 1fr;
-    grid-template-columns: 152px 4fr 200px;
-    grid-gap: 5px;
-    align-items: center; }
   header .logo {
     display: grid;
     grid-template-columns: auto auto;
@@ -270,6 +265,345 @@ footer {
 @media (max-width: 767.98px) {
   footer {
     display: none; } }
+
+.input-field {
+  position: relative;
+  margin-bottom: 30px; }
+  .input-field label {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 100%;
+    color: #848484;
+    transition: .2s all;
+    cursor: text;
+    padding: 0 7px;
+    font-size: 20px; }
+  .input-field input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 7px;
+    border-bottom: 2px solid #979797;
+    box-shadow: none;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    transition: .2s; }
+    .input-field input:focus {
+      border-color: #ffb248; }
+    .input-field input:focus ~ label,
+    .input-field input.has-data ~ label {
+      font-size: 15px;
+      top: -14px; }
+  .input-field.invalid input {
+    border-color: #ff5722; }
+
+.textarea-field textarea {
+  width: 100%;
+  height: 88px;
+  min-height: 88px;
+  resize: vertical;
+  border-radius: 8px;
+  border: 2px solid #848484;
+  background-color: transparent;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  color: white;
+  transition: .2s; }
+  .textarea-field textarea:focus {
+    border-color: #ffb248; }
+
+.textarea-field.invalid textarea {
+  border-color: #ff5722; }
+
+.submit-field {
+  background: #ffb248;
+  padding: 4px;
+  border-radius: 7px;
+  margin-top: 30px;
+  cursor: pointer; }
+  .submit-field button {
+    border-radius: 7px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #ffb248;
+    padding: 14px 0 13px;
+    border-color: #ffb248;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    background: #363646;
+    font-size: 17px;
+    border: none;
+    padding: 15px 0 16px;
+    transition: .2s; }
+  .submit-field:hover {
+    background: #ffb248; }
+    .submit-field:hover button {
+      background: #ffb248;
+      color: white; }
+
+.error {
+  padding: 7px;
+  color: #ff5722;
+  font-size: 14px;
+  min-height: 30px; }
+
+@media (max-width: 767.98px) {
+  .contact__form {
+    margin: 0 auto; }
+    .contact__form h2 {
+      font-size: 28px;
+      line-height: 1.25;
+      margin-bottom: 10px; }
+    .contact__form p {
+      font-size: 15px;
+      line-height: 1.67;
+      margin-top: 0; }
+    .contact__form .input-field input, .contact__form .input-field label {
+      font-size: 15px;
+      line-height: 1.33; }
+    .contact__form .submit-field {
+      margin-top: 15px; } }
+
+.contact {
+  flex-grow: 1;
+  padding: 90px 0;
+  background-color: #363646; }
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-column-gap: 50px;
+    padding: 0; }
+    .contact__wrapper .container:nth-child(3) {
+      display: none; }
+  .contact__form {
+    max-width: 450px; }
+    .contact__form h2 {
+      line-height: .97;
+      margin: 0 0 20px; }
+    .contact__form p {
+      font-size: 18px;
+      line-height: 1.44;
+      color: #d0d0d0;
+      margin-bottom: 35px; }
+  .contact__info__block {
+    margin-bottom: 40px; }
+    .contact__info__block--border a {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+      display: inline-block;
+      transition: .2s; }
+      .contact__info__block--border a:hover {
+        border-color: white; }
+    .contact__info__block p, .contact__info__block a {
+      font-size: 20px;
+      line-height: 1.25;
+      font-weight: normal; }
+    .contact__info__block p {
+      color: #848484;
+      margin: 0 0 10px; }
+    .contact__info__block a {
+      color: white;
+      margin: 0;
+      text-decoration: none; }
+  .contact__info__socials {
+    display: grid;
+    grid-template-columns: 46px 46px 46px;
+    grid-gap: 25px;
+    margin-top: 10px; }
+    .contact__info__socials a {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background-color: #d0d0d0;
+      padding: 10px;
+      width: 46px;
+      height: 46px;
+      transition: .2s; }
+      .contact__info__socials a:hover {
+        background-color: white;
+        transform: scale(1.2); }
+
+@media (max-width: 767.98px) {
+  section.contact {
+    margin-bottom: 0; }
+  .contact {
+    padding: 60px 0; }
+    .contact__wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 0; }
+      .contact__wrapper .container:nth-child(1) {
+        border-bottom: 1px solid #848484;
+        padding-bottom: 75px;
+        margin: 0 0 75px; }
+      .contact__wrapper .container:nth-child(2) {
+        display: none; }
+      .contact__wrapper .container:nth-child(3) {
+        display: block; } }
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #aaa;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: 0 0 5px hsl(208, 99%, 50%);
+  border-color: hsl(208, 99%, 50%);
+  outline: none;
+}
+
+.react-tabs__tab:focus:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  font-size: 15px;
+  line-height: 1.33;
+  color: #848484;
+  border: none;
+  bottom: 0;
+  padding: 0;
+  transition: .2s; }
+  .react-tabs__tab--selected {
+    background: transparent; }
+  .react-tabs__tab-list {
+    background-color: white;
+    border: none;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 18px 0;
+    margin: 0; }
+  .react-tabs__tab:hover {
+    color: #ffb248; }
+  .react-tabs__tab div div {
+    padding: 0 50px; }
+  .react-tabs__tab:not(:last-child) div div {
+    border-right: 2px solid #ebebeb; }
+  .react-tabs__tab:focus {
+    box-shadow: none;
+    border: none; }
+    .react-tabs__tab:focus:after {
+      content: none; }
+  .react-tabs__tab--selected {
+    color: #ffb248;
+    border: none;
+    border-right: inherit;
+    border-radius: 0; }
+  .react-tabs__tab--active:not(:last-child) div div {
+    border-color: #ffb248; }
+
+.react-tabs__tab-panel--selected {
+  animation: fadeIn .3s linear; }
+
+.sticky {
+  position: fixed;
+  top: 20px;
+  z-index: 3; }
+
+.sticky ~ .react-tabs__tab-panel--selected {
+  padding-top: 140px; }
+
+.sub-template {
+  width: 100%;
+  height: 90px;
+  background: #ffb248;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 20px 20px 0 #ffb248; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@media (max-width: 1239.98px) {
+  .react-tabs__tab-list {
+    padding: 14px 0; }
+  .react-tabs__tab div div {
+    padding: 0 20px; } }
+
+@media (max-width: 767.98px) {
+  .sticky {
+    top: 0; }
+  .sub-template {
+    top: -25px; }
+  .react-tabs {
+    width: 100vw; }
+    .react-tabs__tab {
+      padding: 14px 0;
+      height: 100%; }
+      .react-tabs__tab-list {
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        margin-left: -40px;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.89);
+        white-space: nowrap;
+        overflow-x: auto; }
+      .react-tabs__tab-panel {
+        width: calc(100% - 80px); }
+      .react-tabs__tab:not(:last-child) div div {
+        border-right: none; }
+      .react-tabs__tab--selected {
+        border-bottom: 3px solid #ffb248; }
+  .sticky ~ .react-tabs__tab-panel--selected {
+    padding-top: 110px; } }
 
 .snackbar {
   visibility: hidden;
@@ -1319,6 +1653,17 @@ footer {
 @media (min-width: 768px) {
   .portfolio__intro {
     min-height: 740px; } }
+
+body {
+  color: white; }
+
+* {
+  font-family: Mont, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

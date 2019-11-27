@@ -1,6 +1,4 @@
 import React, {Component} from "react";
-import { ReactComponent as Logo } from './oril_banner.svg';
-import { ReactComponent as Title } from './oril_banner_title.svg';
 
 export class Banner extends Component {
     render() {
@@ -9,11 +7,11 @@ export class Banner extends Component {
                 <div className="container home__banner__block">
                     <div className="wrapper">
                         <div id="border_wrap">
-                            <Logo/>
+                            <img src="/assets/img/oril_banner.svg" alt=""/>
                         </div>
                     </div>
                     <div className="home__banner__slogan">
-                        <Title/>
+                        <img src="/assets/img/oril_banner_title.svg" alt=""/>
                     </div>
                 </div>
             </section>
