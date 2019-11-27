@@ -5,7 +5,6 @@ body {
 }
 
 * {
-    color: red !important;
     font-family: Mont, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

@@ -9,7 +9,7 @@ export default () => (
     <div className="App">
         <>
                 <Home/>
-            <Route path="/services" component={Services}/>
+            {/*<Route path="/services" component={Services}/>*/}
             {/*<Route path="/portfolio" component={Portfolio}/>*/}
             {/*<Route path="/blog"/>*/}
             {/*<Route path="/contact"/>*/}

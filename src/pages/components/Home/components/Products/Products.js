@@ -32,9 +32,12 @@ export class Products extends Component {
                         })
                     }
                 </div>
-                <Link href="/portfolio">
-                    <button className="btn">Featured Products</button>
-                </Link>
+                <div className="button-wrapper">
+                    <Link href="/portfolio">
+                        <button className="btn">Featured Products</button>
+                    </Link>
+                </div>
+
             </section>
         );
     }
