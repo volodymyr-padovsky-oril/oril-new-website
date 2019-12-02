@@ -15,3 +15,10 @@ module.exports = withCSS(withSass({
         return config;
     }
 }));
+
+const sitemap = require('nextjs-sitemap-generator');
+sitemap({
+    baseUrl: 'https://oril.co/',
+    pagesDirectory: __dirname + "/pages",
+    targetDirectory : 'static/'
+});
