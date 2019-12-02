@@ -1,13 +1,10 @@
 import React, {Component} from "react";
 import Header from "../commons/Header";
-import Footer from "../commons/Footer";
-import Contacts from "./components/Contacts";
-import routes from "../routes";
-import Snackbar from "../commons/SnackBar";
-import {Helmet} from 'react-helmet';
+import Contacts from "./Contacts";
 
 import "./index.scss";
 import '../index.css';
+import Home from "./Home";
 
 class Index extends Component {
     onChangePage = (path) => {
@@ -27,10 +24,8 @@ class Index extends Component {
                 {/*                <meta property="og:url" content="http://euro-travel-example.com/index.htm"/>*/}
                 {/*</Helmet>*/}
                 <Header redirect={this.onChangePage}/>
-                {routes()}
+                <Home/>
                 <Contacts/>
-                <Footer/>
-                {/*<Snackbar/>*/}
             </>
         );
     }
