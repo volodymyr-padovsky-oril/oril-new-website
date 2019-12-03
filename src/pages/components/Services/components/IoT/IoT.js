@@ -32,10 +32,10 @@ export class IoT extends Component {
                 <div className="container">
                     <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">IoT</h3>
-                    <p className="text">“Breathe life into objects around you and make them Smart.
-                        The Internet of things (IoT) has exploded during the recent days, and of all emerging technologies,
+                    <p className="text">Breathe life into objects around you and make them Smart.
+                        The Internet of Things (IoT) has exploded in recent years, and of all emerging technologies,
                         such as artificial intelligence and robotics, it is expected to have the most significant impact on the industrial economy
-                        <a href="http://info.forbes.com/rs/790-SNV-353/images/Hitachi+IoT+Report.pdf" className="link"> (Forbes Insights report)</a>
+                        <a href="http://info.forbes.com/rs/790-SNV-353/images/Hitachi+IoT+Report.pdf" className="link" rel="noopener noreferrer nofollow"> (Forbes Insights report)</a>
                     </p>
                    <div className="services__approach">
                         <h4>Our Approach</h4>
@@ -70,7 +70,7 @@ export class IoT extends Component {
                         <div>
                             {
                                 this.services.map((service, index) => (
-                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer nofollow" key={'technology-' + index}>
                                         <div>
                                             <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
@@ -85,7 +85,7 @@ export class IoT extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer nofollow" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))

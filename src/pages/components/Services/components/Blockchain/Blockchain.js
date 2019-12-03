@@ -65,7 +65,7 @@ export class Blockchain extends Component {
                         <div>
                             {
                                 this.services.map((service, index) => (
-                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer nofollow" key={'technology-' + index}>
                                         <div>
                                             <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
@@ -80,7 +80,7 @@ export class Blockchain extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer nofollow" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))

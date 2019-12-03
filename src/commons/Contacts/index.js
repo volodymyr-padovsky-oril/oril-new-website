@@ -89,7 +89,7 @@ class Contacts extends Component {
                                 {
                                     this.socials.map((item, index) => {
                                         return (
-                                            <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
+                                            <a href={item.link} target="_blank" rel="noopener noreferrer nofollow" key={index}>
                                                 <img src={item.imgSrc} alt={item.alt}/>
                                             </a>
                                         )

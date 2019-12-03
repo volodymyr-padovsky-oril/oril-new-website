@@ -26,8 +26,8 @@ export class Web extends Component {
     ];
 
     choises = [
-        { title: 'Businesses and Operational' , text: 'E-Commerce, CRM, ERP', img: 'web-business'},
-        { title: 'Reporting and Analytics' , text: 'Dashboards, Reports, Charts', img: 'web-reporting'},
+        { title: 'Businesses & Operational' , text: 'E-Commerce, CRM, ERP', img: 'web-business'},
+        { title: 'Reporting & Analytics' , text: 'Dashboards, Reports, Charts', img: 'web-reporting'},
         { title: 'Graphic' , text: 'Graphic & Design, Detailed Views', img: 'web-heavy-duty'},
         { title: 'Content' , text: 'Blog, Video, Business Information', img: 'web-content'}
     ];
@@ -43,7 +43,7 @@ export class Web extends Component {
     ];
 
     deliverables = [
-        { title: 'Web App', img: 'deliv-web' },
+        { title: 'A Web Application', img: 'deliv-web' },
         { title: 'Admin Dashboard', img: 'deliv-dashboard' },
         { title: 'Documentation', img: 'deliv-documentation' },
         { title: 'Source Code', img: 'deliv-sourcecode' }
@@ -85,7 +85,7 @@ export class Web extends Component {
                     </div>
                     <div className="services__choices">
                         <Bubble size="350px" top="1400px" left="-270px" speed=".4"/>
-                        <h4>Great choice for such products</h4>
+                        <h4>Great choice for:</h4>
                         <div className="choices-list">
                             {
                                 this.choises.map((choice, index) => (
@@ -132,7 +132,7 @@ export class Web extends Component {
                         <div>
                             {
                                 this.services.map((service, index) => (
-                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer nofollow" key={'technology-' + index}>
                                         <div>
                                             <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
@@ -148,7 +148,7 @@ export class Web extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer nofollow" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))

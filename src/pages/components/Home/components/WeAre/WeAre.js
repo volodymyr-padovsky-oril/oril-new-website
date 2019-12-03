@@ -19,21 +19,21 @@ export class WeAre extends Component {
             <section className="home__we-are" id="we-are">
                 <Bubble size="420px" top="3150px" right="-1700px" speed="0.8"/>
                 <Bubble size="800px" top="2150px" left="-1300px" speed="0.5"/>
-                <h3>Who we are</h3>
+                <h3>Who We Are</h3>
                 <div className="container">
                     <div className="home__we-are__text-wrapper">
                         <p className="intro-text">We are a diverse team of professionals who are passionate about digital products</p>
                         <div className="our-credo">
                             <h4>Our Credo</h4>
-                            <p className="ul-item">Increasing World’s Efficiency</p>
+                            <p className="ul-item">Increasing World Efficiency</p>
                         </div>
                         <div className="our-values">
                             <h4>Our Values</h4>
-                            <p className="ul-item">Team is the foundation</p>
+                            <p className="ul-item">Make the team your greatest asset</p>
                             <p className="ul-item">Keep exploring</p>
                             <p className="ul-item">Be a part of solution</p>
-                            <p className="ul-item">Prioritizing time</p>
-                            <p className="ul-item">Products that break limits</p>
+                            <p className="ul-item">Prioritize time</p>
+                            <p className="ul-item">Create limit-breaking products</p>
                         </div>
                     </div>
                     <div className="home__we-are__our-images">

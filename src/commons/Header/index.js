@@ -118,7 +118,7 @@ export class Header extends Component {
                         {this.NavLinks()}
                     </nav>
                     <div className="button-wrapper">
-                        <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer">
+                        <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer nofollow" >
                             <button className="btn">
                                 Free Consultation
                             </button>
@@ -142,7 +142,7 @@ export class Header extends Component {
                         <Bubble size="359px" top="1600px" left="500px" speed=".7"/>
                         {this.NavLinks()}
                         <div className="button-wrapper">
-                            <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer">
+                            <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer nofollow">
                                 <button className="btn">Free Consultation</button>
                             </a>
                         </div>

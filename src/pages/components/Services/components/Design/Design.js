@@ -41,7 +41,7 @@ export class Design extends Component {
         { title: 'UI Style Guides', img: 'deliv-guide' },
         { title: 'UX Artefacts', img: 'deliv-artefacts' },
         { title: 'Interactive Prototypes', img: 'deliv-prototype' },
-        { title: 'Logotype + Brand Identity', img: 'deliv-brand' }
+        { title: 'Logotype & Brand Identity', img: 'deliv-brand' }
     ];
 
     services = [
@@ -122,7 +122,7 @@ export class Design extends Component {
                         <div>
                             {
                                 this.services.map((service, index) => (
-                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer nofollow" key={'technology-' + index}>
                                         <div>
                                             <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
@@ -138,7 +138,7 @@ export class Design extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer nofollow" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))

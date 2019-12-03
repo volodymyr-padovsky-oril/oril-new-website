@@ -10,7 +10,7 @@ export class Mobile extends Component {
         {
             name: 'Personalization.',
             titleOnNewLine: false,
-            text: 'a smartphone is typically used by a single individual, so an application can be tailored to their preferences'
+            text: 'A smartphone is typically used by a single individual, so an application can be tailored to their preferences'
         },
         {
             name: 'Always with you.',
@@ -36,17 +36,17 @@ export class Mobile extends Component {
             img: 'mobile-media'
         },
         {
-            title: 'Lifestyle and Fitness',
+            title: 'Lifestyle & Fitness',
             text: 'Exercice, plan events, and stay healthy on the go',
             img: 'mobile-lifestyle-and-fitness'
         },
         {
-            title: 'Productivity and Utility',
+            title: 'Productivity & Utility',
             text: 'Be more efficient in your day-to-day business activities',
             img: 'mobile-productivity'
         },
         {
-            title: 'IoT and Automation',
+            title: 'IoT & Automation',
             text: 'Control and monitor your surroundings with a few hits',
             img: 'mobile-iot'
         }
@@ -102,7 +102,7 @@ export class Mobile extends Component {
                         }
                     </div>
                     <div className="services__choices">
-                        <h4>Great choice for</h4>
+                        <h4>Great choice for:</h4>
                         <div className="choices-list">
                             {
                                 this.choises.map((choice, index) => (
@@ -150,7 +150,7 @@ export class Mobile extends Component {
                         <div>
                             {
                                 this.services.map((service, index) => (
-                                    <a href={service.link} target="_blank" rel="noopener noreferrer" key={'technology-' + index}>
+                                    <a href={service.link} target="_blank" rel="noopener noreferrer nofollow" key={'technology-' + index}>
                                         <div>
                                             <img src={'assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
@@ -165,7 +165,7 @@ export class Mobile extends Component {
                         <div>
                             {
                                 this.products.map((product, index) => (
-                                    <a href={product.link} target="_blank" rel="noopener noreferrer" key={'product-' + index}>
+                                    <a href={product.link} target="_blank" rel="noopener noreferrer nofollow" key={'product-' + index}>
                                         <img src={'assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))

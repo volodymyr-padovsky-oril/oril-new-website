@@ -36,7 +36,7 @@ export class CompanyInfo extends Component {
                   {
                       this.socials.map((item, index) => {
                           return (
-                              <a href={item.link} target="_blank" rel="noopener noreferrer" key={'social-' + index}>
+                              <a href={item.link} target="_blank" rel="noopener noreferrer nofollow" key={'social-' + index}>
                                   {item.name}
                               </a>
                           )
