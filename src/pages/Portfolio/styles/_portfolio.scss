@@ -1,0 +1,77 @@
+@import "../../../styles/variables";
+@import "../components/Slide/slide";
+@import "../components/Slides/slides";
+@import "../components/PortfolioIntro/portfolio-intro";
+@import "../components/Projects/projects";
+
+.portfolio {
+  background-image: linear-gradient(181deg, $yellow, $orange);
+  overflow: hidden;
+}
+
+.swiper-container-vertical {
+  width: calc(100% + 80px);
+  height: 100%;
+  position: relative;
+  left: -80px;
+
+  .swiper-wrapper {
+    padding-left: 80px;
+  }
+
+  & > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      background: white;
+      opacity: .5;
+      transition: transform .2s;
+      margin: 0 0 24px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &-active {
+        transform: scale(1.4);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets {
+  left: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .swiper-container-vertical {
+    width: calc(100vw - 40px);
+    left: 0;
+  }
+
+  .slider-wrapper {
+    height: 600px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .swiper-container-vertical {
+    width: 100vw;
+    left: -80px;
+  }
+
+  .portfolio {
+    &__intro {
+      height: fit-content;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    &__intro {
+      min-height: 740px;
+    }
+  }
+}

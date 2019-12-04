@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import Link from 'next/link';
 import "./index.scss";
 
 export default (props) => {
@@ -16,20 +16,30 @@ export default (props) => {
                     <div className="nav-wrapper">
                         <img src="assets/icons/logo-white-nolabel.svg" alt="logo" className="logo-white"/>
                         <nav className="nav-footer">
-                            <Link to="/home" className="nav_item" onClick={redirect}>
-                                Home
+                            <Link href="/home">
+                                <a className="nav_item" onClick={redirect}>
+                                    Home
+                                </a>
                             </Link>
-                            <Link to="/portfolio" className="nav_item" onClick={redirect}>
-                                Portfolio
+                            <Link href="/portfolio">
+                                <a className="nav_item" onClick={redirect}>
+                                    Portfolio
+                                </a>
                             </Link>
-                            <Link to="/blog" className="nav_item" onClick={redirect}>
-                                Blog
+                            <Link href="/blog">
+                                <a className="nav_item" onClick={redirect}>
+                                    Blog
+                                </a>
                             </Link>
-                            <Link to="/services" className="nav_item" onClick={redirect}>
-                                Services
+                            <Link href="/services">
+                                <a className="nav_item" onClick={redirect}>
+                                    Services
+                                </a>
                             </Link>
-                            <Link to="/contact" className="nav_item" onClick={redirect}>
-                                Contact Us
+                            <Link href="/contact">
+                                <a className="nav_item" onClick={redirect}>
+                                    Contact Us
+                                </a>
                             </Link>
                         </nav>
                     </div>

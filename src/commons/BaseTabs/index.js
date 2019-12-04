@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {withRouter} from "react-router-dom";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {parse} from "query-string";
 import {later} from "../utils/main";
@@ -103,10 +102,6 @@ export class BaseTabs extends Component {
 
     handleSelect(index) {
         this.setState({ activeTab: index });
-        this.props.history.push({
-            pathname: `/${this.props.pathname}`,
-            search: `?activeTab=${this.props.tabs[index].id}`
-        });
 
         later().then(() => this.setActiveTabBorders());
         let selector = '#development';
@@ -147,4 +142,4 @@ export class BaseTabs extends Component {
     }
 }
 
-export default withRouter(BaseTabs);
+export default BaseTabs;
