@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import Header from '../commons/Header';
 import Home from './Home';
-import Contacts from './Contacts';
+import Contacts from './contacts';
 import "./index.scss";
 import '../index.css';
 
