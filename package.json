@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "history": "^4.10.1",
     "next": "^9.1.4",
+    "next-redux-wrapper": "^4.0.1",
     "nextjs-sitemap-generator": "^0.4.1",
     "node-sass": "^4.13.0",
     "query-string": "^6.8.3",
@@ -22,6 +23,7 @@
     "react-router-dom": "^5.0.1",
     "react-router-redux": "^4.0.8",
     "react-scripts": "3.1.1",
+    "react-svg": "^11.0.3",
     "react-tabs": "^3.0.0",
     "redux": "^4.0.4",
     "redux-actions": "^2.6.5",
@@ -31,11 +33,10 @@
     "swiper": "^4.5.1"
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "next start",
+    "prod": "next export"
   },
   "eslintConfig": {
     "extends": "react-app"
