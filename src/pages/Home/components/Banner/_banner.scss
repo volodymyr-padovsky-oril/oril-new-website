@@ -125,11 +125,11 @@
 
 @keyframes moveLeft {
   0% {
-    x: 584px;
+    transform: translateX(50px);
     opacity: 0;
   }
   100% {
-    x: 442px;
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -141,11 +141,16 @@
 
 @keyframes moveUp {
   0% {
-    y: 212.358px;
+    opacity: 0;
+    transform: translateY(35px)
+  }
+
+  50% {
+    opacity: 0.3;
   }
 
   100% {
-    y: 199px;
     opacity: 1;
+    transform: translateY(0)
   }
 }

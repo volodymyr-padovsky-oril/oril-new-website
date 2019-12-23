@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { ReactSVG } from 'react-svg'
 
 export class Banner extends Component {
     render() {
@@ -7,7 +8,7 @@ export class Banner extends Component {
                 <div className="container home__banner__block">
                     <div className="wrapper">
                         <div id="border_wrap">
-                            <img src="/assets/img/oril_banner.svg" alt=""/>
+                            <ReactSVG src="/assets/img/oril_banner.svg" />
                         </div>
                     </div>
                     <div className="home__banner__slogan">

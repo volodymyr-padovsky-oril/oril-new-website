@@ -2,7 +2,7 @@ import React, {Component, Fragment} from "react";
 import Banner from "./Banner/Banner";
 import Products from "./Products/Products";
 import Services from "./Services/Services";
-import WeAre from "./WeAre/WeAre";
+import WeAre from "./WeAre";
 
 class Home extends Component {
     onChangePage = (path) => {
