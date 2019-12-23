@@ -20,7 +20,7 @@ export class Web extends Component {
         },
         {
             text: `
-                A Web App reduces cost because it eliminates the need to develop and test for various devices
+                A Web Application reduces cost because it eliminates the need to develop and test for various devices
             `
         }
     ];
