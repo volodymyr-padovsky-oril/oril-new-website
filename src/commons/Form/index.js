@@ -114,7 +114,6 @@ class Form extends Component {
         }
 
         this.setState({name: '', email: '', message: ''});
-        console.log(userInfo);
     }
 
     render() {
@@ -165,5 +164,5 @@ const mapDispatchToProps = dispatch => ({
     }
 });
 
-export default Form;
+export default connect(null, mapDispatchToProps)(Form);
 
