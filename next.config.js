@@ -27,10 +27,7 @@ module.exports = withSass(
             return config;
         },
         env: {
-            PUBLIC_URL: process.env.PUBLIC_URL,
-            REACT_APP_API_HOST: process.env.REACT_APP_API_HOST,
-            REACT_APP_SOCKET_API_HOST: process.env.REACT_APP_SOCKET_API_HOST,
-            REACT_APP_STRIPE_PUB_KEY: process.env.REACT_APP_STRIPE_PUB_KEY
+            REACT_APP_API_URL: process.env.REACT_APP_API_URL
         }
     })
 );
