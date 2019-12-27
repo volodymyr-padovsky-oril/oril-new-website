@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./index.scss";
-import { connect } from 'react-redux';
-import { sendGetInTouchMessageRequest } from '../../actions/message';
+import {connect} from 'react-redux';
+import {sendGetInTouchMessageRequest} from '../../actions/message';
 
 class Form extends Component {
     constructor(props) {
@@ -24,14 +24,14 @@ class Form extends Component {
     }
 
     handleInputChange = (state) => {
-        const formErrors = { name: '', email: '', message: ''};
-        this.setState({ ...state, formErrors});
+        const formErrors = {name: '', email: '', message: ''};
+        this.setState({...state, formErrors});
         this.removeErrorClasses();
     };
 
     validateName = (name) => {
         let nameValid = name.length > 0;
-        let formErrors = { ...this.state.formErrors };
+        let formErrors = {...this.state.formErrors};
         formErrors.name = nameValid ? null : 'Name is required';
         return new Promise(resolve => {
             this.setState({nameValid, formErrors}, () => {
@@ -42,7 +42,7 @@ class Form extends Component {
 
     validateEmail = (email) => {
         let emailValid = email.length > 0;
-        const formErrors = { ...this.state.formErrors };
+        const formErrors = {...this.state.formErrors};
         formErrors.email = emailValid ? null : 'Email is required';
 
         if (!emailValid) {
@@ -64,7 +64,7 @@ class Form extends Component {
 
     validateMessage = (message) => {
         const messageValid = message.length > 0;
-        const formErrors = { ...this.state.formErrors };
+        const formErrors = {...this.state.formErrors};
         formErrors.message = messageValid ? null : 'Message is required';
         return new Promise(resolve => {
             this.setState({messageValid, formErrors}, () => {
@@ -100,9 +100,9 @@ class Form extends Component {
         await this.validateForm();
 
         const userInfo = {
-          name: name,
-          email: email,
-          message: message
+            name: name,
+            email: email,
+            message: message
         };
 
         if (this.state.formValid) {
@@ -118,42 +118,46 @@ class Form extends Component {
 
     render() {
         return (
-            <form onSubmit={this.onSubmit.bind(this)}>
-                <div className={`input-field ${this.hasError(this.state.nameValid)}`} ref={this.nameInput}>
-                    <input type="text"
-                           name="name"
-                           id="name"
-                           autoComplete="off"
-                           value={this.state.name}
-                           onChange={(event) => this.handleInputChange({ name: event.target.value }) }
-                           className={this.state.name ? 'has-data' : null}/>
-                    <label htmlFor="name">Name</label>
-                    <div className="error">{this.state.formErrors.name ? this.state.formErrors.name : null}</div>
-                </div>
-                <div className={`input-field ${this.hasError(this.state.nameValid)}`} ref={this.emailInput}>
-                    <input type="text"
-                           name="email"
-                           id="email"
-                           autoComplete="off"
-                           value={this.state.email}
-                           onChange={(event) => this.handleInputChange({ email: event.target.value })}
-                           className={this.state.email ? 'has-data' : null}/>
-                    <label htmlFor="email">E-Mail</label>
-                    <div className="error">{this.state.formErrors.email ? this.state.formErrors.email : null}</div>
-                </div>
-                <div className={`textarea-field ${this.hasError(this.state.nameValid)}`} ref={this.messageInput}>
+            <>
+                <p>Send us a short message and our team will get back to you within 24 hours</p>
+                <form onSubmit={this.onSubmit.bind(this)}>
+                    <div className={`input-field ${this.hasError(this.state.nameValid)}`} ref={this.nameInput}>
+                        <input type="text"
+                               name="name"
+                               id="name"
+                               autoComplete="off"
+                               value={this.state.name}
+                               onChange={(event) => this.handleInputChange({name: event.target.value})}
+                               className={this.state.name ? 'has-data' : null}/>
+                        <label htmlFor="name">Name</label>
+                        <div className="error">{this.state.formErrors.name ? this.state.formErrors.name : null}</div>
+                    </div>
+                    <div className={`input-field ${this.hasError(this.state.nameValid)}`} ref={this.emailInput}>
+                        <input type="text"
+                               name="email"
+                               id="email"
+                               autoComplete="off"
+                               value={this.state.email}
+                               onChange={(event) => this.handleInputChange({email: event.target.value})}
+                               className={this.state.email ? 'has-data' : null}/>
+                        <label htmlFor="email">E-Mail</label>
+                        <div className="error">{this.state.formErrors.email ? this.state.formErrors.email : null}</div>
+                    </div>
+                    <div className={`textarea-field ${this.hasError(this.state.nameValid)}`} ref={this.messageInput}>
                     <textarea placeholder="Message..."
                               name="message"
                               value={this.state.message}
-                              onChange={(event) => this.handleInputChange({ message: event.target.value })}
+                              onChange={(event) => this.handleInputChange({message: event.target.value})}
                               className={this.state.message ? 'has-data' : null}>
                     </textarea>
-                    <div className="error">{this.state.formErrors.message ? this.state.formErrors.message : null}</div>
-                </div>
-                <div className="submit-field">
-                    <button type="submit">Send</button>
-                </div>
-            </form>
+                        <div
+                            className="error">{this.state.formErrors.message ? this.state.formErrors.message : null}</div>
+                    </div>
+                    <div className="submit-field">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </>
         )
     }
 }
