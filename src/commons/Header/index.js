@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import CompanyInfo from "./CompanyInfo";
 import Bubble from "../Bubble";
-import Link from '../utils/ActiveLink';
+import Link from '../utils/activeLink';
 
 import './index.scss';
 
