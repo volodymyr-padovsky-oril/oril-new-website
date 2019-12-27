@@ -1,23 +1,24 @@
 @import "../../styles/variables";
 
 .snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: $purple;
-  color: $orange;
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  border-radius: 6px;
-  padding: 14px 0 13px;
+  //visibility: hidden;
+  //min-width: 250px;
+  //margin-left: -125px;
+  //background-color: $purple;
+  //color: white;
+  //text-align: center;
+  //z-index: 1;
+  //border-radius: 6px;
+  //padding: 14px 0 13px;
   //border: 5px solid #ffb248;
-  outline: none;
-  font-weight: 600;
-  font-size: 17px;
-  transition: .2s;
+  //outline: none;
+  //font-weight: 600;
+  //font-size: 17px;
+  //transition: .2s;
+
+  font-size: 18px;
+  line-height: 1.44;
+  color: #d0d0d0;
 }
 
 .snackbar.show {

@@ -7,27 +7,20 @@ import {closeSnackbar} from '../../actions/helper';
 
 class Snackbar extends Component {
     state = {
-        open: false,
         text: '',
-        vertical: 'top',
-        horizontal: 'right',
-        isActive: true
     };
 
-    componentWillReceiveProps(nextProps) {
-        if (this.props.isSnackbarOpen !== nextProps.isSnackbarOpen) {
-            this.setState({
-                open: nextProps.isSnackbarOpen,
-                text: nextProps.snackbarText
-            });
+    static getDerivedStateFromProps(nextProps) {
+        return {
+            open: nextProps.isSnackbarOpen,
+            text: nextProps.snackbarText
         }
     }
 
     render() {
-        const {open, text} = this.state;
-        console.log('this.props.isSnackbarOpen', this.props.isSnackbarOpen)
+        const {text} = this.state;
         return (
-            <div className={open ? ["snackbar", "show"].join(" ") : "snackbar"}>
+            <div className="snackbar">
                 {text}
             </div>
         )
@@ -35,7 +28,6 @@ class Snackbar extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    isSnackbarOpen: state.helper.isSnackbarOpen,
     snackbarText: state.helper.text
 });
 
