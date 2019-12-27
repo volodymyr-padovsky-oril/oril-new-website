@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 import Header from '../commons/Header';
-import Home from './Home';
+import Home from './home';
 import Contacts from './contacts';
 import "./index.scss";
 import '../index.css';
