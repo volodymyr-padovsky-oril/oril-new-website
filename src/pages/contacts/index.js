@@ -6,7 +6,7 @@ import Footer from "../../commons/Footer";
 import {withRouter} from 'next/router';
 
 
-import "./styles/_styles.scss";
+import "../../components/Contacts/styles/_styles.scss";
 import {connect} from "react-redux";
 import Snackbar from "../../commons/SnackBar";
 
