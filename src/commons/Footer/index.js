@@ -36,7 +36,7 @@ export default (props) => {
                                     Services
                                 </a>
                             </Link>
-                            <Link href="/contact">
+                            <Link href="/contacts">
                                 <a className="nav_item" onClick={redirect}>
                                     Contact Us
                                 </a>

@@ -98,7 +98,9 @@ export class Header extends Component {
 
     redirect = (e) => {
         const elem = e.target;
-        this.props.redirect(elem.pathname);
+        if (this.props.redirect) {
+            this.props.redirect(elem.pathname);
+        }
         window.scrollTo(0, 0);
 
         if (this.state.overlayActive) {

@@ -1,14 +1,14 @@
 import React, {Component} from "react";
-import Form from "../../commons/Form";
 import CompanyInfo from "../../commons/Header/CompanyInfo";
 import Header from "../../commons/Header";
+import Form from "../../commons/Form";
 import Footer from "../../commons/Footer";
 import {withRouter} from 'next/router';
 
 
-import "../../components/Contacts/styles/_styles.scss";
 import {connect} from "react-redux";
 import Snackbar from "../../commons/SnackBar";
+import "../../components/Contacts/styles/_contacts.scss";
 
 class Contacts extends Component {
     socials = [
