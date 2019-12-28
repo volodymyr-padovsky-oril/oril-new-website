@@ -9,7 +9,7 @@
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "history": "^4.10.1",
-    "next": "^9.1.4",
+    "next": "^9.1.6",
     "next-redux-saga": "^4.1.2",
     "next-redux-wrapper": "^4.0.1",
     "nextjs-sitemap-generator": "^0.4.1",
