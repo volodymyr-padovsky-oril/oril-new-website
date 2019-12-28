@@ -6,7 +6,7 @@ export class IoT extends Component {
         {img: 'services-logo-mqtt', name: 'MQTT', link: 'http://mqtt.org/'},
         {img: 'services-logo-amazon-iot', name: 'Amazon IoT', link: 'https://aws.amazon.com/iot/'},
         {img: 'services-logo-ibm-iot', name: 'IBM IoT', link: 'https://www.ibm.com/internet-of-things'},
-        {img: 'services-logo-c++', name: 'C++', link: 'https://isocpp.org/'},
+        {img: 'services-logo-c-plus-plus', name: 'C++', link: 'https://isocpp.org/'},
         {img: 'services-logo-typescript-java', name: 'Java', link: 'https://www.java.com/en/'},
         {img: 'services-logo-typescript-node', name: 'Node JS', link: 'https://nodejs.org/en/'},
         {img: 'services-logo-typescript-react', name: 'React JS', link: 'https://reactjs.org/'},
