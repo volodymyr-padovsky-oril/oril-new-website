@@ -26,11 +26,9 @@ export default (props) => {
                                     Portfolio
                                 </a>
                             </Link>
-                            <Link href="/blog">
-                                <a className="nav_item" onClick={redirect}>
+                                <a href="/blog" className="nav_item" onClick={redirect}>
                                     Blog
                                 </a>
-                            </Link>
                             <Link href="/services">
                                 <a className="nav_item" onClick={redirect}>
                                     Services
