@@ -3,6 +3,7 @@ import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {parse} from "query-string";
 import {later} from "../utils/main";
 import {scrollTo} from "../utils/scroll";
+import {withRouter} from "next/router";
 
 import "react-tabs/style/react-tabs.css";
 import "./index.scss";
@@ -102,6 +103,10 @@ export class BaseTabs extends Component {
 
     handleSelect(index) {
         this.setState({ activeTab: index });
+        this.props.router.push({
+            pathname: `/${this.props.pathname}`,
+            search: `?activeTab=${this.props.tabs[index].id}`
+        });
 
         later().then(() => this.setActiveTabBorders());
         let selector = '#development';
@@ -142,4 +147,4 @@ export class BaseTabs extends Component {
     }
 }
 
-export default BaseTabs;
+export default withRouter(BaseTabs);
