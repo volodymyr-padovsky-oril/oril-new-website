@@ -10,7 +10,7 @@ export class Header extends Component {
         {name: 'Home', to: '/', internal: true},
         {name: 'Services', to: '/services', internal: true},
         {name: 'Portfolio', to: '/portfolio', internal: true},
-        {name: 'Blog', to: '/blog', internal: false},
+        {name: 'Blog', to: '/blog', internal: true},
         {name: 'Contact Us', to: '/contacts', internal: true},
     ];
 
