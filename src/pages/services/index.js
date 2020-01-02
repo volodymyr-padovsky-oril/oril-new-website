@@ -6,7 +6,8 @@ import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import {later} from "../../commons/utils/main";
 import Header from "../../commons/Header";
-import Contacts from "../contacts";
+import Contacts from "../../components/Contacts/Contacts";
+import Footer from "../../commons/Footer";
 import {withRouter} from "next/router";
 
 class Services extends Component {
@@ -39,6 +40,7 @@ class Services extends Component {
                     <Development/>
                 </section>
                 <Contacts/>
+                <Footer/>
             </>
         );
     }

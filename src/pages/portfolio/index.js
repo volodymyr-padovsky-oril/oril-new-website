@@ -4,7 +4,8 @@ import Projects from "../../components/Projects/Projects";
 import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import Header from "../../commons/Header";
-import Contacts from "../contacts";
+import Contacts from "../../components/Contacts/Contacts";
+import Footer from "../../commons/Footer";
 import {project} from "../../lib/our-projects";
 import {withRouter} from "next/router";
 
@@ -32,6 +33,7 @@ class Portfolio extends Component {
                     <Projects slides={this.props.project}/>
                 </section>
                 <Contacts/>
+                <Footer/>
             </>
         );
     }

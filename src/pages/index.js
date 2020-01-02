@@ -3,7 +3,8 @@ import {connect} from 'react-redux';
 
 import Header from '../commons/Header';
 import Home from './home';
-import Contacts from './contacts';
+import Contacts from "../components/Contacts/Contacts";
+import Footer from "../commons/Footer";
 import "./index.scss";
 import '../index.css';
 
@@ -28,6 +29,7 @@ class Counter extends React.Component {
                 <Header/>
                 <Home/>
                 <Contacts/>
+                <Footer/>
             </>
         )
     }
