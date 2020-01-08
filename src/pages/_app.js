@@ -4,6 +4,7 @@ import App from "next/app";
 import withRedux from 'next-redux-wrapper'
 import withReduxSaga from 'next-redux-saga'
 import configureStore from '../store/configure-store.js'
+import Layout from "../components/Layout/Layout";
 
 class MyApp extends App {
 
@@ -18,9 +19,11 @@ class MyApp extends App {
   render() {
     const {Component, pageProps, store} = this.props;
     return (
-      <Provider store={store}>
-        <Component {...pageProps} />
-      </Provider>
+        <Layout>
+          <Provider store={store}>
+            <Component {...pageProps} />
+          </Provider>
+        </Layout>
     )
   }
 
