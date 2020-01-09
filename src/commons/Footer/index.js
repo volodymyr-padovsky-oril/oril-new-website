@@ -16,7 +16,7 @@ export default (props) => {
                     <div className="nav-wrapper">
                         <img src="assets/icons/logo-white-nolabel.svg" alt="logo" className="logo-white"/>
                         <nav className="nav-footer">
-                            <Link href="/home">
+                            <Link href="/">
                                 <a className="nav_item" onClick={redirect}>
                                     Home
                                 </a>
@@ -26,7 +26,7 @@ export default (props) => {
                                     Portfolio
                                 </a>
                             </Link>
-                            <Link href="/blog">
+                            <Link href="http://52.87.212.251/">
                                 <a className="nav_item" onClick={redirect}>
                                     Blog
                                 </a>
