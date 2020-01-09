@@ -4,9 +4,11 @@ import Projects from "../../components/Projects/Projects";
 import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import Header from "../../commons/Header";
-import Contacts from "../contacts";
+import Contacts from "../../components/Contacts/Contacts";
+import Footer from "../../commons/Footer";
 import {project} from "../../lib/our-projects";
 import {withRouter} from "next/router";
+import Helmet from "react-helmet";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -26,12 +28,17 @@ class Portfolio extends Component {
     render() {
         return (
             <>
+                <Helmet
+                    title="Portfolio | ORIL"
+                    meta={[{ property: 'og:title', content: 'Portfolio' }]}
+                />
                 <Header redirect={this.onChangePage}/>
                 <section className="portfolio">
                     <PortfolioIntro/>
                     <Projects slides={this.props.project}/>
                 </section>
                 <Contacts/>
+                <Footer/>
             </>
         );
     }

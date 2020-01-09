@@ -26,11 +26,11 @@ export default (props) => {
                                     Portfolio
                                 </a>
                             </Link>
-                            <Link href="http://52.87.212.251/">
-                                <a className="nav_item" onClick={redirect}>
-                                    Blog
-                                </a>
-                            </Link>
+
+                            <a href="/blog" className="nav_item" onClick={redirect}>
+                                Blog
+                            </a>
+
                             <Link href="/services">
                                 <a className="nav_item" onClick={redirect}>
                                     Services

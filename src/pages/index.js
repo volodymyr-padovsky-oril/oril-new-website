@@ -1,36 +1,29 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
 import Header from '../commons/Header';
 import Home from './home';
-import Contacts from './contacts';
+import Contacts from "../components/Contacts/Contacts";
+import Footer from "../commons/Footer";
 import "./index.scss";
 import '../index.css';
+import Helmet from "react-helmet";
 
-class Counter extends React.Component {
-    // static async getInitialProps({ store, isServer }) {
-    //     store.dispatch(tickClock(isServer));
-    //     store.dispatch(increment());
-    //     if (!store.getState().placeholderData) {
-    //         store.dispatch(loadData());
-    //     }
-    // }
-    //
-    // componentDidMount() {
-    //     this.props.dispatch(startClock());
-    // }
-
-
+class Index extends React.Component {
 
     render() {
         return (
             <>
+                <Helmet
+                    title="Contacts | ORIL"
+                    meta={[{ property: 'og:title', content: 'Contacts' }]}
+                />
                 <Header/>
                 <Home/>
                 <Contacts/>
+                <Footer/>
             </>
         )
     }
 }
 
-export default connect()(Counter);
+export default Index;

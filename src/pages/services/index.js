@@ -6,8 +6,10 @@ import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import {later} from "../../commons/utils/main";
 import Header from "../../commons/Header";
-import Contacts from "../contacts";
+import Contacts from "../../components/Contacts/Contacts";
+import Footer from "../../commons/Footer";
 import {withRouter} from "next/router";
+import Helmet from "react-helmet";
 
 class Services extends Component {
     componentDidMount() {
@@ -32,6 +34,10 @@ class Services extends Component {
     render() {
         return (
             <>
+                <Helmet
+                    title="Services | ORIL"
+                    meta={[{ property: 'og:title', content: 'Services' }]}
+                />
                 <Header redirect={this.onChangePage}/>
                 <section className="services">
                     <Intro/>
@@ -39,6 +45,7 @@ class Services extends Component {
                     <Development/>
                 </section>
                 <Contacts/>
+                <Footer/>
             </>
         );
     }
