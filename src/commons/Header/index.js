@@ -88,7 +88,7 @@ export class Header extends Component {
         this.navLinks.map((link, index) => (
             link.internal
                 ? (
-                    <Link href={link.to} key={index} activeClassName="active" prefetch={false}>
+                    <Link href={link.to} key={index} activeClassName="active">
                         <a className="nav_item" onClick={this.redirect}>
                             {link.name}
                         </a>
