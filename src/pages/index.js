@@ -14,9 +14,22 @@ class Index extends React.Component {
         return (
             <>
                 <Helmet
-                    title="Contacts | ORIL"
-                    meta={[{ property: 'og:title', content: 'Contacts' }]}
+                    title="ORIL"
+                    meta={[
+                        {
+                            name: 'viewport',
+                            content: 'width=device-width, initial-scale=1',
+                        },
+                        {property: 'og:title', content: 'ORIL'},
+                        {
+                            property: 'og:description',
+                            content: 'ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting.'
+                        },
+                        {property: "og:image", content: 'https://oril.co/assets/img/link-logo.png'},
+                        {property: "og:url", content: 'oril.co'}
+                    ]}
                 />
+
                 <Header/>
                 <Home/>
                 <Contacts/>
