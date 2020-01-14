@@ -12,7 +12,6 @@
     "next": "^9.1.6",
     "next-redux-saga": "^4.1.2",
     "next-redux-wrapper": "^4.0.1",
-    "nextjs-sitemap-generator": "^0.4.1",
     "node-sass": "^4.13.0",
     "query-string": "^6.8.3",
     "react": "^16.9.0",
@@ -31,6 +30,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-persist": "^6.0.0",
     "redux-saga": "^1.1.1",
+    "sitemap": "^5.1.0",
     "swiper": "^4.5.1"
   },
   "scripts": {
