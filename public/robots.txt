@@ -1,4 +1,4 @@
-Sitemap: https://domain.com/api/posts-sitemap
+Sitemap: https://oril.co/api/posts-sitemap
 
 User-agent: *
 Allow: /*
