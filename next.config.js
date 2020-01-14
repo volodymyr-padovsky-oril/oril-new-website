@@ -31,3 +31,10 @@ module.exports = withSass(
         }
     })
 );
+
+const sitemap = require('nextjs-sitemap-generator');
+sitemap({
+    baseUrl: 'https://oril.co/',
+    pagesDirectory: __dirname + "/pages",
+    targetDirectory : 'static/'
+});
