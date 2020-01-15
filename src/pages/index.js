@@ -23,7 +23,6 @@ class Index extends React.Component {
                           content="ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting."/>
                     <meta property="og:image" content="https://oril.co/assets/img/link-logo.png"/>
                 </Head>
-
                 <Header/>
                 <Home/>
                 <Contacts/>

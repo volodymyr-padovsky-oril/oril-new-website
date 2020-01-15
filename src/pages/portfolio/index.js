@@ -8,7 +8,6 @@ import Contacts from "../../components/Contacts/Contacts";
 import Footer from "../../commons/Footer";
 import {project} from "../../lib/our-projects";
 import {withRouter} from "next/router";
-import Helmet from "react-helmet";
 
 class Portfolio extends Component {
     componentDidMount() {
@@ -28,10 +27,6 @@ class Portfolio extends Component {
     render() {
         return (
             <>
-                <Helmet
-                    title="Portfolio | ORIL"
-                    meta={[{ property: 'og:title', content: 'Portfolio' }]}
-                />
                 <Header redirect={this.onChangePage}/>
                 <section className="portfolio">
                     <PortfolioIntro/>
