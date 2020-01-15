@@ -14,11 +14,15 @@ class Index extends React.Component {
         return (
             <>
                 <Head>
-                    <title>The Rock (1996)</title>
-                    <meta property="og:title" content="The Rock" />
-                    <meta property="og:type" content="video.movie" />
-                    <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
-                    <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+                    <title>Main page | ORIL</title>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+                    <meta property="og:url" content="https://oril.co"/>
+                    <meta property="og:title" content="ORIL"/>
+                    <meta property="og:type" content="website" />
+                    <meta property="og:description"
+                          content="ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting."/>
+                    <meta property="og:image" content="https://oril.co/assets/img/link-logo.png"/>
                 </Head>
                 <Header/>
                 <Home/>
