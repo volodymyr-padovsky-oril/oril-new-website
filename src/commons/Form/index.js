@@ -19,7 +19,8 @@ class Form extends Component {
             nameValid: true,
             emailValid: true,
             messageValid: true,
-            formValid: false
+            formValid: false,
+            addClass: false
         };
     }
 
@@ -105,6 +106,10 @@ class Form extends Component {
             message: message
         };
 
+        this.setState({
+            addClass: true
+        });
+
         if (this.state.formValid) {
             sendMessageRequest({
                 email,
@@ -117,10 +122,11 @@ class Form extends Component {
     }
 
     render() {
+        console.log('blur', this.state.addClass)
         return (
             <>
                 <p>Send us a short message and our team will get back to you within 24 hours</p>
-                <form onSubmit={this.onSubmit.bind(this)}>
+                <form className={this.state.addClass ? 'blur' : null} onSubmit={this.onSubmit.bind(this)}>
                     <div className={`input-field ${this.hasError(this.state.nameValid)}`} ref={this.nameInput}>
                         <input type="text"
                                name="name"
