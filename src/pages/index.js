@@ -6,29 +6,23 @@ import Contacts from "../components/Contacts/Contacts";
 import Footer from "../commons/Footer";
 import "./index.scss";
 import '../index.css';
-import Helmet from "react-helmet";
+import Head from 'next/head'
 
 class Index extends React.Component {
 
     render() {
         return (
             <>
-                <Helmet
-                    title="ORIL"
-                    meta={[
-                        {
-                            name: 'viewport',
-                            content: 'width=device-width, initial-scale=1',
-                        },
-                        {property: 'og:title', content: 'ORIL'},
-                        {
-                            property: 'og:description',
-                            content: 'ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting.'
-                        },
-                        {property: "og:image", content: 'https://oril.co/assets/img/link-logo.png'},
-                        {property: "og:url", content: 'oril.co'}
-                    ]}
-                />
+                <Head>
+                    <title>Main page | ORIL</title>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+                    <meta property="og:url" content="https://oril.co"/>
+                    <meta property="og:title" content="ORIL"/>
+                    <meta property="og:description"
+                          content="ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting."/>
+                    <meta property="og:image" content="https://oril.co/assets/img/link-logo.png"/>
+                </Head>
 
                 <Header/>
                 <Home/>
