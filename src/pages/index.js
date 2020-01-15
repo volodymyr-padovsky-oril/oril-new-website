@@ -19,6 +19,7 @@ class Index extends React.Component {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                     <meta property="og:url" content="https://oril.co"/>
                     <meta property="og:title" content="ORIL"/>
+                    <meta property="og:type" content="website" />
                     <meta property="og:description"
                           content="ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting."/>
                     <meta property="og:image" content="https://oril.co/assets/img/link-logo.png"/>
