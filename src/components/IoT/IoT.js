@@ -22,7 +22,7 @@ export class IoT extends Component {
 
     products = [
         { img: 'nuravine-logo', link: 'https://www.nuravine.com/'},
-        { img: 'connected-copper', link: 'https://connectedcopper.com/'},
+        { img: 'connected-copper', link: 'http://connectedcopper.com/'},
         { img: 'babybrezza-logo', link: 'https://babybrezza.com/'},
     ];
 

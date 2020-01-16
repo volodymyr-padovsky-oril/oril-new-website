@@ -51,7 +51,7 @@ export class Web extends Component {
 
     products = [
         { img: 'myn-logo' ,link: 'https://matchyourneed.com/'},
-        { img: 'connected-copper', link: 'https://connectedcopper.com/'},
+        { img: 'connected-copper', link: 'http://connectedcopper.com/'},
         { img: 'gv-logo', link: 'https://greenvision-energy.com/'}
     ];
 
