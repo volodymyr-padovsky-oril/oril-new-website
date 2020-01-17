@@ -122,7 +122,6 @@ class Form extends Component {
     }
 
     render() {
-        console.log('blur', this.state.addClass)
         return (
             <>
                 <p>Send us a short message and our team will get back to you within 24 hours</p>
