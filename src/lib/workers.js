@@ -102,7 +102,7 @@ const secondPage = [
         animal: 'team-17',
         photo: '15',
         name: 'Oleh Kravets',
-        position: 'Graphic Designer'
+        position: 'Graphic, UX/UI Designer'
     },
     {
         animal: 'team-18',
