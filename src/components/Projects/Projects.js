@@ -19,7 +19,7 @@ export class Projects extends Component {
 
         return (
           <section className="portfolio__projects" id="products">
-              <div className="container">
+              <div className="portfolio-container">
                   <BaseTabs tabs={this.tabs} pathname="portfolio" />
               </div>
           </section>

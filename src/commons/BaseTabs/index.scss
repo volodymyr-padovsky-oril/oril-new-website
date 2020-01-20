@@ -67,15 +67,7 @@
   }
 }
 
-.sticky {
-  position: fixed;
-  top: 20px;
-  z-index: 3;
-}
 
-.sticky ~ .react-tabs__tab-panel--selected {
-  padding-top: 140px;
-}
 
 .sub-template {
   width: 100%;
@@ -107,7 +99,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1240px) {
   .sticky {
     top: 0;
   }
@@ -128,7 +120,7 @@
         padding: 0;
         height: 50px;
         width: 100%;
-        margin-left: -40px;
+        left: -15px;
         border-radius: 0;
         background-color: rgba(255, 255, 255, .89);
         white-space: nowrap;
@@ -164,5 +156,55 @@
 
   .sticky ~ .react-tabs__tab-panel--selected {
     padding-top: 110px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 20px;
+    z-index: 3;
+  }
+
+  .sticky ~ .react-tabs__tab-panel--selected {
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 1415px) {
+  .react-tabs {
+    display: grid;
+    grid-template-columns: 210px auto;
+    grid-column-gap: 100px;
+
+    &__tab {
+      font-size: 18px;
+      color: $white;
+      width: 100%;
+
+      &-list {
+        background-color: transparent;
+
+      }
+      div {
+        div {
+          padding: 21px 39px;
+        }
+      }
+
+      &:not(:last-child) div div {
+        border-right: none;
+      }
+
+      &--selected {
+        background-color: $white;
+        color: $orange;
+        border-radius: 31px;
+      }
+
+      &:hover{
+        background-color: $white;
+        color: $orange;
+        border-radius: 31px;
+      }
+    }
   }
 }
