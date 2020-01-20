@@ -4,7 +4,7 @@ export class CompanyInfo extends Component {
     socials = [
         { link: 'https://www.linkedin.com/company/oril-software', name: 'LinkedIn' },
         { link: 'https://www.facebook.com/orilsoftware', name: 'Facebook' },
-        { link: 'https://medium.com/oril', name: 'Medium' },
+        { link: 'https://clutch.co/profile/oril', name: 'Clutch' },
         { link: 'https://www.instagram.com/orilsoftware', name: 'Instagram' },
         { link: 'https://www.behance.net/oril-software', name: 'Behance' },
         { link: 'https://twitter.com/orilsoftware', name: 'Twitter' }

@@ -14,9 +14,9 @@ class Contacts extends Component {
             alt: 'linkedin'
         },
         {
-            link: 'https://medium.com/oril',
-            imgSrc: 'assets/icons/medium.svg',
-            alt: 'medium'
+            link: 'https://clutch.co/profile/oril',
+            imgSrc: 'assets/icons/clutch.svg',
+            alt: 'clutch'
         },
         {
             link: 'https://www.behance.net/oril-software',
