@@ -2,4 +2,73 @@
 @import "../components/Services/styles/services";
 @import "../components/Portfolio/styles/portfolio";
 @import "../components/Contacts/styles/contacts";
+@import "../styles/_fonts.scss";
 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.error-wrapper {
+  background-image: url("/assets/img/404.png");
+  height: calc(100vh - 90px);
+  font-family: Mont, serif;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .error-text-block {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 18vw;
+
+    h1 {
+      font-size: 120px;
+      font-weight: 900;
+      line-height: 0.97;
+      letter-spacing: -2.8px;
+      text-align: center;
+      color: $white;
+      font-stretch: normal;
+      font-style: normal;
+      margin: 0 0 30px 0;
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.36;
+      letter-spacing: normal;
+      text-align: right;
+      color: $white;
+      margin: 0 0 30px 0;
+    }
+
+    .btn {
+      border-radius: 7px;
+      background-color: $white;
+      padding: 13px 49px;
+      font-size: 17px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffb248;
+      border: none;
+    }
+  }
+}
