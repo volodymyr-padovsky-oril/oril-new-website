@@ -20,11 +20,11 @@ class MyApp extends App {
         const {Component, pageProps, store} = this.props;
         return (
             <>
-                <Layout>
+                {/*<Layout>*/}
                     <Provider store={store}>
                         <Component {...pageProps} />
                     </Provider>
-                </Layout>
+                {/*</Layout>*/}
             </>
         )
     }
