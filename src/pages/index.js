@@ -27,11 +27,14 @@ class Index extends React.Component {
         {/*</Head>*/}
 
         <NextSeo
+          title="ORIL"
+          description="ORIL is a software development company"
           openGraph={{
             type: 'website',
-            url: 'https://oril.co',
+            url: 'https://oril.co/',
             title: 'ORIL',
             description: 'ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting.',
+            site_name: 'ORIL',
             images: [
               {
                 url: 'https://oril.co/assets/img/link-logo.png',
