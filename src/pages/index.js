@@ -38,9 +38,9 @@ class Index extends React.Component {
             images: [
               {
                 url: 'https://oril.co/assets/img/link-logo.png',
-                width: 800,
-                height: 600,
-                alt: 'Oril logo image',
+                // width: 800,
+                // height: 600,
+                // alt: 'Oril',
               }
             ],
           }}
