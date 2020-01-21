@@ -8,50 +8,44 @@ import Contacts from "../../components/Contacts/Contacts";
 import Footer from "../../commons/Footer";
 import {project} from "../../lib/our-projects";
 import {withRouter} from "next/router";
-import Head from "next/head";
+import SEOMetaTags from "../../components/SEOMetaTags";
 
 class Portfolio extends Component {
-    componentDidMount() {
-        const query = parse(window.location.hash);
-        const string = Object.keys(query)[0];
-        const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
-        const test = string && arr.some(el => string.includes(el));
+  componentDidMount() {
+    const query = parse(window.location.hash);
+    const string = Object.keys(query)[0];
+    const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
+    const test = string && arr.some(el => string.includes(el));
 
-        string && test
-            ? scrollTo('#products')
-            : window.scrollTo(0, 0);
-    }
+    string && test
+      ? scrollTo('#products')
+      : window.scrollTo(0, 0);
+  }
 
-    static getInitialProps() {
-        return {
-            project: project
-        }
+  static getInitialProps() {
+    return {
+      project: project
     }
+  }
 
-    render() {
-        return (
-            <>
-                <Head>
-                    <title>ORIL | Portfolio</title>
-                    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-                    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-                    <meta property="og:url" content="https://oril.co"/>
-                    <meta property="og:title" content="ORIL | Portfolio"/>
-                    <meta property="og:type" content="website" />
-                    <meta property="og:description"
-                          content="ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting."/>
-                    <meta property="og:image" content="https://oril.co/assets/img/link-logo.png"/>
-                </Head>
-                <Header redirect={this.onChangePage}/>
-                <section className="portfolio">
-                    <PortfolioIntro/>
-                    <Projects slides={this.props.project}/>
-                </section>
-                <Contacts/>
-                <Footer/>
-            </>
-        );
-    }
+  render() {
+    return (
+      <>
+        <SEOMetaTags
+          title={"ORIL | Portfolio"}
+          url={"/portfolio"}
+          // description={}   add custom description for this page
+        />
+        <Header redirect={this.onChangePage}/>
+        <section className="portfolio">
+          <PortfolioIntro/>
+          <Projects slides={this.props.project}/>
+        </section>
+        <Contacts/>
+        <Footer/>
+      </>
+    );
+  }
 }
 
 export default withRouter(Portfolio);
