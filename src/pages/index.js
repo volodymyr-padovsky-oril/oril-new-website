@@ -12,6 +12,7 @@ import {NextSeo} from 'next-seo';
 class Index extends React.Component {
 
   render() {
+    const description = 'ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting.'
     return (
       <>
         {/*<Head>*/}
@@ -28,12 +29,12 @@ class Index extends React.Component {
 
         <NextSeo
           title="ORIL"
-          description="ORIL is a software development company"
+          description={description}
           openGraph={{
             type: 'website',
-            url: 'https://oril.co/',
+            url: 'https://oril.co',
             title: 'ORIL',
-            description: 'ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting.',
+            description: description,
             site_name: 'ORIL',
             images: [
               {
