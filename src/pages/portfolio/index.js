@@ -12,9 +12,12 @@ import Head from "next/head";
 
 class Portfolio extends Component {
     componentDidMount() {
-        const query = parse(window.location.search);
+        const query = parse(window.location.hash);
+        const string = Object.keys(query)[0];
+        const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
+        const test = string && arr.some(el => string.includes(el));
 
-        query.activeTab
+        string && test
             ? scrollTo('#products')
             : window.scrollTo(0, 0);
     }

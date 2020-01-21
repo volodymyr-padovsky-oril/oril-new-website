@@ -105,7 +105,7 @@ export class BaseTabs extends Component {
         this.setState({ activeTab: index });
         this.props.router.push({
             pathname: `/${this.props.pathname}`,
-            search: `?activeTab=${this.props.tabs[index].id}`
+            hash: `${this.props.tabs[index].id}`
         });
 
         later().then(() => this.setActiveTabBorders());

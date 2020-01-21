@@ -13,21 +13,19 @@ import Head from "next/dist/next-server/lib/head";
 
 class Services extends Component {
     componentDidMount() {
-        const query = parse(window.location.search);
+        const query = parse(window.location.hash);
+        const string = Object.keys(query)[0];
+        const arr = ['web', 'mobile', 'iot', 'blockchain'];
+        const test = string && arr.some(el => string.includes(el));
 
-        if (query.activeTab) {
-            later().then(() => scrollTo('#development'));
-        }
+        console.log('test1', test);
 
-        switch (query.section) {
-            case 'design':
-                later().then(() => scrollTo('#design'));
-                break;
-            case 'development':
-                later().then(() => scrollTo('#development'));
-                break;
-            default:
-                break;
+        if (string && test) {
+            later(1).then(() => scrollTo('#development'));
+        } else if (string && string.includes('ui-design')) {
+            later(1).then(() => scrollTo('#design'));
+        } else if (string && string.includes('product-development')) {
+            later(1).then(() => scrollTo('#development'));
         }
     }
 

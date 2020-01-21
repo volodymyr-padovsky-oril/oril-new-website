@@ -18,7 +18,7 @@ export class Intro extends Component {
                     <div className="services__intro__categories">
                         <Bubble size="315px" top="250px" left="350px" speed=".3"/>
                         <Bubble size="315px" top="250px" left="-760px" speed=".3"/>
-                        <Link href={{pathname: "/services", search: "?section=design"}}>
+                        <Link href={{pathname: "/services", hash: "ui-design"}}>
                             <a onClick={() => scrollTo('#design')}>
                                 <div className="services__intro__categories__design">
                                     <img src="assets/img/uxui.svg" alt="product development"/>
@@ -26,7 +26,7 @@ export class Intro extends Component {
                                 </div>
                             </a>
                         </Link>
-                        <Link href={{pathname: "/services", search: "?section=development"}}>
+                        <Link href={{pathname: "/services", hash: "product-development"}}>
                             <a onClick={() => scrollTo('#development')}>
                                 <div className="services__intro__categories__development">
                                     <img src="assets/img/pd.svg" alt="product development"/>
