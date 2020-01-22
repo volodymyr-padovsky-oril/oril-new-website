@@ -12,9 +12,11 @@ class SEOMetaTags extends App {
       <NextSeo
         title={title}
         description={description}
+        canonical={`https://oril.co${url}`}
         openGraph={{
           type: 'website',
           url: `https://oril.co${url}`,
+
           title: title,
           description: description || defaultDescription,
           site_name: title,
@@ -24,6 +26,15 @@ class SEOMetaTags extends App {
             }
           ],
         }}
+        twitter={{
+          site: '@orilsoftware',
+          handle: '@orilsoftware',
+          cardType: 'summary_large_image'
+        }}
+        facebook={{
+          appId: '114966969850832'
+        }}
+
       />
     )
   }
