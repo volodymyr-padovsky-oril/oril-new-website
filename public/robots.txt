@@ -1,6 +1,5 @@
 Sitemap: https://oril.co/sitemap.xml
 
 User-agent: *
-Allow: /*
 
 Disallow: /api/*
