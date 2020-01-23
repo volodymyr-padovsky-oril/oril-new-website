@@ -27,7 +27,7 @@ export default (props) => {
                                 </a>
                             </Link>
 
-                            <a href="/blog" className="nav_item" onClick={redirect}>
+                            <a href="/blog" className="nav_item" rel="nofollow" onClick={redirect}>
                                 Blog
                             </a>
 

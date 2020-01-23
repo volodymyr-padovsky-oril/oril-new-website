@@ -93,7 +93,7 @@ export class Header extends Component {
                             {link.name}
                         </a>
                     </Link>)
-                : (<a href={link.to} key={index} className="nav_item" rel="noopener noreferrer">{link.name}</a>)
+                : (<a href={link.to} key={index} className="nav_item" rel="nofollow noopener noreferrer">{link.name}</a>)
         ));
 
     redirect = (e) => {
