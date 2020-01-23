@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 
+
 .error-wrapper {
   background-image: url("/assets/img/404.png");
   height: calc(100vh - 90px);
@@ -22,8 +23,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 
   .error-text-block {
     display: flex;
@@ -57,6 +58,7 @@ body {
     }
 
     .btn {
+      cursor: pointer;
       border-radius: 7px;
       background-color: $white;
       padding: 13px 49px;
@@ -70,5 +72,13 @@ body {
       color: #ffb248;
       border: none;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .error-wrapper{
+    height: calc(100vh - 45px);
+    background-position: right;
+
   }
 }
