@@ -7,7 +7,6 @@ import './index.scss';
 
 export class Header extends Component {
     navLinks = [
-        {name: 'Home', to: '/', internal: true},
         {name: 'Services', to: '/services', internal: true},
         {name: 'Portfolio', to: '/portfolio', internal: true},
         {name: 'Blog', to: '/blog', internal: false},
