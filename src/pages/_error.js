@@ -23,8 +23,7 @@ function Error() {
                 <div className="empty"></div>
                 <div className="error-text-block">
                     <h1>404</h1>
-                    <p>Oops! You are looking for something
-                        that doesn’t exist
+                    <p>Oops! Looks like you're in a wrong place.
                     </p>
                     <Link href="/">
                         <button className="btn">Go to Home</button>
