@@ -103,18 +103,23 @@
 
 #El-Copy {
   opacity: 0;
-  animation: 1.5s rotateRight 0.3s normal forwards;
+  animation: 1.5s upDown 0.3s normal forwards;
 }
 
-@keyframes rotateRight {
+@keyframes upDown {
   0% {
-    transform: rotate(7deg);
-
     opacity: 0;
+    transform: translateY(10px)
   }
+
+  50% {
+    opacity: 0.8;
+    transform: translateY(-30px)
+  }
+
   100% {
-    transform: rotate(0deg);
     opacity: 1;
+    transform: translateY(0px)
   }
 }
 
@@ -154,3 +159,19 @@
     transform: translateY(0)
   }
 }
+
+#Island-Copy2 {
+  opacity: 1;
+  animation: 1s disappear 0.6s 1 normal forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
