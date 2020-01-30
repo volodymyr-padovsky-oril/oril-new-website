@@ -23,10 +23,6 @@
       margin: 0;
     }
 
-    &:hover {
-      color: $orange;
-    }
-
     div {
       div {
         padding: 0 50px;
@@ -61,6 +57,7 @@
   }
 
   &__tab-panel {
+    z-index: 0;
     &--selected {
       animation: fadeIn .3s linear;
     }
@@ -100,8 +97,26 @@
 }
 
 @media (max-width: 1240px) {
-  .sticky {
-    top: 0;
+
+  .tab-list-wrapper{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 65px;
+  }
+
+  .tab-list-wrapper:after{
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    bottom   : 0;
+    left     : 0;
+    pointer-events   : none;
+    background-image : linear-gradient(to right,
+            rgba(255,255,255, 0) 75%,
+            rgba(255,255,255, 1));
+    width    : 100%;
+    height   : 100%;
   }
 
   .sub-template {
@@ -126,19 +141,6 @@
         white-space: nowrap;
         overflow-x: auto;
       }
-      &-list:after {
-        content  : "";
-        position : absolute;
-        z-index  : 1;
-        bottom   : 0;
-        left     : 0;
-        pointer-events   : none;
-        background-image : linear-gradient(to right,
-                rgba(255,255,255, 0) 75%,
-                rgba(255,255,255, 1));
-        width    : 100%;
-        height   : 100%;
-      }
 
       &-panel {
         width: calc(100% - 80px);
@@ -160,9 +162,24 @@
 
   .sticky {
     position: fixed;
-    top: 20px;
+    top: 0;
     z-index: 3;
+    left: 0;
+    &:after{
+      content  : "";
+      position : absolute;
+      z-index  : 1;
+      bottom   : 0;
+      left     : 0;
+      pointer-events   : none;
+      background-image : linear-gradient(to right,
+              rgba(255,255,255, 0) 75%,
+              rgba(255,255,255, 1));
+      width    : 100%;
+      height   : 100%;
+    }
   }
+
 
   .sticky ~ .react-tabs__tab-panel--selected {
     padding-top: 140px;
@@ -184,9 +201,20 @@
         background-color: transparent;
 
       }
+
       div {
         div {
           padding: 21px 39px;
+        }
+      }
+
+      &:not(&--selected) {
+        div {
+          div {
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
         }
       }
 
@@ -200,11 +228,9 @@
         border-radius: 31px;
       }
 
-      &:hover{
-        background-color: $white;
-        color: $orange;
-        border-radius: 31px;
-      }
+
     }
   }
 }
+
+

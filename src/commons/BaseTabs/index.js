@@ -130,15 +130,19 @@ export class BaseTabs extends Component {
     render() {
         return (
             <Tabs onSelect={this.handleSelect} selectedIndex={this.state.activeTab}>
-                <TabList className={`react-tabs__tab-list ${this.state.show ? '' : 'sticky'}`}>
-                    {
-                        this.props.tabs.map((tab, index) => (
-                            <CustomTab activeClassName={this.state.activeTab === index ? 'react-tabs__tab--selected' : ''} key={index}>
-                                {tab.title}
-                            </CustomTab>)
-                        )
-                    }
-                </TabList>
+                <div className="tab-list-wrapper">
+                    <TabList className={`react-tabs__tab-list ${this.state.show ? '' : 'sticky'}`}>
+                        {
+                            this.props.tabs.map((tab, index) => (
+                                <CustomTab
+                                    activeClassName={this.state.activeTab === index ? 'react-tabs__tab--selected' : ''}
+                                    key={index}>
+                                    {tab.title}
+                                </CustomTab>)
+                            )
+                        }
+                    </TabList>
+                </div>
                 {
                     this.props.tabs.map((tab, index) => (<TabPanel key={index}>{tab.component()}</TabPanel>))
                 }
