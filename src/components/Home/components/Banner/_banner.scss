@@ -175,8 +175,20 @@
   }
 }
 
-#hearth{
+#hearth {
   transform: rotate(345deg);
   transform-origin: 50% 50%;
+  opacity: 0;
+  animation: 1s appear 2.7s normal forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
