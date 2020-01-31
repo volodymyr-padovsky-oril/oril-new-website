@@ -44,7 +44,7 @@ export default (props) => {
                         </nav>
                     </div>
                     <div className="copyright">
-                        <p>&copy; 2019. Oril Inc.</p>
+                        <p>&copy; 2020. Oril Inc.</p>
                         <p>All rights reserved</p>
                     </div>
                 </div>

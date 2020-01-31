@@ -44,7 +44,7 @@ export class CompanyInfo extends Component {
                   }
               </div>
               <div className="collapse-template__content__footer">
-                  <p>&copy; 2019, Oril Inc.</p>
+                  <p>&copy; 2020, Oril Inc.</p>
                   <p>All rights reserved</p>
               </div>
           </>
