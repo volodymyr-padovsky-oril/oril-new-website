@@ -164,7 +164,7 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    left: 0;
+    left: 0 !important;
     &:after{
       content  : "";
       position : absolute;
@@ -186,12 +186,17 @@
   }
 }
 
-@media (min-width: 1415px) {
+@media (min-width: 1240px) {
   .react-tabs {
     display: grid;
-    grid-template-columns: 210px auto;
-    grid-column-gap: 100px;
+    grid-template-columns: 183px auto;
+    grid-column-gap: 60px;
 
+    .sticky {
+      position: fixed;
+      top: 100px;
+      width: 183px;
+    }
     &__tab {
       font-size: 18px;
       color: $white;
@@ -204,7 +209,7 @@
 
       div {
         div {
-          padding: 21px 39px;
+          padding: 21px 33px;
         }
       }
 
@@ -233,4 +238,9 @@
   }
 }
 
+@media (max-width: 768px) {
+  .react-tabs__tab-list {
+    left: -40px;
+  }
+}
 
