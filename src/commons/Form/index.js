@@ -106,15 +106,14 @@ class Form extends Component {
             message: message
         };
 
-        this.setState({
-            addClass: true
-        });
-
         if (this.state.formValid) {
             sendMessageRequest({
                 email,
                 name,
                 message,
+            });
+            this.setState({
+                addClass: true
             });
         }
 
