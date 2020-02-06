@@ -179,16 +179,45 @@
   transform: rotate(345deg);
   transform-origin: 50% 50%;
   opacity: 0;
-  animation: 1s appear 2.7s normal forwards;
+  animation: 4s forwards beat 2.7s;
 }
 
-@keyframes appear {
+@keyframes beat {
   0% {
     opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(345deg);
   }
-
+  17% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1.05) rotate(345deg);
+  }
+  32% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(345deg);
+  }
+  47% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1.05) rotate(345deg);
+  }
+  62% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(345deg);
+  }
+  78% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1.05) rotate(345deg);
+  }
   100% {
     opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1) rotate(345deg);
   }
+
 }
 
