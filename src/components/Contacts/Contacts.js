@@ -72,7 +72,7 @@ class Contacts extends Component {
                     <div className="container">
                         <div className="contact__form">
                             <h2>Contact Us</h2>
-                            {this.props.isSnackbarOpen ? <Snackbar/> : <Form/>}
+                            {this.props.isSnackbarOpen ? <Snackbar/> : <Form data={this.props.data}/>}
                         </div>
                     </div>
                     <div className="container">
