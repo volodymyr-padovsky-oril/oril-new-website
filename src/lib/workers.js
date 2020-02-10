@@ -48,20 +48,14 @@ const firstPage = [
         position: 'Lead Software Engineer'
     },
     {
-        animal: 'team-9',
-        photo: '4',
-        name: 'Lisa Burdeniuk',
-        position: 'UI/UX designer'
-    }
-];
-
-const secondPage = [
-    {
         animal: 'team-2',
         photo: '19',
         name: 'Alexander Panchuk',
         position: 'Software Engineer'
-    },
+    }
+];
+
+const secondPage = [
     {
         animal: 'team-4',
         photo: '17',
@@ -109,16 +103,17 @@ const secondPage = [
         photo: '11',
         name: 'Volodymyr Chornyi',
         position: 'Software Engineer'
-    }
-];
-
-const thirdPage = [
+    },
     {
         animal: 'team-19',
         photo: '16',
         name: 'Serhii Yavorskyi',
         position: 'Software Engineer'
-    },
+    }
+];
+
+const thirdPage = [
+
     {
         animal: 'team-20',
         photo: '1',
