@@ -22,6 +22,8 @@ class Index extends React.Component {
                 <SEOMetaTags
                     title={"ORIL"}
                     url={"/"}
+                    description={"One-stop shop for your digital product"}
+                    image={"https://oril.co/assets/img/link-logo.png"}
                     openGraph={{
                         description: "One-stop shop for your digital product",
                         image: "https://oril.co/assets/img/link-logo.png"
