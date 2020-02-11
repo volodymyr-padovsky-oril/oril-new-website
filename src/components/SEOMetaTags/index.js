@@ -18,7 +18,7 @@ class SEOMetaTags extends App {
           url: `https://oril.co${url}`,
 
           title: title,
-          description: description || defaultDescription,
+          description: "One-stop shop for your digital product",
           site_name: title,
           images: [
             {
