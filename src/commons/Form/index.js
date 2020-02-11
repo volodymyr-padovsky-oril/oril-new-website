@@ -97,6 +97,9 @@ class Form extends Component {
 
         const {sendMessageRequest} = this.props;
         const {email, name, message,} = this.state;
+        const {ip, country_name} = this.props.data;
+
+        console.log('country_name', country_name);
 
         e.preventDefault();
         await this.validateForm();
@@ -105,6 +108,8 @@ class Form extends Component {
             name: name,
             email: email,
             message: message,
+            ip: ip,
+            country_name: country_name
         };
 
         if (this.state.formValid) {
@@ -112,7 +117,11 @@ class Form extends Component {
                 email,
                 name,
                 message,
+                ip,
+                country_name
             });
+
+            console.log('data', ip, country_name);
             this.setState({
                 addClass: true
             });
