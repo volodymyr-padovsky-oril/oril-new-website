@@ -2,7 +2,7 @@ import React from "react";
 import App from "next/app";
 import {NextSeo} from "next-seo";
 
-const defaultDescription = "ORIL is a software development company focusing on web, mobile app and IoT products, MVP for software startups and IT consulting."
+const defaultDescription = "One-stop shop for your digital product";
 
 class SEOMetaTags extends App {
 
@@ -11,7 +11,7 @@ class SEOMetaTags extends App {
     return (
       <NextSeo
         title={title}
-        description={description}
+        description={description || defaultDescription}
         canonical={`https://oril.co${url}`}
         openGraph={{
           type: 'website',
