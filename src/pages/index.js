@@ -17,7 +17,6 @@ class Index extends React.Component {
     }
 
     render() {
-        console.log('data', this.props.data)
         return (
             <>
                 <SEOMetaTags

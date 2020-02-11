@@ -27,24 +27,6 @@ class Form extends Component {
         };
     }
 
-    static async getInitialProps(ctx) {
-        const res = await fetch('https://api.github.com/repos/zeit/next.js')
-        const json = await res.json();
-        return { stars: json.stargazers_count }
-    }
-
-    getGeoInfo = () => {
-        axios.get('https://ipapi.co/json/').then((response) => {
-            let data = response.data;
-            this.setState({
-                countryName: data.country_name,
-                countryCode: data.country_calling_code
-            });
-        }).catch((error) => {
-            console.log(error);
-        });
-    };
-
     handleInputChange = (state) => {
         const formErrors = {name: '', email: '', message: ''};
         this.setState({...state, formErrors});
@@ -118,6 +100,8 @@ class Form extends Component {
         const {sendMessageRequest} = this.props;
         const {email, name, message,} = this.state;
         const {ip, country_name} = this.props.data;
+
+        console.log('country_name', country_name);
 
         e.preventDefault();
         await this.validateForm();
