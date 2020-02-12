@@ -25,11 +25,6 @@ class Index extends React.Component {
     //     const res = await axios.get('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025');
     //     return {data: res.data}
     // }
-    // componentDidMount() {
-    //     const res = await axios.get('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025');
-    //     return {data: res.data}
-    //     console.log('data-index', this.props.data.country_name);
-    // }
 
     // static async getInitialProps() {
     //     let res = await fetch('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025')
@@ -38,17 +33,30 @@ class Index extends React.Component {
     //     return {countries: contriesObj.country_name}
     // }
 
-    static async getInitialProps() {
-        let res = await fetch('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025')
-        let contriesObj = await res.json()
-        console.log('getInitialProps', contriesObj)
-        return contriesObj
+    // static async getInitialProps() {
+    //     let res = await fetch('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025')
+    //     let countriesObj = await res.json()
+    //     console.log('getInitialProps', countriesObj)
+    //     return countriesObj
+    // }
+
+    constructor() {
+        super();
+        this.state = { data: [] };
+    }
+
+    componentDidMount() {
+        fetch(`https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025`)
+            .then(res => res.json())
+            .then(json => this.setState({ data: json }));
     }
 
     render() {
         // const { data, error } = useSWR('/repos/zeit/next.js', res)
         // console.log('swr', this.props.json);
-        console.log('this.props.contriesObj', this.props.contriesObj)
+        // const{countriesObj} = this.props;
+        console.log('this.props.contriesObj', this.state.data);
+        // console.log('data', this.props.data)
 
         return (
             <>
@@ -67,7 +75,7 @@ class Index extends React.Component {
                 {/*return <div>Next stars: {data.stargazers_count}</div>*/}
                 <Header/>
                 <Home/>
-                <Contacts contriesObj={this.props.contriesObj}/>
+                <Contacts contriesObj={this.state.data}/>
                 <Footer/>
             </>
         )
