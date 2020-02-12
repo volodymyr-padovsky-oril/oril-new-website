@@ -25,6 +25,16 @@ class Form extends Component {
         };
     }
 
+    // getGeoInfo = () => {
+    //     const res = await axios.get('https://ipapi.co/json/');
+    //     return {data: res.data}
+    // };
+
+    // getGeoInfo = () => {
+    //     const res = axios.get('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025');
+    //         return {data: res.data}
+    // };
+
     handleInputChange = (state) => {
         const formErrors = {name: '', email: '', message: ''};
         this.setState({...state, formErrors});
@@ -99,8 +109,6 @@ class Form extends Component {
         const {email, name, message,} = this.state;
         const {ip, country_name} = this.props.data;
 
-        console.log('country_name', country_name);
-
         e.preventDefault();
         await this.validateForm();
 
@@ -130,7 +138,12 @@ class Form extends Component {
         this.setState({name: '', email: '', message: ''});
     }
 
+    // componentDidMount(){
+    //     this.getGeoInfo();
+    // }
+
     render() {
+        console.log('dta', this.props.data.country_name);
         return (
             <>
                 <p>Send us a short message and our team will get back to you within 24 hours</p>
