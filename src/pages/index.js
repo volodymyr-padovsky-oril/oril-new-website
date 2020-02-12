@@ -15,9 +15,10 @@ class Index extends React.Component {
         const res = await axios.get('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025');
         return {data: res.data}
     }
-
-    render() {
+    componentDidMount() {
         console.log('data-index', this.props.data.country_name);
+    }
+    render() {
         return (
             <>
                 <SEOMetaTags
