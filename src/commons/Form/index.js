@@ -22,6 +22,8 @@ class Form extends Component {
             messageValid: true,
             formValid: false,
             addClass: false,
+            country_name: this.props.data.country_name,
+            ip: this.props.data.ip
         };
     }
 
@@ -96,8 +98,7 @@ class Form extends Component {
     async onSubmit(e) {
 
         const {sendMessageRequest} = this.props;
-        const {email, name, message,} = this.state;
-        const {ip, country_name} = this.props.data;
+        const {email, name, message, ip, country_name} = this.state;
 
         e.preventDefault();
         await this.validateForm();
@@ -107,7 +108,7 @@ class Form extends Component {
             email: email,
             message: message,
             ip: ip,
-            country_name: country_name
+            country: country_name
         };
 
         if (this.state.formValid) {
@@ -115,11 +116,10 @@ class Form extends Component {
                 email,
                 name,
                 message,
-                ip,
-                country_name
+                ip: this.props.data.ip,
+                country_name: this.props.data.country_name
             });
 
-            console.log('data-form', ip, country_name);
             this.setState({
                 addClass: true
             });
