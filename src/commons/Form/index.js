@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import "./index.scss";
 import {connect} from 'react-redux';
 import {sendGetInTouchMessageRequest} from '../../actions/message';
-import axios from 'axios';
 
 class Form extends Component {
     constructor(props) {
@@ -22,8 +21,8 @@ class Form extends Component {
             messageValid: true,
             formValid: false,
             addClass: false,
-            country_name: this.props.data.country_name,
-            ip: this.props.data.ip
+            country_name: '',
+            ip: ''
         };
     }
 
@@ -97,7 +96,7 @@ class Form extends Component {
 
     async onSubmit(e) {
 
-        const {sendMessageRequest} = this.props;
+        const {sendMessageRequest } = this.props;
         const {email, name, message, ip, country_name} = this.state;
 
         e.preventDefault();
