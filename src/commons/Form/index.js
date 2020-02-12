@@ -35,6 +35,12 @@ class Form extends Component {
     //         return {data: res.data}
     // };
 
+    // static async getInitialProps({ req }) {
+    //     const res = await fetch('https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025');
+    //     const json = await res.json();
+    //     return { data: json.country_name }
+    // }
+
     handleInputChange = (state) => {
         const formErrors = {name: '', email: '', message: ''};
         this.setState({...state, formErrors});
@@ -107,7 +113,7 @@ class Form extends Component {
 
         const {sendMessageRequest} = this.props;
         const {email, name, message,} = this.state;
-        const {ip, country_name} = this.props.data;
+        // const {ip, country_name} = this.props.data;
 
         e.preventDefault();
         await this.validateForm();
@@ -116,8 +122,8 @@ class Form extends Component {
             name: name,
             email: email,
             message: message,
-            ip: ip,
-            country_name: country_name
+            // ip: ip,
+            // country_name: country_name
         };
 
         if (this.state.formValid) {
@@ -125,11 +131,11 @@ class Form extends Component {
                 email,
                 name,
                 message,
-                ip,
-                country_name
+                // ip,
+                // country_name
             });
 
-            console.log('data', ip, country_name);
+            // console.log('data', ip, country_name);
             this.setState({
                 addClass: true
             });
@@ -143,7 +149,7 @@ class Form extends Component {
     // }
 
     render() {
-        console.log('dta', this.props.data.country_name);
+        console.log('dta', this.props.data);
         return (
             <>
                 <p>Send us a short message and our team will get back to you within 24 hours</p>
