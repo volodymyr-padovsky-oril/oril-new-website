@@ -22,7 +22,6 @@ class Index extends React.Component {
     }
 
     render() {
-
         return (
             <>
                 <SEOMetaTags
@@ -35,9 +34,6 @@ class Index extends React.Component {
                         image: "https://oril.co/assets/img/link-logo.png"
                     }}
                 />
-                {/*if (error) return <div>failed to load</div>*/}
-                {/*if (!data) return <div>loading...</div>*/}
-                {/*return <div>Next stars: {data.stargazers_count}</div>*/}
                 <Header/>
                 <Home/>
                 <Contacts data={this.state.data}/>

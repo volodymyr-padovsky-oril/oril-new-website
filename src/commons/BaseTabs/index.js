@@ -24,7 +24,11 @@ export class BaseTabs extends Component {
     constructor(props) {
         super(props);
         this.startIndex = props.startIndex || 0;
-        this.state = { activeTab: 0, show: true };
+        this.state = {
+            activeTab: 0,
+            show: true,
+            bottom: false
+        };
         this.handleSelect = this.handleSelect.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
     }
@@ -57,7 +61,7 @@ export class BaseTabs extends Component {
         if (this.tabsContainer) {
             const template = document.querySelector('.sub-template');
             const condition = Math.floor(this.tabsContainer.getBoundingClientRect().top > offsetTop);
-
+            const conditionBottom = this.tabsContainer.getBoundingClientRect().bottom > 900;
             if (condition) {
                 if (template) {
                     this.tabList.parentNode.removeChild(template);
@@ -69,7 +73,8 @@ export class BaseTabs extends Component {
             }
 
             this.setState({
-                show: condition
+                show: condition,
+                bottom: conditionBottom
             });
         }
     }
@@ -131,7 +136,7 @@ export class BaseTabs extends Component {
         return (
             <Tabs onSelect={this.handleSelect} selectedIndex={this.state.activeTab}>
                 <div className="tab-list-wrapper">
-                    <TabList className={`react-tabs__tab-list ${this.state.show ? '' : 'sticky'}`}>
+                    <TabList className={`react-tabs__tab-list ${this.state.bottom ? '' : 'absolute-bottom'} ${this.state.show ? '' : 'sticky'}`}>
                         {
                             this.props.tabs.map((tab, index) => (
                                 <CustomTab

@@ -192,6 +192,12 @@
     grid-template-columns: 183px auto;
     grid-column-gap: 60px;
 
+    .absolute-bottom{
+      position: absolute !important;
+      bottom: 341px !important;
+      top: auto !important;
+    }
+
     .sticky {
       position: fixed;
       top: 100px;
