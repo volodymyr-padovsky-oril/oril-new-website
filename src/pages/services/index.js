@@ -1,12 +1,11 @@
 import React, {Component} from "react";
 import Intro from "../../components/Intro/Intro";
-import Design from "../../components/Design/Design";
-import Development from "../../components/Development/Development";
 import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import {later} from "../../commons/utils/main";
 import Header from "../../commons/Header";
 import Contacts from "../../components/Contacts/Contacts";
+import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import Footer from "../../commons/Footer";
 import {withRouter} from "next/router";
 import SEOMetaTags from "../../components/SEOMetaTags";
@@ -17,8 +16,6 @@ class Services extends Component {
     const string = Object.keys(query)[0];
     const arr = ['web', 'mobile', 'iot', 'blockchain'];
     const test = string && arr.some(el => string.includes(el));
-
-    console.log('test1', test);
 
     if (string && test) {
       later(1).then(() => scrollTo('#development'));
@@ -39,9 +36,8 @@ class Services extends Component {
         />
         <Header redirect={this.onChangePage}/>
         <section className="services">
-          <Intro/>
-          <Design/>
-          <Development/>
+            <ServiceCard direction='odd'/>
+            <ServiceCard/>
         </section>
         <Contacts/>
         <Footer/>

@@ -118,8 +118,8 @@ export class Header extends Component {
                             className="logo"
                         >
                             <img src={`${this.state.overlayActive
-                                ? 'assets/icons/logo-white-nolabel.svg'
-                                : 'assets/icons/logo-gold-nolabel.svg'}`}
+                                ? '../assets/icons/logo-white-nolabel.svg'
+                                : '../assets/icons/logo-gold-nolabel.svg'}`}
                                  alt="logo"/>
                             {/*<p className="logo__text">{this.brand.name}</p>*/}
                         </a>

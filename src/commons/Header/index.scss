@@ -9,7 +9,7 @@ header {
   transition: top .3s, height .2s, background-color .25s;
   top: 0;
 
-  &.hidden { top: -92px; }
+  &.hidden { top: -90px; }
 
   &.open { background-color: #252533; }
   &.close { background-color: white; }
@@ -30,7 +30,6 @@ header {
     height: 56px;
     text-decoration: none;
     img{
-      width: 63px;
       width: 42px;
       height: 56px;
     }
