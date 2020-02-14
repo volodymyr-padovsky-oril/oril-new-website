@@ -9,7 +9,7 @@ header {
   transition: top .3s, height .2s, background-color .25s;
   top: 0;
 
-  &.hidden { top: -90px; }
+  &.hidden { top: -92px; }
 
   &.open { background-color: #252533; }
   &.close { background-color: white; }
