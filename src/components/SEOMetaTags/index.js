@@ -1,6 +1,6 @@
 import React from "react";
 import App from "next/app";
-import NextSeo from "next-seo";
+import {NextSeo} from "next-seo";
 
 const defaultDescription = "One-stop shop for your digital product";
 
