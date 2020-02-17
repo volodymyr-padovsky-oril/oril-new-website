@@ -6,6 +6,7 @@
 
 .card-wrapper {
   margin: 200px auto;
+
   & > .container {
     display: grid;
     grid-template-columns: 4.5fr 6.2fr;
@@ -51,24 +52,21 @@
         margin: 0 0 40px;
       }
 
-      button {
+      a {
         border-radius: 7px;
         background-color: #ffffff;
         padding: 14px 50px;
         border: none;
         cursor: pointer;
-
-        a {
-          color: #ffb248;
-          text-decoration: none;
-          font-size: 17px;
-          font-weight: 600;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
-          text-align: center;
-        }
+        color: #ffb248;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
       }
 
     }

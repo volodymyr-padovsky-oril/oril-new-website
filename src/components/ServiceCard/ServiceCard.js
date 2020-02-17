@@ -7,7 +7,6 @@ class ServiceCard extends Component {
 
     render() {
         const {direction} = this.props;
-        console.log('direc', direction)
         return (
             <section className="card-wrapper">
 
@@ -23,11 +22,9 @@ class ServiceCard extends Component {
                                 <span>
                                     Interactive prototyping, explicit UI/UX design and branding with clear message for your web, desktop, mobile, smartwatch and IoT products. This is how we’re becoming advocates of actual user needs and business goals.
                                 </span>
-                                <button>
-                                    <Link href={{pathname: "services/design"}}>
-                                        Learn More
-                                    </Link>
-                                </button>
+                                <Link href={{pathname: "services/design"}}>
+                                    Learn More
+                                </Link>
                             </div>
                             <div className="animation-wrapper">
                                 <Bubble size="490px" top="490px" right="110px" speed=".7"/>
@@ -46,11 +43,9 @@ class ServiceCard extends Component {
                                 <span>
                                     No matter what stage you are at, Idea or a Working Product, we can help you visualize, build, deliver, and improve your Product.
                                 </span>
-                                <button>
-                                    <Link href={{pathname: "services/development"}}>
-                                        Learn More
-                                    </Link>
-                                </button>
+                                <Link href={{pathname: "services/development"}}>
+                                    Learn More
+                                </Link>
                             </div>
                             <div className="animation-wrapper">
                                 <Bubble size="490px" top="280px" right="110px" speed=".7"/>

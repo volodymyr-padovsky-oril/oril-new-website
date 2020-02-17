@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Intro from "../../components/Intro/Intro";
 import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import {later} from "../../commons/utils/main";
