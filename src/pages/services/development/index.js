@@ -36,7 +36,7 @@ export class Development extends Component {
                             <Bubble size="517px" top="1220px" left="-980px" speed=".4"/>
                             <Bubble size="267px" top="2020px" left="-1620px" speed=".8"/>
                             <h2><span>02</span>Product Development</h2>
-                            <BaseTabs tabs={this.tabs} pathname="services"/>
+                            <BaseTabs tabs={this.tabs} pathname="services/development"/>
                         </div>
                     </section>
                     <Contacts/>

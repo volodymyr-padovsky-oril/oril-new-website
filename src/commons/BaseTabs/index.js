@@ -109,7 +109,7 @@ export class BaseTabs extends Component {
     handleSelect(index) {
         this.setState({ activeTab: index });
         this.props.router.push({
-            pathname: `/${this.props.pathname}/development`,
+            pathname: `/${this.props.pathname}`,
             hash: `${this.props.tabs[index].id}`
         });
 
@@ -117,7 +117,7 @@ export class BaseTabs extends Component {
         let selector = '#development';
 
         switch (this.props.pathname) {
-            case 'services/development':
+            case 'services':
                 selector = '#development';
                 break;
             case 'portfolio':
