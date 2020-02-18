@@ -5,13 +5,19 @@ export const sendGetInTouchMail = ({
                                        name,
                                        message,
                                        ip,
-                                       country_name
+                                       country_name,
+                                       browser,
+                                       device,
+                                       os
                                    }) => {
     return apiClient.post(`/mail/send/get-in-touch`, {
         email,
         name,
         message,
         ip,
-        country_name
+        country_name,
+        browser,
+        device,
+        os
     });
 };

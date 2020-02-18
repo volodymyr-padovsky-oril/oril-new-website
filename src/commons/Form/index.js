@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import "./index.scss";
 import {connect} from 'react-redux';
 import {sendGetInTouchMessageRequest} from '../../actions/message';
+import {browserName, deviceType, osName} from 'react-device-detect';
 
 class Form extends Component {
     constructor(props) {
@@ -21,8 +22,6 @@ class Form extends Component {
             messageValid: true,
             formValid: false,
             addClass: false,
-            country_name: '',
-            ip: ''
         };
     }
 
@@ -116,7 +115,11 @@ class Form extends Component {
                 name,
                 message,
                 ip: this.props.data.ip,
-                country_name: this.props.data.country_name
+                country_name: this.props.data.country_name,
+                browser: browserName,
+                device: deviceType,
+                os: osName
+
             });
 
             this.setState({
