@@ -61,7 +61,7 @@ export class BaseTabs extends Component {
         if (this.tabsContainer) {
             const template = document.querySelector('.sub-template');
             const condition = Math.floor(this.tabsContainer.getBoundingClientRect().top > offsetTop);
-            const conditionBottom = this.tabsContainer.getBoundingClientRect().bottom > 900;
+            const conditionBottom = this.tabsContainer.getBoundingClientRect().bottom > 920;
             if (condition) {
                 if (template) {
                     this.tabList.parentNode.removeChild(template);
@@ -113,6 +113,7 @@ export class BaseTabs extends Component {
             hash: `${this.props.tabs[index].id}`
         });
 
+        console.log('asPath',this.props.router.pathname)
         later().then(() => this.setActiveTabBorders());
         let selector = '#development';
 
