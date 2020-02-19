@@ -4,8 +4,8 @@ import React, { Children } from 'react';
 const ActiveLink = ({ router, children, ...props }) => {
     const child=Children.only(children);
 
-    let className=child.props.className||'';
-    if (router.pathname===props.href&&props.activeClassName) {
+    let className=child.props.className||'active';
+    if (router.pathname.includes(props.href)&&props.activeClassName) {
         className=`${className} ${props.activeClassName}`.trim();
     }
 
