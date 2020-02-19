@@ -107,7 +107,7 @@ export class Mobile extends Component {
                             {
                                 this.choises.map((choice, index) => (
                                     <div className="list-item" key={index}>
-                                        <img src={`../assets/icons/` + choice.img + '.svg'} alt={choice.img} />
+                                        <img src={`../../../assets/icons/` + choice.img + '.svg'} alt={choice.img} />
                                         <div>
                                             <p>{choice.title}</p>
                                             <p>{choice.text}</p>
@@ -125,7 +125,7 @@ export class Mobile extends Component {
                             <div>Implementation & Delivery</div>
                             <div>Maintenance & Support</div>
                         </div>
-                        <img src="../assets/icons/approach-group-web.svg" alt="group-web" />
+                        <img src="../../../assets/icons/approach-group-web.svg" alt="group-web" />
                         {/*<div className="see-more">*/}
                         {/*    <a href="/#">See more details</a>*/}
                         {/*</div>*/}
