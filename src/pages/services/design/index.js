@@ -82,7 +82,7 @@ export class Design extends Component {
                 <section className="services">
                     <section className="services__design" id="design">
                         <div className="container">
-                            <h2><span>01</span>UX/UI Design</h2>
+                            <h2>UX/UI Design</h2>
                             <div className="services__desc">
                                 <Bubble size="284px" top="365px" left="-1280px" speed=".2"/>
                                 <Bubble size="1441px" top="1100px" left="740px" speed=".2"/>
