@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import PortfolioIntro from "../../components/PortfolioIntro/PortfolioIntro";
-import Projects from "../../components/Projects/Projects";
 import {parse} from "query-string";
 import {scrollTo} from "../../commons/utils/scroll";
 import Header from "../../commons/Header";
@@ -9,6 +8,12 @@ import Footer from "../../commons/Footer";
 import {project} from "../../lib/our-projects";
 import {withRouter} from "next/router";
 import SEOMetaTags from "../../components/SEOMetaTags";
+import BaseTabs from "../../commons/BaseTabs";
+import PortfolioMarketplace from "../../components/PortfolioMarketplace/PortfolioMarketplace";
+import PortfolioLifestyleAndFitness from "../../components/PortfolioLifestyleAndFitness/PortfolioLifestyleAndFitness";
+import PortfolioIoT from "../../components/PortfolioIoT/PortfolioIoT";
+import PortfolioBlockchain from "../../components/PortfolioBlockchain/PortfolioBlockchain";
+import PortfolioOther from "../../components/PortfolioOther/PortfolioOther";
 
 class Portfolio extends Component {
   componentDidMount() {
@@ -28,24 +33,36 @@ class Portfolio extends Component {
     }
   }
 
-  render() {
-    return (
-      <>
-        <SEOMetaTags
-          title={"ORIL | Portfolio"}
-          url={"/portfolio"}
-          // description={}   add custom description for this page
-        />
-        <Header redirect={this.onChangePage}/>
-        <section className="portfolio">
-          <PortfolioIntro/>
-          <Projects slides={this.props.project}/>
-        </section>
-        <Contacts/>
-        <Footer/>
-      </>
-    );
-  }
+    tabs = [
+        { id: 'marketplace',  href: '/portfolio/marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },
+        { id: 'lifestyle-and-fitness', href: '/portfolio/lifestyle', title: 'Lifestyle & Fitness', component: () => <PortfolioLifestyleAndFitness/> },
+        { id: 'iot', title: 'IoT', href: '/portfolio/iot',  component: () => <PortfolioIoT/> },
+        { id: 'blockchain', href: '/portfolio/blockchain', title: 'Blockchain', component: () => <PortfolioBlockchain/> },
+        { id: 'other', href: '/portfolio/other', title: 'Other', component: () => <PortfolioOther/> }
+    ];
+
+    render() {
+        return (
+            <>
+                <SEOMetaTags
+                    title={"ORIL | Portfolio"}
+                    url={"/portfolio"}
+                    // description={}   add custom description for this page
+                />
+                <Header redirect={this.onChangePage}/>
+                <section className="portfolio">
+                    <PortfolioIntro/>
+                    <section className="portfolio__projects" id="products">
+                        <div className="container">
+                            <BaseTabs tabs={this.tabs} selected="0"/>
+                        </div>
+                    </section>
+                </section>
+                <Contacts/>
+                <Footer/>
+            </>
+        );
+    }
 }
 
 export default withRouter(Portfolio);

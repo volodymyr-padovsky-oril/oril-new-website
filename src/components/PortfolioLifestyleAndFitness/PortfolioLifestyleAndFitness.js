@@ -19,7 +19,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                                     <div className="slide">
                                         <div className="slide__header">
                                             <div className="logo">
-                                                <img src={`assets/img/${slide.logo.name}${slide.logo.extension}`}
+                                                <img src={`../assets/img/${slide.logo.name}${slide.logo.extension}`}
                                                      alt={slide.logo.name} />
                                             </div>
                                             <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow" className="title">{slide.title}</a>
@@ -49,7 +49,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                                                 }
                                             </div>
                                             <div className="right">
-                                                <img src={`assets/img/${slide.img.name}${slide.img.extension}`}
+                                                <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
                                                      alt={slide.img.name} />
                                             </div>
                                         </div>
@@ -58,7 +58,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                                             <div className="slide__footer">
                                                 <div className="customer">
                                                     <img
-                                                        src={`assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}
+                                                        src={`../assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}
                                                         alt={slide.customer.img.name}/>
                                                     <div>
                                                         <p>{slide.customer.firstName} {slide.customer.lastName}</p>
@@ -84,7 +84,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                                 <div className="slide">
                                     <div className="slide__header">
                                         <div className="logo">
-                                            <img src={`assets/img/${slide.logo.name}${slide.logo.extension}`}
+                                            <img src={`../assets/img/${slide.logo.name}${slide.logo.extension}`}
                                                  alt={slide.logo.name} />
                                         </div>
                                         <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow" className="title">{slide.title}</a>
@@ -114,7 +114,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                                             }
                                         </div>
                                         <div className="right">
-                                            <img src={`assets/img/${slide.img.name}${slide.img.extension}`}
+                                            <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
                                                  alt={slide.img.name} />
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                                         <div className="slide__footer">
                                             <div className="customer">
                                                 <img
-                                                    src={`assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}
+                                                    src={`../assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}
                                                     alt={slide.customer.img.name}/>
                                                 <div>
                                                     <p>{slide.customer.firstName} {slide.customer.lastName}</p>

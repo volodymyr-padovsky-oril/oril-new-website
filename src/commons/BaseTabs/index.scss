@@ -22,12 +22,6 @@
       margin: 0;
     }
 
-    div {
-      div {
-        padding: 0 50px;
-      }
-    }
-
     &:not(:last-child) div div {
       border-right: 2px solid $light-gray-alt;
     }
@@ -49,20 +43,18 @@
     }
 
     &--active:not(:last-child) {
-      div div {
-        border-color: $orange;
-      }
+      border-color: $orange;
     }
   }
 
   &__tab-panel {
     z-index: 0;
+
     &--selected {
       animation: fadeIn .3s linear;
     }
   }
 }
-
 
 
 .sub-template {
@@ -75,8 +67,12 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1239.98px) {
@@ -86,36 +82,34 @@
         padding: 14px 0;
       }
 
-      div {
-        div {
-          padding: 0 20px;
-        }
-      }
+
+      padding: 0 20px;
+
     }
   }
 }
 
 @media (max-width: 1240px) {
 
-  .tab-list-wrapper{
+  .tab-list-wrapper {
     position: relative;
     height: 50px;
     width: 100%;
     margin-bottom: 65px;
   }
 
-  .tab-list-wrapper:after{
-    content  : "";
-    position : absolute;
-    z-index  : 1;
-    bottom   : 0;
-    left     : 0;
-    pointer-events   : none;
-    background-image : linear-gradient(to right,
-            rgba(255,255,255, 0) 75%,
-            rgba(255,255,255, 1));
-    width    : 100%;
-    height   : 100%;
+  .tab-list-wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 75%,
+            rgba(255, 255, 255, 1));
+    width: 100%;
+    height: 100%;
   }
 
   .sub-template {
@@ -128,6 +122,18 @@
     &__tab {
       padding: 14px 0;
       height: 100%;
+
+      a {
+        font-size: 15px;
+        line-height: 1.33;
+        color: #848484;
+        border: none;
+        bottom: 0;
+        padding: 14px 20px;
+        height: 100%;
+        transition: .2s;
+        text-decoration: none;
+      }
 
       &-list {
         position: relative;
@@ -151,6 +157,23 @@
 
       &--selected {
         border-bottom: 3px solid $orange;
+        color: #ffb248;
+        display: inline-block;
+        border-right: inherit;
+        border-radius: 0;
+        padding: 14px 0;
+        height: 100%;
+
+        a {
+          color: #ffb248;
+          border: none;
+          border-right: inherit;
+          border-radius: 0;
+          font-size: 15px;
+          line-height: 1.33;
+          text-decoration: none;
+          padding: 14px 20px;
+        }
       }
     }
   }
@@ -164,18 +187,19 @@
     top: 0;
     z-index: 3;
     left: 0 !important;
-    &:after{
-      content  : "";
-      position : absolute;
-      z-index  : 1;
-      bottom   : 0;
-      left     : 0;
-      pointer-events   : none;
-      background-image : linear-gradient(to right,
-              rgba(255,255,255, 0) 75%,
-              rgba(255,255,255, 1));
-      width    : 100%;
-      height   : 100%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to right,
+              rgba(255, 255, 255, 0) 75%,
+              rgba(255, 255, 255, 1));
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -191,9 +215,9 @@
     grid-template-columns: 183px auto;
     grid-column-gap: 60px;
 
-    .absolute-bottom{
+    .absolute-bottom {
       position: absolute !important;
-      bottom: 465px !important;
+      bottom: 500px !important;
       top: auto !important;
     }
 
@@ -202,31 +226,34 @@
       top: 100px;
       width: 183px;
     }
+
     &__tab {
       font-size: 18px;
       color: $white;
       width: 100%;
 
+      a {
+        width: 100%;
+        display: block;
+
+        &:hover {
+          transform: scale(1.2);
+          transform-origin: center left;
+        }
+      }
+
       &-list {
         background-color: transparent;
+        width: 100%;
       }
 
-      div {
-        div {
-          padding: 21px 33px;
-        }
-      }
 
-      &:not(&--selected) {
-        div {
-          div {
-            &:hover {
-              transform: scale(1.2);
-              transform-origin: center left;
-              padding-left: 27px;
-            }
-          }
-        }
+      padding: 21px 33px;
+
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        line-height: 18px;
       }
 
       &:not(:last-child) div div {
@@ -235,11 +262,20 @@
 
       &--selected {
         background-color: $white;
-        color: $orange;
         border-radius: 31px;
+        color: $orange;
+        padding: 21px 33px;
+        font-size: 18px;
+        width: 100%;
+        line-height: 1.33;
+
+        a {
+          color: $orange;
+          font-size: 18px;
+          text-decoration: none;
+          line-height: 18px;
+        }
       }
-
-
     }
   }
 }

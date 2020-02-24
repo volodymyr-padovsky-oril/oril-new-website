@@ -43,7 +43,7 @@ class ServiceCard extends Component {
                                 <span>
                                     No matter what stage you are at, Idea or a Working Product, we can help you visualize, build, deliver, and improve your Product.
                                 </span>
-                                <Link href={{pathname: "services/development"}}>
+                                <Link href={{pathname: "services/development/web"}}>
                                     Learn More
                                 </Link>
                             </div>

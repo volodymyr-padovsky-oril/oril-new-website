@@ -14,7 +14,7 @@ export class PortfolioIntro extends Component {
                     <div className="portfolio__intro__image">
                         <Bubble size="388px" top="390px" left="-370px" speed="0.7"/>
                         <Bubble size="500px" top="340px" left="10px" speed="0.3"/>
-                        <img src="assets/img/hero.png" alt="hero" />
+                        <img src="../assets/img/hero.png" alt="hero" />
                     </div>
                 </div>
             </section>

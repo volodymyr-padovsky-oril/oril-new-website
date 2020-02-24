@@ -137,7 +137,7 @@ export class Mobile extends Component {
                             {
                                 this.deliverables.map((deliverable, index) => (
                                     <div key={'deliverable-' + index} className="link-block">
-                                        <img src={'../assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
+                                        <img src={'../../../assets/icons/' + deliverable.img + '.svg'} alt={deliverable.img} />
                                         <span>{deliverable.title}</span>
                                     </div>
                                 ))
@@ -152,7 +152,7 @@ export class Mobile extends Component {
                                 this.services.map((service, index) => (
                                     <a href={service.link} target="_blank" rel="noopener noreferrer nofollow" key={'technology-' + index}>
                                         <div>
-                                            <img src={'../assets/img/' + service.img + '.png'} alt={service.img} />
+                                            <img src={'../../../assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
                                         <span>{service.name}</span>
                                     </a>
@@ -166,7 +166,7 @@ export class Mobile extends Component {
                             {
                                 this.products.map((product, index) => (
                                     <a href={product.link} target="_blank" rel="noopener noreferrer nofollow" key={'product-' + index}>
-                                        <img src={'../assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
+                                        <img src={'../../../assets/img/' + product.img + '.png'} alt={product.img} title={product.link}/>
                                     </a>
                                 ))
                             }

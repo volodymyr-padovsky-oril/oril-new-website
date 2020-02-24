@@ -10,32 +10,32 @@ class Contacts extends Component {
     socials = [
         {
             link: 'https://www.linkedin.com/company/oril-software',
-            imgSrc: '../assets/icons/linkedin.svg',
+            imgSrc: '../../assets/icons/linkedin.svg',
             alt: 'linkedin'
         },
         {
             link: 'https://clutch.co/profile/oril',
-            imgSrc: '../assets/icons/clutch.svg',
+            imgSrc: '../../assets/icons/clutch.svg',
             alt: 'clutch'
         },
         {
             link: 'https://www.behance.net/oril-software',
-            imgSrc: '../assets/icons/behance.svg',
+            imgSrc: '../../assets/icons/behance.svg',
             alt: 'behance'
         },
         {
             link: 'https://www.facebook.com/orilsoftware',
-            imgSrc: '../assets/icons/facebook.svg',
+            imgSrc: '../../assets/icons/facebook.svg',
             alt: 'facebook'
         },
         {
             link: 'https://www.instagram.com/orilsoftware',
-            imgSrc: '../assets/icons/instagram.svg',
+            imgSrc: '../../assets/icons/instagram.svg',
             alt: 'instagram'
         },
         {
             link: 'https://twitter.com/orilsoftware',
-            imgSrc: '../assets/icons/twitter.svg',
+            imgSrc: '../../assets/icons/twitter.svg',
             alt: 'twitter'
         }
     ];
