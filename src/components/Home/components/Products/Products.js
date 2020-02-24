@@ -20,7 +20,7 @@ export class Products extends Component {
                     {
                         this.products.map((product, index) => {
                             return (
-                                <Link href={`/services?activeTab=${product.name}`} key={index}>
+                                <Link href={`/services/development/${product.name}`} key={index}>
                                     <a
                                         rel="noopener noreferrer"
                                         className="link-block">

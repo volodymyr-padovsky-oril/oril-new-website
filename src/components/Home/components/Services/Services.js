@@ -15,7 +15,7 @@ export class Services extends Component {
                 <Bubble size="420px" top="1550px" left="-650px" speed="0.8"/>
                 <h3>Services</h3>
                 <div className="container">
-                    <Link href={{pathname: "/services", hash: "ui-design"}} >
+                    <Link href="/services/design" >
                         <a rel="noopener noreferrer" onClick={this.redirect.bind(this)}>
                             <div className="home__services__flex-row">
                                 <img src="assets/img/uxui.jpg" alt="uxui" />
@@ -30,7 +30,7 @@ export class Services extends Component {
                             </div>
                         </a>
                     </Link>
-                    <Link href={{pathname: "/services", hash: "development"}} >
+                    <Link href="/services/development/web" >
                         <a rel="noopener noreferrer" onClick={this.redirect.bind(this)}>
                             <div className="home__services__flex-row">
                                 <img src="assets/img/product-development.jpg" alt="product development" />
