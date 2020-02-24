@@ -3,6 +3,7 @@ import Banner from "../../components/Home/components/Banner/Banner";
 import Products from "../../components/Home/components/Products/Products";
 import Services from "../../components/Home/components/Services/Services";
 import WeAre from "../../components/Home/components/WeAre";
+import Achievements from "../../components/Home/components/Achievements/Achievements";
 
 class Index extends Component {
     onChangePage = (path) => {
@@ -16,6 +17,7 @@ class Index extends Component {
                     <Banner/>
                     <Products/>
                     <Services redirect={this.onChangePage}/>
+                    <Achievements/>
                     <WeAre/>
                 </main>
             </Fragment>
