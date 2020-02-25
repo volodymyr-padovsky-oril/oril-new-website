@@ -37,6 +37,7 @@
           display: grid;
           grid-template-columns: 282px 1fr;
           grid-gap: 50px;
+          min-height: 144px;
         }
 
         .swiper-pagination {
