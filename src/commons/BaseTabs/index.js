@@ -53,8 +53,6 @@ export class BaseTabs extends Component {
     render() {
         const {tabs, tab, selected} = this.props;
         const {bottom, show} = this.state;
-        console.log('bottom', bottom);
-        console.log('show', show);
         return (
             <div className="react-tabs">
                 <div className="tab-list-wrapper">

@@ -6,6 +6,7 @@
 @import "../components/Services/services";
 @import "../components/WeAre/we-are";
 @import "../components/Achievements/achivements";
+@import "../components/Testimonials/testimonials";
 
 .home {
   overflow: hidden;
@@ -13,11 +14,6 @@
   object-fit: contain;
 
   section {
-    //@media (min-height: 500px) {
-    //  &:first-child {
-    //    height: calc(100vh - 90px);
-    //  }
-    //}
     .btn {
       @include btn($orange, linear-gradient(#ffffff, #ffffff));
     }
