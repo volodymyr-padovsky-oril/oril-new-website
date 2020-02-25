@@ -4,6 +4,7 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
+import './_design.scss';
 
 export class Design extends Component {
     blocks = [

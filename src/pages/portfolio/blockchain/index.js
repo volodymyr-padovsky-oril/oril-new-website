@@ -16,24 +16,26 @@ import PortfolioIoT from "../../../components/PortfolioIoT/PortfolioIoT";
 import PortfolioBlockchain from "../../../components/PortfolioBlockchain/PortfolioBlockchain";
 import PortfolioOther from "../../../components/PortfolioOther/PortfolioOther";
 import Blockchain from "../../../components/Blockchain/Blockchain";
+import '../../../components/Portfolio/styles/_portfolio.scss';
+
 
 class BlockchainPage extends Component {
-    componentDidMount() {
-        const query = parse(window.location.hash);
-        const string = Object.keys(query)[0];
-        const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
-        const test = string && arr.some(el => string.includes(el));
-
-        string && test
-            ? scrollTo('#products')
-            : window.scrollTo(0, 0);
-    }
-
-    static getInitialProps() {
-        return {
-            project: project
-        }
-    }
+    // componentDidMount() {
+    //     const query = parse(window.location.hash);
+    //     const string = Object.keys(query)[0];
+    //     const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
+    //     const test = string && arr.some(el => string.includes(el));
+    //
+    //     string && test
+    //         ? scrollTo('#products')
+    //         : window.scrollTo(0, 0);
+    // }
+    //
+    // static getInitialProps() {
+    //     return {
+    //         project: project
+    //     }
+    // }
 
     tabs = [
         { id: 'marketplace',  href: '/portfolio/marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },

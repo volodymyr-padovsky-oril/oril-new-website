@@ -15,6 +15,8 @@ import PortfolioLifestyleAndFitness
 import PortfolioIoT from "../../../components/PortfolioIoT/PortfolioIoT";
 import PortfolioBlockchain from "../../../components/PortfolioBlockchain/PortfolioBlockchain";
 import PortfolioOther from "../../../components/PortfolioOther/PortfolioOther";
+import '../../../components/Portfolio/styles/_portfolio.scss';
+
 
 class Iot extends Component {
     componentDidMount() {

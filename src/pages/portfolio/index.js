@@ -14,24 +14,25 @@ import PortfolioLifestyleAndFitness from "../../components/PortfolioLifestyleAnd
 import PortfolioIoT from "../../components/PortfolioIoT/PortfolioIoT";
 import PortfolioBlockchain from "../../components/PortfolioBlockchain/PortfolioBlockchain";
 import PortfolioOther from "../../components/PortfolioOther/PortfolioOther";
+import '../../components/Portfolio/styles/_portfolio.scss';
 
 class Portfolio extends Component {
-  componentDidMount() {
-    const query = parse(window.location.hash);
-    const string = Object.keys(query)[0];
-    const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
-    const test = string && arr.some(el => string.includes(el));
+  // componentDidMount() {
+  //   const query = parse(window.location.hash);
+  //   const string = Object.keys(query)[0];
+  //   const arr = ['web', 'mobile', 'iot', 'blockchain', 'lifestyle-and-fitness'];
+  //   const test = string && arr.some(el => string.includes(el));
+  //
+  //   string && test
+  //     ? scrollTo('#products')
+  //     : window.scrollTo(0, 0);
+  // }
 
-    string && test
-      ? scrollTo('#products')
-      : window.scrollTo(0, 0);
-  }
-
-  static getInitialProps() {
-    return {
-      project: project
-    }
-  }
+  // static getInitialProps() {
+  //   return {
+  //     project: project
+  //   }
+  // }
 
     tabs = [
         { id: 'marketplace',  href: '/portfolio/marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },
