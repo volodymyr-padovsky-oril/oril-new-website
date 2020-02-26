@@ -90,3 +90,10 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .card-wrapper > .container .animation-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
