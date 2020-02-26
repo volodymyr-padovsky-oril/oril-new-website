@@ -3,6 +3,7 @@ import Swiper from "react-id-swiper";
 import {project} from "../../../../lib/our-projects";
 
 export const params = {
+    width: 1240,
     autoHeight: true,
     pagination: {
         el: '.swiper-pagination',

@@ -14,6 +14,10 @@
 
       a {
         height: 70px;
+        transition: all 1s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
 
         img {
           width: 180px;
