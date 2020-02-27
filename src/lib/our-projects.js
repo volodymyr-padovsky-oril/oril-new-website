@@ -91,7 +91,7 @@ export const project = {
         },
         title: 'SparkOffer',
         link: 'https://www.sparkoffer.com/',
-        tags: ['#Wep', '#Realestate', '#Platform'],
+        tags: ['#Web', '#Realestate', '#Platform'],
         text: `
             A platform that helps to interact and make real estate binding offers,
             with or without the assistance of a buyer’s agent. SparkOffer provides a
@@ -112,7 +112,7 @@ export const project = {
         },
         title: 'Scrooge Bot',
         link: 'https://scroogebot.co/',
-        tags: ['#Wep', '#Dashboard', '#Bot', '#Crypto'],
+        tags: ['#Web', '#Dashboard', '#Bot', '#Crypto'],
         text: `
             Scrooge Bot handles trading for you. Simply connect Scrooge Bot 
             to your Binance account and watch your assets grow
