@@ -57,7 +57,7 @@ class Marketplace extends Component {
                     {/*<Projects slides={this.props.project}/>*/}
                     <section className="portfolio__projects" id="products">
                         <div className="container">
-                            <BaseTabs tabs={this.tabs} tab="lifestyle-and-fitness" selected="0"/>
+                            <BaseTabs tabs={this.tabs} tab="marketplace" selected="0"/>
                         </div>
                     </section>
                 </section>
