@@ -34,7 +34,7 @@ class ServiceCard extends Component {
                                 <Bubble size="490px" top="490px" right="110px" speed=".7"/>
                                 <Bubble size="400px" top="560px" right="20px" speed=".7"/>
                                 <Bubble size="100px" top="50px" left="60px" bottom="112px" speed=".7"/>
-                                <img src="assets/gif/UX-compressed.png" alt="ux"/>
+                                <img src="assets/gif/UX-short.png" alt="ux"/>
                             </div>
                         </div>
                         :
@@ -63,7 +63,7 @@ class ServiceCard extends Component {
                                     }}
                                 >
                                     <img
-                                        src={`${this.state.imgViz ? 'assets/gif/PD-compressed.png' : 'assets/gif/transparent.png'}`}
+                                        src={`${this.state.imgViz ? 'assets/gif/PD-short.png' : 'assets/gif/transparent.png'}`}
                                         alt="development"/>
                                 </VizSensor>
                             </div>
