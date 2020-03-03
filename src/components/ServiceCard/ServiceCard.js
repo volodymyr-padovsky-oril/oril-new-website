@@ -24,7 +24,7 @@ class ServiceCard extends Component {
                                     for All Kind of Products
                                 </p>
                                 <span>
-                                    Interactive prototyping, explicit UI/UX design and branding with clear message for your web, desktop, mobile, smartwatch and IoT products. This is how we’re becoming advocates of actual user needs and business goals.
+                                    Interactive prototyping, explicit UI/UX design and branding with clear message for your web, desktop, mobile, smartwatch and IoT products. This is how we’re becoming advocates of actual user needs and business goals
                                 </span>
                                 <Link href={{pathname: "services/design"}}>
                                     Learn More
@@ -57,7 +57,7 @@ class ServiceCard extends Component {
                                     Build your product with us
                                 </p>
                                 <span>
-                                    No matter what stage you are at, Idea or a Working Product, we can help you visualize, build, deliver, and improve your Product.
+                                    No matter what stage you are at, Idea or a Working Product, we can help you visualize, build, deliver, and improve your Product
                                 </span>
                                 <Link href={{pathname: "services/development/web"}}>
                                     Learn More
