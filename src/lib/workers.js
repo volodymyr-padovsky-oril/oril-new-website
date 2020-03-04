@@ -75,12 +75,6 @@ const secondPage = [
         position: 'Software Engineer'
     },
     {
-        animal: 'team-21',
-        photo: '14',
-        name: 'Olesia Dovbush',
-        position: 'Software Engineer'
-    },
-    {
         animal: 'team-12',
         photo: '12',
         name: 'Vyacheslav Perfilyev',
@@ -109,24 +103,22 @@ const secondPage = [
         photo: '16',
         name: 'Serhii Yavorskyi',
         position: 'Software Engineer'
-    }
-];
-
-const thirdPage = [
-
+    },
     {
         animal: 'team-20',
         photo: '1',
         name: 'Vitalii Vototskyi',
         position: 'Software Engineer'
     },
+];
+
+const thirdPage = [
     {
         animal: 'team-22',
         photo: '6',
         name: 'Anna Rurych',
         position: 'QA Software Engineer'
     }
-
 ];
 
 export const workersPages = [
