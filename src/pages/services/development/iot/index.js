@@ -11,7 +11,7 @@ import Contacts from "../../../../components/Contacts/Contacts";
 import Footer from "../../../../commons/Footer";
 import '../_development.scss';
 
-export class Iot extends Component {
+export class IotPage extends Component {
     tabs = [
         {id: 'web', title: 'Web', href: '/services/development/web', component: () => <Web/>},
         {id: 'mobile', title: 'Mobile', href: '/services/development/mobile', component: () => <Mobile/>},
@@ -34,7 +34,7 @@ export class Iot extends Component {
                             <Bubble size="517px" top="1220px" left="-980px" speed=".4"/>
                             <Bubble size="267px" top="2020px" left="-1620px" speed=".8"/>
                             <h2>Product Development</h2>
-                            <BaseTabs tabs={this.tabs} tab='mobile' selected="2"/>
+                            <BaseTabs tabs={this.tabs} tab='iot' selected="2"/>
                         </div>
                     </section>
                     <Contacts/>
@@ -45,4 +45,4 @@ export class Iot extends Component {
     }
 }
 
-export default Iot;
+export default IotPage;

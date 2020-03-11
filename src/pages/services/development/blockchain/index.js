@@ -11,7 +11,7 @@ import Contacts from "../../../../components/Contacts/Contacts";
 import Footer from "../../../../commons/Footer";
 import '../_development.scss';
 
-export class Iot extends Component {
+export class BlockchainPge extends Component {
     tabs = [
         {id: 'web', title: 'Web', href: '/services/development/web', component: () => <Web/>},
         {id: 'mobile', title: 'Mobile', href: '/services/development/mobile', component: () => <Mobile/>},
@@ -45,4 +45,4 @@ export class Iot extends Component {
     }
 }
 
-export default Iot;
+export default BlockchainPge;

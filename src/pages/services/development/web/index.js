@@ -11,12 +11,12 @@ import Contacts from "../../../../components/Contacts/Contacts";
 import Footer from "../../../../commons/Footer";
 import '../_development.scss';
 
-export class Development extends Component {
+export class WebPage extends Component {
     tabs = [
         {id: 'web', title: 'Web', href: '/services/development/web', component: () => <Web/>},
         {id: 'mobile', title: 'Mobile', href: '/services/development/mobile', component: () => <Mobile/>},
-        {id: 'iot', title: 'IoT', component: () => <IoT/>},
-        {id: 'blockchain', title: 'Blockchain', component: () => <Blockchain/>}
+        {id: 'iot', title: 'IoT', href: '/services/development/iot', component: () => <IoT/>},
+        {id: 'blockchain', href: '/services/development/blockchain', title: 'Blockchain', component: () => <Blockchain/>}
     ];
 
     render() {
@@ -45,4 +45,4 @@ export class Development extends Component {
     }
 }
 
-export default Development;
+export default WebPage;
