@@ -220,27 +220,3 @@
   }
 
 }
-
-#leaf{
-  opacity: 0;
-  transform: rotate(80deg);
-  transform-origin: 50% 50%;
-  animation: 1.5s appear 1.8s normal forwards;
-}
-
-#hat{
-  opacity: 0;
-  animation: 2s appear 2.5s normal forwards;
-  transform: rotate(20deg);
-  transform-origin: 50% 50%;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
