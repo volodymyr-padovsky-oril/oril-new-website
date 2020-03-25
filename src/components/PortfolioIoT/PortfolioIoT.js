@@ -5,7 +5,6 @@ import {project} from "../../lib/our-projects";
 export class PortfolioIoT extends Component {
     slides = [
         project.nuravine,
-        project.cc,
         project.vicki
     ];
 

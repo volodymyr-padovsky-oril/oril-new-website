@@ -68,7 +68,6 @@ export class Design extends Component {
     products = [
         {img: 'nuravine-logo', link: 'https://www.nuravine.com/'},
         {img: 'gv-logo', link: 'https://greenvision-energy.com/'},
-        {img: 'connected-copper', link: 'http://connectedcopper.com/'}
     ];
 
     render() {

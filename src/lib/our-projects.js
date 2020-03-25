@@ -30,24 +30,6 @@ export const project = {
             `
         }
     },
-    cc: {
-        logo: {
-            name: 'connected-copper',
-            extension: '.png'
-        },
-        title: 'Connected Copper',
-        link: 'http://connectedcopper.com/',
-        tags: ['#WebApp', '#Mobile', '#USA'],
-        text: 'An enterprise focused cloud platform serves as the central hub for your globally distributed devices and mobile applications. Gain control and visibility into your new IoT product fleet',
-        img: {
-            name: 'cc',
-            extension: '.png'
-        },
-        info: [
-            { value: 'IBM', text: 'proud startup partner of IBM' },
-            { value: 'One', text: 'custom designed chipset' },
-        ],
-    },
     vicki: {
         logo: {
             name: 'vicki-logo',

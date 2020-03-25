@@ -76,7 +76,6 @@ export class Mobile extends Component {
         { img: 'hoozeon-logo', link: 'https://www.hoozeon.us/'},
         { img: 'activesoul-logo', link: 'https://www.activesoul.us/'},
         { img: 'vicki-logo', link: 'https://getvicki.com/'},
-        { img: 'connected-copper', link: 'http://connectedcopper.com/'}
     ];
 
     render() {
