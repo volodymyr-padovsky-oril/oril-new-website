@@ -5,6 +5,11 @@ import withRedux from 'next-redux-wrapper'
 import withReduxSaga from 'next-redux-saga'
 import configureStore from '../store/configure-store.js'
 import Layout from "../components/Layout/Layout";
+import TagManager from 'react-gtm-module';
+
+const tagManagerArgs = {
+    id: 'GTM-TGVMH8P'
+};
 
 class MyApp extends App {
 
@@ -14,6 +19,10 @@ class MyApp extends App {
             pageProps = await Component.getInitialProps({ctx})
         }
         return {pageProps}
+    }
+
+    componentDidMount () {
+        TagManager.initialize(tagManagerArgs)
     }
 
     render() {
