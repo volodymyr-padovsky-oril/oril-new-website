@@ -54,7 +54,7 @@ class Iot extends Component {
                 />
                 <Header redirect={this.onChangePage}/>
                 <section className="portfolio">
-                    <PortfolioIntro/>
+                    {/*<PortfolioIntro/>*/}
                     <section className="portfolio__projects" id="products">
                         <div className="container">
                             <BaseTabs tabs={this.tabs} tab="iot" selected="2"/>

@@ -53,7 +53,7 @@ class Lifestyle extends Component {
                 />
                 <Header redirect={this.onChangePage}/>
                 <section className="portfolio">
-                    <PortfolioIntro/>
+                    {/*<PortfolioIntro/>*/}
                     {/*<Projects slides={this.props.project}/>*/}
 
                     <section className="portfolio__projects" id="products">
