@@ -373,7 +373,7 @@ export const project = {
         customer: {
             img: {
                 name: 'moore',
-                extension: '.png'
+                extension: '.jpeg'
             },
             firstName: 'Steven',
             lastName: 'Moore',

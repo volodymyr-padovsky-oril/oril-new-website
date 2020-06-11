@@ -43,7 +43,7 @@ class ServiceCard extends Component {
                                     active={!this.state.imgViz}
                                 >
                                     <img
-                                        src={`${this.state.imgViz ? 'assets/gif/UX-short.png' : 'assets/gif/transparent.png'}`}
+                                        src={`${this.state.imgViz ? 'assets/gif/UX-short.gif' : 'assets/gif/transparent.png'}`}
                                         alt="ux"/>
                                 </VizSensor>
 
@@ -76,7 +76,7 @@ class ServiceCard extends Component {
                                     active={!this.state.imgViz}
                                 >
                                     <img
-                                        src={`${this.state.imgViz ? 'assets/gif/PD-short.png' : 'assets/gif/transparent.png'}`}
+                                        src={`${this.state.imgViz ? 'assets/gif/PD-short.gif' : 'assets/gif/transparent.png'}`}
                                         alt="development"/>
                                 </VizSensor>
                             </div>
