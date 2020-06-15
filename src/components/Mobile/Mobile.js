@@ -74,7 +74,7 @@ export class Mobile extends Component {
     products = [
         { img: 'laced-logo', link: 'https://laced-app.com/'},
         { img: 'hoozeon-logo', link: 'https://www.hoozeon.us/'},
-        { img: 'activesoul-logo', link: 'https://www.activesoul.us/'},
+        { img: 'activesoul-logo', link: 'https://apps.apple.com/us/app/activesoul/id1127395958'},
         { img: 'vicki-logo', link: 'https://getvicki.com/'},
     ];
 

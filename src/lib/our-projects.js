@@ -116,7 +116,7 @@ export const project = {
             extension: '.png'
         },
         title: 'ActiveSoul',
-        link: 'https://www.activesoul.us/',
+        link: 'https://apps.apple.com/us/app/activesoul/id1127395958',
         tags: ['#MobileApp', '#iOS', '#Android', '#Fitness'],
         text: `
             ActiveSoul brings fitness enthusiasts, wellness providers, and 1000's of health clubs together in a brand new way. Book fitness classes, register for events, create challenges, and track your fitness activity - all in one application
