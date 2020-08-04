@@ -1,12 +1,14 @@
 .services {
-  background-image: linear-gradient(156deg, #ffe22a, #ffb248 50%, #ffe22a);
   overflow: hidden;
 
   &__design {
     margin: 150px 0 280px;
 
     h2 {
-      margin: 0 0 50px;
+      margin: 44px 0 10px;
+      font-family: Mont-Bold, serif;
+      font-size: 1.75rem;
+      color: #363645;
     }
 
     .services__approach {
@@ -32,12 +34,18 @@
     margin-bottom: 200px;
 
     h3 {
-      margin: 0 0 25px;
+      margin: 0 0 40px;
+      font-family: Mont-Bold, serif;
+      font-size: 1.25rem;
+      text-align: left;
+      color: #363645;
     }
 
     p {
       max-width: 816px;
-      margin: 0 0 60px 0;
+      margin: 0 0 50px 0;
+      font-size: 1.25rem;
+      color: #676875;
     }
   }
 }

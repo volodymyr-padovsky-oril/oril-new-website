@@ -31,8 +31,6 @@ export class WebPage extends Component {
                 <div className="services">
                     <section className="services__development" id="development">
                         <div className="container">
-                            <Bubble size="517px" top="1220px" left="-980px" speed=".4"/>
-                            <Bubble size="267px" top="2020px" left="-1620px" speed=".8"/>
                             <h2>Product Development</h2>
                             <BaseTabs tabs={this.tabs} tab='web' selected="0"/>
                         </div>

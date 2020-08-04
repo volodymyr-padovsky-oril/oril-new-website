@@ -9,6 +9,7 @@
 
     & > .container {
       overflow: hidden;
+
       .swiper-wrapper {
         //height: 144px !important;
 
@@ -54,16 +55,20 @@
           .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
-            background-color: #ffffff;
+            background-color: #ffe155;
           }
 
           .swiper-pagination-bullet-active {
             width: 16px;
             height: 16px;
-            background-color: #ffffff;
+            background-color: #ffe155;
           }
         }
 
+      }
+
+      .feedback {
+        color: #676875
       }
     }
   }

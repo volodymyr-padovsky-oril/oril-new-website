@@ -7,10 +7,11 @@
 @import "../components/WeAre/we-are";
 @import "../components/Achievements/achivements";
 @import "../components/Testimonials/testimonials";
+@import "../components/OurWorks/our-works";
+@import "../components/News/news";
 
 .home {
   overflow: hidden;
-  background-image: linear-gradient(#ffcb38 27%, $orange 51%, $yellow);
   object-fit: contain;
 
   section {

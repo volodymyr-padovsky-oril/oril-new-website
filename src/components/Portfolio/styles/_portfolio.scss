@@ -3,8 +3,8 @@
 @import "../../Projects/projects";
 
 .portfolio {
-  background-image: linear-gradient(181deg, $yellow, $orange);
   overflow: hidden;
+  padding-top: 30px;
 }
 
 .swiper-container-vertical {
@@ -87,19 +87,17 @@
   }
 }
 
-@media (min-width: 1239.98px) {
-  .portfolio {
-    padding-top: 90px;
-  }
-}
-
 @media (max-width: 991.98px) {
-  .slider-wrapper { display: none; }
+  .slider-wrapper {
+    display: none;
+  }
   .slider-mobile-wrapper {
     display: block;
+
     > div {
       z-index: -1;
-    }}
+    }
+  }
 }
 
 .swiper-slide {
@@ -107,17 +105,17 @@
 }
 
 .slide {
+  margin: 50px 0 205px;
   overflow: hidden;
-  height: 814px;
 
   p {
     margin: 0;
   }
 
   &__header {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 70px minmax(min-content, max-content) 1fr;
+    grid-template-columns: 70px minmax(min-content, max-content);
     align-items: center;
 
     .logo {
@@ -130,29 +128,19 @@
     }
 
     .title {
-      margin: 0 60px 0 0;
+      font-family: Mont-Bold, serif;
+      font-size: 1.75rem;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
-      }
-    }
-
-    .tags {
-      span {
-        font-size: 15px;
-        line-height: 2.13;
-
-        &:not(:last-child) {
-          margin-right: 25px;
-        }
       }
     }
   }
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 60px;
+    grid-template-columns: 2fr 3fr;
 
     .left {
       max-width: 500px;
@@ -160,6 +148,26 @@
 
     .right {
       text-align: right;
+
+      .tags {
+        display: flex;
+        flex-direction: row;
+        margin: 40px 0 10px;
+        justify-content: flex-end;
+
+        div {
+          color: #2c2c2c;
+          padding: 15px 30px;
+          font-size: 1.125rem;
+          border-radius: 27px;
+          margin-right: 30px;
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
 
       img {
         max-width: 560px;
@@ -170,43 +178,59 @@
     .text {
       margin-bottom: 60px;
       max-width: 480px;
+      font-family: Mont-SemiBold, serif;
+      color: #676875;
+      font-size: 1.25rem;
     }
 
     .info {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 200px);
-      grid-gap: 40px;
-      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
 
       div {
-        background: rgba(255, 255, 255, .12);
-        padding: 15px;
-        border-radius: 10px;
-        min-height: 136px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 30px 40px 0;
+        width: 180px;
       }
 
       &__title {
-        font-size: 25px;
-        line-height: 1;
+        text-align: center;
+        font-family: Mont-Bold, serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
         margin-bottom: 12px;
+        color: #ffb248;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #fff6d9;
       }
 
       &__text {
-        font-size: 15px;
-        line-height: 1.33;
+        text-align: center;
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
+        font-family: Mont-SemiBold, serif;
+        color: #676875;
       }
     }
   }
 
   &__footer {
+    margin-top: 70px;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 400px 1fr;
     grid-gap: 40px;
 
     .customer {
       display: grid;
       grid-template-columns: 85px 1fr;
-      img{
+
+      img {
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -216,6 +240,8 @@
         font-size: 15px;
         line-height: 1.67;
         margin-bottom: 5px;
+        color: #363645;
+        font-family: 'Mont-SemiBold', serif;
       }
 
       p:last-child {
@@ -228,9 +254,11 @@
     .feedback {
       max-width: 800px;
       font-size: 18px;
-      font-style: italic;
+      font-family: 'Mont-SemiBoldItalic', serif;
+
       line-height: 2;
       font-weight: normal;
+      color: #676875;
     }
   }
 }
@@ -308,7 +336,8 @@
 
 @media (max-width: 767.98px) {
   .slide {
-      height: 580px;
+    height: 580px;
+
     &__content {
       .left {
         .text {

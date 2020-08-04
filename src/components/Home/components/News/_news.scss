@@ -1,0 +1,42 @@
+.home {
+  &__our-news {
+    margin: 0 auto;
+
+    &__text {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 468px;
+    }
+
+    &__card {
+      position: relative;
+      width: 20%;
+      //height:100%;
+
+    }
+
+    &__cloud {
+      position: absolute;
+      z-index: 9;
+      top: 4%;
+      //left: 50%;
+      background-color: #fff;
+      font-size: 1.75rem;
+      padding: 10px 20px;
+      border-radius: 64px;
+      font-family: Mont-Bold, serif;
+      color: #000;
+      //margin: auto;
+      width: 70%;
+      margin-left: 15%;
+      text-align: center;
+    }
+  }
+
+
+}

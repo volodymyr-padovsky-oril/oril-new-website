@@ -1,9 +1,5 @@
 @import './styles/index.scss';
 
-body {
-    color: white;
-}
-
 * {
     font-family: Mont, sans-serif;
     -webkit-box-sizing: border-box;

@@ -84,13 +84,12 @@ export class Design extends Component {
                         <div className="container">
                             <h2>UX/UI Design</h2>
                             <div className="services__desc">
-                                <Bubble size="284px" top="365px" left="-1280px" speed=".2"/>
-                                <Bubble size="1441px" top="1100px" left="740px" speed=".2"/>
                                 <h3>Thoughtful User Interfaces for All Kind of Products</h3>
                                 <p>
-                                    Interactive prototyping, explicit UI/UX design, and branding with
-                                    clear message for your web, desktop, mobile, smartwatch, and IoT products.
-                                    This is how we’re becoming advocates of actual user needs and business goals
+                                    Design that works is design that clearly lays out solutions for user needs. This is
+                                    achieved through methodical research, prototyping, and testing. Add to this our
+                                    knowledge of usability heuristics and other psychological principles, and we’ll make
+                                    sure that your product is ready for market!
                                 </p>
                                 <div className="services__ul-list">
                                     {
@@ -147,7 +146,8 @@ export class Design extends Component {
                                             <a href={service.link} target="_blank" rel="noopener noreferrer nofollow"
                                                key={'technology-' + index}>
                                                 <div>
-                                                    <img src={'../assets/img/' + service.img + '.png'} alt={service.img}/>
+                                                    <img src={'../assets/img/' + service.img + '.png'}
+                                                         alt={service.img}/>
                                                 </div>
                                                 <span>{service.name}</span>
                                             </a>
