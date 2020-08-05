@@ -1,0 +1,49 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+@import "../components/Banner/banner";
+@import "../components/Products/products";
+@import "../components/Services/services";
+@import "../components/WeAre/we-are";
+@import "../components/Achievements/achivements";
+@import "../components/Testimonials/testimonials";
+@import "../components/OurWorks/our-works";
+@import "../components/News/news";
+
+.home {
+  overflow: hidden;
+  object-fit: contain;
+
+  section {
+    .btn {
+      @include btn($orange, linear-gradient(#ffffff, #ffffff));
+    }
+  }
+
+  &__products, &__services, &__we-are {
+    h3 {
+      text-align: center;
+      margin: 0 0 50px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home {
+    section {
+      h3 {
+        margin: 0 0 35px;
+      }
+
+      h4 {
+        font-size: 20px;
+        line-height: 1.25;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.67;
+      }
+    }
+  }
+}

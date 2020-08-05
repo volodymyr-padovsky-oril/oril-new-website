@@ -1,0 +1,21 @@
+@mixin btn($text_color, $bg_color: none, $width: 200px) {
+  border-radius: 7px;
+  width: $width;
+  font-size: 18px;
+  text-align: center;
+  color: $text_color;
+  padding: 14px 0 13px;
+  border-color: $text_color;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+
+  @if $bg_color != none {
+    background: $bg_color;
+    font-size: 17px;
+    border: none;
+    padding: 18px 0 19px;
+  }
+}

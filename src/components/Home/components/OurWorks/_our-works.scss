@@ -1,0 +1,115 @@
+.home {
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrapper {
+      width: 1740px;
+      overflow: hidden;
+
+      .slide {
+        margin-top: 134px;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        p {
+          max-width: 541px;
+
+        }
+
+        .title {
+          font-size: 1.75rem;
+          color: #363645;
+          font-family: Mont-Bold, serif;
+          margin: 61px 0 20px;
+        }
+
+        .text {
+          font-size: 1.25rem;
+          margin: 30px 0;
+          color: #676875;
+        }
+
+        .tags {
+          span {
+            color: #2c2c2c;
+            margin-right: 10px;
+            padding: 9px 17px;
+            font-size: 0.875rem;
+            border-radius: 28px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+          }
+        }
+
+        .link {
+          color: #f7931d;
+          text-decoration: underline;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide-active, .swiper-slide-duplicate-prev {
+  //width:100px;
+  //border: 1px solid blue;
+  .slide {
+    margin-top: 280px !important;
+
+    img {
+      width: 344px;
+      //height: 290px;
+    }
+
+    & > div {
+      display: none !important;
+    }
+  }
+}
+
+.swiper-slide-next {
+  //width:100px;
+  //border: 1px solid red;
+}
+
+.swiper-slide-duplicate-prev {
+  .slide {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+}
+
+.swiper-slide-active {
+  .slide {
+    justify-content: flex-start;
+    display: flex;
+  }
+
+}
+
+.swiper-button-prev {
+  left: 450px !important;
+  background-image: url("/assets/icons/arrow-left.svg") !important;
+  border: 3px solid #979797;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  background-size: 16px 30px !important;
+}
+
+.swiper-button-next {
+  right: 450px !important;
+  background-image: url("/assets/icons/arrow-right.svg") !important;
+  border: 3px solid #979797;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  background-size: 16px 30px !important;
+}

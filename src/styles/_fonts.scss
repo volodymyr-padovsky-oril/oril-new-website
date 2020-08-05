@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Mont-SemiBold';
+  src: url('/assets/fonts/Mont-SemiBold.eot');
+  src: url('/assets/fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-SemiBold.woff') format('woff'),
+  url('/assets/fonts/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Mont-Regular.eot');
+  src: url('/assets/fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-Regular.woff') format('woff'),
+  url('/assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Mont-Bold';
+  src: url('/assets/fonts/Mont-Bold.eot');
+  src: url('/assets/fonts/Mont-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-Bold.woff') format('woff'),
+  url('/assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Mont-BoldItalic.eot');
+  src: url('/assets/fonts/Mont-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-BoldItalic.woff') format('woff'),
+  url('/assets/fonts/Mont-BoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont-SemiBoldItalic';
+  src: url('/assets/fonts/Mont-SemiBoldItalic.eot');
+  src: url('/assets/fonts/Mont-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Mont-SemiBoldItalic.woff') format('woff'),
+  url('/assets/fonts/Mont-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 0.86;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.56;
+}
+
+h2 span {
+  color: rgba(255, 255, 255, .5);
+  margin-right: 20px;
+}
+
+h3 {
+  color: #676875;
+  font-size: 36px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1;
+}
+
+p, a {
+  font-weight: 600;
+  font-size: 20px;
+  color: #676875;
+  line-height: 1.8;
+}

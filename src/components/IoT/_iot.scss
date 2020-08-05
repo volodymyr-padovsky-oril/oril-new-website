@@ -1,0 +1,11 @@
+.services {
+  &__iot {
+    .text, .pre-text {
+      margin: 0;
+    }
+
+    .text {
+      margin-bottom: 200px;
+    }
+  }
+}
