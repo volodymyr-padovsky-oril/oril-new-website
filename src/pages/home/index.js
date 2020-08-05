@@ -9,19 +9,38 @@ import Industries from "../../components/Home/components/Industries/Industries";
 import BaseTabs from "../../commons/BaseTabs";
 import OurWorks from "../../components/Home/components/OurWorks/OurWorks";
 import OurNews from "../../components/Home/components/News/News";
+import Web from "../../components/Web/Web";
+import Mobile from "../../components/Mobile/Mobile";
+import IoT from "../../components/IoT/IoT";
+import Blockchain from "../../components/Blockchain/Blockchain";
 
 class Index extends Component {
     onChangePage = (path) => {
         this.setState({path});
     };
 
+    // tabs = [
+    //     {
+    //         id: 'iot',
+    //         img: 'iot',
+    //         name: 'IoT',
+    //         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium',
+    //         component: () => <div>helo</div>
+    //     },
+    //     {
+    //         id: 'real-estate',
+    //         img: 'iot',
+    //         name: 'Real Estate',
+    //         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium',
+    //         component: () => <div>hi</div>
+    //     }
+    // ];
+
     tabs = [
-        {
-            img: 'iot',
-            name: 'IoT',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium',
-            component: () => <WeAre/>
-        }
+        {id: 'web', title: 'Web', component: () => <Web/>},
+        {id: 'mobile', title: 'Mobile', component: () => <Mobile/>},
+        {id: 'iot', title: 'IoT', component: () => <IoT/>},
+        {id: 'blockchain', title: 'Blockchain', component: () => <Blockchain/>}
     ];
 
     render() {
@@ -30,7 +49,7 @@ class Index extends Component {
                 <main className='home'>
                     <Banner/>
                     <Services redirect={this.onChangePage}/>
-                    {/*<Industries tabs={this.tabs} tab="marketplace" selected="0"/>*/}
+                    {/*<Industries tabs={this.tabs} selected="0" tab="web"/>*/}
                     <OurWorks/>
                     {/*<Products/>*/}
                     <Testimonials/>

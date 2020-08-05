@@ -38,7 +38,7 @@ export class OurWorks extends Component {
     render() {
         return (
             <section className="our-works">
-                <h3>Our works</h3>
+                {this.props.title && <h3>Our works</h3>}
                 <div className="our-works__wrapper">
                     <Swiper {...params}>
                         {this.slides.map((slide, index) => (

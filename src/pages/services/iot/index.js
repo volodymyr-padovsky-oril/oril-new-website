@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../../commons/Bubble";
 import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
@@ -9,7 +8,7 @@ import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 // import Link from '../../../../src/commons/utils/activeLink';
 import Link from "next/link";
 
-export class Design extends Component {
+export class Iot extends Component {
     blocks = [
         {
             title: 'Research',
@@ -124,7 +123,6 @@ export class Design extends Component {
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
-
                 <section className="services">
                     <section className="services__design" id="design">
                         <div className="container">
@@ -242,4 +240,4 @@ export class Design extends Component {
     }
 }
 
-export default Design;
+export default Iot;

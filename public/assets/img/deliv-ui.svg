@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="160" viewBox="0 0 200 160">
+    <defs>
+        <linearGradient id="cn2yi8ottc" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFCF7"/>
+            <stop offset="100%" stop-color="#FFF8EC"/>
+        </linearGradient>
+        <linearGradient id="blmamzfnhd" x1="10.556%" x2="172.113%" y1="50%" y2="50.643%">
+            <stop offset="0%" stop-color="#FFD745"/>
+            <stop offset="100%" stop-color="#FFEABC"/>
+        </linearGradient>
+        <linearGradient id="msvo1aa3oe" x1="50%" x2="50%" y1="-391.91%" y2="215.342%">
+            <stop offset="0%" stop-color="#FDA53C"/>
+            <stop offset="100%" stop-color="#FFD369"/>
+        </linearGradient>
+        <linearGradient id="b80npq8unf" x1="50%" x2="50%" y1="-142.813%" y2="100%">
+            <stop offset="0%" stop-color="#FFF7DB"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="loyfu8oa3g" x1="50%" x2="50%" y1="163.031%" y2="29.635%">
+            <stop offset="0%" stop-color="#FBDFB1"/>
+            <stop offset="100%" stop-color="#FBDFB0"/>
+        </linearGradient>
+        <linearGradient id="ywppt6qqjh" x1="13.408%" x2="82.948%" y1="77.399%" y2="50%">
+            <stop offset="0%" stop-color="#FCA85A"/>
+            <stop offset="100%" stop-color="#FFB864"/>
+        </linearGradient>
+        <linearGradient id="454yaq218i" x1="79.022%" x2="79.022%" y1="174.369%" y2="35.645%">
+            <stop offset="0%" stop-color="#FCA06A"/>
+            <stop offset="100%" stop-color="#FFC365"/>
+        </linearGradient>
+        <linearGradient id="7d4ki8yr8j" x1="21.444%" x2="31.452%" y1="100%" y2="-17.456%">
+            <stop offset="0%" stop-color="#F8CC81"/>
+            <stop offset="100%" stop-color="#FFD599"/>
+        </linearGradient>
+        <linearGradient id="piygsdxqnk" x1="30.868%" x2="37.573%" y1="100%" y2="-17.456%">
+            <stop offset="0%" stop-color="#F8CC81"/>
+            <stop offset="100%" stop-color="#FFD599"/>
+        </linearGradient>
+        <filter id="52sa729ada" width="113%" height="119%" x="-6.5%" y="-8%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.982557952 0 0 0 0 0.725390792 0 0 0 0 0.257794231 0 0 0 0.455446897 0"/>
+        </filter>
+        <rect id="zouh66gf2b" width="99.9" height="68.4" x="45" y="45" rx="8.1"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(4 10)">
+        <circle cx="152.1" cy="26.1" r="7.2" fill="#FFF6D9"/>
+        <path fill="#FFF6D9" d="M87.934 13.981c22.958-3.636 44.87 7.169 56.484 25.693 18.803-2.485 36.264 10.466 39.249 29.309 3.032 19.146-10.03 37.126-29.177 40.158-5.736.909-11.368.373-16.524-1.339-8.27 8.925-19.483 15.243-32.433 17.294-11.254 1.783-22.256.095-31.917-4.27-.798.236-1.637.471-2.516.704-32.21 8.517-57.414-9.643-60.447-28.79-3.032-19.146 10.03-37.126 29.177-40.158 1.131-.18 2.258-.302 3.378-.371 6.324-19.486 23.104-34.805 44.726-38.23z"/>
+        <use fill="#000" filter="url(#52sa729ada)" xlink:href="#zouh66gf2b"/>
+        <use fill="url(#cn2yi8ottc)" xlink:href="#zouh66gf2b"/>
+        <rect width="87.3" height="9.9" x="51.3" y="65.7" fill="url(#blmamzfnhd)" opacity=".608" rx="4.5"/>
+        <path fill="url(#msvo1aa3oe)" d="M53.1 45h83.7c4.474 0 8.1 3.626 8.1 8.1v6.3H45v-6.3c0-4.474 3.626-8.1 8.1-8.1z"/>
+        <circle cx="54" cy="52.2" r="2.7" fill="url(#b80npq8unf)" opacity=".854"/>
+        <circle cx="63.9" cy="52.2" r="2.7" fill="url(#b80npq8unf)" opacity=".854"/>
+        <circle cx="73.8" cy="52.2" r="2.7" fill="url(#b80npq8unf)" opacity=".854"/>
+        <path fill="url(#loyfu8oa3g)" fill-rule="nonzero" d="M87.981 110.88h14.572c-.675-2.565-1.19-4.088-1.545-4.57-1.808-1.083-3.631-2.183-5.464-3.29-1.833 1.107-3.656 2.207-5.464 3.29-.355.482-1.054 2.005-2.099 4.57z"/>
+        <path fill="url(#ywppt6qqjh)" fill-rule="nonzero" d="M86.841 95.702c1.063 3.522 2.153 7.061 3.24 10.608 3.642.042 7.284.042 10.927 0-4.642-3.48-9.415-7.08-14.167-10.608z"/>
+        <path fill="url(#454yaq218i)" fill-rule="nonzero" d="M97.242 96.617c-.032.039-.065.077-.1.114-.873.91-2.323.91-3.195 0-.558-.581-.725-1.392-.523-2.122l-3.69-3.763c-.915 1.308-1.83 2.613-2.741 3.913-.193.275-.249.622-.152.943 2.731 5.293 8.44 9.385 14.167 10.608.905-2.955 1.813-5.905 2.705-8.845-2.156-.277-4.313-.561-6.471-.848z"/>
+        <path fill="url(#7d4ki8yr8j)" fill-rule="nonzero" d="M103.713 97.465l.534-1.763c.097-.321.04-.668-.152-.943-2.446-3.49-4.922-7.018-7.352-10.536-.078-.126-.227-.193-.376-.16-.164.036-.275.192-.275.362.003 2.681.005 5.362.005 8.044 0 .097.04.191.108.26l.873.873c.821.821.897 2.137.164 3.015 2.047.736 4.25 1.036 6.471.848z"/>
+        <path fill="url(#piygsdxqnk)" fill-rule="nonzero" d="M93.424 94.609c.102-.37.298-.719.586-1.007l.873-.873c.069-.069.108-.163.108-.26 0-2.682.002-5.363.005-8.044 0-.17-.11-.326-.275-.362-.15-.033-.298.034-.376.16-1.525 2.208-3.068 4.42-4.61 6.623 1.015 1.478 2.27 2.743 3.689 3.763z"/>
+        <path fill="#FFD38C" fill-rule="nonzero" d="M125.202 103.94c-7.726-.01-13.988-6.271-13.997-13.998-.004-5.859-3.235-11.239-8.404-13.996h7.471c.516 0 .933-.418.933-.934 0-.515-.417-.933-.933-.933h-29.86c-.515 0-.933.418-.933.933 0 .516.418.934.933.934h7.472c-5.17 2.757-8.4 8.137-8.405 13.996 0 .516.418.934.933.934.516 0 .934-.418.934-.934 0-7.73 6.266-13.996 13.996-13.996s13.997 6.266 13.997 13.996c0 8.747 7.116 15.863 15.863 15.863.516 0 .933-.417.933-.933 0-.515-.417-.933-.933-.933z"/>
+        <path fill="#FCB442" fill-rule="nonzero" d="M96.702 77.812h-2.719c-.795 0-1.44-.645-1.44-1.44v-2.719c0-.795.645-1.44 1.44-1.44h2.719c.795 0 1.44.645 1.44 1.44v2.719c0 .795-.645 1.44-1.44 1.44zM81.772 92.742h-2.719c-.795 0-1.44-.645-1.44-1.44v-2.719c0-.795.645-1.44 1.44-1.44h2.719c.795 0 1.44.645 1.44 1.44v2.719c0 .795-.645 1.44-1.44 1.44zM111.632 92.742h-2.719c-.795 0-1.44-.645-1.44-1.44v-2.719c0-.795.645-1.44 1.44-1.44h2.719c.795 0 1.44.645 1.44 1.44v2.719c0 .795-.645 1.44-1.44 1.44zM126.562 107.672h-2.72c-.794 0-1.44-.645-1.44-1.44v-2.719c0-.795.646-1.44 1.44-1.44h2.72c.795 0 1.44.645 1.44 1.44v2.719c0 .795-.645 1.44-1.44 1.44z"/>
+        <circle cx="110.272" cy="75.012" r="2.799" fill="#FCB442" fill-rule="nonzero"/>
+        <circle cx="80.412" cy="75.012" r="2.799" fill="#FCB442" fill-rule="nonzero"/>
+    </g>
+</svg>

@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import {withRouter} from "next/router";
 
 import "react-tabs/style/react-tabs.css";
+// import "./index.scss";
 import Link from "next/link";
-import Web from "../../../Web/Web";
 
 export class Industries extends Component {
     constructor(props) {
@@ -18,7 +18,7 @@ export class Industries extends Component {
     }
 
     static defaultProps = {
-        tab: 'marketplace'
+        tab: 'web'
     };
 
     componentDidMount() {
@@ -55,16 +55,17 @@ export class Industries extends Component {
         const {bottom, show} = this.state;
         return (
             <div className="react-tabs">
-                <div className="tab-list-wrapper">
-                    <div className={`react-tabs__tab-list ${bottom ? '' : 'absolute-bottom'} ${show ? '' : 'sticky'}`}>
-                        {tabs.map((tab, index) => (
-                                <div className={selected == index ? 'react-tabs__tab--selected' : 'react-tabs__tab'}
-                                     key={index}>
-                                    {tab.name}
+                <div className={`react-tabs__list ${bottom ? '' : 'absolute-bottom'} ${show ? '' : 'sticky'}`}>
+                    {
+                        this.props.tabs.map((tab, index) => (
+                                <div
+                                    className={selected == index ? 'react-tabs__list__tab--selected' : 'react-tabs__list__tab'}
+                                    key={index}>
+                                        {tab.title}
                                 </div>
                             )
-                        )}
-                    </div>
+                        )
+                    }
                 </div>
                 <div className="react-tabs__tab-panel react-tabs__tab-panel--selected">
                     <div>{this.getTab(tabs, tab).component()}</div>
@@ -75,7 +76,5 @@ export class Industries extends Component {
 }
 
 export default withRouter(Industries);
-
-
 
 
