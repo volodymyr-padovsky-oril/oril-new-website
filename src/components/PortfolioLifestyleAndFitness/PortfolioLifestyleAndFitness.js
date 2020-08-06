@@ -23,11 +23,6 @@ export class PortfolioLifestyleAndFitness extends Component {
                                                      alt={slide.logo.name} />
                                             </div>
                                             <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow" className="title">{slide.title}</a>
-                                            <div className="tags">
-                                                {
-                                                    slide.tags.map((tag, index) => (<span key={`tag-${index}`}>{tag}</span>))
-                                                }
-                                            </div>
                                         </div>
                                         <div className="slide__content">
                                             <div className="left">
@@ -51,6 +46,10 @@ export class PortfolioLifestyleAndFitness extends Component {
                                             <div className="right">
                                                 <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
                                                      alt={slide.img.name} />
+                                                <div className="tags">
+                                                    {slide.tags.map((tag, index) => (
+                                                        <div key={`tag-${index}`}>{tag}</div>))}
+                                                </div>
                                             </div>
                                         </div>
                                         {

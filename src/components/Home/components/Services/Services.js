@@ -1,6 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../../../commons/Bubble";
-import Link from 'next/link';
 
 export class Services extends Component {
     redirect = (e) => {
@@ -9,42 +7,42 @@ export class Services extends Component {
         window.scrollTo(0, 0)
     };
 
+    products = [
+        {
+            img: 'ui-ux-design',
+            name: 'UX/UI Design',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium'
+        },
+        {
+            img: 'product-development',
+            name: 'Product development',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium'
+        },
+        {
+            img: 'io-t',
+            name: 'Product IoT',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium'
+        },
+    ];
+
     render() {
         return (
-            <section className="home__services">
-                <Bubble size="420px" top="1550px" left="-650px" speed="0.8"/>
-                <h3>Services</h3>
+            <section className="services">
                 <div className="container">
-                    <Link href="/services/design" >
-                        <a rel="noopener noreferrer" onClick={this.redirect.bind(this)}>
-                            <div className="home__services__flex-row">
-                                <img src="assets/img/uxui.jpg" alt="uxui" />
-                                <div>
-                                    <div>
-                                        <h4>UI/UX Design</h4>
-                                    </div>
-                                    <p>
-                                        Creative designs that make your innovation simple to use
-                                    </p>
+                    <h3>Services</h3>
+                    <div className="services__wrapper">
+                        {this.products.map((product, index) => {
+                            return (
+                                <div className="services__item">
+                                    <img
+                                        src={`../assets/img/${product.img}.png`}
+                                        alt=""/>
+                                    <h4>{product.name}</h4>
+                                    <p>{product.content}</p>
                                 </div>
-                            </div>
-                        </a>
-                    </Link>
-                    <Link href="/services/development/web" >
-                        <a rel="noopener noreferrer" onClick={this.redirect.bind(this)}>
-                            <div className="home__services__flex-row">
-                                <img src="assets/img/product-development.jpg" alt="product development" />
-                                <div>
-                                    <div>
-                                        <h4>Product Development</h4>
-                                    </div>
-                                    <p>
-                                        Scalable state-of-the-art products
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </Link>
+                            )
+                        })}
+                    </div>
                 </div>
             </section>
         );

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Mont';
+  font-family: 'Mont-SemiBold';
   src: url('/assets/fonts/Mont-SemiBold.eot');
   src: url('/assets/fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
   url('/assets/fonts/Mont-SemiBold.woff') format('woff'),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'Mont';
+  font-family: 'Mont-Bold';
   src: url('/assets/fonts/Mont-Bold.eot');
   src: url('/assets/fonts/Mont-Bold.eot?#iefix') format('embedded-opentype'),
   url('/assets/fonts/Mont-Bold.woff') format('woff'),
@@ -36,7 +36,7 @@
 }
 
 @font-face {
-  font-family: 'Mont';
+  font-family: 'Mont-SemiBoldItalic';
   src: url('/assets/fonts/Mont-SemiBoldItalic.eot');
   src: url('/assets/fonts/Mont-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
   url('/assets/fonts/Mont-SemiBoldItalic.woff') format('woff'),
@@ -61,8 +61,10 @@ h2 span {
 }
 
 h3 {
-  font-size: 28px;
+  color: #676875;
+  font-size: 36px;
   line-height: 1.07;
+  text-align: center;
 }
 
 h4 {
@@ -73,6 +75,6 @@ h4 {
 p, a {
   font-weight: 600;
   font-size: 20px;
-  color: rgba(255, 255, 255, .9);
+  color: #676875;
   line-height: 1.8;
 }

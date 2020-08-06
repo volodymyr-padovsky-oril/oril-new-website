@@ -37,13 +37,6 @@ export class Testimonials extends Component {
                                                 <p>{slide.customer.firstName} {slide.customer.lastName}</p>
                                                 <p>{slide.customer.position}</p>
                                             </div>
-                                            <div className="clutch-block">
-                                                <img src="../assets/icons/clutch-small.svg"
-                                                     alt={slide.customer.img.name}/>
-                                            </div>
-                                            <div className="stars-block">
-                                                <img src="../assets/icons/stars.svg" alt={slide.customer.img.name}/>
-                                            </div>
                                         </div>
                                         <div className="feedback">
                                             {slide.customer.feedback}

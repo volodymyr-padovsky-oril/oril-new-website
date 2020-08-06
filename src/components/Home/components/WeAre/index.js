@@ -5,7 +5,7 @@ import Swiper from "react-id-swiper";
 
 export const params = {
     autoHeight: true,
-    width: 555,
+    width: 620,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -24,7 +24,7 @@ export class WeAre extends Component {
                     <div className="home__we-are__text-wrapper">
                         <p className="intro-text">We are a diverse team of professionals who are passionate about digital products</p>
                         <div className="our-credo">
-                            <h4>Our Credo</h4>
+                            <h4>Our Kredo</h4>
                             <p className="ul-item">Increasing World Efficiency</p>
                         </div>
                         <div className="our-values">
@@ -46,7 +46,7 @@ export class WeAre extends Component {
                                                 const animal_src = "assets/img/" + worker.animal + ".png";
                                                 const photoStyles = {
                                                     backgroundImage: "url(assets/img/" + worker.photo + ".jpg)",
-                                                    backgroundSize: 'contain',
+                                                    backgroundSize: 'cover',
                                                     backgroundRepeat: 'no-repeat'
                                                 };
 

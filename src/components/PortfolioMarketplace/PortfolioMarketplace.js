@@ -25,11 +25,6 @@ export class PortfolioMarketplace extends Component {
                                                      alt={slide.logo.name} />
                                             </div>
                                             <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow" className="title">{slide.title}</a>
-                                            <div className="tags">
-                                                {
-                                                    slide.tags.map((tag, index) => (<span key={`tag-${index}`}>{tag}</span>))
-                                                }
-                                            </div>
                                         </div>
                                         <div className="slide__content">
                                             <div className="left">
@@ -53,6 +48,9 @@ export class PortfolioMarketplace extends Component {
                                             <div className="right">
                                                 <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
                                                      alt={slide.img.name} />
+                                                <div className="tags">
+                                                    {slide.tags.map((tag, index) => (<div key={`tag-${index}`}>{tag}</div>))}
+                                                </div>
                                             </div>
                                         </div>
                                         {
@@ -106,7 +104,7 @@ export class PortfolioMarketplace extends Component {
                                                         slide.info.map((item, index) => {
                                                             return (
                                                                 <div key={`info-${index}`}>
-                                                                    <p className="info__title">{item.value}</p>
+                                                                    <div className="info__title">{item.value}</div>
                                                                     <p className="info__text">{item.text}</p>
                                                                 </div>
                                                             );

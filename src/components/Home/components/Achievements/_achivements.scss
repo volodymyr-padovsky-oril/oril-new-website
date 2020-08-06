@@ -1,10 +1,26 @@
 .home {
   &__achievements {
-    margin: 200px 0 240px;
+    //background-image: url(/public/assets/img/group-13.svg);
+    margin: 340px 0 450px;
+    position: relative;
 
-    h3 {
+    &:after {
+      //background-image: url("/assets/img/404.jpg");
+
+      background-image: url("/assets/img/group-13.svg");
+      content: "";
+      position: absolute;
+      top: -350px;
+      left: -150px;
+      height: 870px;
+      width: 2199px;
+      background-size: 100%;
+    }
+
+      h3 {
       text-align: center;
       margin: 0 0 50px;
+      color: #fff;
     }
 
     & > .container {

@@ -55,20 +55,19 @@ export class BaseTabs extends Component {
         const {bottom, show} = this.state;
         return (
             <div className="react-tabs">
-                <div className="tab-list-wrapper">
-                    <div className={`react-tabs__tab-list ${bottom ? '' : 'absolute-bottom'} ${show ? '' : 'sticky'}`}>
-                        {
-                            this.props.tabs.map((tab, index) => (
-                                    <div className={selected == index ? 'react-tabs__tab--selected' : 'react-tabs__tab'}
-                                         key={index}>
-                                        <Link className="react-tabs__tab" href={tab.href}>
-                                            {tab.title}
-                                        </Link>
-                                    </div>
-                                )
+                <div className={`react-tabs__list ${bottom ? '' : 'absolute-bottom'} ${show ? '' : 'sticky'}`}>
+                    {
+                        this.props.tabs.map((tab, index) => (
+                                <div
+                                    className={selected == index ? 'react-tabs__list__tab--selected' : 'react-tabs__list__tab'}
+                                    key={index}>
+                                    <Link className="react-tabs__tab" href={tab.href}>
+                                        {tab.title}
+                                    </Link>
+                                </div>
                             )
-                        }
-                    </div>
+                        )
+                    }
                 </div>
                 <div className="react-tabs__tab-panel react-tabs__tab-panel--selected">
                     <div>{this.getTab(tabs, tab).component()}</div>

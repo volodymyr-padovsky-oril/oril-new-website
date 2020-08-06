@@ -9,11 +9,11 @@
 
   & > .container {
     display: grid;
-    grid-template-columns: 4.5fr 6.2fr;
+    grid-template-columns: 2fr 5fr;
     align-items: center;
     width: 100%;
     height: 100%;
-    grid-gap: 10%;
+    //grid-gap: 5%;
     direction: rtl;
 
     .text-wrapper {
@@ -24,7 +24,7 @@
         font-style: normal;
         line-height: 1.4;
         letter-spacing: normal;
-        color: #ffffff;
+        color: #363645;
         margin: 0 0 39px;
       }
 
@@ -35,7 +35,7 @@
         font-style: normal;
         line-height: 1.61;
         letter-spacing: normal;
-        color: #ffffff;
+        color: #363645;
         margin: 0 0 10px;
       }
 
@@ -48,24 +48,19 @@
         font-style: normal;
         line-height: 1.8;
         letter-spacing: normal;
-        color: #ffffff;
+        color: #676875;
         margin: 0 0 40px;
       }
 
       a {
+        font-family: Mont-Bold, serif;
         border-radius: 7px;
         background-color: #ffffff;
-        padding: 14px 50px;
         border: none;
         cursor: pointer;
         color: #ffb248;
         text-decoration: none;
-        font-size: 17px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
+        font-size: 1.25rem;
         text-align: center;
       }
 

@@ -5,6 +5,9 @@ import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
 import './_design.scss';
+import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
+// import Link from '../../../../src/commons/utils/activeLink';
+import Link from "next/link";
 
 export class Design extends Component {
     blocks = [
@@ -42,11 +45,31 @@ export class Design extends Component {
     ];
 
     deliverables = [
-        {title: 'UI Designs', img: 'deliv-ui'},
-        {title: 'UI Style Guides', img: 'deliv-guide'},
-        {title: 'UX Artefacts', img: 'deliv-artefacts'},
-        {title: 'Interactive Prototypes', img: 'deliv-prototype'},
-        {title: 'Logotype & Brand Identity', img: 'deliv-brand'}
+        {
+            title: 'UI Designs',
+            img: 'deliv-ui',
+            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end developers.'
+        },
+        {
+            title: 'UI Style Guides',
+            img: 'deliv-guide',
+            text: 'We create style guides and design libraries in Sketch to ensure consistency across all future designs.'
+        },
+        {
+            title: 'UX Artefacts',
+            img: 'deliv-artefacts',
+            text: 'Results from our UX work, such as customer journey mapping and usability testing, are all provided in their respective file formats.'
+        },
+        {
+            title: 'Interactive Prototypes',
+            img: 'deliv-prototype',
+            text: 'We load our prototypes into services like ProtoPie and Invision to simulate how the app would behave once developed. '
+        },
+        {
+            title: 'Logotype & Brand Identity',
+            img: 'deliv-brand',
+            text: 'The logos and visual brand identities that we create are often delivered alongside our style guides.'
+        }
     ];
 
     services = [
@@ -70,6 +93,28 @@ export class Design extends Component {
         {img: 'gv-logo', link: 'https://greenvision-energy.com/'},
     ];
 
+    process = [
+        {
+            title: '1. Analyze',
+            img: 'services-whale2',
+            text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things.',
+            direction: 'odd'
+        },
+        {
+            title: '2. Wireframe & Test',
+            img: 'services-whale3',
+            text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas.',
+            direction: 'even'
+
+        },
+        {
+            title: '3. Prototype & Implement',
+            img: 'services-whale4',
+            text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the developers to ensure that the designs are implemented correctly.',
+            direction: 'odd'
+        },
+    ];
+
     render() {
         return (
             <div className="design-wrapper">
@@ -79,98 +124,114 @@ export class Design extends Component {
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
+
                 <section className="services">
                     <section className="services__design" id="design">
                         <div className="container">
-                            <h2>UX/UI Design</h2>
+                            <div className="header-link">
+                                <Link activeClassName='active' href="/services/design">
+                                    UX/UI Design
+                                </Link>
+                                <Link activeClassName='active' href="/services/product-development">
+                                    Product Development
+                                </Link>
+                                <Link activeClassName='active' href="/services/iot">
+                                    Iot
+                                </Link>
+                            </div>
                             <div className="services__desc">
-                                <Bubble size="284px" top="365px" left="-1280px" speed=".2"/>
-                                <Bubble size="1441px" top="1100px" left="740px" speed=".2"/>
-                                <h3>Thoughtful User Interfaces for All Kind of Products</h3>
-                                <p>
-                                    Interactive prototyping, explicit UI/UX design, and branding with
-                                    clear message for your web, desktop, mobile, smartwatch, and IoT products.
-                                    This is how we’re becoming advocates of actual user needs and business goals
-                                </p>
-                                <div className="services__ul-list">
-                                    {
-                                        this.blocks.map((item, index) => (
-                                            <div className="list-item" key={index}>
-                                                <div className="list-style"></div>
-                                                <div>
-                                                    {
-                                                        item.title
-                                                            ? <span
-                                                                className={item.titleOnNewLine ? 'block' : null}>{item.title}</span>
-                                                            : null
-                                                    }
-                                                    {item.text}
-                                                </div>
-                                            </div>
-                                        ))
-                                    }
+                                <div className="services__desc--left">
+                                    <h2>UX/UI Design</h2>
+                                    <h3>Thoughtful User Interfaces for All Kind of Products</h3>
+                                    <p>
+                                        Design that works is design that clearly lays out solutions for user needs. This
+                                        is
+                                        achieved through methodical research, prototyping, and testing. Add to this our
+                                        knowledge of usability heuristics and other psychological principles, and we’ll
+                                        make
+                                        sure that your product is ready for market!
+                                    </p>
+                                </div>
+                                <div className="services__desc--right">
+                                    <img src="../assets/img/services-whale1.jpg" alt="product development"/>
                                 </div>
                             </div>
-                            <div className="services__approach">
-                                <h4>Our Approach</h4>
-                                <div className="approach-text">
-                                    <div>Analyse</div>
-                                    <div>Prototype</div>
-                                    <div>Design</div>
-                                    <div>Test</div>
+                            <div className="services__ul-list">
+                                {this.blocks.map((item, index) => (
+                                    <div className="list-item" key={index}>
+                                        <div className="list-style"></div>
+                                        <div>
+                                            {
+                                                item.title
+                                                    ? <span
+                                                        className={item.titleOnNewLine ? 'block' : null}>{item.title}</span>
+                                                    : null
+                                            }
+                                            {item.text}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="services__process">
+                                <h2>Our Process</h2>
+                                <p>
+                                    Our practical approach to product design pulls heavily from tried-and-true
+                                    methodologies. Due to the heavily streamlined process we’ve internalized, our team
+                                    is able to focus its efforts on what matters most: your product.
+                                </p>
+                                <div className="process-wrapper">
+                                    {this.process.map((item, index) => (
+                                        <div className={`process-item ${item.direction === 'odd' && 'odd'}`}
+                                             key={'process-item-' + index}>
+                                            <img src={'../assets/img/' + item.img + '.jpg'}
+                                                 alt={item.img}/>
+                                            <div className="process-item__text">
+                                                <span>{item.title}</span>
+                                                <p>
+                                                    {item.text}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                                <img src="../assets/icons/approach-group-design.svg" alt="group-design"/>
-                                {/*<div className="see-more">*/}
-                                {/*    <a href="/#">See more details</a>*/}
-                                {/*</div>*/}
                             </div>
                             <div className="services__deliverables">
-                                <h4>Deliverables</h4>
-                                <div>
-                                    {
-                                        this.deliverables.map((deliverable, index) => (
-                                            <div key={'deliverable-' + index} className="link-block">
-                                                <img src={'../assets/icons/' + deliverable.img + '.svg'}
-                                                     alt={deliverable.img}/>
-                                                <span>{deliverable.title}</span>
-                                            </div>
-                                        ))
-                                    }
+                                <h2>Deliverables</h2>
+                                <p>Final deliverables depend on each project, but clients can expect to generally
+                                    receive these items:</p>
+                                <div className="deliverable__wrapper">
+                                    {this.deliverables.map((deliverable, index) => (
+                                        <div key={'deliverable-' + index} className="deliverable-item">
+                                            <img src={'../assets/img/' + deliverable.img + '.svg'}
+                                                 alt={deliverable.img}/>
+                                            <span>{deliverable.title}</span>
+                                            <p>{deliverable.text}</p>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                             <div className="services__technologies">
-                                <Bubble size="1089px" top="1740px" left="920px" speed=".2"/>
-                                <h4>Technologies</h4>
+                                <h2>Technologies</h2>
                                 <div>
-                                    {
-                                        this.services.map((service, index) => (
-                                            <a href={service.link} target="_blank" rel="noopener noreferrer nofollow"
-                                               key={'technology-' + index}>
-                                                <div>
-                                                    <img src={'../assets/img/' + service.img + '.png'} alt={service.img}/>
-                                                </div>
-                                                <span>{service.name}</span>
-                                            </a>
-                                        ))
-                                    }
+                                    {this.services.map((service, index) => (
+                                        <a href={service.link} target="_blank" rel="noopener noreferrer nofollow"
+                                           key={'technology-' + index}>
+                                            <div>
+                                                <img src={'../assets/img/' + service.img + '.png'}
+                                                     alt={service.img}/>
+                                            </div>
+                                        </a>
+                                    ))}
                                 </div>
                             </div>
-                            <div className="services__products">
-                                <Bubble size="216px" top="340px" left="-910px" speed=".1"/>
-                                <h4>Featured Products</h4>
-                                <div>
-                                    {
-                                        this.products.map((product, index) => (
-                                            <a href={product.link} target="_blank" rel="noopener noreferrer nofollow"
-                                               key={'product-' + index}>
-                                                <img src={'../assets/img/' + product.img + '.png'} alt={product.img}
-                                                     title={product.link}/>
-                                            </a>
-                                        ))
-                                    }
-                                </div>
-                            </div>
+
                         </div>
+                        <div className="products">
+                            <h2>Featured Products</h2>
+                            <OurWorks title={false}/>
+
+                        </div>
+
                     </section>
 
                 </section>

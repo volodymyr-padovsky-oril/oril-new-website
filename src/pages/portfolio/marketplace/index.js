@@ -19,7 +19,7 @@ class Marketplace extends Component {
                 />
                 <Header redirect={this.onChangePage}/>
                 <section className="portfolio">
-                    <section className="portfolio__projects" id="products">
+                    <section className="portfolio__projects">
                         <div className="container">
                             <BaseTabs tabs={tabs} tab="marketplace" selected="0"/>
                         </div>

@@ -8,15 +8,15 @@ import PortfolioMarketplace from "../PortfolioMarketplace/PortfolioMarketplace";
 
 export class Projects extends Component {
     tabs = [
+        { id: 'iot', title: 'IoT', component: () => <PortfolioIoT/> },
+        //TODO: change to real estate
+        { id: 'blockchain', title: 'Blockchain', component: () => <PortfolioBlockchain/> },
         { id: 'marketplace', title: 'Marketplace', component: () => <PortfolioMarketplace/> },
         { id: 'lifestyle-and-fitness', title: 'Lifestyle & Fitness', component: () => <PortfolioLifestyleAndFitness/> },
-        { id: 'iot', title: 'IoT', component: () => <PortfolioIoT/> },
-        { id: 'blockchain', title: 'Blockchain', component: () => <PortfolioBlockchain/> },
         { id: 'other', title: 'Other', component: () => <PortfolioOther/> }
     ];
 
     render() {
-
         return (
           <section className="portfolio__projects" id="products">
               <div className="container">
