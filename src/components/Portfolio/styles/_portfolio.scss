@@ -239,7 +239,7 @@
       p:first-child {
         font-size: 15px;
         line-height: 1.67;
-        margin-bottom: 5px;
+        margin: 0 0 5px;
         color: #363645;
         font-family: 'Mont-SemiBold', serif;
       }
@@ -248,6 +248,7 @@
         font-size: 15px;
         line-height: 1.33;
         font-weight: normal;
+        margin: 0;
       }
     }
 

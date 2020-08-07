@@ -45,6 +45,27 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url('/assets/fonts/DMSans-Bold.ttf');
+  src: url('/DMSans-Bold.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/DMSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/assets/fonts/Roboto-Regular.ttf');
+  src: url('/Roboto-Regular.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirNext-Medium';
+  src: url('/assets/fonts/AvenirNext-Medium.ttf');
+  src: url('/AvenirNext-Medium.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/AvenirNext-Medium.ttf') format('truetype');
+}
+
 h1 {
   font-size: 65px;
   line-height: 0.86;
