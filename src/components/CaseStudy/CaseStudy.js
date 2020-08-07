@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import OurWorks from "../Home/components/OurWorks/OurWorks";
 
 class CaseStudy extends Component {
 
@@ -18,7 +19,6 @@ class CaseStudy extends Component {
                                 GreenVision is a platform that allows anyone to envision their future without Carbon
                                 Dioxide emissions: both on the scale of personal home and on the US scale.
                             </p>
-
                         </div>
                         <div className="case-study-right">
                             <img src="../assets/img/gv.jpg" alt="gv"/>
@@ -89,12 +89,142 @@ class CaseStudy extends Component {
                             <div className="fonts">
                                 <span className="fonts--big">Aa</span>
                                 <span className="fonts--green">Avenir Next</span>
-                                <span className="fonts--regular-big">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
-                                <span className="fonts--regular">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
+                                <span
+                                    className="fonts--regular-big">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
+                                <span
+                                    className="fonts--regular">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
                                 <span className="fonts--regular">0123456789</span>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="case-study__big-image">
+                    <img src="../assets/img/gv-big.jpg" alt="gv-bid"/>
+                </div>
+                <div className="container">
+                    <div className="case-study__our-process">
+                        <h2>Our Process</h2>
+                        <div>
+                            <h4>MVP</h4>
+                            <div className="case-study__mvp">
+                                <div className="process__wrapper--top">
+                                    <div className="process__item">
+                                        <span>Research</span>
+                                        <div className="process__dot">
+                                            <div></div>
+                                        </div>
+                                        <div className="process__img"
+                                             style={{backgroundImage: 'url("/assets/icons/research.svg")'}}/>
+                                        <p>1 week</p>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="case-study__upgrades">
+                                    <h4 className="upgrades-title">Continuous <br/>Upgrades</h4>
+                                    <div className="process__wrapper--bottom">
+                                        <div className="process__item">
+                                            <span>Research</span>
+                                            <div className="process__dot">
+                                                <div></div>
+                                            </div>
+                                            <div className="process__img"
+                                                 style={{backgroundImage: 'url("/assets/icons/research.svg")'}}/>
+                                            <p>1 week</p>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet</li>
+                                                <li>Lorem ipsum dolor sit amet</li>
+                                                <li>Lorem ipsum dolor sit amet</li>
+                                                <li>Lorem ipsum dolor sit amet</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="case-study__technologies">
+                        <h2>Technologies</h2>
+                        <p>
+                            SparkOffer UI system was carefully created to reflect its authenticity,
+                            strong values and project identity: modern, ambitious, reliable, simple.
+                        </p>
+                        <div>
+                            <div className="technologies__wrapper">
+                                <div className="technologies__item">
+                                    <div>
+                                        <img src="../assets/img/services-logo-typescript-angular.png" alt="angular"/>
+                                    </div>
+                                    <span>Angular</span>
+                                </div>
+                                <div className="technologies__item">
+                                    <div>
+                                        <img src="../assets/img/services-logo-typescript-angular.png" alt="angular"/>
+                                    </div>
+                                    <span>Angular</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="case-study__our-results">
+                        <h2>Our results</h2>
+                        <p>
+                            SparkOffer UI system was carefully created to reflect its authenticity,
+                            strong values and project identity: modern, ambitious, reliable, simple.
+                        </p>
+                        {/*<div className="slide__footer">*/}
+                        {/*    <div className="customer">*/}
+                        {/*        <img*/}
+                        {/*            src={`../assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}*/}
+                        {/*            alt={slide.customer.img.name}/>*/}
+                        {/*        <div>*/}
+                        {/*            <p>{slide.customer.firstName} {slide.customer.lastName}</p>*/}
+                        {/*            <p>{slide.customer.position}</p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="feedback">*/}
+                        {/*        {slide.customer.feedback}*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        <div className="slide__footer">
+                            <div className="customer">
+                                <img
+                                    src='../assets/icons/kuntz.jpeg'
+                                    alt='kuntz'/>
+                                <div>
+                                    <p>Lauren Kuntz</p>
+                                    <p>CEO of GreenVision</p>
+                                </div>
+                            </div>
+                            <div className="feedback">
+                                “They were phenomenal and really blew away all of my expectations.”
+                            </div>
+                        </div>
+                        <div className="our-results__points">
+                            <div className="our-results__item">
+                                <div className="our-results__circle">
+                                    2520
+                                </div>
+                                <span>Number of users on the platform</span>
+                            </div>
+                            <div className="our-results__item">
+                                <div className="our-results__circle">
+                                    2520
+                                </div>
+                                <span>Number of users on the platform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="case-study__our-works">
+                    <h2>A few more Case Studies you might <br/> be interested in</h2>
+                    <OurWorks title={false}/>
+
                 </div>
             </section>
         );
