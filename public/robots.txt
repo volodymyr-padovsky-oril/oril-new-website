@@ -1,5 +1,0 @@
-Sitemap: https://oril.co/sitemap.xml
-
-User-agent: *
-
-Disallow: /api/*
