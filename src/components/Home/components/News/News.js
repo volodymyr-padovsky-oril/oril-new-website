@@ -16,7 +16,7 @@ class OurNews extends Component {
 
     render() {
         const {isHovered} = this.state;
-        console.log('isHovered', isHovered)
+        console.log('isHovered', isHovered);
         return (
             <section className="home__our-news">
                 <h3>OurNews</h3>
@@ -27,6 +27,7 @@ class OurNews extends Component {
                     {news.map((item, index) => {
                         return (
                             <NewsItem
+                                onMouseOver={() => this.toggleHover()}
                                 hef={item.href}
                                 img={item.img}
                                 title={item.title}

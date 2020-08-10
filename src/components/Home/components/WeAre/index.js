@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../../../commons/Bubble";
 import {workersPages} from "../../../../lib/workers";
 import Swiper from "react-id-swiper";
 
@@ -17,8 +16,6 @@ export class WeAre extends Component {
     render() {
         return (
             <section className="home__we-are" id="we-are">
-                <Bubble size="420px" top="3150px" right="-1700px" speed="0.8"/>
-                <Bubble size="800px" top="2150px" left="-1300px" speed="0.5"/>
                 <h3>Who We Are</h3>
                 <div className="container">
                     <div className="home__we-are__text-wrapper">

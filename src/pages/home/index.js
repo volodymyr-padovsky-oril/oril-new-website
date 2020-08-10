@@ -49,8 +49,8 @@ class Index extends Component {
                 <main className='home'>
                     <Banner/>
                     <Services redirect={this.onChangePage}/>
-                    {/*<Industries tabs={this.tabs} selected="0" tab="web"/>*/}
-                    <OurWorks/>
+                    <Industries tabs={this.tabs} selected="0" tab="web"/>
+                    <OurWorks title="Our works"/>
                     {/*<Products/>*/}
                     <Testimonials/>
                     <Achievements/>
