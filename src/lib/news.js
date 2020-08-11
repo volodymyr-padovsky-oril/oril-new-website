@@ -1,7 +1,32 @@
 export const news = [
-    { id: 'iot', title: 'Spring Boot Profiles', href: '/portfolio/iot', img: 'blog-1' },
-    { id: 'iot', title: 'Spring Boot Profiles', href: '/portfolio/iot', img: 'blog-2' },
-    { id: 'iot', title: 'Spring Boot Profiles', href: '/portfolio/iot', img: 'blog-3' },
-    { id: 'iot', title: 'Spring Boot Profiles', href: '/portfolio/iot', img: 'blog-4' },
-    { id: 'iot', title: 'Spring Boot Profiles', href: '/portfolio/iot', img: 'blog-5' },
+    {
+        id: 'sbri',
+        title: 'Spring Boot REST Internationalization',
+        href: 'https://oril.co/blog/spring-boot-rest-internationalization/',
+        img: 'blog-1'
+    },
+    {
+        id: 'sbgm',
+        title: 'Spring Boot + GraphQL + MongoDB',
+        href: 'https://oril.co/blog/spring-boot-graphql-mongodb/',
+        img: 'blog-2'
+    },
+    {
+        id: 'sbp',
+        title: 'Spring Boot Profiles',
+        href: 'https://oril.co/blog/spring-boot-profiles/',
+        img: 'blog-3'
+    },
+    {
+        id: 'ssbajwt',
+        title: 'Secure your Spring Boot API with JSON Web Tokens',
+        href: 'https://oril.co/blog/secure-your-spring-boot-api-with-json-web-tokens/',
+        img: 'blog-4'
+    },
+    {
+        id: 'sbpa',
+        title: 'Spring Boot + PayPal + Angular 2',
+        href: 'https://oril.co/blog/spring-boot-paypal-angular-2/',
+        img: 'blog-5'
+    },
 ];
