@@ -3,23 +3,18 @@ import Swiper from "react-id-swiper";
 import {project} from "../../../../lib/our-projects";
 
 export const params = {
-    // Optional parameters
     loop: true,
-
-    // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
     },
-
-    // And if we need scrollbar
-    width: 1740,
+    width: 1540,
     slidesPerView: 3,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    }
 };
 
 export class OurWorks extends Component {
