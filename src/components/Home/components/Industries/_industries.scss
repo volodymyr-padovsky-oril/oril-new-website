@@ -1,0 +1,56 @@
+.home__industries {
+  margin-bottom: 200px;
+
+  &__tabpanel {
+    display: grid;
+    grid-template-columns: 542px 622px;
+    grid-gap: 105px;
+  }
+
+  &__text{
+    p{
+      font-family: Mont-SemiBold, serif;
+      font-size: 1.25rem;
+      color: #676875;
+      margin: 40px 0;
+    }
+
+    a{
+      border-radius: 7px;
+      background-image: linear-gradient(116deg, #ffe22a -62%, #ffb248 112%);
+      font-family: Mont-SemiBold, serif;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #ffffff;
+      padding: 14px 23px;
+      text-decoration: none;
+    }
+  }
+
+  &__img{
+    img{
+      width: 622px;
+    }
+  }
+
+  .react-tabs__tab-list {
+    border: none;
+
+    .react-tabs__tab {
+      font-family: Mont-Bold, serif;
+      font-size: 1.375rem;
+      color: #363645;
+      margin-right: 45px;
+      border: none;
+      border-bottom: 4px solid #fff;
+    }
+
+    .react-tabs__tab--selected {
+      border: none;
+      border-bottom: 4px solid #ffd36a;
+    }
+
+
+  }
+
+}

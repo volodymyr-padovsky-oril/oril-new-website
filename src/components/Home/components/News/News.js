@@ -1,38 +1,25 @@
 import React, {Component} from "react";
 import {news} from "../../../../lib/news";
-import NewsItem from "./components/NewsItem";
 
 
 class OurNews extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {isHovered: false};
-    }
-
-    toggleHover = () => {
-        this.setState(prevState => ({isHovered: !prevState.isHovered}));
-    };
-
-
     render() {
-        const {isHovered} = this.state;
-        console.log('isHovered', isHovered)
         return (
             <section className="home__our-news">
-                <h3>OurNews</h3>
+                <h3>Blog</h3>
                 <div className="home__our-news__text">
-                    <p className="intro-text">Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit.</p>
+                    <p className="intro-text">Check out our company updates and tips that our own team follows when building strong products.</p>
                 </div>
                 <div className="home__our-news__wrapper">
                     {news.map((item, index) => {
                         return (
-                            <NewsItem
-                                hef={item.href}
-                                img={item.img}
-                                title={item.title}
-                                isHovered={isHovered}
-                                item={{item}}
-                            />
+                            <a
+                                href={item.href}
+                                className="home__our-news__card"
+                            >
+                                <img src={`/assets/img/${item.img}.png`} alt={item.img}/>
+                                <div className="home__our-news__cloud">{item.title}</div>
+                            </a>
                         )
                     })}
                 </div>

@@ -3,23 +3,18 @@ import Swiper from "react-id-swiper";
 import {project} from "../../../../lib/our-projects";
 
 export const params = {
-    // Optional parameters
     loop: true,
-
-    // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
     },
-
-    // And if we need scrollbar
-    width: 1740,
+    width: 1540,
     slidesPerView: 3,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    }
 };
 
 export class OurWorks extends Component {
@@ -37,9 +32,9 @@ export class OurWorks extends Component {
 
     render() {
         return (
-            <section className="our-works">
-                {this.props.title && <h3>Our works</h3>}
-                <div className="our-works__wrapper">
+            <section className="home__our-works">
+                <h3>{this.props.title}</h3>
+                <div className="home__our-works__wrapper">
                     <Swiper {...params}>
                         {this.slides.map((slide, index) => (
                                 <div key={'slide-' + index}>

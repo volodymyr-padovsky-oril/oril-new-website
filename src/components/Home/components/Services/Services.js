@@ -27,13 +27,13 @@ export class Services extends Component {
 
     render() {
         return (
-            <section className="services">
+            <section className="home__services">
                 <div className="container">
                     <h3>Services</h3>
-                    <div className="services__wrapper">
+                    <div className="home__services__wrapper">
                         {this.products.map((product, index) => {
                             return (
-                                <div className="services__item">
+                                <div className="home__services__item">
                                     <img
                                         src={`../assets/img/${product.img}.png`}
                                         alt=""/>

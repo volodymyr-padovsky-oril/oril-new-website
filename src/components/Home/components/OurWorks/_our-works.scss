@@ -1,15 +1,33 @@
 .home {
-  .our-works {
+  &__our-works {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 
     &__wrapper {
-      width: 1740px;
+      margin-top: 90px;
+      width: 1540px;
       overflow: hidden;
 
+      .swiper-pagination {
+        top: 470px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #ffe155;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 16px;
+        height: 16px;
+        background-color: #ffe155;
+      }
+
       .slide {
-        margin-top: 134px;
+        margin: 0;
 
         & > div {
           display: flex;
@@ -26,7 +44,7 @@
           font-size: 1.75rem;
           color: #363645;
           font-family: Mont-Bold, serif;
-          margin: 61px 0 20px;
+          margin: 100px 0 20px;
         }
 
         .text {

@@ -1,9 +1,22 @@
 import React, {Component} from "react";
 import {withRouter} from "next/router";
+import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 
 import "react-tabs/style/react-tabs.css";
 // import "./index.scss";
 import Link from "next/link";
+
+const CustomTab = ({children, activeClassName}) => (
+    <Tab className={`react-tabs__tab ${activeClassName}`}>
+        <div>
+            <div>
+                {children}
+            </div>
+        </div>
+    </Tab>
+);
+
+CustomTab.tabsRole = 'Tab';
 
 export class Industries extends Component {
     constructor(props) {
@@ -54,21 +67,101 @@ export class Industries extends Component {
         const {tabs, tab, selected} = this.props;
         const {bottom, show} = this.state;
         return (
-            <div className="react-tabs">
-                <div className={`react-tabs__list ${bottom ? '' : 'absolute-bottom'} ${show ? '' : 'sticky'}`}>
-                    {
-                        this.props.tabs.map((tab, index) => (
-                                <div
-                                    className={selected == index ? 'react-tabs__list__tab--selected' : 'react-tabs__list__tab'}
-                                    key={index}>
-                                        {tab.title}
+            <div className="home__industries">
+                <div className="container">
+                    <h3>Industries</h3>
+                    <Tabs>
+                        <TabList>
+                            <Tab>IoT</Tab>
+                            <Tab>Real Estate</Tab>
+                            <Tab>Marketplace</Tab>
+                            <Tab>Lifestyle & Fitness</Tab>
+                        </TabList>
+                        <TabPanel>
+                            <div className="home__industries__tabpanel">
+                                <div className="home__industries__text">
+                                    <p>
+                                        We take a strong product-centric approach with marketplaces, since their success
+                                        depends
+                                        on satisfying both consumer and supplier needs.
+                                        To do this, we treat both sides of the marketplace as separate products that
+                                        need their
+                                        own set of compeling features and flows. Once we’re sure that both consumers and
+                                        suppliers will find value in the marketplace, we build seamless ties between the
+                                        two
+                                        parties on mobile and web, all the way through checkout and beyond.
+                                    </p>
+                                    <a href="">Featured Products</a>
                                 </div>
-                            )
-                        )
-                    }
-                </div>
-                <div className="react-tabs__tab-panel react-tabs__tab-panel--selected">
-                    <div>{this.getTab(tabs, tab).component()}</div>
+                                <div className="home__industries__img">
+                                    <img src="../assets/img/industries-iot.png" alt="iot"/>
+                                </div>
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className="home__industries__tabpanel">
+                                <div className="home__industries__text">
+                                    <p>
+                                        We take a strong product-centric approach with marketplaces, since their success
+                                        depends
+                                        on satisfying both consumer and supplier needs.
+                                        To do this, we treat both sides of the marketplace as separate products that
+                                        need their
+                                        own set of compeling features and flows. Once we’re sure that both consumers and
+                                        suppliers will find value in the marketplace, we build seamless ties between the
+                                        two
+                                        parties on mobile and web, all the way through checkout and beyond.
+                                    </p>
+                                    <a href="">Featured Products</a>
+                                </div>
+                                <div className="home__industries__img">
+                                    <img src="../assets/img/industries-real-estate.png" alt="industries-real-estate"/>
+                                </div>
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className="home__industries__tabpanel">
+                                <div className="home__industries__text">
+                                    <p>
+                                        We take a strong product-centric approach with marketplaces, since their success
+                                        depends
+                                        on satisfying both consumer and supplier needs.
+                                        To do this, we treat both sides of the marketplace as separate products that
+                                        need their
+                                        own set of compeling features and flows. Once we’re sure that both consumers and
+                                        suppliers will find value in the marketplace, we build seamless ties between the
+                                        two
+                                        parties on mobile and web, all the way through checkout and beyond.
+                                    </p>
+                                    <a href="">Featured Products</a>
+                                </div>
+                                <div className="home__industries__img">
+                                    <img src="../assets/img/industries-marketplace.png" alt="industries-marketpace"/>
+                                </div>
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className="home__industries__tabpanel">
+                                <div className="home__industries__text">
+                                    <p>
+                                        We take a strong product-centric approach with marketplaces, since their success
+                                        depends
+                                        on satisfying both consumer and supplier needs.
+                                        To do this, we treat both sides of the marketplace as separate products that
+                                        need their
+                                        own set of compeling features and flows. Once we’re sure that both consumers and
+                                        suppliers will find value in the marketplace, we build seamless ties between the
+                                        two
+                                        parties on mobile and web, all the way through checkout and beyond.
+                                    </p>
+                                    <a href="">Featured Products</a>
+                                </div>
+                                <div className="home__industries__img">
+                                    <img src="../assets/img/industries-lifestyle-fitness.png" alt="industries-lifestyle-fitness"/>
+                                </div>
+                            </div>
+                        </TabPanel>
+                    </Tabs>
                 </div>
             </div>
         );
