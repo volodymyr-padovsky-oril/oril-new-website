@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../../commons/Bubble";
 import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
@@ -95,20 +94,20 @@ export class Design extends Component {
 
     process = [
         {
-            title: '1. Analyze',
+            title: 'Analyze',
             img: 'services-whale2',
             text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things.',
             direction: 'odd'
         },
         {
-            title: '2. Wireframe & Test',
+            title: 'Wireframe & Test',
             img: 'services-whale3',
             text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas.',
             direction: 'even'
 
         },
         {
-            title: '3. Prototype & Implement',
+            title: 'Prototype & Implement',
             img: 'services-whale4',
             text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the developers to ensure that the designs are implemented correctly.',
             direction: 'odd'
@@ -124,7 +123,6 @@ export class Design extends Component {
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
-
                 <section className="services">
                     <section className="services__design" id="design">
                         <div className="container">

@@ -4,7 +4,6 @@ import Web from "../../../../components/Web/Web";
 import Mobile from "../../../../components/Mobile/Mobile";
 import IoT from "../../../../components/IoT/IoT";
 import Blockchain from "../../../../components/Blockchain/Blockchain";
-import Bubble from "../../../../commons/Bubble";
 import SEOMetaTags from "../../../../components/SEOMetaTags";
 import Header from "../../../../commons/Header";
 import Contacts from "../../../../components/Contacts/Contacts";
@@ -31,8 +30,6 @@ export class MobilePage extends Component {
                 <div className="services">
                     <section className="services__development" id="development">
                         <div className="container">
-                            <Bubble size="517px" top="1220px" left="-980px" speed=".4"/>
-                            <Bubble size="267px" top="2020px" left="-1620px" speed=".8"/>
                             <h2>Product Development</h2>
                             <BaseTabs tabs={this.tabs} tab='mobile' selected="1"/>
                         </div>

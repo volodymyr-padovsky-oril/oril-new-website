@@ -7,7 +7,7 @@ export const project = {
         },
         title: 'Nuravine',
         link: 'https://www.nuravine.com/',
-        tags: ['#WebApp', '#USA', '#Automation'],
+        tags: ['WebApp', 'USA', 'Automation'],
         text: 'Environmental Automation Made Simple. Understand and optimize your hydroponic reservoir from afar with monitoring and control of pH, EC, Water Temp, and DO',
         info: [
             { value: 'Grow-NY', text: 'finalist' },
@@ -37,7 +37,7 @@ export const project = {
         },
         title: 'VICKI',
         link: 'https://getvicki.com/',
-        tags: ['#MobileApp', '#iOS', '#Android', '#Retail'],
+        tags: ['MobileApp', 'iOS', 'Android', 'Retail'],
         text: `
             VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world
         `,
@@ -73,7 +73,7 @@ export const project = {
         },
         title: 'SparkOffer',
         link: 'https://www.sparkoffer.com/',
-        tags: ['#Web', '#Realestate', '#Platform'],
+        tags: ['Web', 'Realestate', 'Platform'],
         text: `
             A platform that helps to interact and make real estate binding offers,
             with or without the assistance of a buyer’s agent. SparkOffer provides a
@@ -94,7 +94,7 @@ export const project = {
         },
         title: 'Scrooge Bot',
         link: 'https://scroogebot.co/',
-        tags: ['#Web', '#Dashboard', '#Bot', '#Crypto'],
+        tags: ['Web', 'Dashboard', 'Bot', 'Crypto'],
         text: `
             Scrooge Bot handles trading for you. Simply connect Scrooge Bot 
             to your Binance account and watch your assets grow
@@ -117,7 +117,7 @@ export const project = {
         },
         title: 'ActiveSoul',
         link: 'https://apps.apple.com/us/app/activesoul/id1127395958',
-        tags: ['#MobileApp', '#iOS', '#Android', '#Fitness'],
+        tags: ['MobileApp', 'iOS', 'Android', 'Fitness'],
         text: `
             ActiveSoul brings fitness enthusiasts, wellness providers, and 1000's of health clubs together in a brand new way. Book fitness classes, register for events, create challenges, and track your fitness activity - all in one application
         `,
@@ -139,7 +139,7 @@ export const project = {
         },
         title: 'LACED',
         link: 'https://laced-app.com/',
-        tags: ['#MobileApp', '#WebApp', '#Sneakers', '#Auction'],
+        tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
         text: `
             LACED is a mobile app for online sneaker auctions where you can buy bids and participate by placing a bid. You can claim a reward in the loyalty section. Bid small and win big
         `,
@@ -174,7 +174,7 @@ export const project = {
         },
         title: 'Match Your Need',
         link: 'https://matchyourneed.com/',
-        tags: ['#WebApp', '#Charity', '#Social'],
+        tags: ['WebApp', 'Charity', 'Social'],
         text: `
             Match Your Need is a generosity marketplace. It makes matched between those with a need and those with a heart and means to fulfill it based on multiple criteria, including user preferences and geography
         `,
@@ -195,7 +195,7 @@ export const project = {
         },
         title: 'GOWAGO',
         link: 'https://gowago.ch/en/',
-        tags: ['#WebApp', '#E-commerce', '#Auto', '#Swiss'],
+        tags: ['WebApp', 'E-commerce', 'Auto', 'Swiss'],
         text: `
             GOWAGO is Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money
         `,
@@ -215,7 +215,7 @@ export const project = {
         },
         title: 'HoozeOn',
         link: 'https://www.hoozeon.us/',
-        tags: ['#MobileApp', '#iOS', '#Android', '#Social'],
+        tags: ['MobileApp', 'iOS', 'Android', 'Social'],
         text: `
             A platform that provides hospitality owners real-time information of their service staff and allows service staff to connect with all the guests that they serve. HoozeOn allows guests to feel empowered and happy by connecting them with the people they enjoy the most
         `,
@@ -235,7 +235,7 @@ export const project = {
         },
         title: 'Rialto',
         link: 'https://rialtocuration.com/',
-        tags: ['#WebApp', '#Fintech', '#Platform'],
+        tags: ['WebApp', 'Fintech', 'Platform'],
         text: `
             Rialto platform curates the entrepreneurial landscape, providing exceptional founders and investment firms with 360° insight into the connections most worth their time
         `,
@@ -255,7 +255,7 @@ export const project = {
         },
         title: 'Rice to Riches',
         link: 'https://www.ricetoriches.com/',
-        tags: ['#Web', '#E-commerce', '#Catering'],
+        tags: ['Web', 'E-commerce', 'Catering'],
         text: `
             E-commerce website for selling rice puddings, based on Shopify platform.
             Also there is a custom administrator panel for automation delivery process via FedEx shipping company.
@@ -292,7 +292,7 @@ export const project = {
         },
         title: 'GreenVision',
         link: 'https://greenvision-energy.com/',
-        tags: ['#WebApp', '#Mobile', '#Environment'],
+        tags: ['WebApp', 'Mobile', 'Environment'],
         text: `
             GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale
         `,
@@ -324,7 +324,7 @@ export const project = {
         },
         title: 'Stick',
         link: 'https://www.stick.ai/',
-        tags: ['#Web', '#AI', '#Presentation'],
+        tags: ['Web', 'AI', 'Presentation'],
         text: `
             Create beautiful slides easily. Stick uses Al to transform typed text into stunning visual presentations for you. The application uses AI technologies to dynamically suggest images that match the slide’s content and place them in a proper place on the slide. As a user, you have a great experience and don’t waste time searching the internet for the right icons
         `,
@@ -358,7 +358,7 @@ export const project = {
         },
         title: 'PlusDelta',
         link: 'https://plusdelta.app/',
-        tags: ['#WebApp', '#Social', "#Platform"],
+        tags: ['WebApp', 'Social', "Platform"],
         text: `
             Contribute and gather feedback on meetings and events on PlusDelta platform. It helps small or large teams' executives to laymen collaboratively plan, understand, communicate, and measure their projects and performance
         `,

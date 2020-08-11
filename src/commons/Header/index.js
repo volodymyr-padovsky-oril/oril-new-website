@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import CompanyInfo from "./CompanyInfo";
-import Bubble from "../Bubble";
 import Link from '../utils/activeLink';
 
 import './index.scss';
@@ -147,9 +146,6 @@ export class Header extends Component {
                 </div>
                 <div className="collapse collapse-template">
                     <div className="collapse-template__content">
-                        <Bubble size="200px" top="100px" left="-800px" speed=".7"/>
-                        <Bubble size="500px" top="1000px" left="400px" speed=".7"/>
-                        <Bubble size="359px" top="1600px" left="500px" speed=".7"/>
                         {this.NavLinks()}
                         <div className="button-wrapper">
                             <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer nofollow">

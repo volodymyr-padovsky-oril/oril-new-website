@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../commons/Bubble";
 import Link from 'next/link';
 import {scrollTo} from "../../commons/utils/scroll";
 
@@ -10,14 +9,10 @@ export class Intro extends Component {
             <section className="services__intro">
                 <div className="container">
                     <div className="services__intro__text">
-                        <Bubble size="1030px" top="560px" left="-960px" speed=".5"/>
-                        <Bubble size="266px" top="220px" left="100px" speed=".7"/>
                         <h2>Build your product with us</h2>
                         <p>No matter what stage you are at, <b>Idea</b> or a <b>Working Product</b>, we can help you visualize, build, deliver, and improve your Product</p>
                     </div>
                     <div className="services__intro__categories">
-                        <Bubble size="315px" top="250px" left="350px" speed=".3"/>
-                        <Bubble size="315px" top="250px" left="-760px" speed=".3"/>
                         <Link href={{pathname: "/services", hash: "ui-design"}}>
                             <a onClick={() => scrollTo('#design')}>
                                 <div className="services__intro__categories__design">

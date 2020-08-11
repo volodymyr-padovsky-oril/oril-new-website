@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../commons/Bubble";
 
 export class Mobile extends Component {
     blocks = [
@@ -82,7 +81,6 @@ export class Mobile extends Component {
         return (
             <section className="services__mobile">
                 <div className="container">
-                    <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">Mobile</h3>
                     <p className="text">
                         Mobile Apps came into play in early 2000s and have become more popular each other.
@@ -130,7 +128,6 @@ export class Mobile extends Component {
                         {/*</div>*/}
                     </div>
                     <div className="services__deliverables">
-                        <Bubble size="735px" top="800px" left="920px" speed=".2"/>
                         <h4>Deliverables</h4>
                         <div>
                             {
@@ -144,7 +141,6 @@ export class Mobile extends Component {
                         </div>
                     </div>
                     <div className="services__technologies">
-                        <Bubble size="407px" top="990px" left="-1800px" speed=".2"/>
                         <h4>Technologies</h4>
                         <div>
                             {

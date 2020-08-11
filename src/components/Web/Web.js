@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../commons/Bubble";
 
 export class Web extends Component {
     blocks = [
@@ -82,7 +81,6 @@ export class Web extends Component {
                         }
                     </div>
                     <div className="services__choices">
-                        <Bubble size="350px" top="1400px" left="-270px" speed=".4"/>
                         <h4>Great choice for:</h4>
                         <div className="choices-list">
                             {
@@ -125,7 +123,6 @@ export class Web extends Component {
                         </div>
                     </div>
                     <div className="services__technologies">
-                        <Bubble size="1089px" top="1740px" left="920px" speed=".2"/>
                         <h4>Technologies</h4>
                         <div>
                             {
@@ -141,7 +138,6 @@ export class Web extends Component {
                         </div>
                     </div>
                     <div className="services__products">
-                        <Bubble size="306px" top="1315px" left="-1380px" speed=".2"/>
                         <h4>Featured Products</h4>
                         <div>
                             {

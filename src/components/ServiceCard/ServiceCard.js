@@ -19,9 +19,10 @@ class ServiceCard extends Component {
                         </Link>
                     </div>
                     <Lottie
+                        style={{height: 'auto'}}
                         options={card.animationOptions}
-                        height={380}
-                        width={714}
+                        // height=auto
+                        width={613}
                     />
                 </div>
 

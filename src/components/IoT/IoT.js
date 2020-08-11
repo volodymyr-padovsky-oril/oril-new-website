@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../commons/Bubble";
 
 export class IoT extends Component {
     services = [
@@ -29,7 +28,6 @@ export class IoT extends Component {
         return (
             <section className="services__iot">
                 <div className="container">
-                    <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">IoT</h3>
                     <p className="text">Breathe life into objects around you and make them Smart.
                         The Internet of Things (IoT) has exploded in recent years, and of all emerging technologies,
@@ -50,7 +48,6 @@ export class IoT extends Component {
                         {/*</div>*/}
                     </div>
                     <div className="services__deliverables">
-                        <Bubble size="735px" top="800px" left="920px" speed=".2"/>
                         <h4>Deliverables</h4>
                         <div>
                             {
@@ -64,7 +61,6 @@ export class IoT extends Component {
                         </div>
                     </div>
                     <div className="services__technologies">
-                        <Bubble size="407px" top="990px" left="-1800px" speed=".2"/>
                         <h4>Technologies</h4>
                         <div>
                             {

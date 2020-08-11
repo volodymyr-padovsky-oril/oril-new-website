@@ -114,6 +114,21 @@ export class Iot extends Component {
         },
     ];
 
+    navLinks = [
+        {name: 'UX/UI Design', to: '/services/design'},
+        {name: 'Product Development', to: '/services/product-development'},
+        {name: 'Iot', to: '/services/iot'},
+    ];
+
+    NavLinks = () =>
+        this.navLinks.map((link, index) => (
+            <Link href={link.to} key={index} activeClassName="active">
+                <a className="nav_item">
+                    {link.name}
+                </a>
+            </Link>)
+        );
+
     render() {
         return (
             <div className="design-wrapper">
@@ -127,15 +142,7 @@ export class Iot extends Component {
                     <section className="services__design" id="design">
                         <div className="container">
                             <div className="header-link">
-                                <Link activeClassName='active' href="/services/design">
-                                    UX/UI Design
-                                </Link>
-                                <Link activeClassName='active' href="/services/product-development">
-                                    Product Development
-                                </Link>
-                                <Link activeClassName='active' href="/services/iot">
-                                    Iot
-                                </Link>
+                                {this.NavLinks()}
                             </div>
                             <div className="services__desc">
                                 <div className="services__desc--left">
