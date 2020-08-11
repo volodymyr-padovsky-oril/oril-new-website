@@ -4,7 +4,6 @@ import Web from "../../../../components/Web/Web";
 import Mobile from "../../../../components/Mobile/Mobile";
 import IoT from "../../../../components/IoT/IoT";
 import Blockchain from "../../../../components/Blockchain/Blockchain";
-import Bubble from "../../../../commons/Bubble";
 import SEOMetaTags from "../../../../components/SEOMetaTags";
 import Header from "../../../../commons/Header";
 import Contacts from "../../../../components/Contacts/Contacts";

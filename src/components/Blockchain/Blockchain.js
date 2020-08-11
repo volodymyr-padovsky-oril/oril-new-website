@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Bubble from "../../commons/Bubble";
 
 export class Blockchain extends Component {
     deliverables = [
@@ -27,7 +26,6 @@ export class Blockchain extends Component {
         return (
             <section className="services__blockchain">
                 <div className="container">
-                    <Bubble size="1089px" top="1850px" left="-400px" speed=".2"/>
                     <h3 className="tab-title">Blockchain</h3>
                     <p className="text">
                         Blockchain is not only an innovative technology but is also a revolutionary approach to how our daily transactions are processed and stored. Blockchain adoption grows each day due to its committed community that contributes to the infrastructure and tools that make Blockchain’s application a no-brainer in many industries
@@ -46,7 +44,6 @@ export class Blockchain extends Component {
                         {/*</div>*/}
                     </div>
                     <div className="services__deliverables">
-                        <Bubble size="735px" top="800px" left="920px" speed=".2"/>
                         <h4>Deliverables</h4>
                         <div>
                             {
@@ -60,7 +57,6 @@ export class Blockchain extends Component {
                         </div>
                     </div>
                     <div className="services__technologies">
-                        <Bubble size="407px" top="990px" left="-1800px" speed=".2"/>
                         <h4>Technologies</h4>
                         <div>
                             {
