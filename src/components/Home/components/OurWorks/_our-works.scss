@@ -7,7 +7,7 @@
 
     &__wrapper {
       margin-top: 90px;
-      width: 1540px;
+      width: 1539px;
       overflow: hidden;
 
       .swiper-pagination {
@@ -24,6 +24,10 @@
         width: 16px;
         height: 16px;
         background-color: #ffe155;
+      }
+
+      .swiper-container-horizontal>.swiper-pagination-bullets{
+        bottom: auto;
       }
 
       .slide {

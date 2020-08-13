@@ -91,7 +91,9 @@ export class Industries extends Component {
                                         two
                                         parties on mobile and web, all the way through checkout and beyond.
                                     </p>
-                                    <a href="">Featured Products</a>
+                                    <Link href="/portfolio/iot">
+                                        Featured Products
+                                    </Link>
                                 </div>
                                 <div className="home__industries__img">
                                     <img src="../assets/img/industries-iot.png" alt="iot"/>
@@ -112,7 +114,9 @@ export class Industries extends Component {
                                         two
                                         parties on mobile and web, all the way through checkout and beyond.
                                     </p>
-                                    <a href="">Featured Products</a>
+                                    <Link href="/portfolio/iot">
+                                        Featured Products
+                                    </Link>
                                 </div>
                                 <div className="home__industries__img">
                                     <img src="../assets/img/industries-real-estate.png" alt="industries-real-estate"/>
@@ -133,7 +137,9 @@ export class Industries extends Component {
                                         two
                                         parties on mobile and web, all the way through checkout and beyond.
                                     </p>
-                                    <a href="">Featured Products</a>
+                                    <Link href="/portfolio/marketplace">
+                                        Featured Products
+                                    </Link>
                                 </div>
                                 <div className="home__industries__img">
                                     <img src="../assets/img/industries-marketplace.png" alt="industries-marketpace"/>
@@ -154,10 +160,13 @@ export class Industries extends Component {
                                         two
                                         parties on mobile and web, all the way through checkout and beyond.
                                     </p>
-                                    <a href="">Featured Products</a>
+                                    <Link href="/portfolio/lifestyle">
+                                        Featured Products
+                                    </Link>
                                 </div>
                                 <div className="home__industries__img">
-                                    <img src="../assets/img/industries-lifestyle-fitness.png" alt="industries-lifestyle-fitness"/>
+                                    <img src="../assets/img/industries-lifestyle-fitness.png"
+                                         alt="industries-lifestyle-fitness"/>
                                 </div>
                             </div>
                         </TabPanel>

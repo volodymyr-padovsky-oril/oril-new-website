@@ -11,10 +11,10 @@ export const params = {
     },
     width: 1540,
     slidesPerView: 3,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false
-    // }
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    }
 };
 
 export class OurWorks extends Component {

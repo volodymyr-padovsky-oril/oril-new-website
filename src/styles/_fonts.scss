@@ -53,6 +53,13 @@
 }
 
 @font-face {
+  font-family: 'DMSans-Regular';
+  src: url('/assets/fonts/DMSans-Regular.ttf');
+  src: url('/DMSans-Regular.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Roboto-Regular';
   src: url('/assets/fonts/Roboto-Regular.ttf');
   src: url('/Roboto-Regular.ttf?#iefix') format('embedded-opentype'),

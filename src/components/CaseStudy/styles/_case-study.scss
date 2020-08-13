@@ -1,6 +1,10 @@
 .case-study {
   margin: 82px 0 0 0;
 
+  p {
+    max-width: 750px;
+  }
+
   h2 {
     font-family: Mont-Bold, serif;
     font-size: 2.75rem;
@@ -25,6 +29,8 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 116px;
+    margin-bottom: 117px;
+
   }
 
   &__left {
@@ -38,14 +44,10 @@
       margin-bottom: 26px;
     }
 
-    p {
-      margin-bottom: 117px;
-    }
-
     h4 {
       font-size: 1.25rem;
       color: #2c2c2c;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       font-family: Mont-Bold, serif;
     }
 
@@ -59,8 +61,8 @@
 
   &__properties {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 116px;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 322px;
     margin-bottom: 80px;
   }
 
@@ -122,16 +124,47 @@
 
   &__palette {
     display: grid;
-    grid-template-columns: 356px 1fr;
-    grid-gap: 183px;
+    grid-template-columns: auto 1fr;
+    grid-gap: 141px;
+    margin-top: 92px;
 
-    .leafs {
+    //.shape {
+    //  display: grid;
+    //  grid-template-columns: 1fr 1fr;
+    //  grid-template-rows: 1fr 1fr;
+    //  grid-row-gap: 74px;
+    //
+    //
+    //}
+
+    .shape {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-row-gap: 74px;
+      grid-row-gap: 60px;
+      grid-gap: 60px;
 
-      &__item {
+      &__square {
+        //margin-right: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 160px;
+        border-radius: 25px;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+        color: #fff;
+        font-family: DMSans-Regular, serif;
+        font-size: 22px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+      &__leaf {
         display: flex;
         flex-direction: column;
 
@@ -232,7 +265,7 @@
 
         &--bottom {
           position: absolute;
-          left: 2;
+          left: 2px;
           bottom: -298px;
         }
 
@@ -362,7 +395,7 @@
 
       &__wrapper {
         display: flex;
-
+        margin-top: 100px;
       }
 
       &__item {
@@ -398,8 +431,6 @@
   }
 
   &__our-results {
-
-
     .our-results {
 
       &__points {
@@ -410,6 +441,7 @@
 
       &__item {
         margin: 0 130px;
+        text-align: center;
 
         span {
           font-family: Mont-SemiBold, serif;
