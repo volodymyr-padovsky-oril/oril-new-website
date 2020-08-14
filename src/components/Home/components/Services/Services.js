@@ -11,17 +11,17 @@ export class Services extends Component {
         {
             img: 'ui-ux-design',
             name: 'UX/UI Design',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium'
+            content: 'Intuitive design is a huge component of most products’ success. We’ll make sure your products and features flow well while looking great!'
         },
         {
             img: 'product-development',
             name: 'Product development',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium'
+            content: 'Unicorns aren’t built in a day. They’re the product of solid methodologies that iteratively bridge market demands with unique solutions. We’ve got your back.'
         },
         {
             img: 'io-t',
             name: 'Product IoT',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium'
+            content: 'Our dedicated team of IoT specialists ensures that software, hardware, and everything in between works just like it should!'
         },
     ];
 

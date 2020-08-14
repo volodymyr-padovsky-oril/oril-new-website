@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Swiper from "react-id-swiper";
 import {project} from "../../../../lib/our-projects";
+import Link from "next/link";
 
 export const params = {
     loop: true,
@@ -11,10 +12,10 @@ export const params = {
     },
     width: 1540,
     slidesPerView: 3,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false
-    // }
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    }
 };
 
 export class OurWorks extends Component {
@@ -26,8 +27,8 @@ export class OurWorks extends Component {
 
     slides = [
         project.greenVision,
-        project.plusDelta,
-        project.laced
+        project.sparkOffer,
+        project.laced,
     ];
 
     render() {
@@ -52,10 +53,10 @@ export class OurWorks extends Component {
                                                 }
                                             </div>
                                             <p className="text">{slide.text}</p>
-                                            <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow"
-                                               className="link">
-                                                Learn more
-                                            </a>
+                                            <Link href={`case-study/${slide.link}`}>
+                                                <a className="link">Learn more
+                                                </a>
+                                            </Link>
                                         </div>
 
                                     </div>

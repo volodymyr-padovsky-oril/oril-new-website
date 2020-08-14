@@ -36,7 +36,7 @@ export const project = {
             extension: '.png'
         },
         title: 'VICKI',
-        link: 'https://getvicki.com/',
+        link: 'vicki',
         tags: ['MobileApp', 'iOS', 'Android', 'Retail'],
         text: `
             VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world
@@ -72,7 +72,7 @@ export const project = {
             extension: '.png'
         },
         title: 'SparkOffer',
-        link: 'https://www.sparkoffer.com/',
+        link: 'sparkoffer',
         tags: ['Web', 'Realestate', 'Platform'],
         text: `
             A platform that helps to interact and make real estate binding offers,
@@ -138,7 +138,7 @@ export const project = {
             extension: '.png'
         },
         title: 'LACED',
-        link: 'https://laced-app.com/',
+        link: 'laced',
         tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
         text: `
             LACED is a mobile app for online sneaker auctions where you can buy bids and participate by placing a bid. You can claim a reward in the loyalty section. Bid small and win big
@@ -291,7 +291,7 @@ export const project = {
             extension: '.png'
         },
         title: 'GreenVision',
-        link: 'https://greenvision-energy.com/',
+        link: 'green-vision',
         tags: ['WebApp', 'Mobile', 'Environment'],
         text: `
             GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale

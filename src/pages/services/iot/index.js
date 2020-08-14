@@ -6,7 +6,7 @@ import Footer from "../../../commons/Footer";
 import './_design.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 // import Link from '../../../../src/commons/utils/activeLink';
-import Link from "next/link";
+import Link from '../../../commons/utils/activeLink';
 
 export class Iot extends Component {
     blocks = [
