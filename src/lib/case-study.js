@@ -366,5 +366,137 @@ export const caseStudy = {
 
             ]
 
+        },
+    sab:
+        {
+            id: 'sab',
+            logo: 'sab-logo',
+            logoExt: 'jpg',
+            link: 'https://signalautobroker.com',
+            headerTitle: 'Some text needs to be displayed here',
+            headerText: 'SparkOffer is a residential real estate marketplace that enables buyers, sellers and agents to find, list, offer and negotiate properties completely online',
+            headerImg: 'laced',
+            properties: [
+                {
+                    title: 'Background',
+                    text: 'SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …',
+                },
+                {
+                    title: 'Duration',
+                    text: 'MVP in 3.5 month, continuing work for 18+ months',
+                },
+                {
+                    title: 'Scope',
+                    text: '146 screens, mobile responsive programming',
+                },
+                {
+                    title: 'Team',
+                    text: 'UI/UX designer, 3 Engineers, Project Manager, QA',
+                }
+            ],
+            // teams: ['UI/UX designer', '3 Engineers', 'Project Manager', 'QA'],
+            tags: ['Mobile App', 'UX/UI', 'MVP', 'Development'],
+            posterImg: 'sab2',
+            uxProcessSubTitle: 'The goal of UX process was to identify the main pain points and understand the process of using the product in daily work. Our UX team has created high-fidelity wireframes to understand the client’s vision as much as possible and to clarify all the features of interface.',
+            uxProcessImg: 'sab3',
+            uxProcessImgExt: 'jpg',
+            uiConceptSubTitle: 'SparkOffer UI system was carefully created to reflect its authenticity, strong values and project identity: modern, ambitious, reliable, simple.',
+            uiConceptShapes: [
+                {
+                    color: '#000000',
+                    style: {
+                        backgroundColor: '#000000',
+                        borderRadius: 'unset',
+
+                    }
+                },
+                {
+                    color: '#39853e',
+                    style: {
+                        backgroundColor: '#39853e',
+                        borderRadius: 'unset',
+                    }
+
+                },
+                {
+                    color: '#f8f8f8',
+                    style: {
+                        backgroundColor: '#f8f8f8',
+                        color: '#000',
+                        borderRadius: 'unset',
+                    },
+
+                },
+            ],
+            uiConceptFont: 'Source Sans',
+            uiConceptFontStyle: {
+                fontFamily: 'SourceSansPro-Bold, serif'
+            },
+            uiConceptFontStyleColor: {
+                color: '#39853e',
+                fontFamily: 'SourceSansPro-Bold, serif'
+            },
+            bigImage: 'sab-big',
+            ourProcessItem: [
+                {
+                    title: 'Research',
+                    img: 'research',
+                    date: '1 week',
+                    points: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet']
+                }
+            ],
+            technoTitle: 'Technologies',
+            technoSubTitle: 'SparkOffer UI system was carefully created to reflect its authenticity, strong values and project identity: modern, ambitious, reliable, simple.',
+            technoItems: [
+                {
+                    img: 'services-logo-typescript-java',
+                    name: 'Java'
+                },
+                {
+                    img: 'spring-boot',
+                    name: 'Spring Boot'
+                },
+                {
+                    img: 'mongo-db',
+                    name: 'MongoDB'
+                },
+                {
+                    img: 'services-logo-typescript-angular',
+                    name: 'Angular 9'
+                },
+                {
+                    img: 'websocket',
+                    name: 'WebSocket'
+                },
+                {
+                    img: 'hazel-cast',
+                    name: 'HazelCast'
+                },
+                {
+                    img: 's3bucket',
+                    name: 'S3 Bucket'
+                }
+            ],
+            ourResultsSubTile: 'SparkOffer UI system was carefully created to reflect its authenticity, strong values and project identity: modern, ambitious, reliable, simple.',
+            ourResultsCustomerImg: 'propati',
+            ourResultsCustomerName: 'Dom Propati',
+            ourResultsCustomerPosition: 'CEO of ViaTouch Media',
+            ourResultsCustomerFeedback: `“Their skills are excellent, and they’re one of the best engineering firms I’ve worked with.”`,
+            ourResultsCustomerPoints: [
+                {
+                    circle: '2520',
+                    text: 'Number of users on the platform'
+                },
+                {
+                    circle: '1,000+',
+                    text: 'Informed households'
+                },
+                {
+                    circle: '1',
+                    text: 'Saved planet'
+                },
+
+            ]
+
         }
 };

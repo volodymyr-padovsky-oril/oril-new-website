@@ -80,6 +80,14 @@
   url('/assets/fonts/Barlow-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('/assets/fonts/SourceSansPro-Bold.ttf');
+  src: url('/SourceSansPro-Bold.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+
 h1 {
   font-size: 65px;
   line-height: 0.86;
