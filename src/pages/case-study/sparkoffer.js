@@ -13,7 +13,7 @@ class Index extends Component {
         return (
             <>
                 <SEOMetaTags
-                    title={"ORIL | Case Study"}
+                    title={"ORIL | Spark Offer Case Study"}
                     url={"/portfolio"}
                     // description={}   add custom description for this page
                 />

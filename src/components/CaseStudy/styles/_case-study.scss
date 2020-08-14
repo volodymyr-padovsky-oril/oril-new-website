@@ -389,13 +389,14 @@
   }
 
   &__technologies {
-    margin-bottom: 260px;
+    margin-bottom: 200px;
 
     .technologies {
 
       &__wrapper {
         display: flex;
         margin-top: 100px;
+        flex-wrap: wrap;
       }
 
       &__item {
@@ -403,6 +404,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 60px;
 
         & > div {
           margin: 0 40px 30px 40px;
@@ -414,6 +416,9 @@
           height: 132px;
           box-shadow: 4px 4px 48px 0 rgba(4, 59, 85, 0.09);
           border-radius: 22px;
+          img{
+            max-width: 75px;
+          }
         }
 
         &:last-child {

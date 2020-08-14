@@ -10,7 +10,7 @@ class CaseStudy extends Component {
                 <div className="container">
                     <div className="case-study__header">
                         <div className="case-study__left">
-                            <img src={`../assets/icons/${data.logo}.svg`} alt={data.logo}/>
+                            <img src={`../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
                             <h2>
                                 {data.headerTitle}
                             </h2>
@@ -35,7 +35,7 @@ class CaseStudy extends Component {
                             ))}
                         </div>
                         <div className="case-study__right">
-                            {data.team &&
+                            {data.teams &&
                             <div className="team">
                                 <h3>Team</h3>
                                 {data.teams.map((team, index) => (
@@ -54,10 +54,11 @@ class CaseStudy extends Component {
                         </div>
                     </div>
                     <div className="case-study__poster">
-                        <img src={`../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
-                        <h3>
+                        <img style={!data.posterTitle ? { width: 'auto'} : {width: '666px'}} src={`../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
+                        {data.posterTitle && <h3>
                             {data.posterTitle}
-                        </h3>
+                        </h3>}
+
                     </div>
                 </div>
                 <div className="case-study__ux-process">
@@ -67,10 +68,10 @@ class CaseStudy extends Component {
                             {data.uxProcessSubTitle}
                         </p>
                         {data.uxProcessImg &&
-                        <img src={`../assets/icons/${data.uxProcessImg}.svg`} alt={data.uxProcessImg}/>}
+                        <img src={`../assets/icons/${data.uxProcessImg}.${data.uxProcessImgExt}`} alt={data.uxProcessImg} style={{width: '100%'}}/>}
                     </div>
                     {data.uxProcessImgFull &&
-                    <img src={`../assets/icons/${data.uxProcessImgFull}.svg`} alt={data.uxProcessImgFull}/>}
+                    <img src={`../assets/icons/${data.uxProcessImgFull}.${data.uxProcessImgFullExt}`} alt={data.uxProcessImgFull}/>}
                 </div>
                 <div className="container">
                     <div className="case-study__ui-concept">
@@ -93,13 +94,17 @@ class CaseStudy extends Component {
                                 }
                             </div>
                             <div className="fonts">
-                                <span className="fonts--big">Aa</span>
-                                <span className="fonts--green">{data.uiConceptFont}</span>
+                                <span style={data.uiConceptFontStyle} className="fonts--big">Aa</span>
+                                <span style={data.uiConceptFontStyleColor} className="fonts--green">{data.uiConceptFont}</span>
                                 <span
+                                    style={data.uiConceptFontStyle}
                                     className="fonts--regular-big">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
                                 <span
+                                    style={data.uiConceptFontStyle}
                                     className="fonts--regular">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
-                                <span className="fonts--regular">0123456789</span>
+                                <span
+                                    style={data.uiConceptFontStyle}
+                                    className="fonts--regular">0123456789</span>
                             </div>
                         </div>
                     </div>

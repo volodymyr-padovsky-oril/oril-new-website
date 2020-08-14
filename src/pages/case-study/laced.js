@@ -10,21 +10,21 @@ import {caseStudy} from "../../lib/case-study";
 
 class Index extends Component {
 
-    render() {
-        return (
-            <>
-                <SEOMetaTags
-                    title={"ORIL | Green Vision Case Study"}
-                    url={"/portfolio"}
-                    // description={}   add custom description for this page
-                />
-                <Header redirect={this.onChangePage}/>
-                <CaseStudy data={caseStudy.greenVision}/>
-                <Contacts/>
-                <Footer/>
-            </>
-        );
-    }
+  render() {
+    return (
+      <>
+        <SEOMetaTags
+          title={"ORIL | Laced Case Study"}
+          url={"/portfolio"}
+          // description={}   add custom description for this page
+        />
+        <Header redirect={this.onChangePage}/>
+        <CaseStudy data={caseStudy.laced}/>
+        <Contacts/>
+        <Footer/>
+      </>
+    );
+  }
 }
 
 export default Index;

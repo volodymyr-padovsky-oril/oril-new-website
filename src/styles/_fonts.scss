@@ -73,6 +73,13 @@
   url('/assets/fonts/AvenirNext-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Barlow-Bold';
+  src: url('/assets/fonts/Barlow-Bold.ttf');
+  src: url('/Barlow-Bold.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Barlow-Bold.ttf') format('truetype');
+}
+
 h1 {
   font-size: 65px;
   line-height: 0.86;
