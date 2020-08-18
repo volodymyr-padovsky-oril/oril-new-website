@@ -1,7 +1,6 @@
 .banner {
   &__block {
     height: 1038px;
-    width: 2199px;
     position: relative;
 
     &:after {
@@ -9,7 +8,8 @@
       content: "";
       position: absolute;
       height: 1038px;
-      width: 2199px;
+      width: 100%;
+      background-repeat: round;
 
     }
 

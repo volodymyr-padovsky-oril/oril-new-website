@@ -7,11 +7,11 @@
 
     &__wrapper {
       margin-top: 90px;
-      width: 1539px;
+      width: 1240px;
       overflow: hidden;
 
       .swiper-pagination {
-        top: 470px;
+        top: 388px;
       }
 
       .swiper-pagination-bullet {
@@ -32,6 +32,9 @@
 
       .slide {
         margin: 0;
+        img{
+          width: 100%;
+        }
 
         & > div {
           display: flex;
@@ -87,7 +90,7 @@
     margin-top: 280px !important;
 
     img {
-      width: 344px;
+      width: 250px;
       //height: 290px;
     }
 

@@ -14,7 +14,8 @@ class CaseStudy extends Component {
                             <h2>
                                 {data.headerTitle}
                             </h2>
-                            <a href={data.link}
+                            <a style={{color: data.linkColor}}
+                                href={data.link}
                                target="_blank"
                                rel="noopener noreferrer">{data.link}</a>
                             <p>

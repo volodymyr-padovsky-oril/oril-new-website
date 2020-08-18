@@ -10,7 +10,7 @@ export const params = {
         type: 'bullets',
         clickable: true
     },
-    width: 1540,
+    width: 1240,
     slidesPerView: 3,
     autoplay: {
         delay: 3500,
