@@ -5,8 +5,10 @@ import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
 import './_design.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
-// import Link from '../../../../src/commons/utils/activeLink';
 import Link from '../../../commons/utils/activeLink';
+import development from "../../../lib/lotties/development-services";
+import Lottie from 'react-lottie';
+import ux from "../../../lib/lotties/ux-services";
 
 export class Design extends Component {
     blocks = [
@@ -95,20 +97,20 @@ export class Design extends Component {
     process = [
         {
             title: 'Analyze',
-            img: 'services-whale2',
+            img: 'services-panther1',
             text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things.',
             direction: 'odd'
         },
         {
             title: 'Wireframe & Test',
-            img: 'services-whale3',
+            img: 'services-panther2',
             text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas.',
             direction: 'even'
 
         },
         {
             title: 'Prototype & Implement',
-            img: 'services-whale4',
+            img: 'services-panther3',
             text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the developers to ensure that the designs are implemented correctly.',
             direction: 'odd'
         },
@@ -116,9 +118,18 @@ export class Design extends Component {
 
     navLinks = [
         {name: 'UX/UI Design', to: '/services/design'},
-        {name: 'Product Development', to: '/services/product-development'},
+        {name: 'Product Development', to: '/services/development'},
         {name: 'Iot', to: '/services/iot'},
     ];
+
+    animationOptions= {
+        loop: true,
+        autoplay: true,
+        animationData: ux,
+        // rendererSettings: {
+        //     preserveAspectRatio: "xMidYMid slice"
+        // }
+    };
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
@@ -133,8 +144,8 @@ export class Design extends Component {
         return (
             <div className="design-wrapper">
                 <SEOMetaTags
-                    title={"ORIL | Services"}
-                    url={"/services"}
+                    title={"ORIL | Design"}
+                    url={"/services/design"}
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
@@ -158,7 +169,10 @@ export class Design extends Component {
                                     </p>
                                 </div>
                                 <div className="services__desc--right">
-                                    <img src="../assets/img/services-whale1.jpg" alt="product development"/>
+                                    <Lottie
+                                        options={this.animationOptions}
+                                        width={613}
+                                    />
                                 </div>
                             </div>
                             <div className="services__ul-list">

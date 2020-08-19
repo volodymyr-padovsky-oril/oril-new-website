@@ -110,7 +110,7 @@
   position: relative;
   width: 185px;
   height: 185px;
-  border-radius: 44%;
+  border-radius: 50%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
   margin: 10px;
 
@@ -163,7 +163,7 @@
     transition-delay: 0s;
     width: 185px;
     height: 185px;
-    border-radius: 44%;
+    border-radius: 50%;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
 
     &__desc {
@@ -193,7 +193,8 @@
           font-size: 12px;
           line-height: 1.25;
           margin: 0 auto;
-          max-width: 144px;
+          max-width: 110px;
+          margin-bottom: 10px;
         }
       }
     }

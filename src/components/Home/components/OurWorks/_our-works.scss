@@ -2,16 +2,15 @@
   &__our-works {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 200px;
 
     &__wrapper {
-      margin-top: 90px;
-      width: 1539px;
+      width: 1240px;
       overflow: hidden;
+      margin: 90px auto 0 auto;
 
       .swiper-pagination {
-        top: 470px;
+        top: 388px;
       }
 
       .swiper-pagination-bullet {
@@ -32,6 +31,9 @@
 
       .slide {
         margin: 0;
+        img{
+          width: 100%;
+        }
 
         & > div {
           display: flex;
@@ -87,8 +89,8 @@
     margin-top: 280px !important;
 
     img {
-      width: 344px;
-      //height: 290px;
+      width: 250px;
+      height: 100%;
     }
 
     & > div {

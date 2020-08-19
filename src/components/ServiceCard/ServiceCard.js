@@ -9,8 +9,8 @@ class ServiceCard extends Component {
         const {card} = this.props;
         return (
             <section className="card-wrapper">
-                <div className={`container ${card.direction === 'odd' && 'odd'}`}>
-                    <div className="text-wrapper">
+                <div className={`container ${card.direction === 'odd' ? 'odd' : 'even'}`}>
+                    <div className="card-wrapper__text-wrapper">
                         <h2>{card.title}</h2>
                         <p>{card.subtitle}</p>
                         <span>{card.text}</span>
@@ -18,14 +18,16 @@ class ServiceCard extends Component {
                             Learn More
                         </Link>
                     </div>
-                    <Lottie
-                        style={{height: 'auto'}}
-                        options={card.animationOptions}
-                        // height=auto
-                        width={613}
-                    />
-                </div>
+                    <div className="card-wrapper__animation-wrapper">
 
+                        <Lottie
+                            // style={{height: 'auto', marginLeft: '-60px'}}
+                            options={card.animationOptions}
+                            // height=auto
+                            // width={613}
+                        />
+                    </div>
+                </div>
             </section>
         );
     }

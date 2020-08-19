@@ -7,6 +7,7 @@
     margin: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     &__tab {
       font-size: 1.125rem;
@@ -16,11 +17,13 @@
       padding: 0;
       transition: .2s;
       margin-right: 35px;
+      white-space: nowrap;
 
       a {
         text-decoration: none;
         color: #848484;
-        &:hover{
+
+        &:hover {
           color: #ffb248;
         }
 
@@ -98,6 +101,30 @@
 
 
       padding: 0 20px;
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .react-tabs {
+    &__list {
+      &__tab {
+        margin-right: 20px;
+
+        &--selected {
+          margin-right: 20px;
+
+          a {
+            font-size: 0.875rem;
+          }
+        }
+
+        a {
+          font-size: 0.875rem;
+        }
+      }
+
 
     }
   }
@@ -281,9 +308,9 @@
 //  }
 //}
 
-@media (max-width: 768px) {
-  .react-tabs__tab-list {
-    left: -40px;
-  }
-}
+//@media (max-width: 768px) {
+//  .react-tabs__tab-list {
+//    left: -40px;
+//  }
+//}
 

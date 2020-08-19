@@ -2,7 +2,6 @@
 
 @import "../../Intro/intro";
 @import "../../../pages/services/design/design";
-@import "../../../pages/services/development/development";
 @import "../../Web/web";
 @import "../../Mobile/mobile";
 @import "../../IoT/iot";
@@ -85,44 +84,43 @@
   &__technologies {
     margin-bottom: 275px;
 
+    //& > div {
+    //  display: grid;
+    //  grid-template-columns: repeat(auto-fill, 66px);
+    //  grid-gap: 30px;
+    //
+    //  & > div {
+    //    text-align: center;
+    //    width: 100%;
+    //    grid-gap: 18px;
+    //    display: grid;
+    //    justify-items: center;
+    //
+    //    & > div {
+    //      width: 66px;
+    //      height: 66px;
+    //      display: grid;
+    //      align-items: center;
+    //      justify-content: center;
+    //      background-color: white;
+    //      border-radius: 5px;
+    //
+    //      img {
+    //        max-width: 44px;
+    //        max-height: 44px;
+    //      }
+    //    }
+    //  }
+    //}
+
     & > div {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 66px);
-      grid-gap: 30px;
-
-      & > div {
-        text-align: center;
-        width: 100%;
-        grid-gap: 18px;
-        display: grid;
-        justify-items: center;
-
-        & > div {
-          width: 66px;
-          height: 66px;
-          display: grid;
-          align-items: center;
-          justify-content: center;
-          background-color: white;
-          border-radius: 5px;
-
-          img {
-            max-width: 44px;
-            max-height: 44px;
-          }
-        }
-      }
-    }
-
-    & > div {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 66px);
+      grid-template-columns: repeat(auto-fill, 90px);
       grid-gap: 30px;
 
       & > a {
-        border-radius: 11px;
-        box-shadow: 1px 2px 9px 0 rgba(102, 102, 102, 0.15);
-        font-size: 16px;
+        font-family: Mont-Bold, serif;
+        font-size: 15px;
         text-decoration: none;
         text-align: center;
         width: 100%;
@@ -141,7 +139,8 @@
           align-items: center;
           justify-content: center;
           background-color: white;
-          border-radius: 5px;
+          border-radius: 11px;
+          box-shadow: 1px 2px 9px 0 rgba(102, 102, 102, 0.15);
 
           img {
             max-width: 44px;
@@ -387,7 +386,7 @@
 
       & > div {
         grid-gap: 57px;
-        grid-template-columns: repeat(auto-fill, 66px);
+        grid-template-columns: repeat(auto-fill, 90px);
 
         a {
           box-shadow: 1px 2px 9px 0 rgba(102, 102, 102, 0.15);
@@ -414,7 +413,7 @@
 
 .products {
   text-align: center;
-  width: 1539px;
+  width: 1240px;
   overflow: hidden;
   margin: 0 auto;
 }

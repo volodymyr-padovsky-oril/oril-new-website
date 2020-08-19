@@ -1,7 +1,6 @@
 .banner {
   &__block {
     height: 1038px;
-    width: 2199px;
     position: relative;
 
     &:after {
@@ -9,8 +8,12 @@
       content: "";
       position: absolute;
       height: 1038px;
-      width: 2199px;
+      width: 100%;
 
+
+      @media (min-width: 2000px) {
+        background-repeat: round;
+      }
     }
 
     .wrapper {

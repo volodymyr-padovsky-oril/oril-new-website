@@ -116,7 +116,7 @@ export class Iot extends Component {
 
     navLinks = [
         {name: 'UX/UI Design', to: '/services/design'},
-        {name: 'Product Development', to: '/services/product-development'},
+        {name: 'Product Development', to: '/services/development'},
         {name: 'Iot', to: '/services/iot'},
     ];
 
