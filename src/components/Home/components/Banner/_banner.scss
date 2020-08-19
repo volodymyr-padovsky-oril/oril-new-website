@@ -9,8 +9,11 @@
       position: absolute;
       height: 1038px;
       width: 100%;
-      background-repeat: round;
 
+
+      @media (min-width: 2000px) {
+        background-repeat: round;
+      }
     }
 
     .wrapper {

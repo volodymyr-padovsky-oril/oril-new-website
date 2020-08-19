@@ -25,6 +25,7 @@ div.bubble_wrapper { z-index: 0 }
   display: grid;
   max-width: 1240px;
   margin: 0 auto;
+  //width: 50%;
 }
 
 .link {
@@ -61,5 +62,10 @@ div.bubble_wrapper { z-index: 0 }
 @media (max-width: 767.98px) {
   .container {
     padding: 0 20px;
+  }
+}
+@media (min-width: 2700px) {
+  .container {
+    width: 35%;
   }
 }

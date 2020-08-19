@@ -2,13 +2,12 @@
   &__our-works {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 200px;
 
     &__wrapper {
-      margin-top: 90px;
       width: 1240px;
       overflow: hidden;
+      margin: 90px auto 0 auto;
 
       .swiper-pagination {
         top: 388px;
@@ -91,7 +90,7 @@
 
     img {
       width: 250px;
-      //height: 290px;
+      height: 100%;
     }
 
     & > div {
