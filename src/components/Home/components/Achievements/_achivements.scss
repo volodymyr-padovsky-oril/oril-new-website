@@ -16,9 +16,23 @@
       width: 116%;
       background-size: 100%;
       background-repeat: round;
+
+      @media (max-width: 1600.98px) {
+        background-repeat: no-repeat;
+        width: 200%;
+        left: -250px;
+      }
+
+      @media (max-width: 460px) {
+        top: -234px;
+      }
+
+      @media (max-width: 1185px) {
+        top: -140px;
+      }
     }
 
-      h3 {
+    h3 {
       color: #fff !important;
     }
 
@@ -30,6 +44,7 @@
       a {
         height: 70px;
         transition: all 1s ease;
+
         &:hover {
           transform: scale(1.2);
         }
@@ -61,7 +76,8 @@
 @media (max-width: 767.98px) {
   .home {
     &__achievements {
-      margin-bottom: 150px;
+      margin: 140px 0 150px;
+
 
       & > .container {
         grid-gap: 55px;
