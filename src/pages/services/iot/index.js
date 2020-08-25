@@ -3,10 +3,10 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
-import './_design.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
-// import Link from '../../../../src/commons/utils/activeLink';
 import Link from '../../../commons/utils/activeLink';
+import Lottie from 'react-lottie';
+import iot from "../../../lib/lotties/iot-services";
 
 export class Iot extends Component {
     blocks = [
@@ -94,23 +94,39 @@ export class Iot extends Component {
 
     process = [
         {
-            title: '1. Analyze',
-            img: 'services-whale2',
-            text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things.',
-            direction: 'odd'
+            title: 'Research',
+            img: 'octo-research',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
+            direction: 'odd',
+            ext: 'png'
         },
         {
-            title: '2. Wireframe & Test',
-            img: 'services-whale3',
-            text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas.',
-            direction: 'even'
-
+            title: 'Product Design',
+            img: 'octo-design',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
+            direction: 'even',
+            ext: 'png'
         },
         {
-            title: '3. Prototype & Implement',
-            img: 'services-whale4',
-            text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the developers to ensure that the designs are implemented correctly.',
-            direction: 'odd'
+            title: 'Web and mobile app',
+            img: 'octo-web',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
+            direction: 'odd',
+            ext: 'png'
+        },
+        {
+            title: 'Device prototype',
+            img: 'octo-prototype',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
+            direction: 'odd',
+            ext: 'png'
+        },
+        {
+            title: 'Product release',
+            img: 'octo-release',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
+            direction: 'odd',
+            ext: 'png'
         },
     ];
 
@@ -119,6 +135,15 @@ export class Iot extends Component {
         {name: 'Product Development', to: '/services/development'},
         {name: 'Iot', to: '/services/iot'},
     ];
+
+    animationOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: iot,
+        // rendererSettings: {
+        //     preserveAspectRatio: "xMidYMid slice"
+        // }
+    };
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
@@ -133,8 +158,8 @@ export class Iot extends Component {
         return (
             <div className="design-wrapper">
                 <SEOMetaTags
-                    title={"ORIL | Services"}
-                    url={"/services"}
+                    title={"ORIL | Design"}
+                    url={"/services/design"}
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
@@ -146,7 +171,7 @@ export class Iot extends Component {
                             </div>
                             <div className="services__desc">
                                 <div className="services__desc--left">
-                                    <h2>UX/UI Design</h2>
+                                    <h2>Iot</h2>
                                     <h3>Thoughtful User Interfaces for All Kind of Products</h3>
                                     <p>
                                         Design that works is design that clearly lays out solutions for user needs. This
@@ -158,7 +183,10 @@ export class Iot extends Component {
                                     </p>
                                 </div>
                                 <div className="services__desc--right">
-                                    <img src="../assets/img/services-whale1.jpg" alt="product development"/>
+                                    <Lottie
+                                        options={this.animationOptions}
+                                        width={613}
+                                    />
                                 </div>
                             </div>
                             <div className="services__ul-list">
@@ -166,19 +194,17 @@ export class Iot extends Component {
                                     <div className="list-item" key={index}>
                                         <div className="list-style"></div>
                                         <div>
-                                            {
-                                                item.title
-                                                    ? <span
-                                                        className={item.titleOnNewLine ? 'block' : null}>{item.title}</span>
-                                                    : null
-                                            }
+                                            {item.title
+                                                ? <span
+                                                    className={item.titleOnNewLine ? 'block' : null}>{item.title}</span>
+                                                : null}
                                             {item.text}
                                         </div>
                                     </div>
                                 ))}
                             </div>
                             <div className="services__process">
-                                <h2>Our Process</h2>
+                                <h2>Our Approach</h2>
                                 <p>
                                     Our practical approach to product design pulls heavily from tried-and-true
                                     methodologies. Due to the heavily streamlined process we’ve internalized, our team
@@ -188,7 +214,7 @@ export class Iot extends Component {
                                     {this.process.map((item, index) => (
                                         <div className={`process-item ${item.direction === 'odd' && 'odd'}`}
                                              key={'process-item-' + index}>
-                                            <img src={'../assets/img/' + item.img + '.jpg'}
+                                            <img src={'../assets/img/' + item.img + '.' + item.ext}
                                                  alt={item.img}/>
                                             <div className="process-item__text">
                                                 <span>{item.title}</span>
@@ -234,11 +260,8 @@ export class Iot extends Component {
                         <div className="products">
                             <h2>Featured Products</h2>
                             <OurWorks title={false}/>
-
                         </div>
-
                     </section>
-
                 </section>
                 <Contacts/>
                 <Footer/>

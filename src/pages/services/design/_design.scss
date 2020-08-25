@@ -62,6 +62,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       direction: rtl;
+      img{
+        width: 100%;
+      }
 
       &__text {
         text-align: left;

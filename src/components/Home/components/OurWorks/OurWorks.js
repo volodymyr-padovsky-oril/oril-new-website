@@ -11,14 +11,13 @@ export const params = {
         clickable: true
     },
     slidesPerView: 3,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    },
     width: 1240,
 
     breakpoints: {
-        // when window width is >= 320px
         1260: {
             slidesPerView: 1,
         },
@@ -65,7 +64,6 @@ export class OurWorks extends Component {
                                                 </a>
                                             </Link>
                                         </div>
-
                                     </div>
                                 </div>
                             )
