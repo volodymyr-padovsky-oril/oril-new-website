@@ -170,7 +170,7 @@ export class Design extends Component {
                                 <div className="services__desc--right">
                                     <Lottie
                                         options={this.animationOptions}
-                                        width={613}
+                                        // width={613}
                                     />
                                 </div>
                             </div>

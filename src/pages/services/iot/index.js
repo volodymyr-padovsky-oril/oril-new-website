@@ -185,7 +185,6 @@ export class Iot extends Component {
                                 <div className="services__desc--right">
                                     <Lottie
                                         options={this.animationOptions}
-                                        width={613}
                                     />
                                 </div>
                             </div>
