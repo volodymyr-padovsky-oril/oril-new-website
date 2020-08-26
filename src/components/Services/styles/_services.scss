@@ -388,9 +388,9 @@
         grid-gap: 57px;
         grid-template-columns: repeat(auto-fill, 90px);
 
-        a {
-          box-shadow: 1px 2px 9px 0 rgba(102, 102, 102, 0.15);
-        }
+        //a {
+        //  box-shadow: 1px 2px 9px 0 rgba(102, 102, 102, 0.15);
+        //}
 
         div > div {
           width: 66px;
@@ -420,8 +420,10 @@
 
 .header-link {
   margin-bottom: 50px;
+  line-height: 3.5rem;
+
   a {
-    margin-right: 30px;
+    margin-right: 35px;
     text-decoration: none;
     font-size: 1.125rem;
     color: #848484;

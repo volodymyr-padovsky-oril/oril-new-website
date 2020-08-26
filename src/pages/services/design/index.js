@@ -6,7 +6,6 @@ import Footer from "../../../commons/Footer";
 import './_design.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
-import development from "../../../lib/lotties/development-services";
 import Lottie from 'react-lottie';
 import ux from "../../../lib/lotties/ux-services";
 
@@ -171,7 +170,7 @@ export class Design extends Component {
                                 <div className="services__desc--right">
                                     <Lottie
                                         options={this.animationOptions}
-                                        width={613}
+                                        // width={613}
                                     />
                                 </div>
                             </div>
@@ -248,11 +247,8 @@ export class Design extends Component {
                         <div className="products">
                             <h2>Featured Products</h2>
                             <OurWorks title={false}/>
-
                         </div>
-
                     </section>
-
                 </section>
                 <Contacts/>
                 <Footer/>
