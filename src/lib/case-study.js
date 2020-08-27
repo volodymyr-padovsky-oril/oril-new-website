@@ -147,7 +147,7 @@ export const caseStudy = {
             posterTitle: 'The easiest way to make and receive Offers on a home',
             uxProcessSubTitle: 'The goal of UX process was to identify the main pain points and understand the process of using the product in daily work. Our UX team has created high-fidelity wireframes to understand the client’s vision as much as possible and to clarify all the features of interface.',
             uxProcessImgFull: 'spark-offer3',
-            uxProcessImgFullExt: 'svg',
+            uxProcessImgFullExt: 'jpg',
             uiConceptSubTitle: 'SparkOffer UI system was carefully created to reflect its authenticity, strong values and project identity: modern, ambitious, reliable, simple.',
             uiConceptShapes: [
                 {

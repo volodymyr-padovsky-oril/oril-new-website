@@ -22,7 +22,7 @@ class CaseStudy extends Component {
                                 {data.headerText}
                             </p>
                         </div>
-                        <div className="case-study-right">
+                        <div className="case-study__right">
                             <img src={`../assets/img/${data.headerImg}.jpg`} alt={data.headerImg}/>
                         </div>
                     </div>
@@ -116,56 +116,94 @@ class CaseStudy extends Component {
                 <div className="container">
                     <div className="case-study__our-process">
                         <h2>Our Process</h2>
-                        <div>
-                            <h4>MVP</h4>
-                            <div className="case-study__mvp">
-                                <div className="process__wrapper--top">
-                                    {data.ourProcessItem.map((process, index) => (
-                                        <div className="process__item" key={index}>
-                                            <span>{process.title}</span>
-                                            <div className="process__dot">
-                                                <div></div>
-                                            </div>
-                                            <div className="process__img"
-                                                 style={{backgroundImage: 'url("/assets/icons/research.svg")'}}/>
-                                            <p>{process.date}</p>
-                                            {/*<ul>*/}
-                                            {/*    {data.ourProcessItem.points.map((points, index) => (*/}
-                                            {/*        <li>k</li>*/}
-                                            {/*    ))}*/}
-
-                                            {/*</ul>*/}
-                                            {/*{data.ourProcessItem.points.map((points) => {*/}
-                                            {/*    return (*/}
-                                            {/*                <li>{points}</li>*/}
-
-                                            {/*    );*/}
-                                            {/*})}*/}
-                                        </div>
-                                    ))}
+                        <div className="our-process__wrapper">
+                            <div className="our-process__item">
+                                <div>
+                                    <div></div>
                                 </div>
-                                <div className="case-study__upgrades">
-                                    <h4 className="upgrades-title">Continuous <br/>Upgrades</h4>
-                                    <div className="process__wrapper--bottom">
-                                        <div className="process__item">
-                                            <span>Research</span>
-                                            <div className="process__dot">
-                                                <div></div>
-                                            </div>
-                                            <div className="process__img"
-                                                 style={{backgroundImage: 'url("/assets/icons/research.svg")'}}/>
-                                            <p>1 week</p>
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet</li>
-                                                <li>Lorem ipsum dolor sit amet</li>
-                                                <li>Lorem ipsum dolor sit amet</li>
-                                                <li>Lorem ipsum dolor sit amet</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                <h5>Research & Product Design</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Cras dapibus vulputate diam eu pretium. Mauris elit orci,
+                                    ultricies id fermentum vel, porta et eros. Vestibulum condimentum
+                                    lectus in convallis feugiat. Sed vulputate fringilla felis.
+                                </p>
+                                <span>1 week</span>
+                            </div>
+                            <div className="our-process__item">
+                                <div>
+                                    <div></div>
                                 </div>
+                                <h5>Development</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Cras dapibus vulputate diam eu pretium. Mauris elit orci,
+                                    ultricies id fermentum vel, porta et eros. Vestibulum condimentum
+                                    lectus in convallis feugiat. Sed vulputate fringilla felis.
+                                </p>
+                                <span>1 week</span>
+                            </div>
+                            <div className="our-process__item">
+                                <div className="our-process__item--last">
+                                    <div></div>
+                                </div>
+                                <h5>Iterative Improvement</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Cras dapibus vulputate diam eu pretium. Mauris elit orci,
+                                    ultricies id fermentum vel, porta et eros. Vestibulum condimentum
+                                    lectus in convallis feugiat. Sed vulputate fringilla felis.
+                                </p>
+                                <span>1 week</span>
                             </div>
                         </div>
+                        {/*<div>*/}
+                        {/*    <h4>MVP</h4>*/}
+                        {/*    <div className="case-study__mvp">*/}
+                        {/*        <div className="process__wrapper--top">*/}
+                        {/*            {data.ourProcessItem.map((process, index) => (*/}
+                        {/*                <div className="process__item" key={index}>*/}
+                        {/*                    <span>{process.title}</span>*/}
+                        {/*                    <div className="process__dot">*/}
+                        {/*                        <div></div>*/}
+                        {/*                    </div>*/}
+                        {/*                    <div className="process__img"*/}
+                        {/*                         style={{backgroundImage: 'url("/assets/icons/research.svg")'}}/>*/}
+                        {/*                    <p>{process.date}</p>*/}
+                        {/*                    /!*<ul>*!/*/}
+                        {/*                    /!*    {data.ourProcessItem.points.map((points, index) => (*!/*/}
+                        {/*                    /!*        <li>k</li>*!/*/}
+                        {/*                    /!*    ))}*!/*/}
+
+                        {/*                    /!*</ul>*!/*/}
+                        {/*                    /!*{data.ourProcessItem.points.map((points) => {*!/*/}
+                        {/*                    /!*    return (*!/*/}
+                        {/*                    /!*                <li>{points}</li>*!/*/}
+
+                        {/*                    /!*    );*!/*/}
+                        {/*                    /!*})}*!/*/}
+                        {/*                </div>*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*        <div className="case-study__upgrades">*/}
+                        {/*            <h4 className="upgrades-title">Continuous <br/>Upgrades</h4>*/}
+                        {/*            <div className="process__wrapper--bottom">*/}
+                        {/*                <div className="process__item">*/}
+                        {/*                    <span>Research</span>*/}
+                        {/*                    <div className="process__dot">*/}
+                        {/*                        <div></div>*/}
+                        {/*                    </div>*/}
+                        {/*                    <div className="process__img"*/}
+                        {/*                         style={{backgroundImage: 'url("/assets/icons/research.svg")'}}/>*/}
+                        {/*                    <p>1 week</p>*/}
+                        {/*                    <ul>*/}
+                        {/*                        <li>Lorem ipsum dolor sit amet</li>*/}
+                        {/*                        <li>Lorem ipsum dolor sit amet</li>*/}
+                        {/*                        <li>Lorem ipsum dolor sit amet</li>*/}
+                        {/*                        <li>Lorem ipsum dolor sit amet</li>*/}
+                        {/*                    </ul>*/}
+                        {/*                </div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="case-study__technologies">
                         <h2>{data.technoTitle}</h2>
