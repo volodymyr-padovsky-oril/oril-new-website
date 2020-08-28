@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {project} from "../../lib/our-projects";
+import Link from "next/link";
 
 
 export class PortfolioMarketplace extends Component {
@@ -27,6 +28,10 @@ export class PortfolioMarketplace extends Component {
                             <div className="slide__content">
                                 <div className="left">
                                     <p className="text">{slide.text}</p>
+                                    {slide.caseStudy && <Link href={`/case-study/${slide.caseStudy}`}>
+                                        <a className="link">Learn more
+                                        </a>
+                                    </Link>}
                                     {
                                         slide.info &&
                                         <div className="info">
