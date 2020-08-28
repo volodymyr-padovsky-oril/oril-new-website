@@ -71,6 +71,7 @@ export const project = {
             name: 'sparkoffer-logo',
             extension: '.png'
         },
+        caseStudy: 'sparkoffer',
         title: 'SparkOffer',
         link: 'sparkoffer',
         tags: ['Web', 'Realestate', 'Platform'],
@@ -137,6 +138,7 @@ export const project = {
             name: 'laced-logo',
             extension: '.png'
         },
+        caseStudy: 'laced',
         title: 'LACED',
         link: 'laced',
         tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
@@ -290,6 +292,7 @@ export const project = {
             name: 'gv-logo',
             extension: '.png'
         },
+        caseStudy: 'green-vision',
         title: 'GreenVision',
         link: 'green-vision',
         tags: ['WebApp', 'Mobile', 'Environment'],

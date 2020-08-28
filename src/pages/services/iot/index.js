@@ -118,7 +118,7 @@ export class Iot extends Component {
             title: 'Device prototype',
             img: 'octo-prototype',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
-            direction: 'odd',
+            direction: 'even',
             ext: 'png'
         },
         {
