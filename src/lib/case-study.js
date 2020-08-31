@@ -4,7 +4,7 @@ export const caseStudy = {
             id: 'green-vision',
             logo: 'green-vision-logo',
             logoExt: 'svg',
-            link: 'https://www.sparkoffer.com/',
+            link: 'https://greenvision-energy.com/',
             headerTitle: 'Set your own energy goals',
             headerText: 'GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale.',
             headerImg: 'gv',
@@ -98,15 +98,16 @@ export const caseStudy = {
             ourResultsCustomerFeedback: '“They were phenomenal and really blew away all of my expectations.”',
             ourResultsCustomerPoints: [
                 {
-                    circle: '2520',
+                    circle: 2520,
                     text: 'Number of users on the platform'
                 },
                 {
-                    circle: '1,000+',
+                    circle: 1000,
+                    string: '+',
                     text: 'Informed households'
                 },
                 {
-                    circle: '1',
+                    circle: 1,
                     text: 'Saved planet'
                 },
 
@@ -217,15 +218,16 @@ export const caseStudy = {
             ourResultsCustomerFeedback: '“This team provides quick and quality work. They were able to quickly turn our ideas into a functioning and professional dashboard.”',
             ourResultsCustomerPoints: [
                 {
-                    circle: '2520',
+                    circle: 2520,
                     text: 'Number of users on the platform'
                 },
                 {
-                    circle: '1,000+',
+                    circle: 1000,
+                    string: '+',
                     text: 'Informed households'
                 },
                 {
-                    circle: '1',
+                    circle: 1,
                     text: 'Saved planet'
                 },
 
@@ -354,15 +356,16 @@ export const caseStudy = {
             ourResultsCustomerFeedback: `“ORIL's platform was intuitive and user-friendly. The client's business gained 50,000 customers in its first year. Communicative and transparent, their developers worked quickly and precisely”`,
             ourResultsCustomerPoints: [
                 {
-                    circle: '2520',
+                    circle: 2520,
                     text: 'Number of users on the platform'
                 },
                 {
-                    circle: '1,000+',
+                    circle: 1000,
+                    string: '+',
                     text: 'Informed households'
                 },
                 {
-                    circle: '1',
+                    circle: 1,
                     text: 'Saved planet'
                 },
 
@@ -487,15 +490,16 @@ export const caseStudy = {
             ourResultsCustomerFeedback: `“Their skills are excellent, and they’re one of the best engineering firms I’ve worked with.”`,
             ourResultsCustomerPoints: [
                 {
-                    circle: '2520',
+                    circle: 2520,
                     text: 'Number of users on the platform'
                 },
                 {
-                    circle: '1,000+',
+                    circle: 1000,
+                    string: '+',
                     text: 'Informed households'
                 },
                 {
-                    circle: '1',
+                    circle: 1,
                     text: 'Saved planet'
                 },
 
