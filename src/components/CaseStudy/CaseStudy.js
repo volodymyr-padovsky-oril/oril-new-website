@@ -3,14 +3,35 @@ import OurWorks from "../Home/components/OurWorks/OurWorks";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import Countup from "../../commons/Countup";
+import Link from "../../commons/utils/activeLink";
 
 class CaseStudy extends Component {
+
+    navLinks = [
+        {name: 'Green Vision', to: '/case-study/green-vision'},
+        {name: 'Laced', to: '/case-study/laced'},
+        {name: 'SAB', to: '/case-study/sab'},
+        {name: 'SparkOffer', to: '/case-study/sparkoffer'},
+        {name: 'Vicki', to: '/case-study/vicki'},
+    ];
+
+    NavLinks = () =>
+        this.navLinks.map((link, index) => (
+            <Link href={link.to} key={index} activeClassName="active">
+                <a className="nav_item">
+                    {link.name}
+                </a>
+            </Link>)
+        );
 
     render() {
         const {data} = this.props;
         return (
             <section className="case-study">
                 <div className="container">
+                    <div className="header-link">
+                        {this.NavLinks()}
+                    </div>
                     <div className="case-study__header">
                         <div className="case-study__left">
                             <img src={`../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
