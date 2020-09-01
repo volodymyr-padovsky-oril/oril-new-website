@@ -30,8 +30,12 @@
     }
 
     &__img {
+      //display: flex;
+      //justify-content: center;
+
       img {
         width: 100%;
+        max-width: 567px;
       }
     }
 
@@ -65,9 +69,14 @@
 
       &__tabpanel {
         grid-template-columns: 1fr;
-
       }
-        .react-tabs__tab-list {
+
+      &__img {
+        display: flex;
+        justify-content: center;
+      }
+
+      .react-tabs__tab-list {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;

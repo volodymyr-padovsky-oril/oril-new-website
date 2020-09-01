@@ -64,9 +64,9 @@
       height: fit-content;
     }
   }
-  .slide {
-    height: 580px;
-  }
+  //.slide {
+  //  height: 580px;
+  //}
 }
 
 @media (min-width: 768px) {
@@ -351,7 +351,7 @@
 
 @media (max-width: 767.98px) {
   .slide {
-    height: 580px;
+    //height: 580px;
 
     &__content {
       .left {
