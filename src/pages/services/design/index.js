@@ -95,20 +95,20 @@ export class Design extends Component {
 
     process = [
         {
-            title: 'Analyze',
+            title: '1. Analyze',
             img: 'services-panther1',
             text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things.',
             direction: 'odd'
         },
         {
-            title: 'Wireframe & Test',
+            title: '2. Wireframe & Test',
             img: 'services-panther2',
             text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas.',
             direction: 'even'
 
         },
         {
-            title: 'Prototype & Implement',
+            title: '3. Prototype & Implement',
             img: 'services-panther3',
             text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the developers to ensure that the designs are implemented correctly.',
             direction: 'odd'

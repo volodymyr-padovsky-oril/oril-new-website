@@ -86,27 +86,27 @@ export class Design extends Component {
 
     process = [
         {
-            title: ' Product design',
+            title: '1. Product design',
             img: 'services-whale1',
             text: 'From researching competitors, markets, and users to wireframing and delivering high quality prototypes, we deliver product designs that make sense and look beautiful.',
             direction: 'odd'
         },
         {
-            title: 'Development',
+            title: '2. Development',
             img: 'services-whale2',
             text: 'Our developers iteratively build products using Agile frameworks. We strictly adhere to client priorities and roadmaps, but also flexibly change course whenever the situation calls for it. All the while, our team leads maintain constant communication with both the client and their programmers to ensure that everyone is in sync.',
             direction: 'even'
 
         },
         {
-            title: 'Product Iterations & Feature Enhancements',
+            title: '3. Product Iterations & Feature Enhancements',
             img: 'services-whale3',
             text: 'We build upon existing products and features by proactively checking user engagement metrics or following client roadmaps. Based on these indicators, we find ways to roll out new features and improvements that continue to delight - and retain - existing customers.',
             direction: 'odd'
 
         },
         {
-            title: 'Maintenance & Support',
+            title: '4. Maintenance & Support',
             img: 'services-whale4',
             text: 'All software needs regular maintenance to stay in top shape. This includes updating platforms, plugins, security settings, and content. Putting a concerted effort into solid maintenance can greatly extend the shelf life of any product’s code, which can in turn lead to significant cost reductions.',
             direction: 'even'

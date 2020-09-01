@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 import {project} from "../../lib/our-projects";
 import Link from "next/link";
+import Countup from "../../commons/Countup";
 
 
 export class PortfolioLifestyleAndFitness extends Component {
     slides = [
-        project.as,
-        project.laced
+        project.laced,
+        project.as
     ];
 
     render() {
@@ -37,7 +38,9 @@ export class PortfolioLifestyleAndFitness extends Component {
                                                 slide.info.map((item, index) => {
                                                     return (
                                                         <div key={`info-${index}`}>
-                                                            <p className="info__title">{item.value}</p>
+                                                            <div className="info__title">
+                                                                <Countup circle={item.value} string={item.string}/>
+                                                            </div>
                                                             <p className="info__text">{item.text}</p>
                                                         </div>
                                                     );

@@ -42,7 +42,7 @@ export const project = {
             VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world
         `,
         info: [
-            { value: '1,000+', text: 'vending machines' },
+            { value: 1000, string: '+', text: 'vending machines' },
             { value: 'AI-Powered', text: 'intelligent item purchase detection' },
             { value: 'Cross Platform', text: 'Android & iOS' },
             { value: '+70% Engagement', text: 'led by a reward system' }
@@ -123,10 +123,10 @@ export const project = {
             ActiveSoul brings fitness enthusiasts, wellness providers, and 1000's of health clubs together in a brand new way. Book fitness classes, register for events, create challenges, and track your fitness activity - all in one application
         `,
         info: [
-            { value: '30,000+', text: 'health clubs' },
-            { value: '300+', text: 'wearable devices integrated' },
-            { value: '6,000+', text: 'running events' },
-            { value: '250,000+', text: 'fitness classes' }
+            { value: 30000, string: '+', text: 'health clubs' },
+            { value: 300, string: '+', text: 'wearable devices integrated' },
+            { value: 6000, string: '+', text: 'running events' },
+            { value: 250000, string: '+', text: 'fitness classes' }
         ],
         img: {
             name: 'activesoul',
@@ -147,8 +147,8 @@ export const project = {
         `,
         info: [
             { value: 'Featured', text: 'in top fashion magazines' },
-            { value: '70,000+', text: 'users' },
-            { value: '1,000+', text: 'collectable items sold' }
+            { value: 70000, string: '+', text: 'users' },
+            { value:1000, string: '+', text: 'collectable items sold' }
         ],
         img: {
             name: 'laced',
@@ -181,8 +181,8 @@ export const project = {
             Match Your Need is a generosity marketplace. It makes matched between those with a need and those with a heart and means to fulfill it based on multiple criteria, including user preferences and geography
         `,
         info: [
-            { value: '600+', text: 'needs matched' },
-            { value: '20+', text: 'San Diego non-profits involved' },
+            { value: 600, string: '+', text: 'needs matched' },
+            { value: 20, string: '+', text: 'San Diego non-profits involved' },
             { value: 'One', text: 'act of kindness, one big difference' },
         ],
         img: {
@@ -202,8 +202,8 @@ export const project = {
             GOWAGO is Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money
         `,
         info: [
-            { value: '10,000', text: 'cars on the platform' },
-            { value: '1,000+', text: 'happy car owners' },
+            { value: 10000, text: 'cars on the platform' },
+            { value: 1000, string: '+', text: 'happy car owners' },
         ],
         img: {
             name: 'gowago',
@@ -222,7 +222,7 @@ export const project = {
             A platform that provides hospitality owners real-time information of their service staff and allows service staff to connect with all the guests that they serve. HoozeOn allows guests to feel empowered and happy by connecting them with the people they enjoy the most
         `,
         info: [
-            {value: '5.0', text: 'rating on AppStore'},
+            {value: 5.0, text: 'rating on AppStore'},
             {value: 'Cross Platform', text: 'Android & iOS'},
         ],
         img: {
@@ -242,7 +242,7 @@ export const project = {
             Rialto platform curates the entrepreneurial landscape, providing exceptional founders and investment firms with 360° insight into the connections most worth their time
         `,
         info: [
-            {value: '100+', text: 'curated startups'},
+            {value: 100, string: '+', text: 'curated startups'},
             {value: 'Countless', text: 'startup-investor connections'},
         ],
         img: {
@@ -263,9 +263,9 @@ export const project = {
             Also there is a custom administrator panel for automation delivery process via FedEx shipping company.
         `,
         info: [
-            { value: '70%', text: 'customers use iOS or Android app' },
-            { value: '4.8', text: 'rating an AppStore' },
-            { value: '11.245', text: 'monthly active users' }
+            { value: 70, string: '%', text: 'customers use iOS or Android app' },
+            { value: 4.8, text: 'rating an AppStore' },
+            { value: 11.245, text: 'monthly active users' }
         ],
         img: {
             name: 'ricetoriches',
@@ -281,7 +281,7 @@ export const project = {
             position: 'CEO of Rice to Riches',
             feedback: `
                 “This team provides quick and quality work.
-                They were able to quickly turn ourideas into a functioning and professional dashboard.”
+                They were able to quickly turn our ideas into a functioning and professional dashboard.”
             `
         }
     },
@@ -301,7 +301,7 @@ export const project = {
         `,
         info: [
             { value: 'One', text: 'saved planet' },
-            { value: '1,000+', text: 'informed households' }
+            { value: 1000, string: '%', text: 'informed households' }
         ],
         img: {
             name: 'gv',
@@ -333,7 +333,7 @@ export const project = {
         `,
         info: [
             { value: 'AI-Powered', text: 'AI image recommendation' },
-            { value: '1,000+', text: 'decks created' },
+            { value: 1000, string: '+', text: 'decks created' },
         ],
         img: {
             name: 'stick',
@@ -366,8 +366,8 @@ export const project = {
             Contribute and gather feedback on meetings and events on PlusDelta platform. It helps small or large teams' executives to laymen collaboratively plan, understand, communicate, and measure their projects and performance
         `,
         info: [
-            { value: '1,000+', text: 'meetings conducted' },
-            { value: '10,000+', text: 'notes noted and votes voted' },
+            { value: 1000, string: '+', text: 'meetings conducted' },
+            { value: 10000, string: '+', text: 'notes noted and votes voted' },
         ],
         img: {
             name: 'plusdelta',

@@ -94,35 +94,35 @@ export class Iot extends Component {
 
     process = [
         {
-            title: 'Research',
+            title: '1. Research',
             img: 'octo-research',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
             direction: 'odd',
             ext: 'png'
         },
         {
-            title: 'Product Design',
+            title: '2. Product Design',
             img: 'octo-design',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
             direction: 'even',
             ext: 'png'
         },
         {
-            title: 'Web and mobile app',
+            title: '3. Web and mobile app',
             img: 'octo-web',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
             direction: 'odd',
             ext: 'png'
         },
         {
-            title: 'Device prototype',
+            title: '4. Device prototype',
             img: 'octo-prototype',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
             direction: 'even',
             ext: 'png'
         },
         {
-            title: 'Product release',
+            title: '5. Product release',
             img: 'octo-release',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis.',
             direction: 'odd',

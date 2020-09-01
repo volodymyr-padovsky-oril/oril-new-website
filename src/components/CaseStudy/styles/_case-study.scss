@@ -1,15 +1,17 @@
 .case-study {
-  margin: 82px 0 0 0;
+  margin: 30px 0 0 0;
 
   p {
     max-width: 750px;
+    margin: 0;
   }
 
   h2 {
     font-family: Mont-Bold, serif;
     font-size: 2.75rem;
     color: #363645;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
+    line-height: normal;
   }
 
   h3 {
@@ -46,6 +48,10 @@
       margin-bottom: 26px;
     }
 
+    p{
+      margin-top: 30px;
+    }
+
     h4 {
       font-size: 1.25rem;
       color: #2c2c2c;
@@ -54,9 +60,9 @@
     }
 
     span {
-      font-size: 1rem;
+      font-size: 1.25rem;
       color: #676875;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
   }
 
@@ -70,7 +76,7 @@
 
   &__left{
     & > div{
-      margin-bottom: 40px;
+      margin-bottom: 25px;
 
       &:last-child{
         margin: 0;
@@ -421,17 +427,17 @@
         box-shadow: 0 1px 9px 5px rgba(0, 0, 0, 0.05);
         background-color: #ffffff;
         font-family: DMSans-Regular, serif;
-        font-size: 2.5rem;
-        color: #363645;
         margin-bottom: 40px;
+        span{
+          font-size: 2.5rem;
+          color: #363645;
+        }
       }
     }
 
   }
 
   &__our-works {
-    width: 1740px;
-    overflow: hidden;
     margin: 260px auto 0 auto;
 
     h2 {
@@ -442,7 +448,6 @@
 
 @media (max-width: 1170.98px) {
   .case-study__header{
-    //grid-template-columns: 1fr;
     grid-gap: 20px;
   }
 }

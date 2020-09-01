@@ -30,8 +30,12 @@
     }
 
     &__img {
+      //display: flex;
+      //justify-content: center;
+
       img {
         width: 100%;
+        max-width: 567px;
       }
     }
 
@@ -55,15 +59,24 @@
   }
 }
 
+//.react-tabs__tab-panel--selected{
+//  animation: fadeIn .3s linear;
+//}
+
 @media (max-width: 920px) {
   .home {
     &__industries {
 
       &__tabpanel {
         grid-template-columns: 1fr;
-
       }
-        .react-tabs__tab-list {
+
+      &__img {
+        display: flex;
+        justify-content: center;
+      }
+
+      .react-tabs__tab-list {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
