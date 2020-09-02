@@ -29,7 +29,7 @@ export class PortfolioMarketplace extends Component {
                             <div className="slide__content">
                                 <div className="left">
                                     <p className="text">{slide.text}</p>
-                                    {slide.caseStudy && <Link href={`/case-study/${slide.caseStudy}`}>
+                                    {slide.caseStudy && <Link href={`marketplace/${slide.caseStudy}`}>
                                         <a className="link">Learn more
                                         </a>
                                     </Link>}
@@ -55,7 +55,10 @@ export class PortfolioMarketplace extends Component {
                                     <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
                                          alt={slide.img.name}/>
                                     <div className="tags">
-                                        {slide.tags.map((tag, index) => (<div key={`tag-${index}`}>{tag}</div>))}
+                                        {slide.tags.map((tag, index) => (
+                                            <a href={`https://oril.co/blog/tag/${tag}/`}
+                                               key={`tag-${index}`}>{tag}
+                                            </a>))}
                                     </div>
                                 </div>
                             </div>

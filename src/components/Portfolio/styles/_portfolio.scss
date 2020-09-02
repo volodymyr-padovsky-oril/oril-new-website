@@ -161,14 +161,21 @@
         margin: 40px 0 10px;
         justify-content: flex-end;
 
-        div {
+        a {
+          text-decoration: none;
+          font-family: Mont-SemiBold, serif;
           color: #2c2c2c;
           padding: 15px 30px;
-          font-size: 1.125rem;
+          font-size: 0.875rem;
           border-radius: 27px;
           margin-right: 30px;
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
           white-space: nowrap;
+
+
+          &:hover{
+            color: #ffb248;
+          }
 
           &:last-child {
             margin-right: 0;

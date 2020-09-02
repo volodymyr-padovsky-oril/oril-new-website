@@ -1,5 +1,5 @@
 .case-study {
-  margin: 30px 0 0 0;
+  margin: 42px 0 0 0;
 
   p {
     max-width: 750px;
@@ -399,6 +399,8 @@
   }
 
   &__our-results {
+    margin-top: 150px;
+
     .our-results {
 
       &__points {
@@ -489,6 +491,7 @@
 
 @media (max-width: 759px) {
   .case-study {
+
     &__left {
       a {
         font-size: 1rem;
@@ -535,4 +538,5 @@
   .technologies__wrapper {
     justify-content: center;
   }
+
 }
