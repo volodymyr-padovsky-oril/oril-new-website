@@ -78,9 +78,9 @@ class CaseStudy extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="case-study__poster">
-                        <img style={!data.posterTitle ? {width: 'auto'} : {width: '666px'}}
-                             src={`../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
+                    <div className="case-study__poster"
+                         style={data.posterTitle ? {gridTemplateColumns: '2fr 1fr'} : {gridTemplateColumns: '1fr'}}>
+                        <img src={`../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
                         {data.posterTitle && <h3>
                             {data.posterTitle}
                         </h3>}
@@ -199,42 +199,41 @@ class CaseStudy extends Component {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div className="case-study__our-results">
-                        <h2>Our results</h2>
-                        <p>
-                            {data.ourResultsSubTile}
-                        </p>
-                        <div className="slide__footer">
-                            <div className="customer">
-                                <img
-                                    src={`../assets/icons/${data.ourResultsCustomerImg}.jpeg`}
-                                    alt='kuntz'/>
-                                <div>
-                                    <p>{data.ourResultsCustomerName}</p>
-                                    <p>{data.ourResultsCustomerPosition}</p>
-                                </div>
-                            </div>
-                            <div className="feedback">
-                                {data.ourResultsCustomerFeedback}
-                            </div>
-                        </div>
-                        <div className="our-results__points">
-                            {data.ourResultsCustomerPoints.map((customerPoint, index) => (
-                                <div className="our-results__item" key={index}>
-                                    <div className="our-results__circle">
-                                        <Countup circle={customerPoint.circle} string={customerPoint.string}/>
+                        <div className="case-study__our-results">
+                            <h2>Our results</h2>
+                            <p>
+                                {data.ourResultsSubTile}
+                            </p>
+                            <div className="slide__footer">
+                                <div className="customer">
+                                    <img
+                                        src={`../assets/icons/${data.ourResultsCustomerImg}.jpeg`}
+                                        alt='kuntz'/>
+                                    <div>
+                                        <p>{data.ourResultsCustomerName}</p>
+                                        <p>{data.ourResultsCustomerPosition}</p>
                                     </div>
-                                    <span>{customerPoint.text}</span>
                                 </div>
-                            ))}
+                                <div className="feedback">
+                                    {data.ourResultsCustomerFeedback}
+                                </div>
+                            </div>
+                            <div className="our-results__points">
+                                {data.ourResultsCustomerPoints.map((customerPoint, index) => (
+                                    <div className="our-results__item" key={index}>
+                                        <div className="our-results__circle">
+                                            <Countup circle={customerPoint.circle} string={customerPoint.string}/>
+                                        </div>
+                                        <span>{customerPoint.text}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div className="case-study__our-works">
-                    <h2>A few more Case Studies you might <br/> be interested in</h2>
-                    <OurWorks title={false}/>
+                    <div className="case-study__our-works">
+                        <h2>A few more Case Studies you might <br/> be interested in</h2>
+                        <OurWorks title={false}/>
+                    </div>
                 </div>
             </section>
         );

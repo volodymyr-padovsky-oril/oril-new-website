@@ -421,6 +421,8 @@
 .header-link {
   margin-bottom: 50px;
   line-height: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
 
   a {
     margin-right: 35px;
