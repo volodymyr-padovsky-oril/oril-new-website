@@ -5,10 +5,13 @@
     position: relative;
     background-image: url("/assets/img/group-13.svg");
     background-repeat: no-repeat;
-    background-position-x: -152px;
+    background-position-y: bottom;
+    background-position-x: center;
 
     @media (min-width: 1920px) {
       background-position-x: center;
+      padding: 444px 0 573px !important;
+      background-position-y: bottom;
     }
 
     //&:after {
