@@ -18,8 +18,7 @@ class OurNews extends Component {
                                 <img className="first-img" src={`/assets/img/${item.img}.png`} alt={item.img}/>
                                 <img className="second-img" src={`/assets/img/${item.img}-darken.png`} alt={item.img}/>
                                 <div className="home__our-news__cloud">{item.title}
-                                    <a href={item.href}
-                                    >
+                                    <a href={item.href}>
                                         Read more
                                     </a>
                                 </div>
@@ -34,4 +33,3 @@ class OurNews extends Component {
 
 export default OurNews;
 
-// <div style={{backgroundImage: "url(assets/img/" + item.img + ".png)"}} className="home__our-news__card">
