@@ -16,13 +16,15 @@ export const params = {
         delay: 3500,
         disableOnInteraction: false
     },
+    // width: 1240,
+    speed: 1500,
     breakpoints: {
         900: {
             slidesPerView: 1,
         },
         1239: {
             slidesPerView: 2,
-            spaceBetween: 40
+            // spaceBetween: 40
         }
     }
 };
@@ -34,12 +36,6 @@ export class OurWorks extends Component {
         window.scrollTo(0, 0)
     };
 
-    slides = [
-        project.greenVision,
-        project.sparkOffer,
-        project.laced,
-    ];
-
     render() {
         return (
             <section className="home__our-works">
@@ -47,10 +43,10 @@ export class OurWorks extends Component {
                 <div className="container">
                     <div className="home__our-works__wrapper">
                         <Swiper {...params}>
-                            {this.slides.map((slide, index) => (
+                            {this.props.slides.map((slide, index) => (
                                     <div key={'slide-' + index}>
                                         <div className="slide">
-                                            <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
+                                            <img src={`../../assets/img/${slide.img.name}${slide.img.extension}`}
                                                  alt={slide.img.name}/>
                                             <div>
                                                 <div
@@ -63,7 +59,7 @@ export class OurWorks extends Component {
                                                     }
                                                 </div>
                                                 <p className="text">{slide.text}</p>
-                                                <Link href={`case-study/${slide.link}`}>
+                                                <Link href={`${slide.caseStudy}`}>
                                                     <a className="link">Learn more
                                                     </a>
                                                 </Link>

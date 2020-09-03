@@ -1,18 +1,17 @@
 import React, {Component} from "react";
 import OurWorks from "../Home/components/OurWorks/OurWorks";
-import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
 import Countup from "../../commons/Countup";
 import Link from "../../commons/utils/activeLink";
+import {project} from "../../lib/our-projects";
 
 class CaseStudy extends Component {
 
     navLinks = [
-        {name: 'Green Vision', to: '/case-study/green-vision'},
-        {name: 'Laced', to: '/case-study/laced'},
-        {name: 'SAB', to: '/case-study/sab'},
-        {name: 'SparkOffer', to: '/case-study/sparkoffer'},
-        {name: 'Vicki', to: '/case-study/vicki'},
+        {name: 'Marketplace', to: '/portfolio/marketplace'},
+        {name: 'Lifestyle & Fitness', to: '/portfolio/lifestyle'},
+        {name: 'IoT', to: '/portfolio/iot'},
+        {name: 'Blockchain', to: '/portfolio/blockchain'},
+        {name: 'Other', to: '/portfolio/other'},
     ];
 
     NavLinks = () =>
@@ -34,7 +33,7 @@ class CaseStudy extends Component {
                     </div>
                     <div className="case-study__header">
                         <div className="case-study__left">
-                            <img src={`../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
+                            <img src={`../../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
                             <h2>
                                 {data.headerTitle}
                             </h2>
@@ -47,7 +46,7 @@ class CaseStudy extends Component {
                             </p>
                         </div>
                         <div className="case-study__right">
-                            <img src={`../assets/img/${data.headerImg}.jpg`} alt={data.headerImg}/>
+                            <img src={`../../assets/img/${data.headerImg}.jpg`} alt={data.headerImg}/>
                         </div>
                     </div>
                     <div className="case-study__properties">
@@ -78,9 +77,9 @@ class CaseStudy extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="case-study__poster">
-                        <img style={!data.posterTitle ? {width: 'auto'} : {width: '666px'}}
-                             src={`../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
+                    <div className="case-study__poster"
+                         style={data.posterTitle ? {gridTemplateColumns: '2fr 1fr'} : {gridTemplateColumns: '1fr'}}>
+                        <img src={`../../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
                         {data.posterTitle && <h3>
                             {data.posterTitle}
                         </h3>}
@@ -94,11 +93,11 @@ class CaseStudy extends Component {
                             {data.uxProcessSubTitle}
                         </p>
                         {data.uxProcessImg &&
-                        <img src={`../assets/icons/${data.uxProcessImg}.${data.uxProcessImgExt}`}
+                        <img src={`../../assets/icons/${data.uxProcessImg}.${data.uxProcessImgExt}`}
                              alt={data.uxProcessImg} style={{width: '100%'}}/>}
                     </div>
                     {data.uxProcessImgFull &&
-                    <img src={`../assets/icons/${data.uxProcessImgFull}.${data.uxProcessImgFullExt}`}
+                    <img src={`../../assets/icons/${data.uxProcessImgFull}.${data.uxProcessImgFullExt}`}
                          alt={data.uxProcessImgFull}/>}
                 </div>
                 <div className="container">
@@ -111,7 +110,7 @@ class CaseStudy extends Component {
                             <div className="shape">
                                 {data.uiConceptLeafs ? data.uiConceptLeafs.map((leaf, index) => (
                                         <div className="shape__leaf" key={index}>
-                                            <img src={`../assets/icons/${leaf.img}.svg`} alt={leaf.img}/>
+                                            <img src={`../../assets/icons/${leaf.img}.svg`} alt={leaf.img}/>
                                             <span>{leaf.title}</span>
                                         </div>
                                     )) :
@@ -139,7 +138,7 @@ class CaseStudy extends Component {
                     </div>
                 </div>
                 <div className="case-study__big-image">
-                    <img src={`../assets/img/${data.bigImage}.jpg`} alt={data.bigImage}/>
+                    <img src={`../../assets/img/${data.bigImage}.jpg`} alt={data.bigImage}/>
                 </div>
                 <div className="container">
                     <div className="case-study__our-process">
@@ -192,49 +191,48 @@ class CaseStudy extends Component {
                             {data.technoItems.map((technoItem, index) => (
                                 <div className="technologies__item" key={index}>
                                     <div>
-                                        <img src={`../assets/img/${technoItem.img}.png`}
+                                        <img src={`../../assets/img/${technoItem.img}.png`}
                                              alt="angular"/>
                                     </div>
                                     <span>{technoItem.name}</span>
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div className="case-study__our-results">
-                        <h2>Our results</h2>
-                        <p>
-                            {data.ourResultsSubTile}
-                        </p>
-                        <div className="slide__footer">
-                            <div className="customer">
-                                <img
-                                    src={`../assets/icons/${data.ourResultsCustomerImg}.jpeg`}
-                                    alt='kuntz'/>
-                                <div>
-                                    <p>{data.ourResultsCustomerName}</p>
-                                    <p>{data.ourResultsCustomerPosition}</p>
-                                </div>
-                            </div>
-                            <div className="feedback">
-                                {data.ourResultsCustomerFeedback}
-                            </div>
-                        </div>
-                        <div className="our-results__points">
-                            {data.ourResultsCustomerPoints.map((customerPoint, index) => (
-                                <div className="our-results__item" key={index}>
-                                    <div className="our-results__circle">
-                                        <Countup circle={customerPoint.circle} string={customerPoint.string}/>
+                        <div className="case-study__our-results">
+                            <h2>Our results</h2>
+                            <p>
+                                {data.ourResultsSubTile}
+                            </p>
+                            <div className="slide__footer">
+                                <div className="customer">
+                                    <img
+                                        src={`../../assets/icons/${data.ourResultsCustomerImg}.jpeg`}
+                                        alt='kuntz'/>
+                                    <div>
+                                        <p>{data.ourResultsCustomerName}</p>
+                                        <p>{data.ourResultsCustomerPosition}</p>
                                     </div>
-                                    <span>{customerPoint.text}</span>
                                 </div>
-                            ))}
+                                <div className="feedback">
+                                    {data.ourResultsCustomerFeedback}
+                                </div>
+                            </div>
+                            <div className="our-results__points">
+                                {data.ourResultsCustomerPoints.map((customerPoint, index) => (
+                                    <div className="our-results__item" key={index}>
+                                        <div className="our-results__circle">
+                                            <Countup circle={customerPoint.circle} string={customerPoint.string}/>
+                                        </div>
+                                        <span>{customerPoint.text}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div className="case-study__our-works">
-                    <h2>A few more Case Studies you might <br/> be interested in</h2>
-                    <OurWorks title={false}/>
+                    <div className="case-study__our-works">
+                        <h2>A few more Case Studies you might <br/> be interested in</h2>
+                        <OurWorks title={false} slides = {[project.laced, project.sparkOffer, project.sab]}/>
+                    </div>
                 </div>
             </section>
         );

@@ -8,6 +8,7 @@ import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from "react-lottie";
 import development from "../../../lib/lotties/development-services";
+import {project} from "../../../lib/our-projects";
 
 export class Design extends Component {
     blocks = [
@@ -154,7 +155,7 @@ export class Design extends Component {
                             </div>
                             <div className="services__desc">
                                 <div className="services__desc--left">
-                                    <h2>Product Development</h2>
+                                    <h1>Product Development</h1>
                                     <h3>Logical Roadmaps and Reliable Programming</h3>
                                     <p>
                                         Our product managers, business analysts, DevOps, and programmers work in tandem
@@ -241,7 +242,8 @@ export class Design extends Component {
                         </div>
                         <div className="products">
                             <h2>Featured Products</h2>
-                            <OurWorks title={false}/>
+                            <OurWorks title={false}
+                                      slides={[project.sparkOffer, project.laced, project.sab, project.scroogeBot]}/>
                         </div>
                     </section>
                 </section>

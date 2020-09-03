@@ -240,3 +240,12 @@
     }
   }
 }
+
+@media (max-width: 1920px) {
+  .home__our-news__card {
+    &:last-child, &:first-child{
+      display: none;
+    }
+  }
+}
+

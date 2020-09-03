@@ -381,7 +381,7 @@ export const caseStudy = {
             linkColor: '#45a04a',
             headerTitle: 'Some text needs to be displayed here',
             headerText: 'SparkOffer is a residential real estate marketplace that enables buyers, sellers and agents to find, list, offer and negotiate properties completely online',
-            headerImg: 'laced',
+            headerImg: 'sab',
             properties: [
                 {
                     title: 'Background',

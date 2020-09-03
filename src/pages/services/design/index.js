@@ -8,6 +8,7 @@ import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';
 import ux from "../../../lib/lotties/ux-services";
+import {project} from "../../../lib/our-projects";
 
 export class Design extends Component {
     blocks = [
@@ -121,7 +122,7 @@ export class Design extends Component {
         {name: 'Iot', to: '/services/iot'},
     ];
 
-    animationOptions= {
+    animationOptions = {
         loop: true,
         autoplay: true,
         animationData: ux,
@@ -156,7 +157,7 @@ export class Design extends Component {
                             </div>
                             <div className="services__desc">
                                 <div className="services__desc--left">
-                                    <h2>UX/UI Design</h2>
+                                    <h1>UX/UI Design</h1>
                                     <h3>Thoughtful User Interfaces for All Kind of Products</h3>
                                     <p>
                                         Design that works is design that clearly lays out solutions for user needs. This
@@ -246,7 +247,8 @@ export class Design extends Component {
                         </div>
                         <div className="products">
                             <h2>Featured Products</h2>
-                            <OurWorks title={false}/>
+                            <OurWorks title={false}
+                                      slides={[project.laced, project.sparkOffer, project.greenVision, project.scroogeBot]}/>
                         </div>
                     </section>
                 </section>

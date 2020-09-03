@@ -71,7 +71,7 @@ export const project = {
             name: 'sparkoffer-logo',
             extension: '.png'
         },
-        caseStudy: 'sparkoffer',
+        caseStudy: '/portfolio/other/sparkoffer',
         title: 'SparkOffer',
         link: 'sparkoffer',
         tags: ['Web', 'Realestate', 'Platform'],
@@ -138,9 +138,9 @@ export const project = {
             name: 'laced-logo',
             extension: '.png'
         },
-        caseStudy: 'laced',
         title: 'LACED',
         link: 'laced',
+        caseStudy: '/portfolio/lifestyle/laced',
         tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
         text: `
             LACED is a mobile app for online sneaker auctions where you can buy bids and participate by placing a bid. You can claim a reward in the loyalty section. Bid small and win big
@@ -292,7 +292,7 @@ export const project = {
             name: 'gv-logo',
             extension: '.png'
         },
-        caseStudy: 'green-vision',
+        caseStudy: '/portfolio/other/green-vision',
         title: 'GreenVision',
         link: 'green-vision',
         tags: ['WebApp', 'Mobile', 'Environment'],
@@ -385,5 +385,26 @@ export const project = {
                 “Internal stakeholders are pleased with the product, which has been praised after a limited launch. ORIL adapted to internal systems and provided excellent technical value. Customers can expect an organized partner capable of producing powerful yet accessible solutions”
             `
         }
+    },
+    sab: {
+        logo: {
+            name: 'sab',
+            extension: '.png'
+        },
+        title: 'SAB',
+        link: 'signalautobrocker.com',
+        caseStudy: '/portfolio/marketplace/sab',
+        tags: ['WebApp', 'UX/UI', "MVP", "Development"],
+        text: `
+            Contribute and gather feedback on meetings and events on PlusDelta platform. It helps small or large teams' executives to laymen collaboratively plan, understand, communicate, and measure their projects and performance
+        `,
+        info: [
+            { value: 1000, string: '+', text: 'meetings conducted' },
+            { value: 10000, string: '+', text: 'notes noted and votes voted' },
+        ],
+        img: {
+            name: 'sab',
+            extension: '.jpg'
+        },
     }
 };
