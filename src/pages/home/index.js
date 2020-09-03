@@ -13,6 +13,7 @@ import Web from "../../components/Web/Web";
 import Mobile from "../../components/Mobile/Mobile";
 import IoT from "../../components/IoT/IoT";
 import Blockchain from "../../components/Blockchain/Blockchain";
+import {project} from "../../lib/our-projects";
 
 class Index extends Component {
     onChangePage = (path) => {
@@ -50,7 +51,7 @@ class Index extends Component {
                     <Banner/>
                     <Services redirect={this.onChangePage}/>
                     <Industries tabs={this.tabs} selected="0" tab="web"/>
-                    <OurWorks title="Our works"/>
+                    <OurWorks title="Our works" slides = {[project.laced, project.sparkOffer, project.sab]}/>
                     {/*<Products/>*/}
                     <Testimonials/>
                     <Achievements/>

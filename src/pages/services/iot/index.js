@@ -7,6 +7,7 @@ import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';
 import iot from "../../../lib/lotties/iot-services";
+import {project} from "../../../lib/our-projects";
 
 export class Iot extends Component {
     blocks = [
@@ -171,7 +172,7 @@ export class Iot extends Component {
                             </div>
                             <div className="services__desc">
                                 <div className="services__desc--left">
-                                    <h2>Iot</h2>
+                                    <h1>Iot</h1>
                                     <h3>Thoughtful User Interfaces for All Kind of Products</h3>
                                     <p>
                                         Design that works is design that clearly lays out solutions for user needs. This
@@ -258,7 +259,7 @@ export class Iot extends Component {
                         </div>
                         <div className="products">
                             <h2>Featured Products</h2>
-                            <OurWorks title={false}/>
+                            <OurWorks title={false} slides={[project.vicki, project.nuravine]}/>
                         </div>
                     </section>
                 </section>

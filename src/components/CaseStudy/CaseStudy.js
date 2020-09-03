@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import OurWorks from "../Home/components/OurWorks/OurWorks";
 import Countup from "../../commons/Countup";
 import Link from "../../commons/utils/activeLink";
+import {project} from "../../lib/our-projects";
 
 class CaseStudy extends Component {
 
@@ -230,7 +231,7 @@ class CaseStudy extends Component {
                     </div>
                     <div className="case-study__our-works">
                         <h2>A few more Case Studies you might <br/> be interested in</h2>
-                        <OurWorks title={false}/>
+                        <OurWorks title={false} slides = {[project.laced, project.sparkOffer, project.sab]}/>
                     </div>
                 </div>
             </section>

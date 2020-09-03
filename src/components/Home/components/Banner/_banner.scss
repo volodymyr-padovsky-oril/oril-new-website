@@ -2,19 +2,9 @@
   &__block {
     height: 1038px;
     position: relative;
-
-    &:after {
-      background-image: url("/assets/img/top-wave.svg");
-      content: "";
-      position: absolute;
-      height: 1038px;
-      width: 100%;
-
-
-      @media (min-width: 2000px) {
-        background-repeat: round;
-      }
-    }
+    background-image: url("/assets/img/top-wave.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
     .wrapper {
       position: relative;
@@ -24,19 +14,7 @@
       #border_wrap {
         overflow: hidden;
       }
-
     }
-
-    //img {
-    //  width: 100%;
-    //  position: absolute;
-    //  margin: auto;
-    //  top: 0;
-    //  right: 0;
-    //  bottom: 0;
-    //  left: 0;
-    //  z-index: 1;
-    //}
   }
 
   &__text {
