@@ -3,13 +3,15 @@ const firstPage = [
         animal: 'team-16',
         photo: '9',
         name: 'Roman Havrylyuk',
-        position: 'CEO'
+        position: 'CEO',
+        hover: true
     },
     {
         animal: 'team-5',
         photo: '7',
         name: 'Natalie Havrylyuk',
-        position: 'Business Development Manager'
+        position: 'Business Development Manager',
+        hover: true
     },
     {
         animal: 'team-10',
