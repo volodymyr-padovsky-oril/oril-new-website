@@ -5,12 +5,14 @@
     margin-bottom: 200px;
 
     &__wrapper {
+      max-width: 1240px;
       width: 100%;
       overflow: hidden;
       margin: 90px auto 0 auto;
 
+
       .swiper-pagination {
-        top: 343px;
+        top: 316px;
       }
 
       .swiper-pagination-bullet {
@@ -29,15 +31,39 @@
         bottom: auto;
       }
 
-      .slide {
+      .swiper-slide-next {
+        .slide {
+          margin: 0 !important;
+
+          img {
+            width: 100% !important;
+          }
+
+          & > div {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+
+          }
+        }
+      }
+
+      .swiper-slide {
         margin: 0;
 
+        .slide {
+          margin-top: 280px;
 
-        & > div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          img {
+            width: 250px;
+            height: 100%;
+          }
+
+          & > div {
+            display: none;
+          }
         }
+
 
         p {
           max-width: 541px;
@@ -59,6 +85,10 @@
         }
 
         .tags {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
           span {
             font-family: Mont-SemiBold, serif;
             color: #2c2c2c;
@@ -83,8 +113,17 @@
 
 @media (max-width: 1239px) {
   .slide {
+    margin-top: 0 !important;
+
+    & > div {
+      justify-content: center;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
-      width: 100%;
+      width: 100% !important;
     }
   }
 
@@ -93,49 +132,33 @@
   }
 }
 
-@media (min-width: 1240px) {
-
-  .slide {
-    img {
-      width: 100%
-    }
-  }
-  .swiper-slide-active, .swiper-slide-duplicate-prev {
-
-    .slide {
-      margin-top: 280px !important;
-
-      img {
-        width: 250px;
-        height: 100%;
-      }
-
-      & > div {
-        display: none !important;
-      }
-    }
-  }
-
-}
 
 @media (max-width: 900px) {
   .slide {
     justify-content: center;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
 
+    & > div {
+      justify-content: center;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       width: auto;
-      max-height: 541px;
+      //max-height: 441px;
     }
   }
 }
 
+
 @media (max-width: 600px) {
   .slide {
     img {
-      width: 100%;
+      width: 100% !important;
     }
   }
 }

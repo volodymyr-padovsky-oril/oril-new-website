@@ -24,7 +24,7 @@ export const params = {
         },
         1239: {
             slidesPerView: 2,
-            spaceBetween: 40
+            // spaceBetween: 40
         }
     }
 };
