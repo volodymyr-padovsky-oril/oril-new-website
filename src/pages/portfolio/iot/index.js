@@ -40,7 +40,7 @@ class Iot extends Component {
                 <section className="portfolio">
                     <section className="portfolio__projects" id="products">
                         <div className="container">
-                            <BaseTabs tabs={tabs} tab="iot" selected="2"/>
+                            <BaseTabs tabs={tabs} tab="iot" selected="1"/>
                         </div>
                     </section>
                 </section>

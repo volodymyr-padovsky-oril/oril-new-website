@@ -22,7 +22,7 @@ class Marketplace extends Component {
                 <section className="portfolio">
                     <section className="portfolio__projects" id="products">
                         <div className="container">
-                            <BaseTabs tabs={tabs} tab="other" selected="4"/>
+                            <BaseTabs tabs={tabs} tab="other" selected="5"/>
                         </div>
                     </section>
                 </section>

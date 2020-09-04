@@ -5,7 +5,6 @@ import Countup from "../../commons/Countup";
 
 export class PortfolioOther extends Component {
     slides = [
-        project.greenVision,
         project.stick,
         project.plusDelta
     ];

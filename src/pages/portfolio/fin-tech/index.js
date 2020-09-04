@@ -21,7 +21,7 @@ class Marketplace extends Component {
                 <section className="portfolio">
                     <section className="portfolio__projects">
                         <div className="container">
-                            <BaseTabs tabs={tabs} tab="marketplace" selected="3"/>
+                            <BaseTabs tabs={tabs} tab="fin-tech" selected="2"/>
                         </div>
                     </section>
                 </section>

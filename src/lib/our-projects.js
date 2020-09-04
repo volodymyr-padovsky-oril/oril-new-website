@@ -388,8 +388,8 @@ export const project = {
     },
     sab: {
         logo: {
-            name: 'sab',
-            extension: '.png'
+            name: 'sab-logo',
+            extension: '.jpg'
         },
         title: 'SAB',
         link: 'signalautobrocker.com',

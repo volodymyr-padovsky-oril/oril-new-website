@@ -11,6 +11,7 @@ export const params = {
         type: 'bullets',
         clickable: true
     },
+    speed: 1500,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false

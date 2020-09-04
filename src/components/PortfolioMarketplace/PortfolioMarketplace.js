@@ -6,8 +6,9 @@ import Countup from "../../commons/Countup";
 
 export class PortfolioMarketplace extends Component {
     slides = [
+        project.laced,
         project.gowago,
-        project.rialto,
+        //TODO kable
         project.hoozeOn,
         project.myn,
     ];
