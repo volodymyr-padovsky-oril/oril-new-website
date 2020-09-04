@@ -21,7 +21,7 @@ class Lifestyle extends Component {
                 <section className="portfolio">
                     <section className="portfolio__projects" id="products">
                         <div className="container">
-                            <BaseTabs tabs={tabs} tab="lifestyle-and-fitness" selected="1"/>
+                            <BaseTabs tabs={tabs} tab="lifestyle-and-fitness" selected="4"/>
                         </div>
                     </section>
                 </section>

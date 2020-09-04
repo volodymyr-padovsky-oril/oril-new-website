@@ -8,6 +8,7 @@ export class PortfolioIoT extends Component {
     slides = [
         project.vicki,
         project.nuravine
+        //TODO: add scale
     ];
 
     render() {

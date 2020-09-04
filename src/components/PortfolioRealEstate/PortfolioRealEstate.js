@@ -4,9 +4,11 @@ import Link from "next/link";
 import Countup from "../../commons/Countup";
 
 
-export class PortfolioLifestyleAndFitness extends Component {
+export class PortfolioRealEstate extends Component {
     slides = [
-        project.as
+        project.sparkOffer,
+        project.greenVision,
+        //TODO: add scale
     ];
 
     render() {
@@ -26,7 +28,7 @@ export class PortfolioLifestyleAndFitness extends Component {
                             <div className="slide__content">
                                 <div className="left">
                                     <p className="text">{slide.text}</p>
-                                    {slide.caseStudy && <Link href={`${slide.caseStudy}`}>
+                                    {slide.caseStudy && <Link href={`blockchain/${slide.caseStudy}`}>
                                         <a className="link">Learn more
                                         </a>
                                     </Link>}
@@ -82,4 +84,4 @@ export class PortfolioLifestyleAndFitness extends Component {
     }
 }
 
-export default PortfolioLifestyleAndFitness;
+export default PortfolioRealEstate;

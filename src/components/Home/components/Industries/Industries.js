@@ -72,16 +72,17 @@ export class Industries extends Component {
                     <h3>Industries</h3>
                     <Tabs>
                         <TabList>
-                            <Tab>IoT</Tab>
                             <Tab>Real Estate</Tab>
+                            <Tab>IoT</Tab>
+                            <Tab>FinTech</Tab>
                             <Tab>Marketplace</Tab>
-                            <Tab>Lifestyle & Fitness</Tab>
+                            <Tab>Health & Fitness</Tab>
                         </TabList>
                         <TabPanel>
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        IoT text. We take a strong product-centric approach with marketplaces, since their success
+                                        We take a strong product-centric approach with marketplaces, since their success
                                         depends
                                         on satisfying both consumer and supplier needs.
                                         To do this, we treat both sides of the marketplace as separate products that
@@ -91,7 +92,7 @@ export class Industries extends Component {
                                         two
                                         parties on mobile and web, all the way through checkout and beyond.
                                     </p>
-                                    <Link href="/portfolio/iot">
+                                    <Link href="/portfolio/real-estate">
                                         Featured Products
                                     </Link>
                                 </div>
@@ -104,7 +105,7 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        Real Estate text. We take a strong product-centric approach with marketplaces, since their success
+                                        We take a strong product-centric approach with marketplaces, since their success
                                         depends
                                         on satisfying both consumer and supplier needs.
                                         To do this, we treat both sides of the marketplace as separate products that
@@ -127,7 +128,30 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        Marketplace text. We take a strong product-centric approach with marketplaces, since their success
+                                        We take a strong product-centric approach with marketplaces, since their success
+                                        depends
+                                        on satisfying both consumer and supplier needs.
+                                        To do this, we treat both sides of the marketplace as separate products that
+                                        need their
+                                        own set of compeling features and flows. Once we’re sure that both consumers and
+                                        suppliers will find value in the marketplace, we build seamless ties between the
+                                        two
+                                        parties on mobile and web, all the way through checkout and beyond.
+                                    </p>
+                                    <Link href="/portfolio/fin-tech">
+                                        Featured Products
+                                    </Link>
+                                </div>
+                                <div className="home__industries__img">
+                                    <img src="../assets/img/industries-marketplace.png" alt="industries-marketpace"/>
+                                </div>
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className="home__industries__tabpanel">
+                                <div className="home__industries__text">
+                                    <p>
+                                        We take a strong product-centric approach with marketplaces, since their success
                                         depends
                                         on satisfying both consumer and supplier needs.
                                         To do this, we treat both sides of the marketplace as separate products that
@@ -150,7 +174,7 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        Lifestyle & Fitness text. We take a strong product-centric approach with marketplaces, since their success
+                                        We take a strong product-centric approach with marketplaces, since their success
                                         depends
                                         on satisfying both consumer and supplier needs.
                                         To do this, we treat both sides of the marketplace as separate products that

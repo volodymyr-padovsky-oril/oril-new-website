@@ -113,8 +113,7 @@
 
   &__header {
     margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 70px minmax(min-content, max-content);
+    display: flex;
     align-items: center;
 
     .logo {
@@ -122,7 +121,7 @@
 
       img {
         max-height: 40px;
-        max-width: 40px;
+        //max-width: 40px;
       }
     }
 

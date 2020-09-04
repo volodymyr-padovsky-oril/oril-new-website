@@ -8,7 +8,7 @@ import BaseTabs from "../../../commons/BaseTabs";
 import '../../../components/Portfolio/styles/_portfolio.scss';
 import {tabs} from "../../../lib/tabs";
 
-class Marketplace extends Component {
+class RealEstate extends Component {
     render() {
         return (
             <>
@@ -21,7 +21,7 @@ class Marketplace extends Component {
                 <section className="portfolio">
                     <section className="portfolio__projects">
                         <div className="container">
-                            <BaseTabs tabs={tabs} tab="marketplace" selected="3"/>
+                            <BaseTabs tabs={tabs} tab="real-estate" selected="0"/>
                         </div>
                     </section>
                 </section>
@@ -32,4 +32,4 @@ class Marketplace extends Component {
     }
 }
 
-export default withRouter(Marketplace);
+export default withRouter(RealEstate);

@@ -4,9 +4,10 @@ import Link from "next/link";
 import Countup from "../../commons/Countup";
 
 
-export class PortfolioBlockchain extends Component {
+export class PortfolioFinTech extends Component {
     slides = [
-        project.scroogeBot
+        project.sab,
+        project.scroogeBot,
     ];
 
     render() {
@@ -82,4 +83,4 @@ export class PortfolioBlockchain extends Component {
     }
 }
 
-export default PortfolioBlockchain;
+export default PortfolioFinTech;

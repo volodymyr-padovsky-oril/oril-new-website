@@ -1,1 +1,1 @@
-export { default } from "./marketplace";
+export { default } from "./real-estate";
