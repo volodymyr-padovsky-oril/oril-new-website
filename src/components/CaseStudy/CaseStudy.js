@@ -7,10 +7,11 @@ import {project} from "../../lib/our-projects";
 class CaseStudy extends Component {
 
     navLinks = [
-        {name: 'Marketplace', to: '/portfolio/marketplace'},
-        {name: 'Lifestyle & Fitness', to: '/portfolio/lifestyle'},
+        {name: 'Real Estate', to: '/portfolio/real-estate'},
         {name: 'IoT', to: '/portfolio/iot'},
-        {name: 'Blockchain', to: '/portfolio/blockchain'},
+        {name: 'FinTech', to: '/portfolio/fin-tech'},
+        {name: 'Marketplace', to: '/portfolio/marketplace'},
+        {name: 'Health & Fitness', to: '/portfolio/lifestyle'},
         {name: 'Other', to: '/portfolio/other'},
     ];
 

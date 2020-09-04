@@ -71,7 +71,7 @@ export const project = {
             name: 'sparkoffer-logo',
             extension: '.png'
         },
-        caseStudy: '/portfolio/other/sparkoffer',
+        caseStudy: '/portfolio/real-estate/sparkoffer',
         title: 'SparkOffer',
         link: 'sparkoffer',
         tags: ['Web', 'Realestate', 'Platform'],
@@ -140,7 +140,7 @@ export const project = {
         },
         title: 'LACED',
         link: 'laced',
-        caseStudy: '/portfolio/lifestyle/laced',
+        caseStudy: '/portfolio/marketplace/laced',
         tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
         text: `
             LACED is a mobile app for online sneaker auctions where you can buy bids and participate by placing a bid. You can claim a reward in the loyalty section. Bid small and win big
@@ -292,7 +292,7 @@ export const project = {
             name: 'gv-logo',
             extension: '.png'
         },
-        caseStudy: '/portfolio/other/green-vision',
+        caseStudy: '/portfolio/real-estate/green-vision',
         title: 'GreenVision',
         link: 'green-vision',
         tags: ['WebApp', 'Mobile', 'Environment'],
@@ -393,7 +393,7 @@ export const project = {
         },
         title: 'SAB',
         link: 'signalautobrocker.com',
-        caseStudy: '/portfolio/marketplace/sab',
+        caseStudy: '/portfolio/fin-tech/sab',
         tags: ['WebApp', 'UX/UI', "MVP", "Development"],
         text: `
             Contribute and gather feedback on meetings and events on PlusDelta platform. It helps small or large teams' executives to laymen collaboratively plan, understand, communicate, and measure their projects and performance
