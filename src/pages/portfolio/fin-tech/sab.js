@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SEOMetaTags from "../.././../components/SEOMetaTags";
+import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
