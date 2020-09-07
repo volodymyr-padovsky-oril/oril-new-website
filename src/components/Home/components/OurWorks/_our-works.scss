@@ -92,11 +92,15 @@
           span {
             font-family: Mont-SemiBold, serif;
             color: #2c2c2c;
-            margin-right: 10px;
+            margin: 0 10px 10px 0;
             padding: 9px 17px;
             font-size: 0.875rem;
             border-radius: 28px;
             box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+
+            &:last-child{
+              margin-right: 0;
+            }
           }
         }
 
