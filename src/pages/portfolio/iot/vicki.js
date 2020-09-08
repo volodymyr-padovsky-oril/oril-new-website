@@ -18,7 +18,7 @@ class Index extends Component {
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
-                <CaseStudy data={caseStudy.sparkOffer}/>
+                <CaseStudy data={caseStudy.vicki}/>
                 <Contacts/>
                 <Footer/>
             </>

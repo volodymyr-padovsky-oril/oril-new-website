@@ -34,7 +34,7 @@ class CaseStudy extends Component {
                     </div>
                     <div className="case-study__header">
                         <div className="case-study__left">
-                            <img src={`../../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
+                            <img style={{width: data.logoNotFull ? "auto" : "100%"}} src={`../../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
                             <h2>
                                 {data.headerTitle}
                             </h2>
@@ -108,19 +108,26 @@ class CaseStudy extends Component {
                             {data.uiConceptSubTitle}
                         </p>
                         <div className="case-study__palette">
-                            <div className="shape">
-                                {data.uiConceptLeafs ? data.uiConceptLeafs.map((leaf, index) => (
+                            {(data.uiConceptLeafs || data.uiConceptShapes) && <div className="shape">
+                                {data.uiConceptLeafs && data.uiConceptLeafs.map((leaf, index) => (
                                         <div className="shape__leaf" key={index}>
                                             <img src={`../../assets/icons/${leaf.img}.svg`} alt={leaf.img}/>
                                             <span>{leaf.title}</span>
                                         </div>
-                                    )) :
-                                    data.uiConceptShapes.map((shape, index) => (
+                                    ))}
+                                {data.uiConceptShapes && data.uiConceptShapes.map((shape, index) => (
                                         <div className="shape__square" key={index}
                                              style={shape.style}>{shape.color}</div>
                                     ))
                                 }
-                            </div>
+                            </div>}
+                            {data.uiConceptRectangle && <div className="shape-rectangle">
+                                {data.uiConceptRectangle.map((shape, index) => (
+                                            <div className="shape-rectangle__square" key={index}
+                                                style={shape.style}>{shape.color}</div>
+                                        ))
+                                    }
+                            </div>}
                             <div className="fonts">
                                 <span style={data.uiConceptFontStyle} className="fonts--big">Aa</span>
                                 <span style={data.uiConceptFontStyleColor}
@@ -138,9 +145,14 @@ class CaseStudy extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="case-study__big-image">
+                {data.uiConceptNotFull && <div className="case-study__not-full-image">
+                    <div className="container">
+                        <img src={`../../assets/img/${data.uiConceptNotFull}.jpg`} alt={data.uiConceptNotFull}/>
+                    </div>
+                </div>}
+                {data.bigImage && <div className="case-study__big-image">
                     <img src={`../../assets/img/${data.bigImage}.jpg`} alt={data.bigImage}/>
-                </div>
+                </div>}
                 <div className="container">
                     <div className="case-study__our-process">
                         <h2>Our Process</h2>
