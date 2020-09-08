@@ -36,8 +36,9 @@ export const project = {
             extension: '.png'
         },
         title: 'VICKI',
-        link: 'vicki',
+        link: 'https://getvicki.com/',
         tags: ['MobileApp', 'iOS', 'Android', 'Retail'],
+        caseStudy: '/portfolio/iot/vicki',
         text: `
             VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world
         `,
