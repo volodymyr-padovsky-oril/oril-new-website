@@ -35,11 +35,9 @@ class Services extends Component {
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
-                <section className="services">
                     {serviceCards.map((card, index) => (
                         <ServiceCard card={card}/>
                     ))}
-                </section>
                 <Contacts/>
                 <Footer/>
             </>

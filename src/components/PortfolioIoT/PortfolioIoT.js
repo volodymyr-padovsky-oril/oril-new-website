@@ -28,7 +28,7 @@ export class PortfolioIoT extends Component {
                             <div className="slide__content">
                                 <div className="left">
                                     <p className="text">{slide.text}</p>
-                                    {slide.caseStudy && <Link href={`iot/${slide.caseStudy}`}>
+                                    {slide.caseStudy && <Link href={`${slide.caseStudy}`}>
                                         <a className="link">Learn more
                                         </a>
                                     </Link>}

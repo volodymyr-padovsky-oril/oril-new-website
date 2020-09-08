@@ -87,6 +87,19 @@
   url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('/assets/fonts/OpenSans-Regular.ttf');
+  src: url('/OpenSans-Regular.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('/assets/fonts/OpenSans-Bold.ttf');
+  src: url('/OpenSans-Bold.ttf?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}
 
 h1 {
   font-size: 65px;

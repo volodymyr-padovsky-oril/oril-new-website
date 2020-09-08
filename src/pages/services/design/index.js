@@ -243,13 +243,9 @@ export class Design extends Component {
                                     ))}
                                 </div>
                             </div>
-
                         </div>
-                        <div className="products">
-                            <h2>Featured Products</h2>
-                            <OurWorks title={false}
-                                      slides={[project.laced, project.sparkOffer, project.greenVision, project.scroogeBot]}/>
-                        </div>
+                        <OurWorks title="Featured Products"
+                                  slides={[project.laced, project.sparkOffer, project.greenVision, project.scroogeBot]}/>
                     </section>
                 </section>
                 <Contacts/>
