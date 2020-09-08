@@ -73,7 +73,7 @@ export const project = {
         },
         caseStudy: '/portfolio/real-estate/sparkoffer',
         title: 'SparkOffer',
-        link: 'sparkoffer',
+        link: 'https://www.sparkoffer.com/',
         tags: ['Web', 'Realestate', 'Platform'],
         text: `
             A platform that helps to interact and make real estate binding offers,
@@ -139,7 +139,7 @@ export const project = {
             extension: '.png'
         },
         title: 'LACED',
-        link: 'laced',
+        link: 'https://apps.apple.com/us/app/laced-win-sneakers/id1317801699',
         caseStudy: '/portfolio/marketplace/laced',
         tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
         text: `
@@ -294,7 +294,7 @@ export const project = {
         },
         caseStudy: '/portfolio/real-estate/green-vision',
         title: 'GreenVision',
-        link: 'green-vision',
+        link: 'https://greenvision-energy.com/#/start-page',
         tags: ['WebApp', 'Mobile', 'Environment'],
         text: `
             GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale
@@ -392,7 +392,7 @@ export const project = {
             extension: '.jpg'
         },
         title: 'SAB',
-        link: 'signalautobrocker.com',
+        link: 'https://signalautobroker.com/',
         caseStudy: '/portfolio/fin-tech/sab',
         tags: ['WebApp', 'UX/UI', "MVP", "Development"],
         text: `

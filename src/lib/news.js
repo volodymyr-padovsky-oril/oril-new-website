@@ -30,15 +30,15 @@ export const news = [
         img: 'blog-5'
     },
     {
-        id: 'ufa',
-        title: 'Uploading files to AWS S3 Bucket using Spring Boot',
-        href: 'https://oril.co/blog/uploading-files-to-aws-s3-bucket-using-spring-boot/',
-        img: 'blog-6'
-    },
-    {
         id: '10tkycc',
         title: '10 Tips To Keep Your Code Clean',
         href: 'https://oril.co/blog/10-tips-to-keep-your-code-clean/',
         img: 'blog-7'
+    },
+    {
+        id: 'ufa',
+        title: 'Uploading files to AWS S3 Bucket using Spring Boot',
+        href: 'https://oril.co/blog/uploading-files-to-aws-s3-bucket-using-spring-boot/',
+        img: 'blog-6'
     },
 ];

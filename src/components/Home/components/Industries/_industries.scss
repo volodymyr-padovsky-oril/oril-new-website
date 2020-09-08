@@ -36,6 +36,7 @@
       img {
         width: 100%;
         max-width: 567px;
+        height: intrinsic;
       }
     }
 
@@ -79,10 +80,13 @@
       .react-tabs__tab-list {
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
 
         .react-tabs__tab {
           margin-bottom: 15px;
+          width: fit-content;
         }
       }
     }

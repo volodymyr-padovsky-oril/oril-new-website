@@ -52,7 +52,7 @@
         margin: 0;
 
         .slide {
-          margin-top: 280px;
+          margin-top: 77px;
 
           img {
             width: 250px;
@@ -92,11 +92,15 @@
           span {
             font-family: Mont-SemiBold, serif;
             color: #2c2c2c;
-            margin-right: 10px;
+            margin: 0 10px 10px 0;
             padding: 9px 17px;
             font-size: 0.875rem;
             border-radius: 28px;
             box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+
+            &:last-child{
+              margin-right: 0;
+            }
           }
         }
 
@@ -112,53 +116,51 @@
 
 
 @media (max-width: 1239px) {
-  .slide {
-    margin-top: 0 !important;
+  .home {
+    &__our-works {
+      .slide {
+        margin-top: 0 !important;
 
-    & > div {
-      justify-content: center;
-      display: flex !important;
-      flex-direction: column;
-      align-items: center;
+        & > div {
+          justify-content: center;
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        img {
+          width: 100% !important;
+        }
+      }
+
+      .swiper-pagination {
+        visibility: hidden;
+      }
     }
-
-    img {
-      width: 100% !important;
-    }
-  }
-
-  .swiper-pagination {
-    visibility: hidden;
   }
 }
 
 
 @media (max-width: 900px) {
-  .slide {
-    justify-content: center;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
+  .home {
+    &__our-works {
+      .slide {
+        justify-content: center;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
 
-    & > div {
-      justify-content: center;
-      display: flex !important;
-      flex-direction: column;
-      align-items: center;
-    }
+        & > div {
+          justify-content: center;
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+        }
 
-    img {
-      width: auto;
-      //max-height: 441px;
-    }
-  }
-}
-
-
-@media (max-width: 600px) {
-  .slide {
-    img {
-      width: 100% !important;
+        img {
+          width: auto;
+        }
+      }
     }
   }
 }

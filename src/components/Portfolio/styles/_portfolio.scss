@@ -143,7 +143,7 @@
     .left {
       max-width: 500px;
 
-      .link{
+      .link {
         font-size: 1.25rem;
         font-family: Mont-SemiBold, serif;
         color: #f7931d;
@@ -172,7 +172,7 @@
           white-space: nowrap;
 
 
-          &:hover{
+          &:hover {
             color: #ffb248;
           }
 
@@ -220,7 +220,8 @@
         border-radius: 50%;
         box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.06);
         background-color: #fff;
-        span{
+
+        span {
           font-size: 0.9rem;
           color: #2c2c2c;
         }
@@ -300,11 +301,6 @@
 
       .logo {
         margin-right: 25px;
-
-        img {
-          width: 30px;
-          height: 30px;
-        }
       }
 
       .title {
@@ -312,12 +308,6 @@
         line-height: 1.5;
         margin: 0;
       }
-
-      //.tags {
-      //  display: grid;
-      //  grid-template-columns: repeat(auto-fill, minmax(min-content, 100px));
-      //  grid-column: 1 / -1;
-      //}
     }
 
     &__content {
@@ -343,7 +333,7 @@
           max-width: 380px;
         }
 
-        .tags{
+        .tags {
           justify-content: center;
         }
       }
@@ -371,9 +361,19 @@
           max-width: 270px;
         }
 
-        .tags{
+        .tags {
           flex-wrap: wrap;
-          div{
+
+          a {
+            padding: 10px 15px;
+            margin: 0 15px 15px 0;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+          div {
             margin-bottom: 15px;
             padding: 10px 15px;
             font-size: 1rem;
