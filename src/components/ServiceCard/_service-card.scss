@@ -30,23 +30,17 @@
     text-align: left;
 
     h2 {
-      font-size: 40px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
+      font-size: 2.5rem;
       line-height: 1.4;
-      letter-spacing: normal;
       color: #363645;
       margin: 0 0 39px;
+      font-family: Mont-Bold, serif;
     }
 
     p {
-      font-size: 28px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
+      font-size: 1.75rem;
+      font-family: Mont-Bold, serif;
       line-height: 1.61;
-      letter-spacing: normal;
       max-width: none !important;
       color: #363645;
       margin: 0 0 10px;
@@ -55,8 +49,8 @@
     span {
       display: block;
       opacity: 0.9;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 1.25rem;
+      font-family: Mont-SemiBold, serif;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.8;
@@ -73,7 +67,7 @@
       border: none;
       cursor: pointer;
       color: #ffb248;
-      text-decoration: none;
+      text-decoration: underline;
       font-size: 1.25rem;
       text-align: center;
     }
@@ -89,10 +83,31 @@
 @media (max-width: 991.98px) {
   .card-wrapper {
     margin: 50px auto;
+
     & > .container {
       grid-template-columns: 1fr;
       margin: 150px auto;
       grid-gap: 5%
+    }
+
+    &__text-wrapper {
+      order: 2;
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 15px;
+      }
+
+      a {
+        font-size: 17px;
+      }
     }
   }
 }
