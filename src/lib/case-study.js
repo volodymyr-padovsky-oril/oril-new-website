@@ -182,7 +182,14 @@ export const caseStudy = {
         style: { backgroundColor: "#363645" },
       },
     ],
-    uiConceptFont: "DM Sans",
+    uiConceptFont: "DMSans",
+    uiConceptFontStyle: {
+      fontFamily: "DMSans-Bold, serif",
+    },
+    uiConceptFontStyleColor: {
+      color: "#005288",
+      fontFamily: "DMSans-Bold, serif",
+    },
     bigImage: "so-big",
     ourProcessItem: [
       {
@@ -633,7 +640,7 @@ export const caseStudy = {
         img: "services-logo-typescript-angular",
         name: "Angular 9",
       },
-     
+
     ],
     ourResultsSubTile:
       "SparkOffer UI system was carefully created to reflect its authenticity, strong values and project identity: modern, ambitious, reliable, simple.",
