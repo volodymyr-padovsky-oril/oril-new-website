@@ -1,8 +1,9 @@
+.container-our-works {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .home {
-  .container-our-works {
-    max-width: 1240px;
-    margin: 0 auto;
-  }
   &__our-works {
     display: flex;
     flex-direction: column;
@@ -149,10 +150,10 @@
 }
 
 @media (max-width: 1239px) {
+  .container-our-works {
+    margin: 0;
+  }
   .home {
-    .container-our-works {
-      margin: 0;
-    }
     &__our-works {
       h2{
         font-size: 1.75rem;

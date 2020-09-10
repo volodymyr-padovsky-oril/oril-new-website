@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Swiper from "react-id-swiper";
-import {project} from "../../../../lib/our-projects";
 import Link from "next/link";
 
 export const params = {
@@ -20,7 +19,6 @@ export const params = {
         },
         1239: {
             slidesPerView: 2,
-            // spaceBetween: 40
         }
     }
 };

@@ -242,10 +242,10 @@ class CaseStudy extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="case-study__our-works">
-                        <h2>A few more Case Studies you might <br/> be interested in</h2>
-                        <OurWorks title={false} slides = {[project.laced, project.sparkOffer, project.sab]}/>
-                    </div>
+                </div>
+                <div className="case-study__our-works">
+                    <h2>A few more Case Studies you might <br/> be interested in</h2>
+                    <OurWorks title={false} slides = {[project.laced, project.sparkOffer, project.sab]}/>
                 </div>
             </section>
         );
