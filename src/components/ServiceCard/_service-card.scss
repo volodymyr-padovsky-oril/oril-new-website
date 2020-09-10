@@ -2,12 +2,12 @@
 
 .odd {
   direction: ltr !important;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
 
 }
 
 .even {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
 
   .card-wrapper__animation-wrapper {
     margin-left: -100px;
@@ -48,9 +48,7 @@
 
     span {
       display: block;
-      opacity: 0.9;
       font-size: 1.25rem;
-      font-family: Mont-SemiBold, serif;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.8;
@@ -58,18 +56,13 @@
       color: #676875;
       margin: 0 0 40px;
       direction: ltr;
+
     }
 
     a {
-      font-family: Mont-Bold, serif;
-      border-radius: 7px;
-      background-color: #ffffff;
-      border: none;
-      cursor: pointer;
-      color: #ffb248;
+      color: #f7931d;
       text-decoration: underline;
       font-size: 1.25rem;
-      text-align: center;
     }
 
   }
