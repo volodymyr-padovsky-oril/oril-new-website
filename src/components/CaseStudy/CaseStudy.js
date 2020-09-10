@@ -158,9 +158,6 @@ class CaseStudy extends Component {
                         <h2>Our Process</h2>
                         <div className="our-process__wrapper">
                             <div className="our-process__item">
-                                <div>
-                                    <div></div>
-                                </div>
                                 <h5>Research & Product Design</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Cras dapibus vulputate diam eu pretium. Mauris elit orci,
@@ -170,9 +167,6 @@ class CaseStudy extends Component {
                                 <span>1 week</span>
                             </div>
                             <div className="our-process__item">
-                                <div>
-                                    <div></div>
-                                </div>
                                 <h5>Development</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Cras dapibus vulputate diam eu pretium. Mauris elit orci,
@@ -182,9 +176,6 @@ class CaseStudy extends Component {
                                 <span>1 week</span>
                             </div>
                             <div className="our-process__item">
-                                <div className="our-process__item--last">
-                                    <div></div>
-                                </div>
                                 <h5>Iterative Improvement</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Cras dapibus vulputate diam eu pretium. Mauris elit orci,
