@@ -207,7 +207,6 @@ class CaseStudy extends Component {
                                         <img src={`../../assets/img/${technoItem.img}.png`}
                                              alt="angular"/>
                                     </div>
-                                    <span>{technoItem.name}</span>
                                 </div>
                             ))}
                         </div>
