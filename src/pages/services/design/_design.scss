@@ -186,6 +186,10 @@
           display: flex;
           align-self: flex-start;
         }
+
+        p {
+          font-size: 0.875rem !important;
+        }
       }
     }
 
@@ -208,10 +212,6 @@
     .deliverable__wrapper {
       grid-template-columns: 1fr 1fr;
       grid-gap: 50px;
-
-      .deliverable-item {
-        margin-top: 40px;
-      }
     }
   }
 
@@ -222,10 +222,6 @@
 
     .deliverable__wrapper {
       grid-template-columns: 1fr;
-
-      .deliverable-item {
-        margin-top: 40px;
-      }
     }
   }
 }
