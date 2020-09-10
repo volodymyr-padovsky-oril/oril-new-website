@@ -256,7 +256,7 @@ export class Iot extends Component {
                                 </div>
                             </div>
                         </div>
-                        <OurWorks title="Featured Products" slides={[project.vicki, project.nuravine]}/>
+                        <OurWorks h2="Featured Products" slides={[project.vicki, project.nuravine]}/>
                     </section>
                 </section>
                 <Contacts/>
