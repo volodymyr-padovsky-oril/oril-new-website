@@ -11,6 +11,7 @@
 
       .swiper-wrapper {
         //height: 144px !important;
+        width: 1240px;
 
         .customer {
           height: 110px;
@@ -67,7 +68,8 @@
       }
 
       .feedback {
-        color: #676875
+        color: #676875;
+        height: 216px;
       }
     }
   }
@@ -85,6 +87,14 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 1239.98px) {
+  .home__testimonials > .container {
+    .feedback {
+      height: auto;
+    }
   }
 }
 
@@ -121,7 +131,7 @@
       .swiper-wrapper {
 
         .swiper-pagination {
-          margin-top: 90px;
+          margin-top: 105px;
           width: 78vw;
         }
       }
@@ -134,8 +144,6 @@
         .feedback {
           width: 80vw !important;
         }
-
-
       }
     }
   }
