@@ -17,16 +17,16 @@ export class PortfolioRealEstate extends Component {
                 <div className="slider-wrapper">
                     {this.slides.map((slide, index) => (
                         <div className="slide" key={'slide-' + index}>
-                            <div className="slide__header">
-                                <div className="logo">
-                                    <img src={`../assets/img/${slide.logo.name}${slide.logo.extension}`}
-                                         alt={slide.logo.name}/>
-                                </div>
-                                <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow"
-                                   className="title">{slide.title}</a>
-                            </div>
                             <div className="slide__content">
                                 <div className="left">
+                                    <div className="slide__header">
+                                        <div className="logo">
+                                            <img src={`../assets/img/${slide.logo.name}${slide.logo.extension}`}
+                                                 alt={slide.logo.name}/>
+                                        </div>
+                                        <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow"
+                                           className="title">{slide.title}</a>
+                                    </div>
                                     <p className="text">{slide.text}</p>
                                     {slide.caseStudy && <Link href={`${slide.caseStudy}`}>
                                         <a className="link">Learn more

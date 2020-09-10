@@ -1,22 +1,15 @@
 import React, {Component} from "react";
 import Swiper from "react-id-swiper";
-import {project} from "../../../../lib/our-projects";
 import Link from "next/link";
 
 export const params = {
     loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-    },
     slidesPerView: 3,
     spaceBetween: 50,
     autoplay: {
         delay: 3500,
         disableOnInteraction: false
     },
-    // width: 1240,
     speed: 1500,
     breakpoints: {
         900: {
@@ -24,9 +17,12 @@ export const params = {
         },
         1239: {
             slidesPerView: 2,
-            // spaceBetween: 40
         }
-    }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 };
 
 export class OurWorks extends Component {
@@ -39,16 +35,17 @@ export class OurWorks extends Component {
     render() {
         return (
             <section className="home__our-works">
-                <div className="container">
-                    <h2>{this.props.title}</h2>
+                <div className="container-our-works" style={{maxWidth: "1240px"}}>
+                    <h2>{this.props.h2}</h2>
+                    <h3>{this.props.h3}</h3>
                     <div className="home__our-works__wrapper">
                         <Swiper {...params}>
                             {this.props.slides.map((slide, index) => (
                                     <div key={'slide-' + index}>
                                         <div className="slide">
-                                            <img src={`../../assets/img/${slide.img.name}${slide.img.extension}`}
+                                            <img className={index !== 1 ? "slide__small-img": ""} src={`../../assets/img/${slide.img.name}${slide.img.extension}`}
                                                  alt={slide.img.name}/>
-                                            <div>
+                                            <div className="slide__description">
                                                 <div
                                                     className="title">{slide.title}
                                                 </div>

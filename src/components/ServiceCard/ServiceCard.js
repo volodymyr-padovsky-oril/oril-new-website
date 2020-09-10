@@ -19,7 +19,6 @@ class ServiceCard extends Component {
                         </Link>
                     </div>
                     <div className="card-wrapper__animation-wrapper">
-
                         <Lottie
                             // style={{height: 'auto', marginLeft: '-60px'}}
                             options={card.animationOptions}

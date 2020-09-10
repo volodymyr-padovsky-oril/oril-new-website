@@ -158,9 +158,6 @@ class CaseStudy extends Component {
                         <h2>Our Process</h2>
                         <div className="our-process__wrapper">
                             <div className="our-process__item">
-                                <div>
-                                    <div></div>
-                                </div>
                                 <h5>Research & Product Design</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Cras dapibus vulputate diam eu pretium. Mauris elit orci,
@@ -170,9 +167,6 @@ class CaseStudy extends Component {
                                 <span>1 week</span>
                             </div>
                             <div className="our-process__item">
-                                <div>
-                                    <div></div>
-                                </div>
                                 <h5>Development</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Cras dapibus vulputate diam eu pretium. Mauris elit orci,
@@ -182,9 +176,6 @@ class CaseStudy extends Component {
                                 <span>1 week</span>
                             </div>
                             <div className="our-process__item">
-                                <div className="our-process__item--last">
-                                    <div></div>
-                                </div>
                                 <h5>Iterative Improvement</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Cras dapibus vulputate diam eu pretium. Mauris elit orci,
@@ -207,7 +198,6 @@ class CaseStudy extends Component {
                                         <img src={`../../assets/img/${technoItem.img}.png`}
                                              alt="angular"/>
                                     </div>
-                                    <span>{technoItem.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -242,10 +232,10 @@ class CaseStudy extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="case-study__our-works">
-                        <h2>A few more Case Studies you might <br/> be interested in</h2>
-                        <OurWorks title={false} slides = {[project.laced, project.sparkOffer, project.sab]}/>
-                    </div>
+                </div>
+                <div className="case-study__our-works">
+                    <h2>A few more Case Studies you might <br/> be interested in</h2>
+                    <OurWorks slides = {[project.laced, project.sparkOffer, project.sab]}/>
                 </div>
             </section>
         );
