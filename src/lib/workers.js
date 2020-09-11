@@ -17,43 +17,50 @@ const firstPage = [
         animal: 'team-10',
         photo: '20',
         name: 'Zorian Fedoryga',
-        position: 'Lead Software Engineer'
+        position: 'Lead Software Engineer',
+        hover: true
     },
     {
         animal: 'team-13',
         photo: '3',
         name: 'Katia Tsybulska',
-        position: 'HR / Recruiter'
+        position: 'HR / Recruiter',
+        hover: true
     },
     {
         animal: 'team-11',
         photo: '5',
         name: 'Maria Synenka',
-        position: 'Project Manager'
+        position: 'Project Manager',
+        hover: true
     },
     {
         animal: 'team-6',
         photo: '18',
         name: 'Ihor Kosandiak',
-        position: 'Lead Software Engineer'
+        position: 'Lead Software Engineer',
+        hover: true
     },
     {
         animal: 'team-15',
         photo: '21',
         name: 'Ihor Sokolyk',
-        position: 'Lead Software Engineer'
+        position: 'Lead Software Engineer',
+        hover: true
     },
     {
         animal: 'team-2',
         photo: '19',
         name: 'Alexander Panchuk',
-        position: 'Software Engineer'
+        position: 'Software Engineer',
+        hover: true
     },
     {
         animal: 'team-4',
         photo: '17',
         name: 'Sasha Bryk',
-        position: 'Software Engineer'
+        position: 'Software Engineer',
+        hover: true
     },
 ];
 

@@ -71,10 +71,9 @@ class CaseStudy extends Component {
                             </div>}
                             <div className="tags">
                                 {data.tags.map((tag, index) => (
-                                    <div key={index}>
-                                        {tag}
-                                    </div>
-                                ))}
+                                    <a href={`https://oril.co/blog/tag/${tag}/`}
+                                       key={`tag-${index}`}>{tag}</a>
+                                    ))}
                             </div>
                         </div>
                     </div>
