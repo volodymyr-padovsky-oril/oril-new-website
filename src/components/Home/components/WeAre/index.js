@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {workersPages} from "../../../../lib/workers";
 import Swiper from "react-id-swiper";
 import VisibilitySensor from "react-visibility-sensor";
+import WeAreItem from './WeAreItem';
 
 export const params = {
     autoHeight: true,
@@ -15,7 +16,6 @@ export const params = {
 };
 
 export class WeAre extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -39,14 +39,8 @@ export class WeAre extends Component {
 
     };
 
-    componentDidUpdate() {
-        this.state.visible &&
-        this.update()
-    }
-
     render() {
-        let {hover, visible} = this.state;
-        console.log('visible', visible);
+        let {visible} = this.state;
         return (
             <section className="home__we-are" id="we-are">
                 <h3>Who We Are</h3>
@@ -76,48 +70,8 @@ export class WeAre extends Component {
                                     <div key={'slide-' + index}>
                                         {
                                             workers.map((worker, index) => {
-                                                const animal_src = "assets/img/" + worker.animal + ".png";
-                                                const photoStyles = {
-                                                    backgroundImage: "url(assets/img/" + worker.photo + ".jpg)",
-                                                    backgroundSize: 'cover',
-                                                    backgroundRepeat: 'no-repeat',
-                                                };
-
-                                                const cardFront = {
-                                                    opacity: 0,
-                                                    transform: 'scale(.8)',
-                                                    border: '1px solid red'
-                                                };
-
-                                                const cardBack = {
-                                                    opacity: 1,
-                                                    transform: 'scale(1)',
-                                                    transitionDelay: '.2s',
-                                                    backgroundImage: "url(assets/img/" + worker.photo + ".jpg)",
-                                                    backgroundSize: 'cover',
-                                                    backgroundRepeat: 'no-repeat',
-                                                };
-
-                                                const description = {
-                                                    opacity: 1,
-                                                    transform: 'scale(1)',
-                                                    transitionDelay: '.2s'
-                                                };
-
                                                 return (
-                                                    <div className="card" key={'card-' + index}>
-                                                        <div className="card__front" style={ worker.hover && hover ? cardFront : null}>
-                                                            <img src={animal_src} alt={worker.animal}/>
-                                                        </div>
-                                                        <div className="card__back"
-                                                             style={worker.hover && hover ? cardBack : photoStyles}>
-                                                            <div className="card__back__desc"
-                                                                 style={worker.hover && hover ? description : null}>
-                                                                <span>{worker.name}</span>
-                                                                <span>{worker.position}</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <WeAreItem index={index} worker={worker} visible={visible} />
                                                 )
                                             })
                                         }

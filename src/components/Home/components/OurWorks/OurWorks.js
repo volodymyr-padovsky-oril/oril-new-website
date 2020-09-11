@@ -8,10 +8,10 @@ export const params = {
     
     slidesPerView: 3,
     spaceBetween: 50,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    },
     // width: 1240,
     speed: 1500,
     breakpoints: {
