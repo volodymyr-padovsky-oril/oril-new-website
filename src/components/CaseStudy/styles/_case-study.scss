@@ -95,14 +95,18 @@
       flex-direction: row;
       flex-wrap: wrap;
 
-      div {
+      a {
         color: #2c2c2c;
         padding: 15px 30px;
         font-size: 1.125rem;
         border-radius: 27px;
-
         margin: 0 30px 20px 0;
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+        text-decoration: none;
+
+        &:hover{
+          color: rgb(255, 178, 72);
+        }
 
         &:last-child {
           margin-right: 0;

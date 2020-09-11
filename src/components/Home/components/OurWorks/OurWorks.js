@@ -54,7 +54,8 @@ export class OurWorks extends Component {
                                                 <div className="tags">
                                                     {
                                                         slide.tags.map((tag, index) => (
-                                                            <span key={`tag-${index}`}>{tag}</span>))
+                                                            <a href={`https://oril.co/blog/tag/${tag}/`}
+                                                               key={`tag-${index}`}>{tag}</a>))
                                                     }
                                                 </div>
                                                 <p className="text">{slide.text}</p>
