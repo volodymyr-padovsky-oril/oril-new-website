@@ -11,6 +11,8 @@ export const params = {
         disableOnInteraction: false
     },
     speed: 1500,
+    grabCursor: false,
+    simulateTouch: false,
     breakpoints: {
         900: {
             slidesPerView: 1,

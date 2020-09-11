@@ -35,6 +35,11 @@
 
 @media (max-width: 767.98px) {
   .home {
+    p {
+      font-size: 15px !important;
+      line-height: 1.67;
+    }
+
     section {
       h3 {
         margin: 0 0 35px;
@@ -43,11 +48,6 @@
       h4 {
         font-size: 20px;
         line-height: 1.25;
-      }
-
-      p {
-        font-size: 15px;
-        line-height: 1.67;
       }
     }
   }
