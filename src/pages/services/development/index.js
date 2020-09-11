@@ -234,14 +234,13 @@ export class Design extends Component {
                                                 <img src={'../assets/img/' + service.img + '.png'}
                                                      alt={service.img}/>
                                             </div>
-                                            {service.name}
                                         </a>
                                     ))}
                                 </div>
                             </div>
                         </div>
-                        <OurWorks title="Featured Products"
-                                  slides={[project.sparkOffer, project.laced, project.sab, project.scroogeBot]}/>
+                        <OurWorks h2="Featured Products"
+                                  slides={[project.sparkOffer, project.laced, project.sab]}/>
                     </section>
                 </section>
                 <Contacts/>

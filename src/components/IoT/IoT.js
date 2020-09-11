@@ -69,7 +69,6 @@ export class IoT extends Component {
                                         <div>
                                             <img src={'../../assets/img/' + service.img + '.png'} alt={service.img} />
                                         </div>
-                                        <span>{service.name}</span>
                                     </a>
                                 ))
                             }
