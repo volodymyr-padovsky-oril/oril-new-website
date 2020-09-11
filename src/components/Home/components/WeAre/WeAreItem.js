@@ -9,9 +9,16 @@ export class WeAreItem extends Component {
     };
   }
 
+  animate() {
+    const { index } = this.props
+    setInterval(() => {
+      setTimeout(() => this.setState({hover: false}), 500 + 200 * index)
+    }, 10)
+  }
+
   componentWillReceiveProps(props, state) {
     if (props.visible !== state.visible) {
-      props.visible && this.setState({ hover: false });
+      props.visible && this.animate()
     }
   }
 
