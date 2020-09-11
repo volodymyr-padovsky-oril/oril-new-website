@@ -151,7 +151,14 @@
 
     &__process {
       margin-bottom: 140px;
-
+      h2 {
+        font-size: 1.25rem !important;
+        line-height: 1.67;
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.87;
+      }
       .process-item {
         grid-gap: 20px;
         margin-top: 60px;
@@ -181,6 +188,15 @@
     &__deliverables {
       margin-bottom: 140px;
 
+      h2 {
+        font-size: 1.25rem !important;
+        line-height: 1.67;
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.87;
+      }
+
       .deliverable-item {
         span {
           display: flex;
@@ -207,6 +223,11 @@
 
     .process-item {
       grid-template-columns: 1fr;
+      // grid-auto-flow: column;
+      // grid-gap: 0
+      img {
+        order: 2;
+      }
     }
 
     .deliverable__wrapper {
