@@ -6,10 +6,10 @@ export const params = {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 50,
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     delay: 3500,
+    //     disableOnInteraction: false
+    // },
     speed: 1500,
     grabCursor: false,
     simulateTouch: false,
