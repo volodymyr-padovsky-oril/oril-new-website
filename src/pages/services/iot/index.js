@@ -8,6 +8,7 @@ import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';
 import iot from "../../../lib/lotties/iot-services";
 import {project} from "../../../lib/our-projects";
+import  '../../../commons/BaseTabs/index.scss';
 
 export class Iot extends Component {
     blocks = [
@@ -148,10 +149,12 @@ export class Iot extends Component {
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
-            <Link href={link.to} key={index} activeClassName="active">
-                <a className="nav_item">
-                    {link.name}
-                </a>
+            <Link href={link.to} key={index} activeClassName="react-tabs__list__tab--selected">
+                <div className="react-tabs__list__tab">
+                    <a className="nav_item">
+                        {link.name}
+                    </a>
+                </div>
             </Link>)
         );
 
@@ -167,7 +170,7 @@ export class Iot extends Component {
                 <section className="services">
                     <section className="services__design" id="design">
                         <div className="container">
-                            <div className="header-link">
+                            <div className="react-tabs__list">
                                 {this.NavLinks()}
                             </div>
                             <div className="services__desc">
