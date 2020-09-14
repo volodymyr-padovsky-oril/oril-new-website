@@ -18,7 +18,9 @@
       transition: .2s;
       margin-right: 35px;
       white-space: nowrap;
-
+      &:hover {
+        cursor: pointer;
+      }
       a {
         font-size: 1.125rem;
         font-family: Mont-SemiBold, serif;
@@ -57,8 +59,7 @@
           font-size: 1.125rem;
           font-family: Mont-SemiBold, serif;
           text-decoration: none;
-          color: #ffb248;
-
+          color: #ffb248 !important;
         }
       }
 

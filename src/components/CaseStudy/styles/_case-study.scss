@@ -1,5 +1,5 @@
 .case-study {
-  margin: 42px 0 160px 0;
+  margin: 30px 0 160px 0;
 
   p {
     max-width: 750px;
@@ -60,7 +60,6 @@
     }
 
     span {
-      font-weight: 600;
       font-size: 20px;
       color: #676875;
       line-height: 1.8;
@@ -516,7 +515,7 @@
 
 @media (max-width: 759px) {
   .case-study {
-    margin: 42px 0 70px 0;
+    margin: 30px 0 70px 0;
 
     p {
       font-size: 0.875rem;

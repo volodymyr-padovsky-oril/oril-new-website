@@ -9,6 +9,7 @@ import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';
 import ux from "../../../lib/lotties/ux-services";
 import {project} from "../../../lib/our-projects";
+import  '../../../commons/BaseTabs/index.scss';
 
 export class Design extends Component {
     blocks = [
@@ -133,10 +134,12 @@ export class Design extends Component {
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
-            <Link href={link.to} key={index} activeClassName="active">
-                <a className="nav_item">
-                    {link.name}
-                </a>
+            <Link href={link.to} key={index} activeClassName="react-tabs__list__tab--selected">
+                <div className="react-tabs__list__tab">
+                    <a>
+                        {link.name}
+                    </a>
+                </div>
             </Link>)
         );
 
@@ -152,7 +155,7 @@ export class Design extends Component {
                 <section className="services">
                     <section className="services__design" id="design">
                         <div className="container">
-                            <div className="header-link">
+                            <div className="react-tabs__list">
                                 {this.NavLinks()}
                             </div>
                             <div className="services__desc">
