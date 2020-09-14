@@ -129,7 +129,23 @@ h4 {
 }
 
 p, a {
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 20px;
   color: #676875;
   line-height: 1.8;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 980px),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    html{
+      font-size: 70%;
+      // line-height: 80%;
+     }
+
 }
