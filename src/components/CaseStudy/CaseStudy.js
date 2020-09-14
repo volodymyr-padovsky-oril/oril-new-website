@@ -3,6 +3,7 @@ import OurWorks from "../Home/components/OurWorks/OurWorks";
 import Countup from "../../commons/Countup";
 import Link from "../../commons/utils/activeLink";
 import {project} from "../../lib/our-projects";
+import  '../../commons/BaseTabs/index.scss';
 
 class CaseStudy extends Component {
 
@@ -17,10 +18,12 @@ class CaseStudy extends Component {
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
-            <Link href={link.to} key={index} activeClassName="active">
-                <a className="nav_item">
-                    {link.name}
-                </a>
+            <Link href={link.to} key={index} activeClassName="react-tabs__list__tab--selected">
+                <div className="react-tabs__list__tab">
+                    <a className="nav_item">
+                        {link.name}
+                    </a>
+                </div>
             </Link>)
         );
 
@@ -29,7 +32,7 @@ class CaseStudy extends Component {
         return (
             <section className="case-study">
                 <div className="container">
-                    <div className="header-link">
+                    <div className="react-tabs__list">
                         {this.NavLinks()}
                     </div>
                     <div className="case-study__header">
