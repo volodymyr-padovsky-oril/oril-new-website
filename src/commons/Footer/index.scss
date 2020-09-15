@@ -34,10 +34,9 @@ footer {
     text-decoration: none;
     line-height: 1.11;
     font-weight: normal;
-    transition: color 0.2s;
+    transition: color .2s;
 
-    &:hover,
-    &.active {
+    &:hover, &.active {
       color: $orange;
     }
   }
@@ -76,29 +75,5 @@ footer {
 @media (max-width: 767.98px) {
   footer {
     display: none;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  footer {
-    .content {
-      padding: 28px 0;
-    }
-    .nav-footer a.nav_item {
-      font-size: 1.2rem;
-    }
-    .copyright {
-      padding: 18px;
-  
-      p {
-        font-size: 1.3rem;
-        font-weight: normal;
-      }
-    }
   }
 }

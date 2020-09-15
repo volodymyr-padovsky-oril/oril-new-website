@@ -12,7 +12,7 @@ export class WeAreItem extends Component {
   animate() {
     const { index } = this.props
     setInterval(() => {
-      setTimeout(() => this.setState({hover: false}), 700 + 200 * index)
+      setTimeout(() => this.setState({hover: false}), 500 + 200 * index)
     }, 10)
   }
 

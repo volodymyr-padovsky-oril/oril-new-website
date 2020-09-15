@@ -149,37 +149,3 @@
     }
   }
 }
-
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-    .home__testimonials {
-      h3 {
-        margin-bottom: 17px !important;
-      }
-      & > .container {
-        .swiper-wrapper {
-          //height: 144px !important;
-          width: 992px;
-          .swiper-slide {
-            min-height: 100px;
-          }
-          .slide__footer {
-            margin-top: 58px;
-          }
-
-          .swiper-pagination {
-            width: 992px !important;}
-        }
-
-          .feedback {
-            height: auto;
-            height: 80px;
-          }
-        }
-      }
-  }
