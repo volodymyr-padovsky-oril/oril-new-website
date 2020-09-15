@@ -12,7 +12,7 @@
     &__text {
       p {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25rem;
         color: #676875;
         line-height: 1.8;
       }
@@ -102,15 +102,21 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .home {
-    &__industries {
-      margin-bottom: 180px;
-      
-      &__text {
-        p {
-          font-size: 1.6rem;
-          line-height: 1.6;
-        }
+
+    .home__industries__text {
+      p {
+        margin-bottom: 40px;
       }
+    }
+    &__industries {
+      margin-bottom: 176px;
+      
+      // &__text {
+      //   p {
+      //     font-size: 1.6rem;
+      //     line-height: 1.6;
+      //   }
+      // }
     }
 
     .react-tabs__tab-list {

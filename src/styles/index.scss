@@ -78,7 +78,7 @@ div.bubble_wrapper { z-index: 0 }
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
     .container {
-      width: 80%;
+      max-width: 992px;
     }
     img {
       width: 90%;

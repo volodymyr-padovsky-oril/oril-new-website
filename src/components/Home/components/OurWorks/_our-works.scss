@@ -285,11 +285,15 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+
+    .container-our-works {
+      max-width: 992px !important;
+    }
     .home {
       &__our-works {
         .swiper-slide {
           margin: 0;
-          height: 700px;
+          height: 650px;
   
           .slide {
             display: flex;

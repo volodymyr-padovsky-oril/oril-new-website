@@ -1,4 +1,4 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .contact {
   flex-grow: 1;
@@ -12,7 +12,9 @@
     grid-column-gap: 50px;
     padding: 0;
 
-    .container:nth-child(3) { display: none; }
+    .container:nth-child(3) {
+      display: none;
+    }
   }
 
   &__form {
@@ -20,12 +22,12 @@
 
     h2 {
       color: #fff;
-      line-height: .97;
+      line-height: 0.97;
       margin: 0 0 20px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 1.44;
       color: $light-gray;
       margin-bottom: 35px;
@@ -38,9 +40,9 @@
 
       &--border {
         a {
-          border-bottom: 2px solid rgba(255, 255, 255, .35);
+          border-bottom: 2px solid rgba(255, 255, 255, 0.35);
           display: inline-block;
-          transition: .2s;
+          transition: 0.2s;
 
           &:hover {
             border-color: white;
@@ -48,8 +50,9 @@
         }
       }
 
-      p, a {
-        font-size: 20px;
+      p,
+      a {
+        font-size: 1.25rem;
         line-height: 1.25;
         font-weight: normal;
       }
@@ -81,7 +84,7 @@
         padding: 10px;
         width: 46px;
         height: 46px;
-        transition: .2s;
+        transition: 0.2s;
 
         &:hover {
           background-color: white;
@@ -93,7 +96,9 @@
 }
 
 @media (max-width: 767.98px) {
-  section.contact { margin-bottom:  0 }
+  section.contact {
+    margin-bottom: 0;
+  }
 
   .contact {
     padding: 60px 0;
@@ -108,8 +113,67 @@
         margin: 0 0 75px;
       }
 
-      .container:nth-child(2) { display: none; }
-      .container:nth-child(3) { display: block; }
+      .container:nth-child(2) {
+        display: none;
+      }
+      .container:nth-child(3) {
+        display: block;
+      }
     }
   }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .contact {
+    padding: 72px 0;
+
+    &__wrapper {
+      grid-column-gap: 40px;
+    }
+
+    &__form {
+      max-width: 450px;
+      h2 {
+        margin: 0 0 17px;
+      }
+      p {
+        margin-bottom: 28px;
+      }
+    }
+
+    &__info {
+      &__block {
+        margin-bottom: 32px;
+        
+      &__socials {
+        display: grid;
+        grid-template-columns: 46px 46px 46px;
+        grid-gap: 25px;
+        margin-top: 10px;
+
+        a {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          background-color: $light-gray;
+          padding: 10px;
+          width: 46px;
+          height: 46px;
+          transition: 0.2s;
+
+          &:hover {
+            background-color: white;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
 }
