@@ -3,12 +3,15 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
+import '../design/_design.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';
 import iot from "../../../lib/lotties/iot-services";
 import {project} from "../../../lib/our-projects";
 import  '../../../commons/BaseTabs/index.scss';
+import  '../../../components/Home/components/OurWorks/_our-works.scss';
+import  '../../../components/Services/styles/_services.scss';
 
 export class Iot extends Component {
     blocks = [
