@@ -219,24 +219,3 @@
   transform: rotate(10deg);
   transform-origin: 50% 50%;
 }
-
-
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-    .banner {
-      &__text {
-        max-width: 796px;
-        margin: 82px auto;
-
-        p {
-          font-size: 1.6rem;
-        }
-      }
-    
-  }
-}
