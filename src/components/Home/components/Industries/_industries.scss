@@ -11,7 +11,8 @@
 
     &__text {
       p {
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 1.25rem;
         color: #676875;
         line-height: 1.8;
       }
@@ -91,6 +92,42 @@
     }
   }
 
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .home {
+
+    .home__industries__text {
+      p {
+        margin-bottom: 40px;
+      }
+    }
+    &__industries {
+      margin-bottom: 176px;
+      
+      // &__text {
+      //   p {
+      //     font-size: 1.6rem;
+      //     line-height: 1.6;
+      //   }
+      // }
+    }
+
+    .react-tabs__tab-list {
+      border: none;
+
+      .react-tabs__tab {
+        padding: 5px 10px;
+        margin-right: 35px;
+      }
+    }
+  }
 }
 
 //@media (max-width: 1239.98px) {

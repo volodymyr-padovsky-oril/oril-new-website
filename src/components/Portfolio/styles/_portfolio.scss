@@ -188,6 +188,7 @@
     }
 
     .text {
+      font-weight: 600;
       font-size: 20px;
       color: #676875;
       line-height: 1.8;
@@ -268,8 +269,8 @@
 
     .feedback {
       max-width: 800px;
-      font-size: 18px;
-      font-family: SemiBoldItalic, sans-serif;
+      font-size: 1.125rem;
+      font-family: 'Mont-SemiBold', serif;
       font-style: italic;
       line-height: 2;
       font-weight: normal;
