@@ -35,9 +35,9 @@ class Services extends Component {
                     // description={}   add custom description for this page
                 />
                 <Header redirect={this.onChangePage}/>
-                    {serviceCards.map((card, index) => (
-                        <ServiceCard card={card}/>
-                    ))}
+                {serviceCards.map((card, index) => (
+                    <ServiceCard card={card}/>
+                ))}
                 <Contacts/>
                 <Footer/>
             </>

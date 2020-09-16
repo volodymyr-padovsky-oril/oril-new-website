@@ -23,6 +23,11 @@
       overflow: hidden;
       margin: 90px auto 0 auto;
 
+      //.slide {
+      //  //margin-top: 77px;
+      //  display: flex;
+      //  flex-direction: column;
+      //}
 
       //.swiper-pagination {
       //  top: 316px;
@@ -67,6 +72,8 @@
 
         .slide {
           //margin-top: 77px;
+          display: flex;
+          flex-direction: column;
           margin: 0;
 
           img {
@@ -83,10 +90,8 @@
           }
         }
 
-
         p {
           max-width: 541px;
-
         }
 
         .title {
@@ -101,6 +106,7 @@
           margin: 20px 0;
           color: #676875;
           text-align: center;
+          line-height: 1.8;
         }
 
         .tags {

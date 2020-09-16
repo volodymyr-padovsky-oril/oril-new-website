@@ -7,7 +7,6 @@ import CaseStudy from "../../../components/CaseStudy/CaseStudy";
 import "../../../components/CaseStudy/styles/_case-study.scss";
 import {caseStudy} from "../../../lib/case-study";
 
-
 class Index extends Component {
 
     render() {

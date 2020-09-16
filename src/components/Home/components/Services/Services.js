@@ -33,12 +33,15 @@ export class Services extends Component {
         return (
             <section className="home__services">
                 <div className="container">
-                    <h3>Services</h3>
+                    {/*<h3>Services</h3>*/}
                     <div className="home__services__wrapper">
                         {this.products.map((product, index) => {
                             return (
-                                <div className="home__services__item">
+                                <div
+                                    style={product.link === 'development' ? { marginBottom: 0} : null}
+                                    className="home__services__item">
                                     <img
+                                        style={product.link === 'development' ? {maxWidth: 'fit-content'} : null}
                                         src={`../assets/img/${product.img}.png`}
                                         alt=""/>
                                     <Link href={`services/${product.link}`}>

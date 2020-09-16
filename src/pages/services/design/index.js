@@ -10,6 +10,8 @@ import Lottie from 'react-lottie';
 import ux from "../../../lib/lotties/ux-services";
 import {project} from "../../../lib/our-projects";
 import  '../../../commons/BaseTabs/index.scss';
+import  '../../../components/Home/components/OurWorks/_our-works.scss';
+import  '../../../components/Services/styles/_services.scss';
 
 export class Design extends Component {
     blocks = [

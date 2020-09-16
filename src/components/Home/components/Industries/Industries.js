@@ -143,7 +143,7 @@ export class Industries extends Component {
                                     </Link>
                                 </div>
                                 <div className="home__industries__img">
-                                    <img src="../assets/img/industries-marketplace.png" alt="industries-marketpace"/>
+                                    <img src="../assets/img/industries-fintech.png" alt="industries-fintech"/>
                                 </div>
                             </div>
                         </TabPanel>
