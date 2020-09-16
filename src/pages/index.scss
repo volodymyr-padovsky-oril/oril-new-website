@@ -2,14 +2,13 @@
 @import "../components/Services/styles/services";
 @import "../components/Portfolio/styles/portfolio";
 @import "../components/Contacts/styles/contacts";
+@import "./services/design/design";
 @import "../styles/_fonts.scss";
-
 
 body {
   margin: 0;
   padding: 0;
 }
-
 
 .error-wrapper {
   background-image: url("/assets/img/404.jpg");
