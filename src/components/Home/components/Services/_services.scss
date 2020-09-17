@@ -50,7 +50,6 @@
     }
   }
 }
-
 @media (max-width: 1239.98px) {
   .home {
     &__services {
@@ -109,6 +108,26 @@
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .home {
+    &__services {
+      &__item {
+        a {
+          margin: 45px 0 10px;
+        }
+        
+      }
+      & > .container {
+        margin-bottom: 176px;
+      }
+    }
+  }
+}
 
 @media (max-width: 394px) {
   .home {

@@ -435,3 +435,26 @@
   }
 }
 
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    .services {
+      &__ul-list {
+        margin-bottom: 100px;
+        grid-gap: 35px 140px;
+    
+        .list-item {
+          font-size: 1.25rem;
+          
+          span {
+            margin-bottom: 10px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }

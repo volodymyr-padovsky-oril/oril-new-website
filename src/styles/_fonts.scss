@@ -1,104 +1,106 @@
 @font-face {
-  font-family: 'Mont-SemiBold';
-  src: url('/assets/fonts/Mont-SemiBold.eot');
-  src: url('/assets/fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Mont-SemiBold.woff') format('woff'),
-  url('/assets/fonts/Mont-SemiBold.ttf') format('truetype');
+  font-family: "Mont-SemiBold";
+  src: url("/assets/fonts/Mont-SemiBold.eot");
+  src: url("/assets/fonts/Mont-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Mont-SemiBold.woff") format("woff"),
+    url("/assets/fonts/Mont-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Mont';
-  src: url('/assets/fonts/Mont-Regular.eot');
-  src: url('/assets/fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Mont-Regular.woff') format('woff'),
-  url('/assets/fonts/Mont-Regular.ttf') format('truetype');
+  font-family: "Mont";
+  src: url("/assets/fonts/Mont-Regular.eot");
+  src: url("/assets/fonts/Mont-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Mont-Regular.woff") format("woff"),
+    url("/assets/fonts/Mont-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Mont-Bold';
-  src: url('/assets/fonts/Mont-Bold.eot');
-  src: url('/assets/fonts/Mont-Bold.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Mont-Bold.woff') format('woff'),
-  url('/assets/fonts/Mont-Bold.ttf') format('truetype');
+  font-family: "Mont-Bold";
+  src: url("/assets/fonts/Mont-Bold.eot");
+  src: url("/assets/fonts/Mont-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Mont-Bold.woff") format("woff"),
+    url("/assets/fonts/Mont-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Mont';
-  src: url('/assets/fonts/Mont-BoldItalic.eot');
-  src: url('/assets/fonts/Mont-BoldItalic.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Mont-BoldItalic.woff') format('woff'),
-  url('/assets/fonts/Mont-BoldItalic.ttf') format('truetype');
+  font-family: "Mont";
+  src: url("/assets/fonts/Mont-BoldItalic.eot");
+  src: url("/assets/fonts/Mont-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mont-BoldItalic.woff") format("woff"),
+    url("/assets/fonts/Mont-BoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Mont-SemiBoldItalic';
-  src: url('/assets/fonts/Mont-SemiBoldItalic.eot');
-  src: url('/assets/fonts/Mont-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Mont-SemiBoldItalic.woff') format('woff'),
-  url('/assets/fonts/Mont-SemiBoldItalic.ttf') format('truetype');
+  font-family: "Mont-SemiBoldItalic";
+  src: url("/assets/fonts/Mont-SemiBoldItalic.eot");
+  src: url("/assets/fonts/Mont-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mont-SemiBoldItalic.woff") format("woff"),
+    url("/assets/fonts/Mont-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'DMSans-Bold';
-  src: url('/assets/fonts/DMSans-Bold.ttf');
-  src: url('/DMSans-Bold.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/DMSans-Bold.ttf') format('truetype');
+  font-family: "DMSans-Bold";
+  src: url("/assets/fonts/DMSans-Bold.ttf");
+  src: url("/DMSans-Bold.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/DMSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'DMSans-Regular';
-  src: url('/assets/fonts/DMSans-Regular.ttf');
-  src: url('/DMSans-Regular.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/DMSans-Regular.ttf') format('truetype');
+  font-family: "DMSans-Regular";
+  src: url("/assets/fonts/DMSans-Regular.ttf");
+  src: url("/DMSans-Regular.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/DMSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url('/assets/fonts/Roboto-Regular.ttf');
-  src: url('/Roboto-Regular.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+  src: url("/Roboto-Regular.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'AvenirNext-Medium';
-  src: url('/assets/fonts/AvenirNext-Medium.ttf');
-  src: url('/AvenirNext-Medium.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/AvenirNext-Medium.ttf') format('truetype');
+  font-family: "AvenirNext-Medium";
+  src: url("/assets/fonts/AvenirNext-Medium.ttf");
+  src: url("/AvenirNext-Medium.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/AvenirNext-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Barlow-Bold';
-  src: url('/assets/fonts/Barlow-Bold.ttf');
-  src: url('/Barlow-Bold.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/Barlow-Bold.ttf') format('truetype');
+  font-family: "Barlow-Bold";
+  src: url("/assets/fonts/Barlow-Bold.ttf");
+  src: url("/Barlow-Bold.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Barlow-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: url('/assets/fonts/SourceSansPro-Bold.ttf');
-  src: url('/SourceSansPro-Bold.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-family: "SourceSansPro-Bold";
+  src: url("/assets/fonts/SourceSansPro-Bold.ttf");
+  src: url("/SourceSansPro-Bold.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('/assets/fonts/OpenSans-Regular.ttf');
-  src: url('/OpenSans-Regular.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: "OpenSans-Regular";
+  src: url("/assets/fonts/OpenSans-Regular.ttf");
+  src: url("/OpenSans-Regular.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('/assets/fonts/OpenSans-Bold.ttf');
-  src: url('/OpenSans-Bold.ttf?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: "OpenSans-Bold";
+  src: url("/assets/fonts/OpenSans-Bold.ttf");
+  src: url("/OpenSans-Bold.ttf?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
 h1 {
@@ -112,7 +114,7 @@ h2 {
 }
 
 h2 span {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   margin-right: 20px;
 }
 
@@ -132,4 +134,51 @@ p, a {
   font-size: 1.25rem;
   color: #676875;
   line-height: 1.8;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 980px),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  html {
+    font-size: 70%;
+    // line-height: 80%;
+  }
+  h1 {
+    font-size: 4.0625rem;
+    line-height: 0.86;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.56;
+  }
+
+  h2 span {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 20px;
+  }
+
+  /*h3 {
+      color: #676875;
+      font-size: 36px;
+      line-height: 1.07;
+      text-align: center;
+    }*/
+
+  h4 {
+    font-size: 1.5625rem;
+    line-height: 1;
+  }
+
+  p,
+  a {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #676875;
+    line-height: 1.8;
+  }
 }

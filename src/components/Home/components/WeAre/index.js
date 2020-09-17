@@ -27,7 +27,7 @@ export class WeAre extends Component {
     update() {
         this.change = setTimeout(() => {
             this.setState({hover: false})
-        }, 2000);
+        }, 3000);
     }
 
     makeVisible = () => {
