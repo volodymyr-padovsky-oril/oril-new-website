@@ -87,11 +87,14 @@ export class Header extends Component {
             link.internal
                 ? (
                     <Link href={link.to} key={index} activeClassName="active">
-                        <a className="nav_item" onClick={this.redirect}>
+                        <a
+                            style={this.props.main && {color: '#fff'}}
+                            className="nav_item" onClick={this.redirect}>
                             {link.name}
                         </a>
                     </Link>)
-                : (<a href={link.to} key={index} className="nav_item" rel="nofollow noopener noreferrer">{link.name}</a>)
+                : (<a href={link.to} style={this.props.main && {color: '#fff'}}
+                      key={index} className="nav_item" rel="nofollow noopener noreferrer">{link.name}</a>)
         ));
 
     redirect = (e) => {
@@ -108,8 +111,23 @@ export class Header extends Component {
     };
 
     render() {
+        const {main} = this.props;
+
+        const header = {
+            position: 'absolute',
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            left: 0,
+            right: 0,
+            textAlign: 'center',
+        };
+
         return (
-            <header className={`${this.state.overlayActive ? 'open' : 'close'}`}>
+            <header
+                style={main && header}
+                className={`${this.state.overlayActive ? 'open' : 'close'} `}>
                 <div className="container">
                     <Link href={this.brand.to}>
                         <a
@@ -118,7 +136,8 @@ export class Header extends Component {
                         >
                             <img src={`${this.state.overlayActive
                                 ? '../../assets/icons/logo-white-nolabel.svg'
-                                : '../../assets/icons/logo-gold-nolabel.svg'}`}
+                                : (main ? '../../assets/icons/logo-white-label.svg' : '../../assets/icons/logo-gold-nolabel.svg')
+                            }`}
                                  alt="logo"/>
                             {/*<p className="logo__text">{this.brand.name}</p>*/}
                         </a>
@@ -127,8 +146,8 @@ export class Header extends Component {
                         {this.NavLinks()}
                     </nav>
                     <div className="button-wrapper">
-                        <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer nofollow" >
-                            <button className="btn">
+                        <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer nofollow">
+                            <button style={main && {color: '#000'}} className="btn">
                                 Free Consultation
                             </button>
                         </a>

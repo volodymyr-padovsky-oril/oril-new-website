@@ -18,7 +18,6 @@ class Index extends React.Component {
                     url={"/"}
                     description={"One-stop shop for your digital product"}
                 />
-                <Header/>
                 <Home/>
                 <Contacts/>
                 <Footer/>
