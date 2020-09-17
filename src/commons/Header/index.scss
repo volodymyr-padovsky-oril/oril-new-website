@@ -30,6 +30,10 @@ header {
     width: 42px;
     height: 56px;
     text-decoration: none;
+
+    .mobile-logo{
+      display: none;
+    }
     img{
       width: 42px;
       height: 56px;
@@ -277,8 +281,16 @@ header {
       align-items: center;
       grid-gap: 10px;
 
+      .desktop-logo{
+        display: none;
+      }
+
+      .mobile-logo{
+        display: block;
+      }
+
       img {
-        width: 28px;
+        width: 69px;
         height: 23px;
       }
 

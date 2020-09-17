@@ -134,9 +134,15 @@ export class Header extends Component {
                             onClick={this.redirect}
                             className="logo"
                         >
-                            <img src={`${this.state.overlayActive
+                            <img className="desktop-logo" src={`${this.state.overlayActive
                                 ? '../../assets/icons/logo-white-nolabel.svg'
-                                : (main ? '../../assets/icons/logo-white-label.svg' : '../../assets/icons/logo-gold-nolabel.svg')
+                                : (main ? '../../assets/icons/logo-white-vert.png' : '../../assets/icons/logo-gold-nolabel.svg')
+                            }`}
+                                 alt="logo"/>
+                            <img className="mobile-logo"
+                                src={`${this.state.overlayActive
+                                ? '../../assets/icons/logo-white-nolabel.svg'
+                                : (main ? '../../assets/icons/logo-white-label.png' : '../../assets/icons/logo-gold-hor.png')
                             }`}
                                  alt="logo"/>
                             {/*<p className="logo__text">{this.brand.name}</p>*/}
