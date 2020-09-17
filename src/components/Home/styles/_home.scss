@@ -15,6 +15,14 @@
   overflow: hidden;
   object-fit: contain;
 
+  
+    .hamburger .hamburger-inner,
+    .hamburger .hamburger-inner::before,
+    .hamburger .hamburger-inner::after {
+      background-color: #fff;
+    }
+  
+
   section {
     .btn {
       @include btn($orange, linear-gradient(#ffffff, #ffffff));
