@@ -257,6 +257,9 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .services {
+    &__design {
+      margin: 20px 0 0;
+    }
     &__ul-list {
       margin-bottom: 100px;
       grid-gap: 35px 140px;
@@ -296,7 +299,7 @@
     }
   }
   .card-wrapper {
-    margin: 160px auto;
+    margin: 120px auto 160px auto;
     &__text-wrapper {
       h2 {
         margin: 0 0 20px;

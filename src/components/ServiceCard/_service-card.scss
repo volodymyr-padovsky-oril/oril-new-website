@@ -128,7 +128,7 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
     .card-wrapper {
-      margin: 160px auto;
+      margin: 120px auto 160px auto;
 
       &__text-wrapper {
         h2 {
