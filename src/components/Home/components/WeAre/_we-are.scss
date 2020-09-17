@@ -176,12 +176,8 @@
       text-align: center;
       width: 100%;
       height: 100px;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(54, 54, 70, 0),
-        rgba(54, 54, 70, 0.69)
-      );
-      padding: 45px 0 15px;
+      background-image: linear-gradient(to bottom, rgba(54, 54, 70, 0), rgba(40, 40, 50, 0.23) 42%, rgba(54, 54, 70, 0.69));
+      padding: 33px 0 15px;
       display: grid;
       transform: translateY(70px);
       transition: 0.2s;
@@ -197,6 +193,7 @@
           font-size: 15px;
           line-height: 1.33;
           margin-bottom: 3px;
+          font-family: Mont-Bold, serif;
         }
 
         &:last-child {
@@ -205,6 +202,8 @@
           margin: 0 auto;
           max-width: 110px;
           margin-bottom: 10px;
+          font-family: Mont-SemiBold, serif;
+
         }
       }
     }
