@@ -33,7 +33,6 @@ export class Services extends Component {
         return (
             <section className="home__services">
                 <div className="container">
-                    {/*<h3>Services</h3>*/}
                     <div className="home__services__wrapper">
                         {this.products.map((product, index) => {
                             return (

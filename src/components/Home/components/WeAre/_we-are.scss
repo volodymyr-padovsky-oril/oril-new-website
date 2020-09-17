@@ -11,7 +11,8 @@
         margin: 0 0 15px;
       }
 
-      .intro-text, .our-credo {
+      .intro-text,
+      .our-credo {
         margin-bottom: 50px;
       }
 
@@ -30,7 +31,7 @@
         grid-column-gap: 10px;
 
         &::before {
-          content: '';
+          content: "";
           width: 12px;
           height: 12px;
           border-radius: 50%;
@@ -60,8 +61,8 @@
             width: 10px;
             height: 10px;
             background: #ffe155;
-            opacity: .5;
-            transition: transform .2s;
+            opacity: 0.5;
+            transition: transform 0.2s;
             margin: 0 12px 0;
 
             &:focus {
@@ -120,23 +121,24 @@
   &:hover {
     .card__front {
       opacity: 0;
-      transform: scale(.8);
+      transform: scale(0.8);
     }
 
     .card__back {
       opacity: 1;
       transform: scale(1);
-      transition-delay: .2s;
+      transition-delay: 0.2s;
 
       &__desc {
         transform: translateY(0);
-        transition-delay: .3s;
+        transition-delay: 0.3s;
         opacity: 1;
       }
     }
   }
 
-  &__front, &__back {
+  &__front,
+  &__back {
     position: absolute;
     top: 0;
     left: 0;
@@ -148,8 +150,8 @@
   }
 
   &__front {
-    transition: .2s;
-    transition-delay: .2s;
+    transition: 0.2s;
+    transition-delay: 0.2s;
 
     img {
       width: 185px;
@@ -158,9 +160,9 @@
   }
 
   &__back {
-    transition: .6s;
+    transition: 0.6s;
     opacity: 0;
-    transform: scale(.9);
+    transform: scale(0.9);
     display: grid;
     align-items: flex-end;
     overflow: hidden;
@@ -174,11 +176,11 @@
       text-align: center;
       width: 100%;
       height: 100px;
-      background-image: linear-gradient(to bottom, rgba(54, 54, 70, 0), rgba(54, 54, 70, 0.69));
-      padding: 45px 0 15px;
+      background-image: linear-gradient(to bottom, rgba(54, 54, 70, 0), rgba(40, 40, 50, 0.23) 42%, rgba(54, 54, 70, 0.69));
+      padding: 33px 0 15px;
       display: grid;
       transform: translateY(70px);
-      transition: .2s;
+      transition: 0.2s;
       opacity: 0;
       transition-delay: 0s;
 
@@ -191,6 +193,7 @@
           font-size: 15px;
           line-height: 1.33;
           margin-bottom: 3px;
+          font-family: Mont-Bold, serif;
         }
 
         &:last-child {
@@ -199,6 +202,8 @@
           margin: 0 auto;
           max-width: 110px;
           margin-bottom: 10px;
+          font-family: Mont-SemiBold, serif;
+
         }
       }
     }
@@ -223,7 +228,8 @@
           margin: 0 0 10px;
         }
 
-        .intro-text, .our-credo {
+        .intro-text,
+        .our-credo {
           margin-bottom: 35px;
         }
       }
@@ -243,8 +249,120 @@
 
 @media (max-width: 1920px) {
   .home__our-news__card {
-    &:last-child, &:first-child{
+    &:last-child,
+    &:first-child {
       display: none;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .home {
+    &__we-are {
+      & > .container {
+        padding-bottom: 145px;  
+        h4 {
+          margin: 0 0 12px;
+        }
+  
+        .intro-text,
+        .our-credo {
+          margin-bottom: 40px;
+        }
+  
+        p {
+          margin: 0 0 8px;
+        }
+      }
+  
+      &__text-wrapper {
+        max-width: 470px;
+  
+        .ul-item {
+          display: grid;
+          grid-template-columns: 12px 1fr;
+          align-items: flex-start;
+          grid-column-gap: 10px;
+  
+          &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            background: #ffed99;
+            margin-top: 12px;
+          }
+        }
+      }
+      &__our-images {
+        height: 540px;
+        width: 496px;
+        overflow: hidden;
+
+        .swiper-slide {
+          width: 496px !important;
+          height: auto;
+        }
+      }
+    }
+  }
+  .card {
+    width: 148px;
+    height: 148px;
+    margin: 8px;
+    &__front,
+    &__back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+
+    &__front {
+      transition: 0.2s;
+      transition-delay: 0.2s;
+
+      img {
+        width: 148px;
+        height: 148px;
+      }
+    }
+
+    &__back {
+      width: 148px;
+      height: 148px;
+
+      &__desc {
+        padding: 15px 0 12px;
+        position: absolute;
+        height: 74px;
+        bottom: 0;
+
+        span {
+          &:first-child {
+            font-size: 1rem;
+            line-height: 1.25;
+            margin-bottom: 3px;
+          }
+
+          &:last-child {
+            font-size: 1rem;
+            line-height: 1.15;
+            margin: 0 auto;
+            max-width: 110px;
+          }
+        }
+      }
     }
   }
 }

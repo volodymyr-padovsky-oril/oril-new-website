@@ -12,7 +12,7 @@ header {
 
   &.hidden { top: -92px; }
 
-  &.open { background-color: #252533; }
+  &.open { background-color: #252533 !important; }
   &.close { background-color: white; }
 
   .container {
@@ -123,6 +123,7 @@ header {
   &__content {
     padding: 70px 40px 60px;
     display: grid;
+    text-align: left;
 
     a {
       text-decoration: none;
@@ -235,9 +236,9 @@ header {
 
 @media (max-width: 991.98px) {
   header {
-    .container {
-      grid-template-columns: 152px 4fr 160px;
-    }
+    //.container {
+    //  grid-template-columns: 152px 4fr 160px;
+    //}
 
     nav .nav_item {
       font-size: 14px;
@@ -292,3 +293,27 @@ header {
     }
   }
 }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    header {
+      padding: 14.5px 0;
+      nav {
+        .nav_item {
+          font-size: 1.3rem;
+          margin: 0 24px;
+        }
+      }
+      .btn {
+        font-size: 1.3rem !important;
+        padding: 14.5 0 15px !important;
+        margin-left: 20% !important;
+        width: 80% !important;
+      }
+    }
+  }

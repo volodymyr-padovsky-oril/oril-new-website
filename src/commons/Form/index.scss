@@ -11,10 +11,10 @@
     left: 0;
     width: 100%;
     color: $dark-gray;
-    transition: .2s all;
+    transition: 0.2s all;
     cursor: text;
     padding: 0 7px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   input {
@@ -26,18 +26,18 @@
     box-shadow: none;
     color: white;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
     line-height: 1;
-    transition: .2s;
+    transition: 0.2s;
 
     &:focus {
       border-color: $orange;
     }
 
-    &:focus~label,
-    &.has-data~label {
-      font-size: 15px;
+    &:focus ~ label,
+    &.has-data ~ label {
+      font-size: 0.9375rem;
       top: -14px;
     }
   }
@@ -57,11 +57,11 @@
     border: 2px solid $dark-gray;
     background-color: transparent;
     padding: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     outline: none;
     color: white;
-    transition: .2s;
+    transition: 0.2s;
 
     &:focus {
       border-color: $orange;
@@ -82,7 +82,7 @@
 
   button {
     @include btn($orange, $purple, 100%);
-    transition: .2s;
+    transition: 0.2s;
   }
 
   &:hover {
@@ -98,7 +98,7 @@
 .error {
   padding: 7px;
   color: $red;
-  font-size: 14px;
+  font-size: 0.875rem;
   min-height: 30px;
 }
 
@@ -108,20 +108,21 @@
       margin: 0 auto;
 
       h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
         line-height: 1.25;
         margin-bottom: 10px;
       }
 
       p {
-        font-size: 15px;
+        font-size: 0.9375rem;
         line-height: 1.67;
         margin-top: 0;
       }
 
       .input-field {
-        input, label {
-          font-size: 15px;
+        input,
+        label {
+          font-size: 0.9375rem;
           line-height: 1.33;
         }
       }
@@ -133,10 +134,28 @@
   }
 }
 
-.blur{
+.blur {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .input-field {
+    margin-bottom: 25px;
+
+    .textarea-field {
+      textarea {
+        height: 80px;
+        min-height: 80px;
+      }
+    }
+  }
 }

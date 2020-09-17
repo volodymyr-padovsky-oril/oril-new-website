@@ -50,28 +50,33 @@ export class Iot extends Component {
 
     deliverables = [
         {
-            title: 'UI Designs',
-            img: 'deliv-ui',
+            title: 'Web & Mobile App',
+            img: 'deliv-web-app',
             text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end developers.'
         },
         {
-            title: 'UI Style Guides',
-            img: 'deliv-guide',
+            title: 'Admin dashboard',
+            img: 'deliv-dashboard',
             text: 'We create style guides and design libraries in Sketch to ensure consistency across all future designs.'
         },
         {
-            title: 'UX Artefacts',
-            img: 'deliv-artefacts',
+            title: 'Documentation',
+            img: 'deliv-documentation',
             text: 'Results from our UX work, such as customer journey mapping and usability testing, are all provided in their respective file formats.'
         },
         {
-            title: 'Interactive Prototypes',
-            img: 'deliv-prototype',
+            title: 'Source code',
+            img: 'deliv-source-code',
             text: 'We load our prototypes into services like ProtoPie and Invision to simulate how the app would behave once developed. '
         },
         {
-            title: 'Logotype & Brand Identity',
-            img: 'deliv-brand',
+            title: 'Firmware',
+            img: 'deliv-firmware',
+            text: 'The logos and visual brand identities that we create are often delivered alongside our style guides.'
+        },
+        {
+            title: 'Product prototype',
+            img: 'deliv-product-prototype',
             text: 'The logos and visual brand identities that we create are often delivered alongside our style guides.'
         }
     ];
