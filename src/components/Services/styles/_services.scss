@@ -449,12 +449,25 @@
     
         .list-item {
           font-size: 1.25rem;
+
+          .list-style {
+            width: 16px;
+            height: 16px;
+            margin-top: 3.5px;
+          }
           
           span {
             margin-bottom: 10px;
             line-height: 1.5;
           }
         }
+      }
+    }
+    .react-tabs__list {
+    
+      a {
+        margin-right: 10px;
+        font-size: 1.3rem;
       }
     }
   }
