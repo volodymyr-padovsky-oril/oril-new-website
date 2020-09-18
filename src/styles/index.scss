@@ -10,6 +10,7 @@
 html, body {
   margin: 0;
   height: 100%;
+  font-size: 16px;
 }
 
 #root{
@@ -76,6 +77,11 @@ div.bubble_wrapper { z-index: 0 }
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-size: 70%;
+    }
     .container {
       max-width: 992px;
     }
