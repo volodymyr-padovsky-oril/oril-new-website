@@ -137,16 +137,12 @@ p, a {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-width: 980px),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  html {
-    font-size: 70%;
-    // line-height: 80%;
-  }
+ 
   h1 {
     font-size: 4.0625rem;
     line-height: 0.86;
