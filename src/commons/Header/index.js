@@ -17,8 +17,10 @@ export class Header extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {overlayActive: false};
-        this.handleScroll = this.handleScroll.bind(this);
+        this.state = {
+            overlayActive: false,
+            main_scroll: false,
+        };
     }
 
     init() {
@@ -50,6 +52,7 @@ export class Header extends Component {
     }
 
     componentDidMount() {
+        const {main} = this.props;
         this.navbar = document.querySelector('header');
         window.addEventListener('scroll', this.handleScroll);
         window.addEventListener('touchmove', this.handleScroll);
@@ -67,28 +70,46 @@ export class Header extends Component {
         });
     }
 
-    handleScroll() {
+    handleScroll = () => {
+        const { main } = this.props
         const scrollTop = window.scrollY;
         const navBarHeight = this.navbar.offsetHeight;
 
         const currentScrollTop = scrollTop;
-
-        if (this.lastScrollTop < currentScrollTop && scrollTop > navBarHeight + navBarHeight) {
-            this.navbar.classList.add('hidden');
-        } else if (this.lastScrollTop > currentScrollTop && !(scrollTop <= navBarHeight)) {
-            this.navbar.classList.remove('hidden');
+        if(main) {
+            if (this.lastScrollTop > navBarHeight) {
+                this.navbar.classList.add('hidden_main');
+                this.setState({
+                    main_scroll: true
+                })
+            } else if (this.lastScrollTop < navBarHeight) {
+                this.navbar.classList.remove('hidden_main');
+                this.setState({
+                    main_scroll: false
+                })
+            }
+    
+        }
+        else {
+            if (this.lastScrollTop < currentScrollTop && scrollTop > navBarHeight + navBarHeight) {
+                this.navbar.classList.add('hidden');
+            } else if (this.lastScrollTop > currentScrollTop && !(scrollTop <= navBarHeight)) {
+                this.navbar.classList.remove('hidden');
+            }
         }
 
         this.lastScrollTop = currentScrollTop;
     }
+
 
     NavLinks = () =>
         this.navLinks.map((link, index) => (
             link.internal
                 ? (
                     <Link href={link.to} key={index} activeClassName="active">
-                        <a
+                        <a  
                             style={this.props.main && {color: '#fff'}}
+                            href={link.to}
                             className="nav_item" onClick={this.redirect}>
                             {link.name}
                         </a>
@@ -112,37 +133,27 @@ export class Header extends Component {
 
     render() {
         const {main} = this.props;
-
-        const header = {
-            position: 'absolute',
-            backgroundColor: 'transparent',
-            boxShadow: 'none',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            left: 0,
-            right: 0,
-            textAlign: 'center',
-        };
-
+        const { main_scroll } = this.state
+        
         return (
             <header
-                style={main && header}
-                className={`${this.state.overlayActive ? 'open' : 'close'} `}>
+                className={`${main ? 'main__header': ''} ${this.state.overlayActive ? 'open' : 'close'}`}>
                 <div className="container">
                     <Link href={this.brand.to}>
                         <a
                             onClick={this.redirect}
+                            href={this.brand.to}
                             className="logo"
                         >
                             <img className="desktop-logo" src={`${this.state.overlayActive
                                 ? '../../assets/icons/logo-white-nolabel.svg'
-                                : (main ? '../../assets/icons/logo-white-vert.png' : '../../assets/icons/logo-gold-nolabel.svg')
+                                : (main ? (main_scroll ? '../../assets/icons/logo-gold-nolabel.svg' : '../../assets/icons/logo-white-vert.png') : '../../assets/icons/logo-gold-nolabel.svg')
                             }`}
                                  alt="logo"/>
                             <img className="mobile-logo"
                                 src={`${this.state.overlayActive
                                 ? '../../assets/icons/logo-white-nolabel.svg'
-                                : (main ? '../../assets/icons/logo-white-label.png' : '../../assets/icons/logo-gold-hor.png')
+                                : (main ? '../../assets/icons/logo-white-nolabel.svg' : '../../assets/icons/logo-gold-nolabel.svg')
                             }`}
                                  alt="logo"/>
                             {/*<p className="logo__text">{this.brand.name}</p>*/}
