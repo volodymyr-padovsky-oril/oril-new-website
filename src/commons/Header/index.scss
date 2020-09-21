@@ -10,10 +10,71 @@ header {
   top: 0;
   box-shadow: 0 -16px 26px 0 rgba(0,0,0,0.7);
 
-  &.hidden { top: -92px; }
-
   &.open { background-color: #252533 !important; }
   &.close { background-color: white; }
+
+  &.hidden { top: -92px; }
+
+  &.main__header {
+    position: fixed;
+    background-color: transparent;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &.hidden_main {
+    position: fixed !important;
+    background-color: #fff;
+    box-shadow: 0 -16px 26px 0 rgba(0,0,0,0.7) !important;
+    animation: color-change .15s ease-in; 
+    top: 0;
+
+     .nav_item {
+       color: #848484 !important;
+       transition: .15s;
+     }
+
+     .logo  {
+      img {
+        svg {
+          fill: red;
+        }
+        
+        -webkit-mask: url('/assets/icons/logo-gold-nolabel.svg') no-repeat center !important;
+      mask: url('/assets/icons/logo-gold-nolabel.svg') no-repeat center !important;
+      }
+     }
+
+     .button-wrapper {
+       .btn {
+        border-radius: 7px;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        color: #fff !important;
+        padding: 14px 0 13px;
+        border-color: white;
+        cursor: pointer;
+        outline: none;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(243deg, #ffb248, #ffe22a, #ffe22a, #ffb248);
+        font-size: 17px;
+        border: none;
+        padding: 18px 0 19px;
+        background-size: 300% 300%;
+        transition: .15s;
+        font-weight: 900;
+        font-family: Mont-Bold, serif;
+    
+       }
+     }
+  }
 
   .container {
     grid-template-rows: 1fr;
@@ -30,10 +91,6 @@ header {
     width: 42px;
     height: 56px;
     text-decoration: none;
-
-    .mobile-logo{
-      display: none;
-    }
     img{
       width: 42px;
       height: 56px;
@@ -260,7 +317,25 @@ header {
     padding: 10px 0;
     height: 45px;
 
-    &.hidden { top: -45px; }
+    &.hidden_main {
+      position: absolute !important;
+      background-color: transparent;
+      box-shadow: none;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    &.hidden { 
+      top: -45px;
+      position: absolute !important;
+      background-color: transparent;
+      box-shadow:none;
+      animation: none; 
+      top: 0;
+    
+    }
 
     .hamburger {
       display: block;
@@ -281,17 +356,9 @@ header {
       align-items: center;
       grid-gap: 10px;
 
-      .desktop-logo{
-        display: none;
-      }
-
-      .mobile-logo{
-        display: block;
-      }
-
       img {
-        width: 69px;
-        height: 23px;
+        width: 28px;
+        height: 24px;
       }
 
       p {
@@ -327,5 +394,16 @@ header {
         margin-left: 20% !important;
         width: 80% !important;
       }
+    }
+  }
+
+
+  
+  @keyframes color-change {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: #fff;
     }
   }

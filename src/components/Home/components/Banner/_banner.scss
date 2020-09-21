@@ -4,6 +4,10 @@
   z-index: 999;
 
   &__block {
+
+    .banner-img--mobile{
+      display: none;
+    }
     img {
       width: 100%;
     }
@@ -37,12 +41,12 @@
 
       @media (max-width: 768px) {
         font-size: 2.5rem;
-        top: 145px;
+        top: 260px;
       }
 
       @media (max-width: 550px) {
         font-size: 1.5rem;
-        top: 77px;
+        top: 145px;
       }
     }
 
@@ -112,6 +116,14 @@
     margin-bottom: 70px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+
+    .banner-img--desktop{
+      display: none;
+    }
+
+    .banner-img--mobile{
+      display: block;
+    }
 
     &__block {
       min-height: 520px;
