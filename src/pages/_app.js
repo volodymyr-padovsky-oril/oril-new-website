@@ -8,6 +8,7 @@ import Layout from "../components/Layout/Layout";
 import TagManager from 'react-gtm-module';
 import '../components/Portfolio/styles/_portfolio.scss';
 import '../components/PortfolioIoT/_portfolio-iot.scss';
+import '../components/Home/components/OurWorks/_our-works.scss';
 
 const tagManagerArgs = {
     id: 'GTM-TGVMH8P'
