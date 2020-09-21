@@ -145,17 +145,12 @@ export class Header extends Component {
                             href={this.brand.to}
                             className="logo"
                         >
-                            <img className="desktop-logo" src={`${this.state.overlayActive
+                            <img src={`${this.state.overlayActive
                                 ? '../../assets/icons/logo-white-nolabel.svg'
-                                : (main ? (main_scroll ? '../../assets/icons/logo-gold-nolabel.svg' : '../../assets/icons/logo-white-vert.png') : '../../assets/icons/logo-gold-nolabel.svg')
+                                : (main ? (main_scroll ? '../../assets/icons/logo-gold-nolabel.svg' : '../../assets/icons/logo-white-nolabel.svg') : '../../assets/icons/logo-gold-nolabel.svg')
                             }`}
                                  alt="logo"/>
-                            <img className="mobile-logo"
-                                src={`${this.state.overlayActive
-                                ? '../../assets/icons/logo-white-nolabel.svg'
-                                : (main ? '../../assets/icons/logo-white-nolabel.svg' : '../../assets/icons/logo-gold-nolabel.svg')
-                            }`}
-                                 alt="logo"/>
+
                             {/*<p className="logo__text">{this.brand.name}</p>*/}
                         </a>
                     </Link>
