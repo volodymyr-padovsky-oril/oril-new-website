@@ -8,12 +8,12 @@ export const caseStudy = {
     headerText:
       "GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale.",
     headerImg: "gv",
+    background:       {
+      title: "Background",
+      text:
+        "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
+    },
     properties: [
-      {
-        title: "Background",
-        text:
-          "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
-      },
       {
         title: "Duration",
         text: "MVP in 3.5 month, continuing work for 18+ months",
@@ -133,12 +133,12 @@ export const caseStudy = {
     headerText:
       "SparkOffer is a residential real estate marketplace that enables buyers, sellers and agents to find, list, offer and negotiate properties completely online",
     headerImg: "so",
+    background: {
+      title: "Background",
+      text:
+        "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
+    },
     properties: [
-      {
-        title: "Background",
-        text:
-          "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
-      },
       {
         title: "Duration",
         text: "MVP in 3.5 month, continuing work for 18+ months",
@@ -266,12 +266,12 @@ export const caseStudy = {
     headerText:
       "SparkOffer is a residential real estate marketplace that enables buyers, sellers and agents to find, list, offer and negotiate properties completely online",
     headerImg: "laced",
+    background: {
+      title: "Background",
+      text:
+        "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
+    },
     properties: [
-      {
-        title: "Background",
-        text:
-          "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
-      },
       {
         title: "Duration",
         text: "MVP in 3.5 month, continuing work for 18+ months",
@@ -409,12 +409,13 @@ export const caseStudy = {
     headerText:
       "SparkOffer is a residential real estate marketplace that enables buyers, sellers and agents to find, list, offer and negotiate properties completely online",
     headerImg: "sab",
+    background: {
+      title: "Background",
+      text:
+        "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
+    },
     properties: [
-      {
-        title: "Background",
-        text:
-          "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
-      },
+
       {
         title: "Duration",
         text: "MVP in 3.5 month, continuing work for 18+ months",
@@ -549,12 +550,12 @@ export const caseStudy = {
     headerText:
       "VICKI is an IOT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of -sale.",
     headerImg: "headerImg_vicky",
+    background:       {
+      title: "Background",
+      text:
+        "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
+    },
     properties: [
-      {
-        title: "Background",
-        text:
-          "SparkOffer approached ORIL to help with….They needed a partner agency with expertise in … in order to achieve …",
-      },
       {
         title: "Duration",
         text: "MVP in 3.5 month, continuing work for 18+ months",

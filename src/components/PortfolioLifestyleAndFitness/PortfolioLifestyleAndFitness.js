@@ -25,6 +25,12 @@ export class PortfolioLifestyleAndFitness extends Component {
                                         <a href={slide.link} target="_blank" rel="noopener noreferrer nofollow"
                                            className="title">{slide.title}</a>
                                     </div>
+                                    <div className="tags">
+                                        {slide.tags.map((tag, index) => (
+                                            <a href={`https://oril.co/blog/tag/${tag}/`}
+                                               key={`tag-${index}`}>{tag}
+                                            </a>))}
+                                    </div>
                                     <p className="text">{slide.text}</p>
                                     {slide.caseStudy && <Link href={`${slide.caseStudy}`}>
                                         <a className="link">Learn more
@@ -51,12 +57,6 @@ export class PortfolioLifestyleAndFitness extends Component {
                                 <div className="right">
                                     <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
                                          alt={slide.img.name}/>
-                                    <div className="tags">
-                                        {slide.tags.map((tag, index) => (
-                                            <a href={`https://oril.co/blog/tag/${tag}/`}
-                                               key={`tag-${index}`}>{tag}
-                                            </a>))}
-                                    </div>
                                 </div>
                             </div>
                             {slide.customer &&

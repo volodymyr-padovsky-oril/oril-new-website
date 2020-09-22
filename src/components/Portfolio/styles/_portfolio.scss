@@ -143,6 +143,32 @@
     .left {
       max-width: 500px;
 
+      .tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+  
+        a {
+          color: #2c2c2c;
+          padding: 5px 15px;
+          font-size: .9rem;
+          font-weight: 600;
+          border-radius: 27px;
+          margin: 0 10px 10px 0;
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+          text-decoration: none;
+  
+          &:hover {
+            color: rgb(255, 178, 72);
+          }
+  
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
       .link {
         color: #f7931d;
         text-decoration: underline;
@@ -152,34 +178,6 @@
 
     .right {
       text-align: right;
-
-      .tags {
-        display: flex;
-        flex-direction: row;
-        margin: 40px 0 10px;
-        justify-content: flex-end;
-
-        a {
-          text-decoration: none;
-          font-family: Mont-SemiBold, serif;
-          color: #2c2c2c;
-          padding: 15px 30px;
-          font-size: 0.875rem;
-          border-radius: 27px;
-          margin-right: 30px;
-          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
-          white-space: nowrap;
-
-
-          &:hover {
-            color: #ffb248;
-          }
-
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
 
       img {
         max-width: 560px;
@@ -191,6 +189,7 @@
       font-size: 20px;
       color: #676875;
       line-height: 1.8;
+      margin-bottom: 15px;
     }
 
     .info {
@@ -235,7 +234,7 @@
   }
 
   &__footer {
-    margin-top: 70px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-gap: 40px;
@@ -400,7 +399,7 @@
             margin: 50px 0 160px;
 
             &__header {
-              margin-bottom: 25px;
+              margin-bottom: 20px;
 
               .logo {
                 img {
@@ -411,6 +410,9 @@
 
             &__content {
               .left {
+                .tags {
+                  margin-bottom: 20px;
+                }
                 .text {
                   font-size: 1.25rem;
                 }

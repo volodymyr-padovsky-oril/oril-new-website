@@ -31,7 +31,7 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 116px;
-    margin-bottom: 117px;
+    margin-bottom: 150px;
   }
 
   &__left {
@@ -64,13 +64,48 @@
       color: #676875;
       line-height: 1.8;
     }
+    .tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      a {
+        color: #2c2c2c;
+        padding: 5px 15px;
+        font-size: .9rem;
+        font-weight: 600;
+        border-radius: 27px;
+        margin: 0 10px 10px 0;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(255, 178, 72);
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   &__properties {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 322px;
     margin-bottom: 231px;
+    .case-study__left {
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        width: 25%;
+        span {
+          max-width: 80%;
+        }
+      }
+    }
   }
 
   &__left {
@@ -88,36 +123,13 @@
       width: 100%;
     }
 
-    .tags {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      a {
-        color: #2c2c2c;
-        padding: 15px 30px;
-        font-size: 1.125rem;
-        border-radius: 27px;
-        margin: 0 30px 20px 0;
-        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
-        text-decoration: none;
-
-        &:hover {
-          color: rgb(255, 178, 72);
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
   }
 
   &__poster {
     margin-bottom: 260px;
     display: grid;
-    grid-gap: 95px;
-    align-items: center;
+    grid-gap: 50px;
+    align-items: flex-start;
 
     img {
       height: auto;
@@ -738,7 +750,7 @@
 
     &__properties {
       display: grid;
-      grid-template-columns: 400px 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 322px;
       margin-bottom: 120px;
     }
@@ -747,11 +759,11 @@
       margin-bottom: 120px;
       display: grid;
       grid-gap: 95px;
-      align-items: center;
+      align-items: flex-start;
 
       img {
         height: auto;
-        width: 90%;
+        width: 100%;
       }
     }
 
