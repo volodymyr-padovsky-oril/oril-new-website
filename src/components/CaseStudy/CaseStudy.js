@@ -38,6 +38,12 @@ class CaseStudy extends Component {
                     <div className="case-study__header">
                         <div className="case-study__left">
                             <img style={{width: data.logoNotFull ? "auto" : "100%"}} src={`../../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
+                            <div className="tags">
+                                {data.tags.map((tag, index) => (
+                                    <a href={`https://oril.co/blog/tag/${tag}/`}
+                                       key={`tag-${index}`}>{tag}</a>
+                                    ))}
+                            </div>
                             <h2>
                                 {data.headerTitle}
                             </h2>
@@ -45,9 +51,9 @@ class CaseStudy extends Component {
                                href={data.link}
                                target="_blank"
                                rel="noopener noreferrer">{data.link}</a>
-                            <p>
+                            {/* <p>
                                 {data.headerText}
-                            </p>
+                            </p> */}
                         </div>
                         <div className="case-study__right">
                             <img src={`../../assets/img/${data.headerImg}.jpg`} alt={data.headerImg}/>
@@ -62,7 +68,7 @@ class CaseStudy extends Component {
                                 </div>
                             ))}
                         </div>
-                        <div className="case-study__right">
+                        {/* <div className="case-study__right">
                             {data.teams &&
                             <div className="team">
                                 <h3>Team</h3>
@@ -72,21 +78,17 @@ class CaseStudy extends Component {
                                     </div>
                                 ))}
                             </div>}
-                            <div className="tags">
-                                {data.tags.map((tag, index) => (
-                                    <a href={`https://oril.co/blog/tag/${tag}/`}
-                                       key={`tag-${index}`}>{tag}</a>
-                                    ))}
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="case-study__poster"
-                         style={data.posterTitle ? {gridTemplateColumns: '2fr 1fr'} : {gridTemplateColumns: '1fr'}}>
+                         style={data.posterTitle ? {gridTemplateColumns: '2fr 2fr'} : {gridTemplateColumns: '1fr'}}>
                         <img src={`../../assets/img/${data.posterImg}.jpg`} alt={data.posterImg}/>
-                        {data.posterTitle && <h3>
-                            {data.posterTitle}
-                        </h3>}
-
+                        <div>
+                            {data.background && <h3>{data.background.title}</h3>}
+                            {data.background && <p>
+                                {data.background.text}
+                            </p>}
+                        </div>
                     </div>
                 </div>
                 <div className="case-study__ux-process">
