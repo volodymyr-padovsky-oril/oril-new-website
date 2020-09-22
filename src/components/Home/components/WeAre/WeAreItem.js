@@ -23,7 +23,6 @@ export class WeAreItem extends Component {
   }
 
   render() {
-    console.log();
     const { worker, index } = this.props;
     const { hover } = this.state;
     const animal_src = "assets/img/" + worker.animal + ".png";
