@@ -134,6 +134,7 @@ p, a {
   font-size: 1.25rem;
   color: #676875;
   line-height: 1.8;
+  font-weight: 500;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -172,9 +173,12 @@ p, a {
 
   p,
   a {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25rem;
     color: #676875;
     line-height: 1.8;
+  }
+  span {
+    font-weight: 500;
   }
 }
