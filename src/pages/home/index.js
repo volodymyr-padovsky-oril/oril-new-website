@@ -8,6 +8,7 @@ import Testimonials from "../../components/Home/components/Testimonials/Testimon
 import Industries from "../../components/Home/components/Industries/Industries";
 import BaseTabs from "../../commons/BaseTabs";
 import OurWorks from "../../components/Home/components/OurWorks/OurWorks";
+import  "../../components/Home/components/OurWorks/_our-works.scss";
 import OurNews from "../../components/Home/components/News/News";
 import Web from "../../components/Web/Web";
 import Mobile from "../../components/Mobile/Mobile";

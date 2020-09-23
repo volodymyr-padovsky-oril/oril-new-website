@@ -37,6 +37,7 @@ export class Services extends Component {
                         {this.products.map((product, index) => {
                             return (
                                 <div
+                                    key={index}
                                     style={product.link === 'development' ? { marginBottom: 0} : null}
                                     className="home__services__item">
                                     <img

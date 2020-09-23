@@ -71,7 +71,7 @@ export class WeAre extends Component {
                                         {
                                             workers.map((worker, index) => {
                                                 return (
-                                                    <WeAreItem index={index} worker={worker} visible={visible} />
+                                                    <WeAreItem key={'slide-' + index} index={index} worker={worker} visible={visible} />
                                                 )
                                             })
                                         }

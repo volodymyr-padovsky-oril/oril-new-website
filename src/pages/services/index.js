@@ -36,7 +36,7 @@ class Services extends Component {
                 />
                 <Header redirect={this.onChangePage}/>
                 {serviceCards.map((card, index) => (
-                    <ServiceCard card={card}/>
+                    <ServiceCard key={index} card={card}/>
                 ))}
                 <Contacts/>
                 <Footer/>

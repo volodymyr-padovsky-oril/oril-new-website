@@ -34,7 +34,7 @@ export class Testimonials extends Component {
                         <Swiper {...params}>
                             {
                                 this.slides.map((slide, index) => (
-                                    <div className="slide__footer">
+                                    <div key={index} className="slide__footer">
                                         <div className="customer">
                                             <img
                                                 src={`../assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}
