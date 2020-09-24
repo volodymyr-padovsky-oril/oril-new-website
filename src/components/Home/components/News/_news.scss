@@ -21,10 +21,13 @@
 
       &--mobile {
         visibility: hidden;
+        display: none;
       }
     }
 
     &__card {
+      display: flex;
+      justify-content: center;
       width: 384px;
       height: 468px;
       position: relative;
@@ -59,9 +62,9 @@
     &__cloud {
       visibility: hidden;
 
-      position: absolute;
+      // position: absolute;
       //z-index: 9;
-      bottom: 23%;
+      bottom: -23%;
       //left: 10%;
       //background-color: #363646;
       font-size: 1.875rem;
@@ -75,7 +78,7 @@
       flex-direction: column;
       max-width: 285px;
       justify-content: center;
-      left: calc(50% - 140px);
+      // left: calc(50% - 140px);
 
       a {
         margin-top: 44px;
@@ -114,6 +117,7 @@
         display: none;
 
         &--mobile {
+          display: block;
           height: 468px;
           visibility: visible;
 

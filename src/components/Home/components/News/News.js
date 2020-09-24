@@ -29,7 +29,7 @@ class OurNews extends Component {
                 <div className="home__our-news__wrapper">
                     {news.map((item, index) => {
                         return (
-                            <div className="home__our-news__card">
+                            <div key={index} className="home__our-news__card">
                                 <img className="first-img" src={`/assets/img/${item.img}.png`} alt={item.img}/>
                                 <img className="second-img" src={`/assets/img/${item.img}-darken.png`} alt={item.img}/>
                                 <div className="home__our-news__cloud">{item.title}
@@ -45,7 +45,7 @@ class OurNews extends Component {
                     <Swiper {...params}>
                         {news.map((item, index) => {
                             return (
-                                <div className="home__our-news__card">
+                                <div key={index} className="home__our-news__card">
                                     {/*<img className="first-img" src={`/assets/img/${item.img}.png`} alt={item.img}/>*/}
                                     <img className="second-img" src={`/assets/img/${item.img}-darken.png`}
                                          alt={item.img}/>
