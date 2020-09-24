@@ -375,7 +375,7 @@
         margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(auto-fill, 66px);
-        grid-gap: 30px;
+        grid-gap: 40px;
       }
 
       &__item {
@@ -413,10 +413,10 @@
         }
 
         span {
-          font-size: 0.9375rem;
+          font-size: 1rem;
           text-decoration: none;
           text-align: center;
-          line-height: 1.8;
+          line-height: 1.4;
           color: #676875;
         }
       }
@@ -707,6 +707,11 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+
+    .case-study__technologies .technologies__item span {
+      margin-top: 15px;
+    }
+
   .case-study {
     margin: 20px 0 10px 0;
 
