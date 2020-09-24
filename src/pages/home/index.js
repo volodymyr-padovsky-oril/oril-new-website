@@ -1,12 +1,10 @@
 import React, {Component, Fragment} from "react";
 import Banner from "../../components/Home/components/Banner/Banner";
-import Products from "../../components/Home/components/Products/Products";
 import Services from "../../components/Home/components/Services/Services";
 import WeAre from "../../components/Home/components/WeAre";
 import Achievements from "../../components/Home/components/Achievements/Achievements";
 import Testimonials from "../../components/Home/components/Testimonials/Testimonials";
 import Industries from "../../components/Home/components/Industries/Industries";
-import BaseTabs from "../../commons/BaseTabs";
 import OurWorks from "../../components/Home/components/OurWorks/OurWorks";
 import  "../../components/Home/components/OurWorks/_our-works.scss";
 import OurNews from "../../components/Home/components/News/News";

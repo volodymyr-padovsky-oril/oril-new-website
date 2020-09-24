@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Swiper from "react-id-swiper";
+import {withRouter} from 'next/router';
 import Link from "next/link";
 
 export const params = {
@@ -13,6 +14,7 @@ export const params = {
     speed: 1500,
     grabCursor: false,
     simulateTouch: false,
+    observer: true,
     breakpoints: {
         900: {
             slidesPerView: 1,
@@ -86,4 +88,4 @@ export class OurWorks extends Component {
     }
 }
 
-export default OurWorks;
+export default withRouter(OurWorks);

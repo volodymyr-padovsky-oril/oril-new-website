@@ -83,51 +83,17 @@
 
   &__technologies {
     margin-bottom: 200px;
-
-    //& > div {
-    //  display: grid;
-    //  grid-template-columns: repeat(auto-fill, 66px);
-    //  grid-gap: 30px;
-    //
-    //  & > div {
-    //    text-align: center;
-    //    width: 100%;
-    //    grid-gap: 18px;
-    //    display: grid;
-    //    justify-items: center;
-    //
-    //    & > div {
-    //      width: 66px;
-    //      height: 66px;
-    //      display: grid;
-    //      align-items: center;
-    //      justify-content: center;
-    //      background-color: white;
-    //      border-radius: 5px;
-    //
-    //      img {
-    //        max-width: 44px;
-    //        max-height: 44px;
-    //      }
-    //    }
-    //  }
-    //}
-
     & > div {
       display: grid;
       grid-template-columns: repeat(auto-fill, 66px);
-      grid-gap: 30px;
+      grid-gap: 40px;
 
       & > a {
         font-family: Mont-Bold, serif;
-        font-size: 15px;
+        line-height: 1.4;
+        font-size: 1rem;
         text-decoration: none;
         text-align: center;
-        width: 100%;
-        grid-gap: 18px;
-        display: grid;
-        width: 100%;
-        grid-gap: 18px;
         width: 100%;
         grid-gap: 18px;
         display: flex;
