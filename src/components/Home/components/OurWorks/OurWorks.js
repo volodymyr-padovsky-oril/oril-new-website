@@ -7,10 +7,10 @@ export const params = {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 50,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    },
     speed: 1500,
     grabCursor: false,
     simulateTouch: false,
@@ -35,9 +35,11 @@ export class OurWorks extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            load: true  //don't delete this
-        })
+        setTimeout(() => {
+            this.setState({
+                load: true  //don't delete this
+            })
+        }, 100);
     }
 
     redirect = (e) => {
@@ -47,13 +49,15 @@ export class OurWorks extends Component {
     };
 
     render() {
+        const { load } = this.state
+        console.log(load)
         return (
             <section className="home__our-works">
                 <div className="container-our-works" style={{maxWidth: "1240px"}}>
                     <h2>{this.props.h2}</h2>
                     <h3>{this.props.h3}</h3>
                     <div className="home__our-works__wrapper">
-                        <Swiper {...params}>
+                        <Swiper loop={load} {...params}>
                             {this.props.slides.map((slide, index) => (
                                     <div key={'slide-' + index}>
                                         <div className="slide">
