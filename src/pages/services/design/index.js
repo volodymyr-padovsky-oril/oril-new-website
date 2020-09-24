@@ -244,6 +244,7 @@ export class Design extends Component {
                                                 <img src={'../assets/img/' + service.img + '.png'}
                                                      alt={service.img}/>
                                             </div>
+                                            <span>{service.name}</span>
                                         </a>
                                     ))}
                                 </div>

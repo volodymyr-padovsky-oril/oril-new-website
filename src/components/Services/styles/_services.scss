@@ -126,6 +126,13 @@
         width: 100%;
         grid-gap: 18px;
         display: grid;
+        width: 100%;
+        grid-gap: 18px;
+        width: 100%;
+        grid-gap: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-items: center;
 
         &:hover {
