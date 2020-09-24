@@ -28,6 +28,16 @@ export const params = {
 };
 
 export class OurWorks extends Component {
+    state = {
+        load: false //don't delete this
+    }
+
+    componentDidMount() {
+        this.setState({
+            load: true  //don't delete this
+        })
+    }
+
     redirect = (e) => {
         const elem = e.target;
         this.props.redirect(elem.pathname);
