@@ -29,36 +29,15 @@ export const params = {
     },
 };
 
-export class OurWorks extends Component {
-    state = {
-        load: false //don't delete this
-    }
-
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                load: true  //don't delete this
-            })
-        }, 100);
-    }
-
-    redirect = (e) => {
-        const elem = e.target;
-        this.props.redirect(elem.pathname);
-        window.scrollTo(0, 0)
-    };
-
-    render() {
-        const { load } = this.state
-        console.log(load)
+const OurWorks = ({h2, h3, slides}) => {
         return (
             <section className="home__our-works">
                 <div className="container-our-works" style={{maxWidth: "1240px"}}>
-                    <h2>{this.props.h2}</h2>
-                    <h3>{this.props.h3}</h3>
+                    <h2>{h2}</h2>
+                    <h3>{h3}</h3>
                     <div className="home__our-works__wrapper">
-                        <Swiper loop={load} {...params}>
-                            {this.props.slides.map((slide, index) => (
+                        <Swiper {...params}>
+                            {slides.map((slide, index) => (
                                     <div key={'slide-' + index}>
                                         <div className="slide">
                                             <img className={index !== 1 ? "slide__small-img": ""} src={`../../assets/img/${slide.img.name}${slide.img.extension}`}
@@ -90,6 +69,5 @@ export class OurWorks extends Component {
             </section>
         );
     }
-}
 
-export default withRouter(OurWorks);
+export default OurWorks;

@@ -13,6 +13,7 @@ import Mobile from "../../components/Mobile/Mobile";
 import IoT from "../../components/IoT/IoT";
 import Blockchain from "../../components/Blockchain/Blockchain";
 import {project} from "../../lib/our-projects";
+import '../../styles/index.scss';
 
 class Index extends Component {
     onChangePage = (path) => {
