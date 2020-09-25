@@ -8,7 +8,7 @@ export class Header extends Component {
     navLinks = [
         {name: 'Services', to: '/services', internal: true},
         {name: 'Portfolio', to: '/portfolio', internal: true},
-        {name: 'Blog', to: '/blog', internal: false},
+        {name: 'Blog', to: 'https://oril.co/blog/', internal: false},
         {name: 'Contact Us', to: '/contacts', internal: true},
     ];
 
