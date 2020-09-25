@@ -197,13 +197,13 @@ class CaseStudy extends Component {
                         </p>
                         <div className="technologies__wrapper">
                             {data.technoItems.map((technoItem, index) => (
-                                <div className="technologies__item" key={index}>
+                                <a href={technoItem.link ? technoItem.link : ""} target={technoItem.link ? "_blank" : ""} className="technologies__item" key={index}>
                                     <div>
                                         <img src={`../../assets/img/${technoItem.img}.png`}
                                              alt="angular"/>
                                     </div>
                                     <span>{technoItem.name}</span>
-                                </div>
+                                </a>
                             ))}
                         </div>
                         <div className="case-study__our-results">

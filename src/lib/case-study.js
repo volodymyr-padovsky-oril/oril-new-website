@@ -77,14 +77,17 @@ export const caseStudy = {
       {
         img: "services-logo-typescript-angular",
         name: "Angular",
+        link: "https://angular.io/"
       },
       {
         img: "services-logo-typescript-node",
         name: "Node JS",
+        link: "https://nodejs.org/en/",
       },
       {
         img: "mongo-db",
         name: "MongoDB",
+        link: "https://www.mongodb.com/"
       },
       {
         img: "excel",
@@ -211,18 +214,22 @@ export const caseStudy = {
       {
         img: "services-logo-typescript-java",
         name: "Java",
+        link: "https://www.java.com/",
       },
       {
         img: "spring-boot",
         name: "Spring Boot",
+        link: "https://spring.io/projects/spring-boot"
       },
       {
         img: "mongo-db",
         name: "MongoDB",
+        link: "https://www.mongodb.com/"
       },
       {
         img: "services-logo-typescript-angular",
         name: "Angular 9",
+        link: "https://angular.io/"
       },
       {
         img: "websocket",
@@ -231,6 +238,7 @@ export const caseStudy = {
       {
         img: "hazel-cast",
         name: "HazelCast",
+        link: "https://hazelcast.com/",
       },
     ],
     ourResultsSubTile:
@@ -343,22 +351,27 @@ export const caseStudy = {
       {
         img: "services-logo-typescript-java",
         name: "Java",
+        link: "https://www.java.com/",
       },
       {
         img: "spring-boot",
         name: "Spring Boot",
+        link: "https://spring.io/projects/spring-boot"
       },
       {
         img: "mongo-db",
         name: "MongoDB",
+        link: "https://www.mongodb.com/"
       },
       {
         img: "services-logo-ionic",
         name: "Ionic",
+        link: "https://ionicframework.com/",
       },
       {
         img: "services-logo-typescript-angular",
         name: "Angular 9",
+        link: "https://angular.io/"
       },
       {
         img: "websocket",
@@ -367,14 +380,17 @@ export const caseStudy = {
       {
         img: "hazel-cast",
         name: "HazelCast",
+        link: "https://hazelcast.com/",
       },
       {
         img: "services-logo-firebase",
         name: "FireBase",
+        link: "https://firebase.google.com/"
       },
       {
         img: "paypal",
         name: "PayPal",
+        link: "https://www.paypal.com/"
       },
     ],
     ourResultsSubTile:
@@ -491,18 +507,22 @@ export const caseStudy = {
       {
         img: "services-logo-typescript-java",
         name: "Java",
+        link: "https://www.java.com/",
       },
       {
         img: "spring-boot",
         name: "Spring Boot",
+        link: "https://spring.io/projects/spring-boot"
       },
       {
         img: "mongo-db",
         name: "MongoDB",
+        link: "https://www.mongodb.com/"
       },
       {
         img: "services-logo-typescript-angular",
         name: "Angular 9",
+        link: "https://angular.io/"
       },
       {
         img: "websocket",
@@ -511,6 +531,7 @@ export const caseStudy = {
       {
         img: "hazel-cast",
         name: "HazelCast",
+        link: "https://hazelcast.com/",
       },
       {
         img: "s3bucket",
@@ -632,14 +653,17 @@ export const caseStudy = {
       {
         img: "services-logo-typescript-java",
         name: "Java",
+        link: "https://www.java.com/",
       },
       {
         img: "services-logo-ionic",
         name: "Ionic",
+        link: "https://ionicframework.com/",
       },
       {
         img: "services-logo-typescript-angular",
         name: "Angular 9",
+        link: "https://angular.io/"
       },
 
     ],
