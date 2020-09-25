@@ -82,7 +82,7 @@ const OurWorks = ({h2, h3, slides}) => {
                 <h2>{h2}</h2>
                 <h3>{h3}</h3>
                 <div className="home__our-works__wrapper">
-                    {setRetina !== 2 && <Swiper {...param}>
+                    {retina !== 2 && <Swiper {...param}>
                         {slides.map((slide, index) => (
                                 <div key={'slide-' + index}>
                                     <div className="slide">
