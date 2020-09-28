@@ -92,7 +92,6 @@
 @media (max-width: 767.98px) {
   .home {
     &__achievements {
-
       & > .container {
         grid-gap: 55px;
 
@@ -106,6 +105,8 @@
 
 @media (max-width: 475.98px) {
   .home__achievements {
+    margin-top: -100px;
+
     & > .container {
       a img {
         max-width: 120px;

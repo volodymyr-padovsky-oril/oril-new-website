@@ -121,6 +121,10 @@
           height: 468px;
           visibility: visible;
 
+          .swiper-container{
+            height: 100%;
+          }
+
           .swiper-pagination {
             //width: 1240px;
             display: flex;
@@ -166,7 +170,7 @@
 
             .home__our-news__cloud {
               bottom: auto;
-              top: 150px;
+              top: 80px;
             }
           }
         }

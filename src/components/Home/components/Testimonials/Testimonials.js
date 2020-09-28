@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Swiper from "react-id-swiper";
-import {project} from "../../../../lib/our-projects";
+import {testimonials} from "../../../../lib/testimonials";
 
 export const params = {
     loop: true,
@@ -19,11 +19,7 @@ export const params = {
 };
 
 export class Testimonials extends Component {
-    slides = [
-        project.greenVision,
-        project.plusDelta,
-        project.laced
-    ];
+    slides = testimonials
 
     render() {
         return (
@@ -37,15 +33,15 @@ export class Testimonials extends Component {
                                     <div key={index} className="slide__footer">
                                         <div className="customer">
                                             <img
-                                                src={`../assets/icons/${slide.customer.img.name}${slide.customer.img.extension}`}
-                                                alt={slide.customer.img.name}/>
+                                                src={`../assets/icons/${slide.img.name}${slide.img.extension}`}
+                                                alt={slide.img.name}/>
                                             <div>
-                                                <p>{slide.customer.firstName} {slide.customer.lastName}</p>
-                                                <p>{slide.customer.position}</p>
+                                                <p>{slide.firstName} {slide.lastName}</p>
+                                                <p>{slide.position}</p>
                                             </div>
                                         </div>
                                         <div className="feedback">
-                                            {slide.customer.feedback}
+                                            {slide.feedback}
                                         </div>
                                     </div>
                                 ))

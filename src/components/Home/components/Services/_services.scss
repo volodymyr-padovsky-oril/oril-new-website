@@ -29,9 +29,11 @@
         color: #363645;
         font-family: Mont-Bold, serif;
         text-decoration: none;
+        pointer-events: none;
+        cursor: default;
 
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
 

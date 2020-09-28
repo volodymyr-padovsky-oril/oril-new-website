@@ -74,7 +74,6 @@ const OurWorks = ({h2, h3, slides}) => {
     };
 
     const param = width < 1240 ? params : params_1
-    console.log(param.width)
 
     return (
         <section className="home__our-works">
@@ -95,15 +94,15 @@ const OurWorks = ({h2, h3, slides}) => {
                                             <div className="tags">
                                                 {
                                                     slide.tags.map((tag, index) => (
-                                                        <a href={`https://oril.co/blog/tag/${tag}/`}
+                                                        <a href="https://oril.co/blog"
                                                             key={`tag-${index}`}>{tag}</a>))
                                                 }
                                             </div>
                                             <p className="text">{slide.text}</p>
-                                            <Link href={`${slide.caseStudy}`}>
-                                                <a className="link">Learn more
-                                                </a>
-                                            </Link>
+                                            {/*<Link href={`${slide.caseStudy}`}>*/}
+                                            {/*    <a className="link">Learn more*/}
+                                            {/*    </a>*/}
+                                            {/*</Link>*/}
                                         </div>
                                     </div>
                                 </div>

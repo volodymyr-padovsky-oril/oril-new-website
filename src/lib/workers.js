@@ -10,14 +10,14 @@ const firstPage = [
         animal: 'team-5',
         photo: '7',
         name: 'Natalie Havrylyuk',
-        position: 'Business Development Manager',
+        position: 'BD Manager',
         hover: true
     },
     {
         animal: 'team-10',
         photo: '20',
         name: 'Zorian Fedoryga',
-        position: 'Lead Software Engineer',
+        position: 'CTO',
         hover: true
     },
     {
@@ -38,14 +38,14 @@ const firstPage = [
         animal: 'team-6',
         photo: '18',
         name: 'Ihor Kosandiak',
-        position: 'Lead Software Engineer',
+        position: 'Lead Engineer',
         hover: true
     },
     {
         animal: 'team-15',
         photo: '21',
         name: 'Ihor Sokolyk',
-        position: 'Lead Software Engineer',
+        position: 'Lead Engineer',
         hover: true
     },
     {
@@ -117,7 +117,7 @@ const secondPage = [
         animal: 'team-22',
         photo: '6',
         name: 'Anna Rurych',
-        position: 'QA Software Engineer'
+        position: 'QA'
     }
 ];
 

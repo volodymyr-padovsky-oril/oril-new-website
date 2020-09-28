@@ -52,7 +52,7 @@ export class Iot extends Component {
         {
             title: 'Web & Mobile App',
             img: 'deliv-web-app',
-            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end developers.'
+            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end engineers.'
         },
         {
             title: 'Admin dashboard',
@@ -143,7 +143,7 @@ export class Iot extends Component {
     navLinks = [
         {name: 'UX/UI Design', to: '/services/design'},
         {name: 'Product Development', to: '/services/development'},
-        {name: 'Iot', to: '/services/iot'},
+        // {name: 'Iot', to: '/services/iot'},
     ];
 
     animationOptions = {

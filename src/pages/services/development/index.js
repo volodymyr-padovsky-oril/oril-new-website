@@ -25,7 +25,7 @@ export class Design extends Component {
         {
             titleOnNewLine: true,
             text: `
-                Our programmers are specifically hired for their attention to detail and organizational skills, leading to quality code and a smooth process.
+                Our engineers are specifically hired for their attention to detail and organizational skills, leading to quality code and a smooth process.
             `
         },
         {
@@ -99,7 +99,7 @@ export class Design extends Component {
         {
             title: '2. Development',
             img: 'services-whale2',
-            text: 'Our developers iteratively build products using Agile frameworks. We strictly adhere to client priorities and roadmaps, but also flexibly change course whenever the situation calls for it. All the while, our team leads maintain constant communication with both the client and their programmers to ensure that everyone is in sync.',
+            text: 'Our engineers iteratively build products using Agile frameworks. We strictly adhere to client priorities and roadmaps, but also flexibly change course whenever the situation calls for it. All the while, our team leads maintain constant communication with both the client and their engineers to ensure that everyone is in sync.',
             direction: 'even'
 
         },
@@ -121,7 +121,7 @@ export class Design extends Component {
     navLinks = [
         {name: 'UX/UI Design', to: '/services/design'},
         {name: 'Product Development', to: '/services/development'},
-        {name: 'Iot', to: '/services/iot'},
+        // {name: 'Iot', to: '/services/iot'},
     ];
 
     animationOptions = {
@@ -164,7 +164,7 @@ export class Design extends Component {
                                     <h1>Product Development</h1>
                                     <h3>Logical Roadmaps and Reliable Programming</h3>
                                     <p>
-                                        Our product managers, business analysts, DevOps, and programmers work in tandem
+                                        Our product managers, business analysts, DevOps, and engineers work in tandem
                                         to ensure that we develop quality features on time and according to logical
                                         roadmaps.
                                     </p>
@@ -247,7 +247,7 @@ export class Design extends Component {
                             </div>
                         </div>
                         <OurWorks h2="Featured Products"
-                                  slides={[project.sparkOffer, project.laced, project.sab]}/>
+                                  slides={[project.laced, project.sab]}/>
                     </section>
                 </section>
                 <Contacts/>

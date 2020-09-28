@@ -24,7 +24,7 @@ export class Design extends Component {
             `
         },
         {
-            title: 'Best practices',
+            title: 'Best Practices',
             titleOnNewLine: true,
             text: `
                 We use Agile methodology and Design Sprint to provide step-by-step delivery of concepts ready to use
@@ -39,7 +39,7 @@ export class Design extends Component {
             `
         },
         {
-            title: "Users' feedback",
+            title: "Users' Feedback",
             titleOnNewLine: true,
             text: `
                 Whatever your target audience is, it’s important to perform usability testing and gather users' opinions
@@ -52,7 +52,7 @@ export class Design extends Component {
         {
             title: 'UI Designs',
             img: 'deliv-ui',
-            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end developers.'
+            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end engineers.'
         },
         {
             title: 'UI Style Guides',
@@ -114,7 +114,7 @@ export class Design extends Component {
         {
             title: '3. Prototype & Implement',
             img: 'services-panther3',
-            text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the developers to ensure that the designs are implemented correctly.',
+            text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the engineers to ensure that the designs are implemented correctly.',
             direction: 'odd'
         },
     ];
@@ -122,7 +122,7 @@ export class Design extends Component {
     navLinks = [
         {name: 'UX/UI Design', to: '/services/design'},
         {name: 'Product Development', to: '/services/development'},
-        {name: 'Iot', to: '/services/iot'},
+        // {name: 'Iot', to: '/services/iot'},
     ];
 
     animationOptions = {
@@ -251,7 +251,7 @@ export class Design extends Component {
                             </div>
                         </div>
                         <OurWorks h2="Featured Products"
-                                  slides={[project.laced, project.sparkOffer, project.greenVision]}/>
+                                  slides={[project.laced, project.greenVision]}/>
                     </section>
                 </section>
                 <Contacts/>

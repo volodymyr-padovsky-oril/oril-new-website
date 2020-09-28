@@ -6,7 +6,7 @@ import Countup from "../../commons/Countup";
 
 export class PortfolioRealEstate extends Component {
     slides = [
-        project.sparkOffer,
+        // project.sparkOffer,
         project.greenVision,
         //TODO: add scale
     ];
@@ -29,15 +29,15 @@ export class PortfolioRealEstate extends Component {
                                     </div>
                                     <div className="tags">
                                         {slide.tags.map((tag, index) => (
-                                            <a href={`https://oril.co/blog/tag/${tag}/`}
+                                            <a href="https://oril.co/blog"
                                                key={`tag-${index}`}>{tag}
                                             </a>))}
                                     </div>
                                     <p className="text">{slide.text}</p>
-                                    {slide.caseStudy && <Link href={`${slide.caseStudy}`}>
-                                        <a className="link">Learn more
-                                        </a>
-                                    </Link>}
+                                    {/*{slide.caseStudy && <Link href={`${slide.caseStudy}`}>*/}
+                                    {/*    <a className="link">Learn more*/}
+                                    {/*    </a>*/}
+                                    {/*</Link>}*/}
                                     {
                                         slide.info &&
                                         <div className="info">

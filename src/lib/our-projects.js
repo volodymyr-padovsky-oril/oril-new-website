@@ -7,8 +7,8 @@ export const project = {
         },
         title: 'Nuravine',
         link: 'https://www.nuravine.com/',
-        tags: ['WebApp', 'USA', 'Automation'],
-        text: 'Environmental Automation Made Simple. Understand and optimize your hydroponic reservoir from afar with monitoring and control of pH, EC, Water Temp, and DO',
+        tags: ['WebApp', 'Platform', 'Automation'],
+        text: 'Environmental automation made simple. Understand and optimize your hydroponic reservoir from afar with monitoring and control of pH, EC, Water Temp, and DO',
         // info: [
         //     { value: 'Grow-NY', text: 'finalist' },
         // ],
@@ -37,10 +37,10 @@ export const project = {
         },
         title: 'VICKI',
         link: 'https://getvicki.com/',
-        tags: ['MobileApp', 'iOS', 'Android', 'Retail'],
+        tags: ['MobileApp', 'AI', 'Retail'],
         caseStudy: '/portfolio/iot/vicki',
         text: `
-            VICKI is an IoT self-checkout solution for retail. Powered by artificial intelligence and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first retail solution to leverage AI at the point-of-sale. She takes the POS experience to the next level in an Amazon and Google world
+            Powered by AI and other advanced technologies, VICKI is a modern replacement for traditional vending experiences and the first IoT self-checkout retail solution to leverage AI at the point-of-sale.
         `,
         // info: [
         //     { value: 1000, string: '+', text: 'vending machines' },
@@ -75,13 +75,9 @@ export const project = {
         caseStudy: '/portfolio/real-estate/sparkoffer',
         title: 'SparkOffer',
         link: 'https://www.sparkoffer.com/',
-        tags: ['Web', 'Realestate', 'Platform'],
-        text: `
-            A platform that helps to interact and make real estate binding offers,
-            with or without the assistance of a buyer’s agent. SparkOffer provides a
-            PropTech process that offers an all-inclusive, secure and transparent means
-            for home buyers to interact directly with sellers.
-        `,
+        tags: ['WebApp', 'PropTech', 'Platform'],
+        text: `A platform provides a PropTech process that offers an all-inclusive, 
+                secure and transparent means for home buyers to interact directly with sellers.`,
         img: {
             name: 'sparkoffer',
             extension: '.png'
@@ -96,7 +92,7 @@ export const project = {
         },
         title: 'Scrooge Bot',
         link: 'https://scroogebot.co/',
-        tags: ['Web', 'Dashboard', 'Bot', 'Crypto'],
+        tags: ['WebApp', 'Dashboard', 'Blockchain', 'Crypto', 'UX/UI Design'],
         text: `
             Scrooge Bot handles trading for you. Simply connect Scrooge Bot 
             to your Binance account and watch your assets grow
@@ -119,9 +115,9 @@ export const project = {
         },
         title: 'ActiveSoul',
         link: 'https://apps.apple.com/us/app/activesoul/id1127395958',
-        tags: ['MobileApp', 'iOS', 'Android', 'Fitness'],
+        tags: ['MobileApp', 'WebApp', 'Health', 'Fitness', 'Platform'],
         text: `
-            ActiveSoul brings fitness enthusiasts, wellness providers, and 1000's of health clubs together in a brand new way. Book fitness classes, register for events, create challenges, and track your fitness activity - all in one application
+            Book fitness classes, register for events, create challenges, and track your fitness activity - all in one application, that brings fitness enthusiasts, wellness and health clubs together in a brand new way
         `,
         // info: [
         //     { value: 30000, string: '+', text: 'health clubs' },
@@ -140,11 +136,11 @@ export const project = {
             extension: '.png'
         },
         title: 'LACED',
-        link: 'https://apps.apple.com/us/app/laced-win-sneakers/id1317801699',
+        link: 'https://laced-app.com',
         caseStudy: '/portfolio/marketplace/laced',
-        tags: ['MobileApp', 'WebApp', 'Sneakers', 'Auction'],
+        tags: ['MobileApp', 'UX/UI Design', 'Auction'],
         text: `
-            LACED is a mobile app for online sneaker auctions where you can buy bids and participate by placing a bid. You can claim a reward in the loyalty section. Bid small and win big
+        A mobile app for online sneaker auctions where you can buy and place bids to participate and claim a reward in the loyalty section. Bid small and win big
         `,
         // info: [
         //     { value: 'Featured', text: 'in top fashion magazines' },
@@ -164,7 +160,7 @@ export const project = {
             lastName: 'Lozano',
             position: 'CEO of LACED',
             feedback: `
-                “ORIL's platform was intuitive and user-friendly. The client's business gained 50,000 customers in its first year. Communicative and transparent, their developers worked quickly and precisely“
+                “ORIL's platform was intuitive and user-friendly. The client's business gained 50,000 customers in its first year. Communicative and transparent, their engineers worked quickly and precisely“
             `
         }
     },
@@ -177,9 +173,9 @@ export const project = {
         },
         title: 'Match Your Need',
         link: 'https://matchyourneed.com/',
-        tags: ['WebApp', 'Charity', 'Social'],
+        tags: ['WebApp', 'Charity', 'Social', 'Platform'],
         text: `
-            Match Your Need is a generosity marketplace. It makes matched between those with a need and those with a heart and means to fulfill it based on multiple criteria, including user preferences and geography
+            A generosity marketplace that makes matched between those with a need and those who can help based on multiple criteria, including user preferences and geography
         `,
         // info: [
         //     { value: 600, string: '+', text: 'needs matched' },
@@ -198,9 +194,9 @@ export const project = {
         },
         title: 'GOWAGO',
         link: 'https://gowago.ch/en/',
-        tags: ['WebApp', 'E-commerce', 'Auto', 'Swiss'],
+        tags: ['WebApp', 'E-commerce', 'Auto', 'Platform'],
         text: `
-            GOWAGO is Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money
+            Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money
         `,
         // info: [
         //     { value: 10000, text: 'cars on the platform' },
@@ -218,9 +214,9 @@ export const project = {
         },
         title: 'HoozeOn',
         link: 'https://www.hoozeon.us/',
-        tags: ['MobileApp', 'iOS', 'Android', 'Social'],
+        tags: ['MobileApp', 'Social', 'Hospitality', 'Platform'],
         text: `
-            A platform that provides hospitality owners real-time information of their service staff and allows service staff to connect with all the guests that they serve. HoozeOn allows guests to feel empowered and happy by connecting them with the people they enjoy the most
+            A platform that provides hospitality owners real-time information of their service staff and allows service staff to connect with all the guests that they serve
         `,
         // info: [
         //     {value: 5.0, text: 'rating on AppStore'},
@@ -296,9 +292,9 @@ export const project = {
         caseStudy: '/portfolio/real-estate/green-vision',
         title: 'GreenVision',
         link: 'https://greenvision-energy.com/#/start-page',
-        tags: ['WebApp', 'Mobile', 'Environment'],
+        tags: ['WebApp', 'GreenTech', 'Platform', 'UX/UI Design'],
         text: `
-            GreenVision is a platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale
+        A platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale
         `,
         // info: [
         //     { value: 'One', text: 'saved planet' },
@@ -328,9 +324,9 @@ export const project = {
         },
         title: 'Stick',
         link: 'https://www.stick.ai/',
-        tags: ['Web', 'AI', 'Presentation'],
+        tags: ['WebApp', 'AI', 'Presentation', 'SaaS'],
         text: `
-            Create beautiful slides easily. Stick uses Al to transform typed text into stunning visual presentations for you. The application uses AI technologies to dynamically suggest images that match the slide’s content and place them in a proper place on the slide. As a user, you have a great experience and don’t waste time searching the internet for the right icons
+            Stick uses Al to transform typed text into stunning visual presentations. It dynamically suggests images that match the slide’s content and places them in a proper place on the slide
         `,
         // info: [
         //     { value: 'AI-Powered', text: 'AI image recommendation' },
@@ -362,9 +358,9 @@ export const project = {
         },
         title: 'PlusDelta',
         link: 'https://plusdelta.app/',
-        tags: ['WebApp', 'Social', "Platform"],
+        tags: ['WebApp', 'Social', "Platform", 'ConstructionTech', 'UX/UI Design'],
         text: `
-            Contribute and gather feedback on meetings and events on PlusDelta platform. It helps small or large teams' executives to laymen collaboratively plan, understand, communicate, and measure their projects and performance
+            A platform that allows to contribute and gather feedback on meetings and events. It helps teams' executives to collaboratively plan, understand, communicate, and measure projects and performance
         `,
         // info: [
         //     { value: 1000, string: '+', text: 'meetings conducted' },
@@ -395,9 +391,9 @@ export const project = {
         title: 'SAB',
         link: 'https://signalautobroker.com/',
         caseStudy: '/portfolio/fin-tech/sab',
-        tags: ['WebApp', 'UX/UI', "MVP", "Development"],
+        tags: ['WebApp', "Development", 'FinTech', 'Auto', 'Platform'],
         text: `
-            Contribute and gather feedback on meetings and events on PlusDelta platform. It helps small or large teams' executives to laymen collaboratively plan, understand, communicate, and measure their projects and performance
+        An automotive tech platform in the used-car ecosystem that connects dealerships to financing and product opportunities
         `,
         // info: [
         //     { value: 1000, string: '+', text: 'meetings conducted' },

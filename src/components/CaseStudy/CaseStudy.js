@@ -40,7 +40,7 @@ class CaseStudy extends Component {
                             <img style={{width: data.logoNotFull ? "auto" : "100%"}} src={`../../assets/icons/${data.logo}.${data.logoExt}`} alt={data.logo}/>
                             <div className="tags">
                                 {data.tags.map((tag, index) => (
-                                    <a href={`https://oril.co/blog/tag/${tag}/`}
+                                    <a href="https://oril.co/blog"
                                        key={`tag-${index}`}>{tag}</a>
                                     ))}
                             </div>
@@ -240,7 +240,7 @@ class CaseStudy extends Component {
                 </div>
                 <div className="case-study__our-works">
                     <h2>A few more Case Studies you might <br/> be interested in</h2>
-                    <OurWorks slides = {[project.laced, project.sparkOffer, project.sab]}/>
+                    <OurWorks slides = {[project.laced, project.sab]}/>
                 </div>
             </section>
         );
