@@ -82,15 +82,11 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        We take a strong product-centric approach with marketplaces, since their success
-                                        depends
-                                        on satisfying both consumer and supplier needs.
-                                        To do this, we treat both sides of the marketplace as separate products that
-                                        need their
-                                        own set of compeling features and flows. Once we’re sure that both consumers and
-                                        suppliers will find value in the marketplace, we build seamless ties between the
-                                        two
-                                        parties on mobile and web, all the way through checkout and beyond
+                                    {`From working with the MLS and building consumer apps to rolling out loT solutions 
+                                    for real estate businesses, we enjoy leaving our mark on the proptech sector. 
+                                    Real estate is a highly unique area. It bridges design and engineering with government, 
+                                    construction, sales, and a multitude of other B2B and B2C services. Here at <name>, 
+                                    we strive to expertly bring the physical built environment into beautiful digital experiences, and vice versa`}
                                     </p>
                                     <Link href="/portfolio/real-estate">
                                         Featured Products
@@ -105,15 +101,7 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        We take a strong product-centric approach with marketplaces, since their success
-                                        depends
-                                        on satisfying both consumer and supplier needs.
-                                        To do this, we treat both sides of the marketplace as separate products that
-                                        need their
-                                        own set of compeling features and flows. Once we’re sure that both consumers and
-                                        suppliers will find value in the marketplace, we build seamless ties between the
-                                        two
-                                        parties on mobile and web, all the way through checkout and beyond
+                                    We constantly marvel at the new utilities being developed from loT. From staying at the forefront of these developments, we excel at rolling out applications and interfaces with the latest capabilities that technology has to offer. From connecting devices in real estate and environmental automation to consumer goods and beyond, we’ll make sure that your products communicate just as they shoud
                                     </p>
                                     <Link href="/portfolio/iot">
                                         Featured Products
@@ -171,15 +159,12 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                        We take a strong product-centric approach with marketplaces, since their success
-                                        depends
-                                        on satisfying both consumer and supplier needs.
-                                        To do this, we treat both sides of the marketplace as separate products that
-                                        need their
-                                        own set of compeling features and flows. Once we’re sure that both consumers and
-                                        suppliers will find value in the marketplace, we build seamless ties between the
-                                        two
-                                        parties on mobile and web, all the way through checkout and beyond
+                                    Life is better when it’s balanced and driven by a healthy lifestyle. 
+                                    Here, we happily admit that our personal tastes drive our interest in 
+                                    working with lifestyle and fitness products. We’ve built solutions to 
+                                    power thousands of health clubs, bring fashion to the masses, and 
+                                    encourage everyone to be a little bit healthier while looking 
+                                    and feeling great.
                                     </p>
                                     <Link href="/portfolio/lifestyle">
                                         Featured Products

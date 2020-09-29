@@ -52,27 +52,27 @@ export class Design extends Component {
         {
             title: 'UI Designs',
             img: 'deliv-ui',
-            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end engineers.'
+            text: 'Final UI designs are delivered via Zeplin, which makes it even easier to coordinate with front end engineers'
         },
         {
             title: 'UI Style Guides',
             img: 'deliv-guide',
-            text: 'We create style guides and design libraries in Sketch to ensure consistency across all future designs.'
+            text: 'We create style guides and design libraries in Sketch to ensure consistency across all future designs'
         },
         {
             title: 'UX Artefacts',
             img: 'deliv-artefacts',
-            text: 'Results from our UX work, such as customer journey mapping and usability testing, are all provided in their respective file formats.'
+            text: 'Results from our UX work, such as customer journey mapping and usability testing, are all provided in their respective file formats'
         },
         {
             title: 'Interactive Prototypes',
             img: 'deliv-prototype',
-            text: 'We load our prototypes into services like ProtoPie and Invision to simulate how the app would behave once developed. '
+            text: 'We load our prototypes into services like ProtoPie and Invision to simulate how the app would behave once developed'
         },
         {
             title: 'Logotype & Brand Identity',
             img: 'deliv-brand',
-            text: 'The logos and visual brand identities that we create are often delivered alongside our style guides.'
+            text: 'The logos and visual brand identities that we create are often delivered alongside our style guides'
         }
     ];
 
@@ -101,20 +101,20 @@ export class Design extends Component {
         {
             title: '1. Analyze',
             img: 'services-panther1',
-            text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things.',
+            text: 'We lay out and analyze the specific solutions that need to be designed for specific user needs. To accomplish this, we look at any existing products and user engagement metrics, conduct customer persona interviews, and create user maps, among other things',
             direction: 'odd'
         },
         {
             title: '2. Wireframe & Test',
             img: 'services-panther2',
-            text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas.',
+            text: 'Based off our research, we lay out basic designs for the solution’s most important flows. Quickly creating low fidelity wireframes allows us to rapidly assess weak points when testing the designs with real customers or customer personas',
             direction: 'even'
 
         },
         {
             title: '3. Prototype & Implement',
             img: 'services-panther3',
-            text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the engineers to ensure that the designs are implemented correctly.',
+            text: 'Based on our usability testing results, we create high fidelity prototypes with all supporting flows, empty states, and error messsages. We then document the functionality, if needed, and work with the engineers to ensure that the designs are implemented correctly',
             direction: 'odd'
         },
     ];
@@ -221,8 +221,7 @@ export class Design extends Component {
                             </div>
                             <div className="services__deliverables">
                                 <h2>Deliverables</h2>
-                                <p>Final deliverables depend on each project, but clients can expect to generally
-                                    receive these items:</p>
+                                <p>All clients receive full access to the design files and supporting work created throughout our collaboration together</p>
                                 <div className="deliverable__wrapper">
                                     {this.deliverables.map((deliverable, index) => (
                                         <div key={'deliverable-' + index} className="deliverable-item">

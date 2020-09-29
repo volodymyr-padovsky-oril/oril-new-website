@@ -22,8 +22,8 @@ export const serviceCards = [
     {
         id: 'development',
         title: 'Product Development',
-        subtitle: 'Short attractive description will be dispayed here',
-        text: 'Interactive prototyping, explicit UX/UI design and branding with clear message for your web, desktop, mobile, smartwatch and IoT products. This is how we’re becoming advocates of actual user needs and business goals',
+        subtitle: 'Logical Roadmaps and Reliable Programming',
+        text: 'Our product managers, business analysts, DevOps, and engineers work in tandem to ensure that we develop quality features on time and according to logical roadmaps',
         direction: 'even',
         href: 'development',
         animationOptions: {

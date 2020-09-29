@@ -16,22 +16,25 @@ import '../../index.scss';
 
 export class Design extends Component {
     blocks = [
-        {
+        {   
+            title: 'Prioritization',
             titleOnNewLine: true,
             text: `
-                Our product managers and business analysts lay out roadmaps, feature maps, and requirements that prioritize what should be built and when.
+                Our product managers and business analysts lay out roadmaps, feature maps, and requirements that prioritize what should be built and when
             `
         },
         {
+            title: 'Quality Engineers',
             titleOnNewLine: true,
             text: `
-                Our engineers are specifically hired for their attention to detail and organizational skills, leading to quality code and a smooth process.
+                We maintain a strong culture among our engineers for attention to detail and organization, which ultimately leads to quality code and smooth processes
             `
         },
         {
+            title: 'Project Leadership',
             titleOnNewLine: true,
             text: `
-                Our DevOps and team leads guide all programming efforts, ensuring that products are built on time and within budget.
+                Our DevOps and team leads guide all programming efforts, ensuring that products are built on time and within budget
             `
         },
     ];
@@ -40,17 +43,17 @@ export class Design extends Component {
         {
             title: 'Web App',
             img: 'deliv-ui',
-            text: 'We develop everything from friendly consumer web apps to niche products with specific requirements.'
+            text: 'We develop everything from friendly consumer web apps to niche products with specific requirements'
         },
         {
             title: 'Mobile App',
             img: 'deliv-guide',
-            text: 'We build both native and hybrid mobile apps that function as standalone products or complement web experiences.'
+            text: 'We build both native and hybrid mobile apps that function as standalone products or complement web experiences'
         },
         {
             title: 'Dashboard',
             img: 'deliv-artefacts',
-            text: 'We create dashboards that clearly show the KPIs businesses value when tracking their success.'
+            text: 'We create dashboards that clearly show the KPIs businesses value when tracking their success'
         },
         {
             title: 'Custom application',
@@ -60,12 +63,12 @@ export class Design extends Component {
         {
             title: 'Documentation',
             img: 'deliv-brand',
-            text: 'We provide thorough documentation for all our programming, including general architecture, database schemas, and functional requirements.'
+            text: 'We provide thorough documentation for all our programming, including general architecture, database schemas, and functional requirements'
         },
         {
             title: 'Source Code',
             img: 'deliv-brand',
-            text: 'All source code is provided via git repositories that your team can fully own and access.'
+            text: 'All source code is provided via git repositories that your team can fully own and access'
         }
     ];
     services = [
@@ -93,27 +96,27 @@ export class Design extends Component {
         {
             title: '1. Product design',
             img: 'services-whale1',
-            text: 'From researching competitors, markets, and users to wireframing and delivering high quality prototypes, we deliver product designs that make sense and look beautiful.',
+            text: 'From researching competitors, markets, and users to wireframing and delivering high quality prototypes, we deliver product designs that make sense and look beautiful',
             direction: 'odd'
         },
         {
             title: '2. Development',
             img: 'services-whale2',
-            text: 'Our engineers iteratively build products using Agile frameworks. We strictly adhere to client priorities and roadmaps, but also flexibly change course whenever the situation calls for it. All the while, our team leads maintain constant communication with both the client and their engineers to ensure that everyone is in sync.',
+            text: 'Our engineers iteratively build products using Agile frameworks. We strictly adhere to client priorities and roadmaps, but also flexibly change course whenever the situation calls for it. All the while, our team leads maintain constant communication with both the client and the development team to ensure that everyone is in sync',
             direction: 'even'
 
         },
         {
             title: '3. Product Iterations & Feature Enhancements',
             img: 'services-whale3',
-            text: 'We build upon existing products and features by proactively checking user engagement metrics or following client roadmaps. Based on these indicators, we find ways to roll out new features and improvements that continue to delight - and retain - existing customers.',
+            text: 'We build upon existing products and features by proactively checking user engagement metrics or following client roadmaps. Based on these indicators, we find ways to roll out new features and improvements that continue to delight - and retain - existing customers',
             direction: 'odd'
 
         },
         {
             title: '4. Maintenance & Support',
             img: 'services-whale4',
-            text: 'All software needs regular maintenance to stay in top shape. This includes updating platforms, plugins, security settings, and content. Putting a concerted effort into solid maintenance can greatly extend the shelf life of any product’s code, which can in turn lead to significant cost reductions.',
+            text: 'All software needs regular maintenance to stay in top shape. This includes updating platforms, plugins, security settings, and content. Putting a concerted effort into solid maintenance can greatly extend the shelf life of any product’s code, which can in turn lead to significant cost reductions',
             direction: 'even'
         },
     ];
@@ -123,6 +126,10 @@ export class Design extends Component {
         {name: 'Product Development', to: '/services/development'},
         // {name: 'Iot', to: '/services/iot'},
     ];
+
+    tags = [
+        'WebApp', 'MobileApp', 'Dashboards', 'CustomSoftware', 'IoTDevices'
+    ]
 
     animationOptions = {
         loop: true,
@@ -166,7 +173,7 @@ export class Design extends Component {
                                     <p>
                                         Our product managers, business analysts, DevOps, and engineers work in tandem
                                         to ensure that we develop quality features on time and according to logical
-                                        roadmaps.
+                                        roadmaps
                                     </p>
                                 </div>
                                 <div className="services__desc--right">
@@ -191,13 +198,23 @@ export class Design extends Component {
                                     </div>
                                 ))}
                             </div>
+                            <div className="services__program">
+                                <h2>We program:</h2>
+                                <div className="tags">
+                                        {this.tags.map((tag, index) => (
+                                            <a href="https://oril.co/blog"
+                                               key={`tag-${index}`}>{tag}
+                                            </a>))}
+                                    </div>
+                            </div>
                             <div className="services__process">
                                 <h2>Our Approach</h2>
                                 <p>
-                                    Depending on our clients’ internal capabilities, we pull select services from our
-                                    offering that spans the entire product development lifecycle. Our goal is to
-                                    complement your strengths with our own in order to produce the strongest possible
-                                    product.
+                                Depending on our clients' internal strengths and 
+                                capabilities, we offer a customized selection of 
+                                services to address identified requirements while 
+                                also filling in any identified knowledge gaps. 
+                                This ensures stronger end-to-end product development lifecycles
                                 </p>
                                 <div className="process-wrapper">
                                     {this.process.map((item, index) => (
@@ -218,7 +235,7 @@ export class Design extends Component {
                             <div className="services__deliverables">
                                 <h2>Deliverables</h2>
                                 <p>Aside from fully functional software, we also deliver high quality documentation and
-                                    source code.</p>
+                                    source code</p>
                                 <div className="deliverable__wrapper">
                                     {this.deliverables.map((deliverable, index) => (
                                         <div key={'deliverable-' + index} className="deliverable-item">
