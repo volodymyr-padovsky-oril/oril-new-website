@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {project} from "../../lib/our-projects";
 import Link from "next/link";
 import Countup from "../../commons/Countup";
-import ProgressiveImage from "react-progressive-image-loading";
+import ProgressiveImage from "../ImageLoader";
 
 
 export class PortfolioMarketplace extends Component {

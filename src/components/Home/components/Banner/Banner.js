@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Header from "../../../../commons/Header";
-import ProgressiveImage from "react-progressive-image-loading";
+import ProgressiveImage from "../../../ImageLoader";
 
 export class Banner extends Component {
     render() {
