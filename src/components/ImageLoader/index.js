@@ -11,7 +11,7 @@ class ProgressiveImage extends React.Component {
 
     unmounted = false;
 
-    componentDidMount() {
+    componentWillMount() {
         const {src, preview} = this.props;
         const initialBlur = this.props.initialBlur;
         this.setState({ src: preview, blur: initialBlur });
@@ -31,10 +31,9 @@ class ProgressiveImage extends React.Component {
             render(src, this.getStyle()))
     }
 
-    fetch(src = "") {
+    fetch(src) {
         return new Promise(resolve => {
             const image = new Image();
-            console.log(src)
             image.src = src;
             image.addEventListener("load", () => resolve(src), false);
         });

@@ -2,7 +2,11 @@ import React, {Component} from "react";
 import {project} from "../../lib/our-projects";
 import Link from "next/link";
 import Countup from "../../commons/Countup";
-import ProgressiveImage from "../ImageLoader";
+import dynamic from "next/dynamic";
+const ProgressiveImage = dynamic(
+  () => import("../ImageLoader"),
+  { ssr: false }
+);
 
 
 export class PortfolioMarketplace extends Component {

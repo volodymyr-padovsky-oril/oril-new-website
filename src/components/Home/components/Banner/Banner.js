@@ -1,6 +1,11 @@
 import React, {Component} from "react";
 import Header from "../../../../commons/Header";
-import ProgressiveImage from "../../../ImageLoader";
+import dynamic from "next/dynamic";
+const ProgressiveImage = dynamic(
+  () => import("../../../ImageLoader"),
+  { ssr: false }
+);
+
 
 export class Banner extends Component {
     render() {
