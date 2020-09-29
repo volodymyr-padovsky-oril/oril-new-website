@@ -17,7 +17,7 @@ export class Intro extends Component {
                             <a onClick={() => scrollTo('#design')}>
                                 <div className="services__intro__categories__design">
                                     <img src="assets/img/uxui.svg" alt="product development"/>
-                                    <span>UI/UX Design</span>
+                                    <span>UX/UI Design</span>
                                 </div>
                             </a>
                         </Link>

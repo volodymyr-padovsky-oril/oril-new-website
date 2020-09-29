@@ -15,6 +15,15 @@ export const params = {
     }
 };
 
+export const paramsMobile = {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+        visible: false
+    }
+};
+
 export class WeAre extends Component {
     constructor(props) {
         super(props);
@@ -72,6 +81,29 @@ export class WeAre extends Component {
                                             workers.map((worker, index) => {
                                                 return (
                                                     <WeAreItem key={'slide-' + index} index={index} worker={worker} visible={visible} />
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                ))
+                            }
+                        </Swiper>
+                    </div>
+                    <div className="home__we-are__our-images--mobile">
+                        <Swiper {...paramsMobile}>
+                            {
+                                workersPages.map((workers, index) => (
+                                    <div key={'slide-' + index}>
+                                        {
+                                            workers.map((worker, index) => {
+                                                return (
+                                                    <div key={'slide-' + index}>
+                                                        <img src={"assets/img/" + worker.photo + ".jpg"} alt={worker.animal} />
+                                                        <div className="span-block">
+                                                            <span>{worker.name}</span>
+                                                            {/*<span>{worker.position}</span>*/}
+                                                        </div>
+                                                    </div>
                                                 )
                                             })
                                         }

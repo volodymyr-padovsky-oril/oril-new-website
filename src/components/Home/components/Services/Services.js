@@ -17,9 +17,9 @@ export class Services extends Component {
         },
         {
             img: 'product-development',
-            name: 'Product development',
+            name: 'Product Development',
             link: 'development',
-            content: 'Unicorns aren’t built in a day. They’re the product of solid methodologies that iteratively bridge market demands with unique solutions. We’ve got your back.'
+            content: 'Unicorns aren’t built in a day. They’re the product of solid methodologies that iteratively bridge market demands with unique solutions. We’ve got your back'
         },
         {
             img: 'io-t',

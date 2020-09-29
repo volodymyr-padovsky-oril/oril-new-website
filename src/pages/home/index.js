@@ -51,7 +51,7 @@ class Index extends Component {
                     <Banner/>
                     <Services redirect={this.onChangePage}/>
                     <Industries tabs={this.tabs} selected="0" tab="web"/>
-                    <OurWorks h3="Our works" slides = {[project.laced, project.sparkOffer, project.sab]}/>
+                    <OurWorks h3="Our works" slides = {[project.laced, project.sab, project.vicki]}/>
                     {/*<Products/>*/}
                     <Testimonials/>
                     <Achievements/>

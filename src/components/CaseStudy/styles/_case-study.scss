@@ -72,7 +72,7 @@
       a {
         color: #2c2c2c;
         padding: 5px 15px;
-        font-size: .9rem;
+        font-size: 0.9rem;
         font-weight: 600;
         border-radius: 27px;
         margin: 0 10px 10px 0;
@@ -122,7 +122,6 @@
     & > img {
       width: 100%;
     }
-
   }
 
   &__poster {
@@ -708,10 +707,9 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-
-    .case-study__technologies .technologies__item span {
-      margin-top: 15px;
-    }
+  .case-study__technologies .technologies__item span {
+    margin-top: 15px;
+  }
 
   .case-study {
     margin: 20px 0 10px 0;
@@ -833,7 +831,6 @@
           }
         }
       }
-     
     }
 
     &__our-process {
@@ -907,6 +904,12 @@
       h2 {
         text-align: center;
       }
+    }
+  }
+
+  @media (max-width: 759px) {
+    .case-study__palette {
+      grid-template-columns: 1fr;
     }
   }
 }

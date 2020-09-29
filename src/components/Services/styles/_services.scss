@@ -95,11 +95,14 @@
         text-decoration: none;
         text-align: center;
         width: 100%;
-        grid-gap: 18px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
+
+        span {
+          margin-top: 18px;
+        }
 
         &:hover {
           text-decoration: underline;

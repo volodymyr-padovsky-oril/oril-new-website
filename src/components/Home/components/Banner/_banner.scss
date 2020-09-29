@@ -3,6 +3,14 @@
   position: relative;
   z-index: 999;
 
+  .banner-img--desktop{
+    &__lazy{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__block {
 
     .banner-img--mobile{
@@ -21,37 +29,37 @@
       right: 0;
       text-align: center;
       font-size: 4.0625rem;
-      line-height: 4.5rem;
+      line-height: 7rem;
       z-index: 9;
       font-family: Mont-Bold, serif;
 
       @media (min-width: 2000px) {
         font-size: 6rem;
-        line-height: 6.5rem;
+        line-height: 7.8rem;
         top: 511px;
       }
 
       @media (max-width: 1600px) {
         font-size: 3.5rem;
-        line-height: 4rem;
+        line-height: 6rem;
         top: 305px;
       }
 
       @media (max-width: 1300px) {
         font-size: 3rem;
-        line-height: 3.5rem;
+        line-height: 6rem;
         top: 180px;
       }
 
       @media (max-width: 768px) {
         font-size: 2.5rem;
-        line-height: 3rem;
+        line-height: 5rem;
         top: 260px;
       }
 
       @media (max-width: 550px) {
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 3rem;
         top: 145px;
       }
     }

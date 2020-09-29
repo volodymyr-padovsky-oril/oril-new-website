@@ -24,10 +24,10 @@ export const caseStudy = {
       },
       {
         title: "Team",
-        text: "UI/UX designer, 3 Engineers, Project Manager, QA",
+        text: "UX/UI designer, 3 Engineers, Project Manager, QA",
       },
     ],
-    tags: ["Web App", "Responsive Design", "MVP", "Development"],
+    tags: ['WebApp', 'GreenTech', 'Platform', 'UX/UI Design'],
     posterImg: "green-vision2",
     posterTitle: "Envision our energy future. Make it a reality.",
     uxProcessSubTitle:
@@ -92,14 +92,17 @@ export const caseStudy = {
       {
         img: "excel",
         name: "Excel",
+        link: "https://en.wikipedia.org/wiki/Microsoft_Excel"
       },
       {
         img: "html",
         name: "HTML",
+        link: "https://en.wikipedia.org/wiki/HTML"
       },
       {
         img: "css",
         name: "CSS",
+        link: "https://en.wikipedia.org/wiki/CSS"
       },
     ],
     ourResultsTile: "Our results",
@@ -152,11 +155,11 @@ export const caseStudy = {
       },
       {
         title: "Team",
-        text: "UI/UX designer, 3 Engineers, Project Manager, QA",
+        text: "UX/UI designer, 3 Engineers, Project Manager, QA",
       },
     ],
-    // teams: ['UI/UX designer', '3 Engineers', 'Project Manager', 'QA'],
-    tags: ["Web App", "Responsive Design", "MVP", "Development"],
+    // teams: ['UX/UI designer', '3 Engineers', 'Project Manager', 'QA'],
+    tags: ['WebApp', 'PropTech', 'Platform'],
     posterImg: "spark-offer2",
     posterTitle: "The easiest way to make and receive Offers on a home",
     uxProcessSubTitle:
@@ -234,6 +237,7 @@ export const caseStudy = {
       {
         img: "websocket",
         name: "WebSocket",
+        link: "https://en.wikipedia.org/wiki/WebSocket"
       },
       {
         img: "hazel-cast",
@@ -290,11 +294,11 @@ export const caseStudy = {
       },
       {
         title: "Team",
-        text: "UI/UX designer, 3 Engineers, Project Manager, QA",
+        text: "UX/UI designer, 3 Engineers, Project Manager, QA",
       },
     ],
-    // teams: ['UI/UX designer', '3 Engineers', 'Project Manager', 'QA'],
-    tags: ["Mobile App", "UX/UI", "MVP", "Development"],
+    // teams: ['UX/UI designer', '3 Engineers', 'Project Manager', 'QA'],
+    tags: ['MobileApp', 'UX/UI Design', 'Auction'],
     posterImg: "laced2",
     uxProcessSubTitle:
       "The goal of UX process was to identify the main pain points and understand the process of using the product in daily work. Our UX team has created high-fidelity wireframes to understand the client’s vision as much as possible and to clarify all the features of interface.",
@@ -376,6 +380,7 @@ export const caseStudy = {
       {
         img: "websocket",
         name: "WebSocket",
+        link: "https://en.wikipedia.org/wiki/WebSocket"
       },
       {
         img: "hazel-cast",
@@ -398,7 +403,7 @@ export const caseStudy = {
     ourResultsCustomerImg: "lozano",
     ourResultsCustomerName: "Sean Lozano",
     ourResultsCustomerPosition: "CEO of LACED",
-    ourResultsCustomerFeedback: `“ORIL's platform was intuitive and user-friendly. The client's business gained 50,000 customers in its first year. Communicative and transparent, their developers worked quickly and precisely”`,
+    ourResultsCustomerFeedback: `“ORIL's platform was intuitive and user-friendly. The client's business gained 50,000 customers in its first year. Communicative and transparent, their engineers worked quickly and precisely”`,
     ourResultsCustomerPoints: [
       {
         circle: 2520,
@@ -442,11 +447,11 @@ export const caseStudy = {
       },
       {
         title: "Team",
-        text: "UI/UX designer, 3 Engineers, Project Manager, QA",
+        text: "UX/UI designer, 3 Engineers, Project Manager, QA",
       },
     ],
-    // teams: ['UI/UX designer', '3 Engineers', 'Project Manager', 'QA'],
-    tags: ["Mobile App", "UX/UI", "MVP", "Development"],
+    // teams: ['UX/UI designer', '3 Engineers', 'Project Manager', 'QA'],
+    tags: ['WebApp', "Development", 'FinTech', 'Auto', 'Platform'],
     posterImg: "sab2",
     uxProcessSubTitle:
       "The goal of UX process was to identify the main pain points and understand the process of using the product in daily work. Our UX team has created high-fidelity wireframes to understand the client’s vision as much as possible and to clarify all the features of interface.",
@@ -527,6 +532,7 @@ export const caseStudy = {
       {
         img: "websocket",
         name: "WebSocket",
+        link: "https://en.wikipedia.org/wiki/WebSocket"
       },
       {
         img: "hazel-cast",
@@ -536,6 +542,7 @@ export const caseStudy = {
       {
         img: "s3bucket",
         name: "S3 Bucket",
+        link: "https://aws.amazon.com/s3/"
       },
     ],
     ourResultsSubTile:
@@ -587,11 +594,11 @@ export const caseStudy = {
       },
       {
         title: "Team",
-        text: "UI/UX designer, 3 Engineers, Project Manager, QA",
+        text: "UX/UI designer, 3 Engineers, Project Manager, QA",
       },
     ],
-    // teams: ['UI/UX designer', '3 Engineers', 'Project Manager', 'QA'],
-    tags: ["Mobile App", "UX/UI", "MVP", "Development"],
+    // teams: ['UX/UI designer', '3 Engineers', 'Project Manager', 'QA'],
+    tags: ['WebApp', 'PropTech', 'Platform'],
     posterImg: "posterImg_vicki",
     posterTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     uxProcessSubTitle:
