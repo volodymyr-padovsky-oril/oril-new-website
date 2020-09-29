@@ -3,7 +3,6 @@ import {withRouter} from "next/router";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 
 import "react-tabs/style/react-tabs.css";
-// import "./index.scss";
 import Link from "next/link";
 
 const CustomTab = ({children, activeClassName}) => (
@@ -64,8 +63,6 @@ export class Industries extends Component {
     }
 
     render() {
-        const {tabs, tab, selected} = this.props;
-        const {bottom, show} = this.state;
         return (
             <div className="home__industries">
                 <div className="container">
