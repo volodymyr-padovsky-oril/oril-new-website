@@ -8,7 +8,6 @@ const ProgressiveImage = dynamic(
   { ssr: false }
 );
 
-
 export class PortfolioFinTech extends Component {
     slides = [
         project.sab,

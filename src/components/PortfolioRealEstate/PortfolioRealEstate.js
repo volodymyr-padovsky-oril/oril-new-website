@@ -8,7 +8,6 @@ const ProgressiveImage = dynamic(
   { ssr: false }
 );
 
-
 export class PortfolioRealEstate extends Component {
     slides = [
         // project.sparkOffer,

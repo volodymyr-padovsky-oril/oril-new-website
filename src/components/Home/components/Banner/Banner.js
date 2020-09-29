@@ -6,7 +6,6 @@ const ProgressiveImage = dynamic(
   { ssr: false }
 );
 
-
 export class Banner extends Component {
     render() {
         return (
@@ -17,7 +16,7 @@ export class Banner extends Component {
                     <ProgressiveImage
                         preview="../assets/img/top-wave__lazy.png"
                         src="../assets/img/top-wave.png"
-                        render={(src, style) => <img src={src} />}
+                        render={(src, style) => <img src={src} className="banner-img--desktop" />}
                     />
                     <img className="banner-img--mobile"  src="../assets/img/top-wave-mobile.png" alt="top-wave"/>
                 </div>

@@ -8,7 +8,6 @@ const ProgressiveImage = dynamic(
   { ssr: false }
 );
 
-
 export class PortfolioMarketplace extends Component {
     slides = [
         project.laced,

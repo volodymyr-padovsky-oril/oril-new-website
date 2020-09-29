@@ -8,7 +8,6 @@ const ProgressiveImage = dynamic(
   { ssr: false }
 );
 
-
 export class PortfolioIoT extends Component {
     slides = [
         project.vicki,

@@ -8,7 +8,6 @@ const ProgressiveImage = dynamic(
   { ssr: false }
 );
 
-
 export class PortfolioLifestyleAndFitness extends Component {
     slides = [
         project.as
