@@ -3,14 +3,6 @@
   position: relative;
   z-index: 999;
 
-  .banner-img--desktop{
-    &__lazy{
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
   &__block {
 
     .banner-img--mobile{

@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {project} from "../../lib/our-projects";
 import Link from "next/link";
 import Countup from "../../commons/Countup";
+import ProgressiveImage from "react-progressive-image-loading";
 
 
 export class PortfolioMarketplace extends Component {
@@ -60,8 +61,11 @@ export class PortfolioMarketplace extends Component {
                                     }
                                 </div>
                                 <div className="right">
-                                    <img src={`../assets/img/${slide.img.name}${slide.img.extension}`}
-                                         alt={slide.img.name}/>
+                                    <ProgressiveImage
+                                        preview={`../assets/img/${slide.img.name}__lazy${slide.img.extension}`}
+                                        src={`../assets/img/${slide.img.name}${slide.img.extension}`}
+                                        render={(src, style) => <img src={src} style={style} />}
+                                    />
                                 </div>
                             </div>
                             {slide.customer &&
