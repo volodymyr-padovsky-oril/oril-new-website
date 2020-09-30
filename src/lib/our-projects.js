@@ -227,21 +227,17 @@ export const project = {
             extension: '.png'
         }
     },
-    rialto: {
+    kable: {
         logo: {
-            name: 'rialto-logo',
+            name: 'kable-logo',
             extension: '.png'
         },
-        title: 'Rialto',
-        link: 'https://rialtocuration.com/',
+        title: 'Kable',
+        link: 'https://kable.ai/',
         tags: ['WebApp', 'Fintech', 'Platform'],
         text: `
-            Rialto platform curates the entrepreneurial landscape, providing exceptional founders and investment firms with 360° insight into the connections most worth their time
+           A platform that curates the entrepreneurial landscape, providing exceptional founders with 360° insight into the connections most worth their time
         `,
-        // info: [
-        //     {value: 100, string: '+', text: 'curated startups'},
-        //     {value: 'Countless', text: 'startup-investor connections'},
-        // ],
         img: {
             name: 'rialto',
             extension: '.png'
@@ -259,11 +255,6 @@ export const project = {
             E-commerce website for selling rice puddings, based on Shopify platform.
             Also there is a custom administrator panel for automation delivery process via FedEx shipping company.
         `,
-        // info: [
-        //     { value: 70, string: '%', text: 'customers use iOS or Android app' },
-        //     { value: 4.8, text: 'rating an AppStore' },
-        //     { value: 11.245, text: 'monthly active users' }
-        // ],
         img: {
             name: 'ricetoriches',
             extension: '.png'
@@ -296,10 +287,6 @@ export const project = {
         text: `
         A platform that allows anyone to envision their future without Carbon Dioxide emissions: both on the scale of personal home and on the US scale
         `,
-        // info: [
-        //     { value: 'One', text: 'saved planet' },
-        //     { value: 1000, string: '%', text: 'informed households' }
-        // ],
         img: {
             name: 'gv',
             extension: '.png'
@@ -323,15 +310,11 @@ export const project = {
             extension: '.png'
         },
         title: 'Stick',
-        link: 'https://www.stick.ai/',
+        link: 'https://www.stick.ai/#/',
         tags: ['WebApp', 'AI', 'Presentation', 'SaaS'],
         text: `
             Stick uses Al to transform typed text into stunning visual presentations. It dynamically suggests images that match the slide’s content and places them in a proper place on the slide
         `,
-        // info: [
-        //     { value: 'AI-Powered', text: 'AI image recommendation' },
-        //     { value: 1000, string: '+', text: 'decks created' },
-        // ],
         img: {
             name: 'stick',
             extension: '.png'
@@ -362,10 +345,6 @@ export const project = {
         text: `
             A platform that allows to contribute and gather feedback on meetings and events. It helps teams' executives to collaboratively plan, understand, communicate, and measure projects and performance
         `,
-        // info: [
-        //     { value: 1000, string: '+', text: 'meetings conducted' },
-        //     { value: 10000, string: '+', text: 'notes noted and votes voted' },
-        // ],
         img: {
             name: 'plusdelta',
             extension: '.png'
@@ -395,13 +374,42 @@ export const project = {
         text: `
         An automotive tech platform in the used-car ecosystem that connects dealerships to financing and product opportunities
         `,
-        // info: [
-        //     { value: 1000, string: '+', text: 'meetings conducted' },
-        //     { value: 10000, string: '+', text: 'notes noted and votes voted' },
-        // ],
+
         img: {
             name: 'sab',
             extension: '.jpg'
+        },
+    },
+    imlca: {
+        logo: {
+            name: 'imlca-logo',
+            extension: '.png'
+        },
+        title: 'IMLCA',
+        link: 'https://imlca.app/splash',
+        tags: ['MobileApp', 'Social', 'Sports'],
+        text: `
+        Get noticed by college lacrosse coaches with IMLCA Players Directory, a mobile app used to increase visibility for perspective student-athletes
+        `,
+        img: {
+            name: 'imlca',
+            extension: '.png'
+        },
+    },
+    bloods: {
+        logo: {
+            name: 'bloods-logo',
+            extension: '.png'
+        },
+        title: 'Bloods.AI',
+        link: 'https://bloods.ai/',
+        tags: ['UI/UX Design', 'Healthcare', 'BioTech'],
+        text: `
+        Designed to meet the challenging requirements for biodata collection, healthcare providers can enjoy Bloodgate’s seamless integration into their standardized practices
+        `,
+        img: {
+            name: 'bloods',
+            extension: '.png'
         },
     }
 };

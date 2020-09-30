@@ -79,11 +79,11 @@ export class Industries extends Component {
                             <div className="home__industries__tabpanel">
                                 <div className="home__industries__text">
                                     <p>
-                                    {`From working with the MLS and building consumer apps to rolling out loT solutions 
+                                    From working with the MLS and building consumer apps to rolling out loT solutions 
                                     for real estate businesses, we enjoy leaving our mark on the proptech sector. 
                                     Real estate is a highly unique area. It bridges design and engineering with government, 
-                                    construction, sales, and a multitude of other B2B and B2C services. Here at <name>, 
-                                    we strive to expertly bring the physical built environment into beautiful digital experiences, and vice versa`}
+                                    construction, sales, and a multitude of other B2B and B2C services. Here at ORIL, 
+                                    we strive to expertly bring the physical built environment into beautiful digital experiences, and vice versa
                                     </p>
                                     <Link href="/portfolio/real-estate">
                                         Featured Products

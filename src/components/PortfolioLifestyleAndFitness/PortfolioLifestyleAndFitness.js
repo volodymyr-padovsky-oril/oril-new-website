@@ -10,7 +10,9 @@ const ProgressiveImage = dynamic(
 
 export class PortfolioLifestyleAndFitness extends Component {
     slides = [
-        project.as
+        project.as,
+        project.imlca,
+        project.bloods,
     ];
 
     render() {

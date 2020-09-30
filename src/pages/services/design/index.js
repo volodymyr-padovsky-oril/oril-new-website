@@ -250,7 +250,7 @@ export class Design extends Component {
                             </div>
                         </div>
                         <OurWorks h2="Featured Products"
-                                  slides={[project.laced, project.greenVision]}/>
+                                  slides={[project.laced, project.greenVision, project.scroogeBot]}/>
                     </section>
                 </section>
                 <Contacts/>

@@ -12,7 +12,7 @@ export class PortfolioMarketplace extends Component {
     slides = [
         project.laced,
         project.gowago,
-        //TODO kable
+        project.kable,
         project.hoozeOn,
         project.myn,
     ];

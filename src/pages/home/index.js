@@ -6,6 +6,7 @@ import Achievements from "../../components/Home/components/Achievements/Achievem
 import Testimonials from "../../components/Home/components/Testimonials/Testimonials";
 import Industries from "../../components/Home/components/Industries/Industries";
 import OurWorks from "../../components/Home/components/OurWorks/OurWorks";
+import "../../commons/BaseTabs/index.scss";
 import  "../../components/Home/components/OurWorks/_our-works.scss";
 import OurNews from "../../components/Home/components/News/News";
 import {project} from "../../lib/our-projects";

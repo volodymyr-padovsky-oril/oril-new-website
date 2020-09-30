@@ -3,6 +3,7 @@ import {workersPages} from "../../../../lib/workers";
 import Swiper from "react-id-swiper";
 import VisibilitySensor from "react-visibility-sensor";
 import WeAreItem from './WeAreItem';
+import WeAreItemMobile from "./WeAreItemMobile";
 
 export const params = {
     autoHeight: true,
@@ -97,13 +98,8 @@ export class WeAre extends Component {
                                         {
                                             workers.map((worker, index) => {
                                                 return (
-                                                    <div key={'slide-' + index}>
-                                                        <img src={"assets/img/" + worker.photo + ".jpg"} alt={worker.animal} />
-                                                        <div className="span-block">
-                                                            <span>{worker.name}</span>
-                                                            {/*<span>{worker.position}</span>*/}
-                                                        </div>
-                                                    </div>
+                                                    <WeAreItemMobile key={'slide-' + index} index={index} worker={worker}/>
+
                                                 )
                                             })
                                         }

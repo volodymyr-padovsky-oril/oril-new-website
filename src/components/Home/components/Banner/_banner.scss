@@ -132,6 +132,9 @@
     grid-template-rows: 1fr 1fr;
 
     .banner-img--desktop{
+      &__lazy{
+        display: none;
+      }
       display: none;
     }
 

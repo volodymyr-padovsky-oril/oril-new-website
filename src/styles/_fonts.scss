@@ -103,6 +103,13 @@
     url("/assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Mont-RegularItalic";
+  src: url("/assets/fonts/Mont-RegularItalic.ttf");
+  src: url("/Mont-RegularItalic.ttf?#iefix") format("embedded-opentype"),
+  url("/assets/fonts/Mont-RegularItalic.ttf") format("truetype");
+}
+
 h1 {
   font-size: 65px;
   line-height: 0.86;
