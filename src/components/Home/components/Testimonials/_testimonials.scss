@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .home {
   &__testimonials {
 
@@ -18,6 +20,7 @@
 
           p {
             margin: 0 0 5px;
+            max-width: 64vw;
           }
 
           .clutch-block {
@@ -68,8 +71,9 @@
       }
 
       .feedback {
-        color: #676875;
+        color: $main-gray;
         height: 216px;
+        font-family: 'Mont-RegularItalic', sans-serif
       }
     }
   }

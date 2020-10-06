@@ -3,6 +3,14 @@
   position: relative;
   z-index: 999;
 
+  .banner-img--desktop{
+    &__lazy{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__block {
 
     .banner-img--mobile{
@@ -124,6 +132,9 @@
     grid-template-rows: 1fr 1fr;
 
     .banner-img--desktop{
+      &__lazy{
+        display: none;
+      }
       display: none;
     }
 

@@ -28,13 +28,13 @@ header {
 
   &.hidden_main {
     position: fixed !important;
-    background-color: #fff;
+    background-color: $white;
     box-shadow: 0 -16px 26px 0 rgba(0,0,0,0.7) !important;
     animation: color-change .15s ease-in; 
     top: 0;
 
      .nav_item {
-       color: #848484 !important;
+       color: $dark-gray !important;
        transition: .15s;
      }
 
@@ -53,17 +53,13 @@ header {
        .btn {
         border-radius: 7px;
         width: 100%;
-        font-size: 18px;
         text-align: center;
-        color: #fff !important;
-        padding: 14px 0 13px;
-        border-color: white;
+        color: $white !important;
         cursor: pointer;
         outline: none;
-        font-weight: 600;
         position: relative;
         z-index: 1;
-        background: linear-gradient(243deg, #ffb248, #ffe22a, #ffe22a, #ffb248);
+        background: linear-gradient(243deg, #ffb248, $yellow, $yellow, #ffb248);
         font-size: 17px;
         border: none;
         padding: 18px 0 19px;
@@ -112,7 +108,7 @@ header {
       margin: 0 30px;
       text-decoration: none;
       opacity: 1;
-      color: #848484;
+      color: $dark-gray;
       font-size: 18px;
       line-height: 1.44;
       transition: color 0.2s;
@@ -404,6 +400,6 @@ header {
       background-color: transparent;
     }
     100% {
-      background-color: #fff;
+      background-color: $white;
     }
   }

@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .home {
 
   &__industries {
@@ -13,7 +15,7 @@
       p {
         // font-weight: 600;
         font-size: 1.25rem;
-        color: #676875;
+        color: $main-gray;
         line-height: 1.8;
       }
 
@@ -23,7 +25,7 @@
         font-family: Mont-SemiBold, serif;
         font-size: 1.1rem;
         text-align: center;
-        color: #ffffff;
+        color: $white;
         padding: 14px 23px;
         text-decoration: none;
       }
@@ -46,10 +48,10 @@
       .react-tabs__tab {
         font-family: Mont-Bold, serif;
         font-size: 1.375rem;
-        color: #363645;
+        color: $case-study-gray;
         margin-right: 45px;
         border: none;
-        border-bottom: 4px solid #fff;
+        border-bottom: 4px solid $white;
       }
 
       .react-tabs__tab--selected {

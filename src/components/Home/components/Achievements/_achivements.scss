@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .home {
   &__achievements {
     //background-image: url(/public/assets/img/group-13.svg);
@@ -14,36 +16,8 @@
       background-position-y: bottom;
     }
 
-    //&:after {
-    //  //background-image: url("/assets/img/404.jpg");
-    //
-    //  background-image: url("/assets/img/group-13.svg");
-    //  content: "";
-    //  position: absolute;
-    //  top: -350px;
-    //  left: -150px;
-    //  height: 870px;
-    //  width: 116%;
-    //  background-size: 100%;
-    //  background-repeat: round;
-    //
-    //  @media (max-width: 1600.98px) {
-    //    background-repeat: no-repeat;
-    //    width: 200%;
-    //    left: -250px;
-    //  }
-    //
-    //  @media (max-width: 460px) {
-    //    top: -234px;
-    //  }
-    //
-    //  @media (max-width: 1185px) {
-    //    top: -140px;
-    //  }
-    //}
-
     h3 {
-      color: #fff !important;
+      color: $white !important;
     }
 
     & > .container {

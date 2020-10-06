@@ -3,7 +3,7 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
-import './_design.scss';
+import '../services.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';
@@ -19,31 +19,34 @@ export class Design extends Component {
             title: 'Research',
             titleOnNewLine: true,
             text: `
-                Driven by human-centered design approach, our clients’ product idea
-                and users behavior patterns are the subject of analysis and investigation
+            Driven by human-centered design approach, we translate clients’ product ideas 
+            into design patterns that are intuitive and highly complementary to existing user behaviour
+
             `
         },
         {
             title: 'Best Practices',
             titleOnNewLine: true,
             text: `
-                We use Agile methodology and Design Sprint to provide step-by-step delivery of concepts ready to use
+            We prioritize our design work based on product roadmaps, then follow 
+            Agile methodologies and design sprints to provide just-in-time delivery of concepts that are ready for programming
             `
         },
         {
             title: 'Integration',
             titleOnNewLine: true,
             text: `
-                As designers, we care about development and this helps our clients execute complex web and mobile
-                applications, turning them into beautiful and impactful products
+            Because we design around user needs, rather than just product features, we’re prepared 
+            to create solutions spanning any combination of web, desktop, mobile, smartwatch, and IoT applications
             `
         },
         {
             title: "Users' Feedback",
             titleOnNewLine: true,
             text: `
-                Whatever your target audience is, it’s important to perform usability testing and gather users' opinions
-                on a product release to make continuous UX
+            We believe that measured investment into usability testing throughout the design 
+            phase is crucial. Doing so before moving on to development leads to less re-work and a greater chance of success after launch
+
             `
         }
     ];
@@ -201,7 +204,7 @@ export class Design extends Component {
                                 <p>
                                     Our practical approach to product design pulls heavily from tried-and-true
                                     methodologies. Due to the heavily streamlined process we’ve internalized, our team
-                                    is able to focus its efforts on what matters most: your product.
+                                    is able to focus its efforts on what matters most: your product
                                 </p>
                                 <div className="process-wrapper">
                                     {this.process.map((item, index) => (
@@ -250,7 +253,7 @@ export class Design extends Component {
                             </div>
                         </div>
                         <OurWorks h2="Featured Products"
-                                  slides={[project.laced, project.greenVision]}/>
+                                  slides={[project.laced, project.greenVision, project.scroogeBot]}/>
                     </section>
                 </section>
                 <Contacts/>

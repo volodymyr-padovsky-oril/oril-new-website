@@ -4,7 +4,6 @@ import {testimonials} from "../../../../lib/testimonials";
 
 export const params = {
     loop: true,
-    // width: 1240,
     autoHeight: true,
     pagination: {
         el: '.swiper-pagination',

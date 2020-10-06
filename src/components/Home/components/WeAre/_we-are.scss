@@ -1,6 +1,8 @@
+@import "../../../../styles/variables";
+
 .home {
   &__we-are {
-    color: #363645;
+    color: $case-study-gray;
 
     & > .container {
       grid-template-columns: 1fr 1fr;
@@ -79,18 +81,18 @@
             .span-block {
               position: absolute;
               bottom: 0;
-              height: 42%;
+              height: 50%;
               margin-left: auto;
               margin-right: auto;
               left: 0;
               right: 0;
               text-align: center;
               background-image: linear-gradient(to bottom, rgba(54, 54, 70, 0), rgba(40, 40, 50, 0.23) 42%, rgba(54, 54, 70, 0.69));
-              padding: 8px;
+              padding: 22px;
 
               span {
                 word-break: break-word;
-                color: #fff;
+                color: $white;
                 font-family: 'Mont-SemiBold', serif;
                 font-size: 1rem;
               }
@@ -438,4 +440,24 @@ only screen and (min-resolution: 2dppx) {
       }
     }
   }
+}
+
+.home__we-are__our-images--mobile {
+  .card__back--mobile {
+    display: none;
+  }
+
+  .card--mobile {
+    &:hover {
+
+      .card__back--mobile {
+        display: block;
+      }
+
+      .card__front--mobile {
+        display: none;
+      }
+    }
+  }
+
 }

@@ -7,7 +7,7 @@ import Footer from "../../../commons/Footer";
 import {project} from "../../../lib/our-projects";
 import SEOMetaTags from "../../../components/SEOMetaTags";
 import BaseTabs from "../../../commons/BaseTabs";
-import '../../../components/Portfolio/styles/_portfolio.scss';
+import '../../../components/Portfolio/_portfolio.scss';
 import {tabs} from "../../../lib/tabs";
 
 class Iot extends Component {

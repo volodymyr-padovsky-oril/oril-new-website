@@ -1,11 +1,5 @@
 @import "../../../styles/variables";
-
-@import "../../Intro/intro";
-@import "../../../pages/services/design/design";
-@import "../../Web/web";
-@import "../../Mobile/mobile";
-@import "../../IoT/iot";
-@import "../../Blockchain/blockchain";
+@import "../../../pages/services/services";
 
 .services {
   overflow: hidden;
@@ -402,7 +396,7 @@
     margin-right: 35px;
     text-decoration: none;
     font-size: 1.125rem;
-    color: #848484;
+    color: $dark-gray;
     font-family: Mont-SemiBold, serif;
   }
 

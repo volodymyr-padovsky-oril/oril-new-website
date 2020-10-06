@@ -2,7 +2,6 @@
 @import "../../../styles/mixin";
 
 @import "../components/Banner/banner";
-@import "../components/Products/products";
 @import "../components/Services/services";
 @import "../components/WeAre/we-are";
 @import "../components/Achievements/achivements";
@@ -19,13 +18,13 @@
     .hamburger .hamburger-inner,
     .hamburger .hamburger-inner::before,
     .hamburger .hamburger-inner::after {
-      background-color: #fff;
+      background-color: $white;
     }
   
 
   section {
     .btn {
-      @include btn($orange, linear-gradient(#ffffff, #ffffff));
+      @include btn($orange, linear-gradient($white, $white));
     }
   }
 
@@ -34,7 +33,7 @@
       font-family: Mont-Bold, serif;
       font-size: 2.25rem;
       text-align: center;
-      color: #363645;
+      color: $case-study-gray;
       margin: 0 0 40px;
     }
   }

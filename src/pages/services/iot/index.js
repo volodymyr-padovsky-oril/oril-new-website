@@ -3,7 +3,7 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
-import '../design/_design.scss';
+import '../services.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from 'react-lottie';

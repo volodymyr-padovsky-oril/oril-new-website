@@ -32,7 +32,7 @@
     h2 {
       font-size: 2.5rem;
       line-height: 1.4;
-      color: #363645;
+      color: $case-study-gray;
       margin: 0 0 39px;
       font-family: Mont-Bold, serif;
     }
@@ -42,7 +42,7 @@
       font-family: Mont-Bold, serif;
       line-height: 1.61;
       max-width: none !important;
-      color: #363645;
+      color: $case-study-gray;
       margin: 0 0 10px;
     }
 
@@ -54,7 +54,7 @@
       line-height: 1.8;
       letter-spacing: normal;
       font-weight: 500;
-      color: #676875;
+      color: $main-gray;
       margin: 0 0 40px;
       direction: ltr;
 

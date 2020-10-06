@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .case-study {
   margin: 30px 0 160px 0;
 
@@ -9,7 +11,7 @@
   h2 {
     font-family: Mont-Bold, serif;
     font-size: 2.75rem;
-    color: #363645;
+    color: #1e1e67;
     margin: 0 0 20px 0;
     line-height: normal;
   }
@@ -17,14 +19,14 @@
   h3 {
     font-family: Mont-Bold, serif;
     font-size: 2.125rem;
-    color: #363645;
+    color: $case-study-gray;
     text-align: left;
   }
 
   h4 {
     font-family: Mont-Bold, serif;
     font-size: 2.0625rem;
-    color: #363645;
+    color: $case-study-gray;
   }
 
   &__header {
@@ -61,7 +63,7 @@
     span {
       // font-weight: 600;
       font-size: 1.25rem;
-      color: #676875;
+      color: $main-gray;
       line-height: 1.8;
     }
     .tags {
@@ -189,7 +191,7 @@
         height: 160px;
         border-radius: 25px;
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
-        color: #fff;
+        color: $white;
         font-family: DMSans-Regular, serif;
         font-size: 1.375rem;
 
@@ -208,7 +210,7 @@
         }
 
         span {
-          color: #676875;
+          color: $main-gray;
           font-size: 1.375rem;
         }
       }
@@ -233,7 +235,7 @@
         width: 100px;
         height: 240px;
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
-        color: #fff;
+        color: $white;
         font-family: DMSans-Regular, serif;
         font-size: 1rem;
         padding: 0 16px;
@@ -254,7 +256,7 @@
         font-family: DMSans-Bold, serif;
         font-size: 10rem;
         font-weight: bold;
-        color: #363645;
+        color: $case-study-gray;
         line-height: 10rem;
         margin-top: 21px;
       }
@@ -270,7 +272,7 @@
         font-family: AvenirNext-Medium, serif;
         font-size: 1.625rem;
         font-weight: 500;
-        color: #676875;
+        color: $main-gray;
         margin-bottom: 19px;
 
         &:last-child {
@@ -282,7 +284,7 @@
         font-family: AvenirNext-Medium, serif;
         font-size: 1.625rem;
         font-weight: 500;
-        color: #676875;
+        color: $main-gray;
         text-transform: uppercase;
         margin-bottom: 19px;
       }
@@ -328,7 +330,7 @@
         h5 {
           font-family: Mont-Bold, serif;
           font-size: 1.75rem;
-          color: #363645;
+          color: $case-study-gray;
           margin: 0 0 20px;
         }
 
@@ -336,13 +338,13 @@
           text-align: left;
           font-size: 1.25rem;
           line-height: 1.8;
-          color: #676875;
+          color: $main-gray;
           margin: 0 0 16px;
           max-width: 856px !important;
         }
 
         span {
-          color: #363645;
+          color: $case-study-gray;
           font-size: 1.25rem;
           font-family: Mont-SemiBold, serif;
         }
@@ -417,7 +419,7 @@
           text-decoration: none;
           text-align: center;
           line-height: 1.4;
-          color: #676875;
+          color: $main-gray;
         }
       }
     }
@@ -443,7 +445,7 @@
         span {
           font-family: Mont-SemiBold, serif;
           font-size: 1.25rem;
-          color: #676875;
+          color: $main-gray;
         }
       }
 
@@ -455,13 +457,13 @@
         width: 128px;
         height: 128px;
         box-shadow: 0 1px 9px 5px rgba(0, 0, 0, 0.05);
-        background-color: #ffffff;
+        background-color: $white;
         margin-bottom: 26px;
 
         span {
           font-size: 2rem;
           font-family: Mont-Bold, serif;
-          color: #363645;
+          color: $case-study-gray;
         }
       }
     }
@@ -822,7 +824,7 @@
           height: 140px;
           border-radius: 20px;
           box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
-          color: #fff;
+          color: $white;
           font-family: DMSans-Regular, serif;
           font-size: 1.375rem;
 
@@ -874,7 +876,7 @@
           span {
             font-family: Mont-SemiBold, serif;
             font-size: 1.25rem;
-            color: #676875;
+            color: $main-gray;
           }
         }
 
@@ -886,13 +888,13 @@
           width: 110px;
           height: 110px;
           box-shadow: 0 1px 9px 5px rgba(0, 0, 0, 0.05);
-          background-color: #ffffff;
+          background-color: $white;
           margin-bottom: 26px;
 
           span {
             font-size: 2rem;
             font-family: Mont-Bold, serif;
-            color: #363645;
+            color: $case-study-gray;
           }
         }
       }

@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Header from '../commons/Header';
 import Home from './home';
 import Contacts from "../components/Contacts/Contacts";
 import Footer from "../commons/Footer";

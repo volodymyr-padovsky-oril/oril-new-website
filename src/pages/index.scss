@@ -1,9 +1,9 @@
 @import "../components/Home/styles/home";
 @import "../components/Services/styles/services";
-@import "../components/Portfolio/styles/portfolio";
+@import "../components/Portfolio/portfolio";
 @import "../components/Contacts/styles/contacts";
 @import "../components/Home/components/OurWorks/our-works";
-@import "./services/design/design";
+@import "services/services";
 @import "../styles/_fonts.scss";
 
 body {

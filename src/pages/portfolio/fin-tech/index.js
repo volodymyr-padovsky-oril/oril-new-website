@@ -5,7 +5,7 @@ import Footer from "../../../commons/Footer";
 import {withRouter} from "next/router";
 import SEOMetaTags from "../../../components/SEOMetaTags";
 import BaseTabs from "../../../commons/BaseTabs";
-import '../../../components/Portfolio/styles/_portfolio.scss';
+import '../../../components/Portfolio/_portfolio.scss';
 import {tabs} from "../../../lib/tabs";
 
 class Marketplace extends Component {

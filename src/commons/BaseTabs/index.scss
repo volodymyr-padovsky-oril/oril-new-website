@@ -26,10 +26,10 @@
         font-size: 1.125rem;
         font-family: Mont-SemiBold, serif;
         text-decoration: none;
-        color: #848484;
+        color: $dark-gray;
 
         &:hover {
-          color: #ffb248;
+          color: $orange;
         }
 
       }
@@ -60,7 +60,7 @@
           font-size: 1.125rem;
           font-family: Mont-SemiBold, serif;
           text-decoration: none;
-          color: #ffb248 !important;
+          color: $orange !important;
         }
       }
 

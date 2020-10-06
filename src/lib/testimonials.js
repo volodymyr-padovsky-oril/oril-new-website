@@ -57,7 +57,6 @@ export const testimonials = [
     position: "Senior Operations Manager at Rice to Riches",
     feedback: `
       “Their dedication to the partnership, coupled with their professionalism and attention to detail, set them apart”
-      Nir Gabriel Co-Founder of Bloods AI “We love the professionalism of everyone in ORIL, the onboarding process was clear, and the actual final project exceeded our expectations”
   `,
   },
   {

@@ -2,12 +2,6 @@ import React, {Component} from "react";
 import Link from "next/link";
 
 export class Services extends Component {
-    redirect = (e) => {
-        const elem = e.target;
-        this.props.redirect(elem.pathname);
-        window.scrollTo(0, 0)
-    };
-
     products = [
         {
             img: 'ui-ux-design',
@@ -38,7 +32,7 @@ export class Services extends Component {
                             return (
                                 <div
                                     key={index}
-                                    style={product.link === 'development' ? { marginBottom: 0} : null}
+                                    style={product.link === 'development' ? {marginBottom: 0} : null}
                                     className="home__services__item">
                                     <img
                                         style={product.link === 'development' ? {maxWidth: 'fit-content'} : null}

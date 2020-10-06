@@ -3,7 +3,7 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import Header from "../../../commons/Header";
 import Contacts from "../../../components/Contacts/Contacts";
 import Footer from "../../../commons/Footer";
-import '../design/_design.scss';
+import '../services.scss';
 import OurWorks from "../../../components/Home/components/OurWorks/OurWorks";
 import Link from '../../../commons/utils/activeLink';
 import Lottie from "react-lottie";
@@ -56,7 +56,7 @@ export class Design extends Component {
             text: 'We create dashboards that clearly show the KPIs businesses value when tracking their success'
         },
         {
-            title: 'Custom application',
+            title: 'Custom Application',
             img: 'deliv-prototype',
             text: 'Need a desktop app? Software for a new piece of hardware? Whatever the requirements, we’ve got you covered!'
         },
@@ -94,7 +94,7 @@ export class Design extends Component {
 
     process = [
         {
-            title: '1. Product design',
+            title: '1. Product Design',
             img: 'services-whale1',
             text: 'From researching competitors, markets, and users to wireframing and delivering high quality prototypes, we deliver product designs that make sense and look beautiful',
             direction: 'odd'
@@ -128,7 +128,7 @@ export class Design extends Component {
     ];
 
     tags = [
-        'WebApp', 'MobileApp', 'Dashboards', 'CustomSoftware', 'IoTDevices'
+        'WebApp', 'MobileApp', 'Dashboards', 'Custom Software', 'IoT Products'
     ]
 
     animationOptions = {
@@ -264,7 +264,7 @@ export class Design extends Component {
                             </div>
                         </div>
                         <OurWorks h2="Featured Products"
-                                  slides={[project.laced, project.sab]}/>
+                                  slides={[project.laced, project.sab, project.scroogeBot]}/>
                     </section>
                 </section>
                 <Contacts/>

@@ -6,6 +6,8 @@
 @import "./_variables.scss";
 
 @import "~swiper/dist/css/swiper.min.css";
+@import "~slick-carousel/slick/slick.css"; 
+
 
 html, body {
   margin: 0;
@@ -13,14 +15,19 @@ html, body {
   font-size: 16px;
 }
 
-#root{
+#root {
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-section:focus { outline: none; }
-div.bubble_wrapper { z-index: 0 }
+section:focus {
+  outline: none;
+}
+
+div.bubble_wrapper {
+  z-index: 0
+}
 
 .container {
   display: grid;
@@ -47,11 +54,9 @@ div.bubble_wrapper { z-index: 0 }
   border-bottom: 1px solid transparent;
 }
 
-/*.link-block:hover span {
-  border-bottom-color: rgba(255, 255, 255, .3);
-}*/
-
-.block { display: block; }
+.block {
+  display: block;
+}
 
 @media (max-width: 1279.98px) {
   .container {
@@ -64,6 +69,7 @@ div.bubble_wrapper { z-index: 0 }
     padding: 0 20px;
   }
 }
+
 @media (min-width: 2700px) {
   .container {
     width: 35%;
@@ -72,20 +78,20 @@ div.bubble_wrapper { z-index: 0 }
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-    html, body {
-      margin: 0;
-      height: 100%;
-      font-size: 70%;
-    }
-    .container {
-      max-width: 992px;
-    }
-    img {
-      width: 90%;
-    } 
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  html, body {
+    margin: 0;
+    height: 100%;
+    font-size: 70%;
+  }
+  .container {
+    max-width: 992px;
+  }
+  img {
+    width: 90%;
+  }
 }

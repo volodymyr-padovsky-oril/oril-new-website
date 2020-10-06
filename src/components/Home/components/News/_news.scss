@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .home {
   &__our-news {
     margin: 0 auto;
@@ -15,7 +17,6 @@
     &__wrapper {
       display: flex;
       flex-direction: row;
-      //height: 468px;
       justify-content: center;
 
 
@@ -62,23 +63,16 @@
     &__cloud {
       visibility: hidden;
 
-      // position: absolute;
-      //z-index: 9;
       bottom: -23%;
-      //left: 10%;
-      //background-color: #363646;
       font-size: 1.875rem;
       font-family: Mont-Bold, serif;
-      color: #fff;
-      //width: 100%;
-      //height: 100%;
+      color: $white;
       align-items: center;
       text-align: center;
       display: flex;
       flex-direction: column;
       max-width: 285px;
       justify-content: center;
-      // left: calc(50% - 140px);
 
       a {
         margin-top: 44px;
@@ -89,7 +83,7 @@
         padding: 7px 22px;
         text-align: center;
         text-decoration: none;
-        color: #ffffff;
+        color: $white;
         width: fit-content;
         align-self: center;
         display: flex;
