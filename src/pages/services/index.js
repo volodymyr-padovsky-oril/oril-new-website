@@ -9,6 +9,7 @@ import Footer from "../../commons/Footer";
 import {withRouter} from "next/router";
 import SEOMetaTags from "../../components/SEOMetaTags";
 import {serviceCards} from '../../lib/service-cards';
+import '../index.scss';
 
 class Services extends Component {
     componentDidMount() {

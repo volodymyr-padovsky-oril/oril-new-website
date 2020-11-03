@@ -3,7 +3,7 @@ import Link from "next/link";
 import Countup from "../../commons/Countup";
 import dynamic from "next/dynamic";
 
-const ProgressiveImage = dynamic(
+const  ProgressiveImage = dynamic(
     () => import("../ImageLoader"),
     {ssr: false}
 );

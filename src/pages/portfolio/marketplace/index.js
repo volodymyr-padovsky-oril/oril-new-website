@@ -7,8 +7,10 @@ import SEOMetaTags from "../../../components/SEOMetaTags";
 import BaseTabs from "../../../commons/BaseTabs";
 import '../../../components/Portfolio/_portfolio.scss';
 import {tabs} from "../../../lib/tabs";
+import '../../index.scss';
 
 class Marketplace extends Component {
+
     render() {
         return (
             <>

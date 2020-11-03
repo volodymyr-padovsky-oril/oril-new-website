@@ -6,6 +6,8 @@ import Contacts from "../../components/Contacts/Contacts";
 import {withRouter} from 'next/router';
 import "../../components/Contacts/styles/_contacts.scss";
 import SEOMetaTags from "../../components/SEOMetaTags";
+import '../index.scss';
+import '../../styles/index.scss'
 
 class ContactUs extends Component {
 
@@ -23,16 +25,16 @@ class ContactUs extends Component {
 
     render() {
         return (
-            <>
+            <div id="contacts">
                 <SEOMetaTags
                     title={"ORIL | Contacts"}
                     url={"/contacts"}
                     // description={}   add custom description for this page
                 />
                 <Header/>
-                <Contacts data={this.state.data}/>
+                <Contacts/>
                 <Footer/>
-            </>
+            </div>
         );
     }
 }

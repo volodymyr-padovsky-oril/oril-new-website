@@ -15,7 +15,7 @@ class ServiceCard extends Component {
                         <p>{card.subtitle}</p>
                         <span>{card.text}</span>
                         <Link href={{pathname: `services/${card.href}`}}>
-                            Learn More
+                            <a>Learn More</a>
                         </Link>
                     </div>
                     <div className="card-wrapper__animation-wrapper">

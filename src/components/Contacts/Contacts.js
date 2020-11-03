@@ -43,10 +43,14 @@ class Contacts extends Component {
     constructor(props) {
         super(props);
         this.state = {mobileMode: ""};
+        this.state = { data: [] };
         this.toggleMobileMode = this.toggleMobileMode.bind(this);
     }
 
     componentDidMount() {
+        fetch(`https://api.ipdata.co/en?api-key=04b4e64842a9fd97b191d94431fcc4605964bc8c65174d5e6c052025`)
+          .then(res => res.json())
+          .then(json => this.setState({ data: json }));
         this.setState({
             mobileMode: window.innerWidth < 768
         });
@@ -72,7 +76,7 @@ class Contacts extends Component {
                     <div className="container">
                         <div className="contact__form">
                             <h2>Contact Us</h2>
-                            {this.props.isSnackbarOpen ? <Snackbar/> : <Form data={this.props.data}/>}
+                            {this.props.isSnackbarOpen ? <Snackbar/> : <Form data={this.state.data}/>}
                         </div>
                     </div>
                     <div className="container">

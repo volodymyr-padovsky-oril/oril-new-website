@@ -96,18 +96,10 @@ class Form extends Component {
     async onSubmit(e) {
 
         const {sendMessageRequest } = this.props;
-        const {email, name, message, ip, country_name} = this.state;
+        const {email, name, message} = this.state;
 
         e.preventDefault();
         await this.validateForm();
-
-        const userInfo = {
-            name: name,
-            email: email,
-            message: message,
-            ip: ip,
-            country: country_name
-        };
 
         if (this.state.formValid) {
             sendMessageRequest({

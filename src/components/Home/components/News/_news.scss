@@ -94,17 +94,7 @@
   }
 }
 
-@media (max-width: 1150.98px) {
-  .home {
-    &__our-news {
-      &__wrapper {
-        flex-wrap: wrap;
-      }
-    }
-  }
-}
-
-@media (max-width: 766.98px) {
+@media (max-width: 1150px) {
   .home {
     &__our-news {
       &__wrapper {
@@ -120,7 +110,6 @@
           }
 
           .swiper-pagination {
-            //width: 1240px;
             display: flex;
             justify-content: center;
             align-items: center;

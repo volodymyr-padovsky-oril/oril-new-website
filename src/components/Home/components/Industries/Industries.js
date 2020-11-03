@@ -33,7 +33,7 @@ export class Industries extends Component {
                                         digital experiences, and vice versa
                                     </p>
                                     <Link href="/portfolio/real-estate">
-                                        Featured Products
+                                        <a>Featured Products</a>
                                     </Link>
                                 </div>
                                 <div className="home__industries__img">
@@ -52,7 +52,7 @@ export class Industries extends Component {
                                         and beyond, we’ll make sure that your products communicate just as they shoud
                                     </p>
                                     <Link href="/portfolio/iot">
-                                        Featured Products
+                                        <a>Featured Products</a>
                                     </Link>
                                 </div>
                                 <div className="home__industries__img">
@@ -72,7 +72,7 @@ export class Industries extends Component {
                                         and is ready to bring that expertise to your team
                                     </p>
                                     <Link href="/portfolio/fin-tech">
-                                        Featured Products
+                                        <a>Featured Products</a>
                                     </Link>
                                 </div>
                                 <div className="home__industries__img">
@@ -95,7 +95,7 @@ export class Industries extends Component {
                                         parties on mobile and web, all the way through checkout and beyond
                                     </p>
                                     <Link href="/portfolio/marketplace">
-                                        Featured Products
+                                        <a>Featured Products</a>
                                     </Link>
                                 </div>
                                 <div className="home__industries__img">
@@ -115,7 +115,7 @@ export class Industries extends Component {
                                         and feeling great
                                     </p>
                                     <Link href="/portfolio/lifestyle">
-                                        Featured Products
+                                        <a>Featured Products</a>
                                     </Link>
                                 </div>
                                 <div className="home__industries__img">

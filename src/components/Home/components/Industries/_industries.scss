@@ -9,6 +9,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 105px;
+      height: 431px;
     }
 
     &__text {
@@ -72,6 +73,7 @@
 
       &__tabpanel {
         grid-template-columns: 1fr;
+        height: auto;
       }
 
       &__img {

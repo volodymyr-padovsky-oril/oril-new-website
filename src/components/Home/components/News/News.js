@@ -9,9 +9,14 @@ export const params = {
         type: 'bullets',
         clickable: true
     },
-    slidesPerView: 1,
+    slidesPerView: 3,
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+        }
+    },
     autoplay: {
-        delay: 3500,
+        delay: 2500,
         disableOnInteraction: false
     },
     speed: 1500

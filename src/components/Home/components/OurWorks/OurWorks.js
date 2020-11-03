@@ -1,24 +1,16 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useEffect} from "react";
 import Swiper from "react-id-swiper";
 import Link from "next/link";
-
-
-import Slider from "react-slick";
 
 const OurWorks = ({h2, h3, slides}) => {
     const [retina, setRetina] = useState(2)
     const [width, setWidth] = useState(0)
-    const [activeSlide, setActiveSlide] = useState(2)
-
-    const sliderRef = useRef(1);
 
     useEffect(() => {
         setRetina(ifRetina())
         setWidth(window.innerWidth)
-        
     }, [retina, width])
    
-    
     const ifRetina = () => {
     if (window.matchMedia) {
         var mq = window.matchMedia(
@@ -29,35 +21,59 @@ const OurWorks = ({h2, h3, slides}) => {
     }
 
     const params = {
-        beforeChange: (oldIndex, newIndex) => setActiveSlide(newIndex === 5 ? 0 : newIndex + 1),
-      infinite: true,
-      dots:false,
-      slidesToShow: 3,
-      initialSlide: 1,
-        className:"center",
-      slidesToScroll: 1,
-      centerPadding: 100,
-      autoplay: true,
-      autoplaySpeed: 3500,
-      speed: 1200,
-      responsive: [
-        {
-          breakpoint: 1240,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            initialSlide: 1
-          }
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 50,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false
         },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-      };
+        speed: 1500,
+        grabCursor: false,
+        simulateTouch: false,
+        observer: true,
+        breakpoints: {
+            900: {
+                slidesPerView: 1,
+            },
+            1239: {
+                slidesPerView: 2,
+            }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    };
+
+    const params_1 = {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 50,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false
+        },
+        speed: 1500,
+        grabCursor: false,
+        simulateTouch: false,
+        observer: true,
+        width: retina ? 992 : 1240,
+        breakpoints: {
+            900: {
+                slidesPerView: 1,
+            },
+            1239: {
+                slidesPerView: 2,
+            }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    };
+
+    const param = width < 1240 ? params : params_1
 
     return (
         <section className="home__our-works">
@@ -65,16 +81,17 @@ const OurWorks = ({h2, h3, slides}) => {
                 <h2>{h2}</h2>
                 <h3>{h3}</h3>
                 <div className="home__our-works__wrapper">
-                    <Slider ref={sliderRef} {...params}>
-                        {[...slides, ...slides].map((slide, index) => (
+                    {retina !== 2 && <Swiper {...param}>
+                        {slides.map((slide, index) => (
+                                <div key={'slide-' + index}>
                                     <div className="slide">
-                                        <img src={`../../assets/img/${slide.img.name}${slide.img.extension}`}
+                                        <img className={index !== 1 ? "slide__small-img": ""} src={`../../assets/img/${slide.img.name}${slide.img.extension}`}
                                                 alt={slide.img.name}/>
-                                        <div className={`slide__description ${activeSlide === index ? "active_slide": ""}`}>
+                                        <div className="slide__description">
                                             <Link href={`/portfolio/${slide.portfolio_type}`}>
-                                                <div
+                                                <a
                                                     className="title">{slide.title}
-                                                </div>
+                                                </a>
                                             </Link>
                                             <div className="tags">
                                                 {
@@ -90,9 +107,10 @@ const OurWorks = ({h2, h3, slides}) => {
                                             {/*</Link>*/}
                                         </div>
                                     </div>
+                                </div>
                             )
                         )}
-                    </Slider>
+                    </Swiper>}
                 </div>
             </div>
         </section>

@@ -61,7 +61,7 @@ export const testimonials = [
   },
   {
     img: {
-      name: "domenick_vicki",
+      name: "propati",
       extension: ".jpeg",
     },
     firstName: "Domenick",

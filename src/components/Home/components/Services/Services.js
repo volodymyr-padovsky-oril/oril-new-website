@@ -39,7 +39,7 @@ export class Services extends Component {
                                         src={`../assets/img/${product.img}.png`}
                                         alt=""/>
                                     <Link href={`services/${product.link}`}>
-                                        {product.name}
+                                        <a>{product.name}</a>
                                     </Link>
                                     <p>{product.content}</p>
                                 </div>
