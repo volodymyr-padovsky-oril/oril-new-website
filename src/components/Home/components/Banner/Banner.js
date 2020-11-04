@@ -13,9 +13,11 @@ export class Banner extends Component {
                     {/*<img className="banner-img--desktop__lazy" src="../assets/img/top-wave__lazy.png" alt="top-wave"/>*/}
                     <img className="banner-img--desktop__lazy" src="../assets/img/top-wave.png" alt="top-wave"/>
                     {/*<img className="banner-img--mobile" src="../assets/img/top-wave-mobile.png" alt="top-wave"/>*/}
-                    <Delayed waitBeforeShow={500}>
-                        <h1>One stop shop for <br/> your digital product</h1>
-                    </Delayed>
+                    <div className="header-wrapper">
+                        <Delayed waitBeforeShow={500}>
+                            <h1>One stop shop for <br/> your digital product</h1>
+                        </Delayed>
+                    </div>
                 </div>
             </section>
             // </div>

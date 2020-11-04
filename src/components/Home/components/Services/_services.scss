@@ -1,6 +1,6 @@
 .home {
   &__services {
-    margin-top: -600px;
+    //margin-top: -600px;
 
     &__wrapper {
       display: grid;
@@ -68,7 +68,7 @@
 @media (max-width: 920px) {
   .home {
     &__services {
-      margin-top: -140px;
+      //margin-top: -140px;
     }
   }
 }
@@ -76,7 +76,7 @@
 @media (min-width: 1700.98px) {
   .home {
     &__services {
-      margin-top: -900px;
+      margin-top: 900px;
     }
   }
 }
