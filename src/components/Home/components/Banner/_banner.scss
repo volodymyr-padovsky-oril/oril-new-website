@@ -43,6 +43,12 @@
       height: auto;
       -webkit-animation: bcCCNc 1000ms ease-out;
       animation: bcCCNc 1000ms ease-out;
+      @media (min-width: 1700px) {
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        width: 100%;
+      }
     }
   }
 
