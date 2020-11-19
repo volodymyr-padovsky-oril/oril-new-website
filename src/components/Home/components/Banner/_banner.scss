@@ -39,12 +39,23 @@
             height: auto;
             -webkit-animation: bcCCNc 1000ms ease-out;
             animation: bcCCNc 1000ms ease-out;
+            margin-top: -20%;
+            transition: margin 2000ms;
+            transition: width 2000ms;
             // @media (min-width: 1700px) {
             //     -webkit-transform: translate(-50%, -50%);
             //     -ms-transform: translate(-50%, -50%);
             //     transform: translate(-50%, -50%);
             //     width: 100%;
             // }
+            @media (max-width: 768px) {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 133%;
+                margin-top: 0;
+                transition: margin 2000ms;
+                transition: width 2000ms;
+            }
         }
     }
     &__block {
