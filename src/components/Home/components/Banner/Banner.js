@@ -19,11 +19,11 @@ export class Banner extends Component {
                         {/* <source src="movie.ogg" type="video/ogg"/> */}
                         Your browser does not support the video tag.
                     </video>
-                    {/* <div className="header-wrapper">
+                    <div className="header-wrapper">
                         <Delayed waitBeforeShow={500}>
-                            <h1>One stop shop for <br /> your digital product</h1>
+                            <h1>One stop shop <br /> for your <br /> digital product</h1>
                         </Delayed>
-                    </div> */}
+                    </div>
                 </div>
             </section>
             // </div>

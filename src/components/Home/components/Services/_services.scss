@@ -1,6 +1,6 @@
 .home {
     &__services {
-        // margin-top: 600px;
+        //margin-top: -100px;
         &__wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -77,7 +77,7 @@
 @media (max-width: 767.98px) {
     .home {
         &__services {
-            // margin-top: -10px;
+             margin-top: 0;
             &__wrapper {
                 grid-template-columns: 1fr;
             }
