@@ -13,7 +13,7 @@ export class Banner extends Component {
                     {/* <img className="banner-img--desktop__lazy" src="../assets/img/top-wave.png" alt="top-wave"/> */}
 
                     {/*<img className="banner-img--mobile" src="../assets/img/top-wave-mobile.png" alt="top-wave"/>*/}
-                    <video className="banner-img--desktop__lazy" loop autoPlay muted>
+                    <video className="banner-img--desktop__lazy" loop autoPlay muted playsinline>
                         <source src="../assets/video/main-banner.mp4" type="video/mp4" />
                         {/* <source src="movie.ogg" type="video/ogg"/> */}
                         Your browser does not support the video tag.

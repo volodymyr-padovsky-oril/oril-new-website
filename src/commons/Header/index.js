@@ -159,7 +159,7 @@ export class Header extends Component {
                     </nav>
                     <div className="button-wrapper">
                         <a href="https://calendly.com/oril" target="_blank" rel="noopener noreferrer nofollow">
-                            <button style={main && {color: '#000'}} className="btn">
+                            <button style={main && {color: '#fff'}} className="btn">
                                 Free Consultation
                             </button>
                         </a>
