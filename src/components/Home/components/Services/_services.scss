@@ -1,6 +1,6 @@
 .home {
     &__services {
-        //margin-top: -100px;
+        margin-top: -100px;
         &__wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -17,7 +17,6 @@
                 position: relative;
                 width: 100%;
                 max-width: 242px;
-                z-index: -999;
             }
             a {
                 font-size: 1.5625rem;

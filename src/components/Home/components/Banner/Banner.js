@@ -7,7 +7,6 @@ export class Banner extends Component {
         return (
             /*<div className="banner-wrapper">*/
             <section className="banner">
-                <Header main={true} />
                 <div className="banner__block">
                     {/*<img className="banner-img--desktop" src="../assets/img/top-wave__plug.png" alt="top-wave__plug"/>*/}
                     {/*<img className="banner-img--desktop__lazy" src="../assets/img/top-wave__lazy.png" alt="top-wave"/>*/}

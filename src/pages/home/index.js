@@ -9,6 +9,7 @@ import OurWorks from "../../components/Home/components/OurWorks/OurWorks";
 import "../../commons/BaseTabs/index.scss";
 import  "../../components/Home/components/OurWorks/_our-works.scss";
 import OurNews from "../../components/Home/components/News/News";
+import Header from "../../commons/Header";
 import {project} from "../../lib/our-projects";
 import '../../styles/index.scss';
 
@@ -21,6 +22,7 @@ class Index extends Component {
         return (
             <Fragment>
                 <main className='home'>
+                    <Header main={true} />
                     <Banner/>
                     <Services/>
                     <Industries/>
